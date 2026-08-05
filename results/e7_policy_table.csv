@@ -1,0 +1,13 @@
+state,heuristic,searched,differs
+C2   | starved(<=m_min),G3,G1,True
+C2   | warning(<m_thr),G2,G2,False
+C2   | mid(<60%),G2,G4,True
+C2   | ample(>=60%),G2,G2,False
+ISR  | starved(<=m_min),G2,G3,True
+ISR  | warning(<m_thr),G1,G4,True
+ISR  | mid(<60%),G1,G1,False
+ISR  | ample(>=60%),G1,G1,False
+LOG  | starved(<=m_min),G4,G3,True
+LOG  | warning(<m_thr),G3,G4,True
+LOG  | mid(<60%),G3,G2,True
+LOG  | ample(>=60%),G3,G2,True

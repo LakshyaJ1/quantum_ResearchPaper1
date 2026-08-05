@@ -1,0 +1,13 @@
+state,heuristic,searched,differs,searched_effective,shield_clipped,differs_effective
+C2   | starved(<=m_min),G3,G1,True,G1,False,True
+C2   | warning(<m_thr),G2,G2,False,G2,False,False
+C2   | mid(<60%),G2,G4,True,G1,True,True
+C2   | ample(>=60%),G2,G2,False,G2,False,False
+ISR  | starved(<=m_min),G2,G3,True,G3,False,True
+ISR  | warning(<m_thr),G1,G4,True,G4,False,True
+ISR  | mid(<60%),G1,G1,False,G1,False,False
+ISR  | ample(>=60%),G1,G1,False,G1,False,False
+LOG  | starved(<=m_min),G4,G3,True,G3,False,True
+LOG  | warning(<m_thr),G3,G4,True,G4,False,True
+LOG  | mid(<60%),G3,G2,True,G2,False,True
+LOG  | ample(>=60%),G3,G2,True,G2,False,True

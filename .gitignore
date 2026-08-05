@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.lnk
+
+# Manuscript sources and working notes are not part of the released artifact.
+*.tex
+*.tex.*
+*.md
+!README.md
+*.log
+results/*.log
+results/*.old
+results/*.pre_a5
+
+# Manuscript tooling: these read paper.tex, which is not distributed here, so they
+# would fail in a clone. They validate the LaTeX, not the simulation.
+experiments/check_tex.py
+experiments/check_tables.py
+experiments/check_pages.py
+experiments/order_refs.py
+experiments/audit_consistency.py
+experiments/verify_paper_numbers.py
+experiments/swap_abstract.py
+
+# Only the top-level draft PDF is excluded; figure PDFs are part of the artifact.
+/*.pdf

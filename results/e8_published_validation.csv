@@ -1,0 +1,5 @@
+check,quantity,measured,predicted,units,verdict,note
+V1,time to drain 3.5 MiB at 8192 bit/s,3584 (approx. 1 h),3584,s,PASS (exact),Reference arithmetic and simulator agree to the second; the gate in e1_validation.py runs this against the KeyStore itself.
+V2,link key consumed per relayed 400-bit global key,1475 (3.69x D),894 (2.23x D),bit,DISAGREES -- model is low by 1.65x,"Solving for the number of authenticated messages per key delivery gives n_auth = 6.6, against our assumed 2."
+V3,authentication share of key consumed per 256-bit AES rekey,"91.2% (5824 bit/round, 512 bit cipher)","65.9% (750 bit/hop, 256 bit cipher)",%,DISAGREES -- model is low by 5.4x on the overhead term,"Implies n_auth = 40 authenticated messages per key delivery for an application-level tunnel, against our assumed 2."
+V4,simultaneous bidirectional OTP voice pairs supported,11 (reported),1.2-12.6 across the link-rate range,pairs,PASS -- 11 lies inside the predicted range,"The OTP demand law (key bits = payload bits) reproduces the reported concurrency without tuning: 11 pairs needs 52.8 kbps, inside their 6-60.5 kbps measured range."

@@ -1,0 +1,9 @@
+D_bits,cost_per_hop,overhead_factor,regime
+256,750,2.9296875,dominated by authentication
+512,1006,1.96484375,authentication material
+1024,1518,1.482421875,authentication material
+2048,2542,1.2412109375,authentication material
+8192,8686,1.060302734375,authentication negligible
+65536,66030,1.007537841796875,authentication negligible
+144000,144494,1.0034305555555556,authentication negligible
+1000000,1000494,1.000494,authentication negligible
