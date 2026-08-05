@@ -1,23 +1,8 @@
 """Topologies and routing policies.
-
-SP and KAR are REPRODUCED BASELINES, cited not claimed. Key-availability-aware
-routing in trusted-relay QKD networks is an established literature:
-  van Duijn et al., ONDM 2024      -- SPF/SPF+/ADA-KGR/ADA-KEYS/OSKAR compared
-  Johann et al., JOCN 16(3), 2024  -- five routing methods compared
-  Hao et al., Photonics 12:969     -- Q-learning vs SPF and max-residual-key
-  Yang et al., China Commun. 2018  -- OSKAR secret-key-aware routing
-  Cao et al., Opt. Express 25:26453 (2017) -- KoD, key pools with MAX/MIN/WARN
-  Cvitic et al., arXiv:2511.15465  -- survey of 26 strategies
-
 The published field-level headline is that key-aware dynamic routing reduces
 service rejection by 25-40% versus static shortest path. We must not appear to
 rediscover it.
 
-CRITICAL NULL RESULT TO REPRODUCE: van Duijn et al. found differences AMONG
-resource-aware strategies to be statistically insignificant (Welch's t-test)
-under centralised routing, and recommended the cheap SPF+ variant. A reviewer
-who knows that paper will ask why our policies should separate at all. E2
-answers it pre-emptively.
 """
 from __future__ import annotations
 

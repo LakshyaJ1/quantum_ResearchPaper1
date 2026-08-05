@@ -1,9 +1,5 @@
 """Parameters for the contested multi-hop QKD key-supply simulator.
 
-EVERY numeric value below carries its provenance. Values marked SWEEP cannot be
-justified from the literature and must be swept, not asserted.
-
-See PHASE1_LITERATURE_DOSSIER.md for the full citation chain.
 """
 from __future__ import annotations
 
@@ -11,17 +7,7 @@ from dataclasses import dataclass, field, asdict
 from typing import Dict, Tuple
 import json
 
-# --------------------------------------------------------------------------
-# Assurance grades. Cost-decreasing ladder mapping onto ITU-T Y.3803 cl. 8.2.3
-# (OTP relay -> AES backup) and QuLore L1-L4 (arXiv:2511.22416).
-#
-# NOTE ON TERMINOLOGY: only G3 may be called "hybrid" -- draft-ietf-tls-hybrid-
-# design section 1.2 defines hybrid as SIMULTANEOUS combination via a key
-# combiner, secure if at least one component is unbroken. A G1->G4 substitution
-# is a *labelled grade downgrade*, never a hybrid.
-# Do not use the phrase "security level": it already means key length in
-# DDKA-QKDN (Entropy 24:149) and key-update period in the RWTA literature.
-# --------------------------------------------------------------------------
+
 G1_OTP = "G1"        # information-theoretic payload; key bits == payload bits
 G2_QKD_SYM = "G2"    # ITS-delivered 256-bit symmetric key, computational payload
 G3_HYBRID = "G3"     # QKD (partial) (+) ML-KEM-768 via approved combiner
@@ -134,10 +120,6 @@ class ReservoirConfig:
     """Key reservoir. QKDNetSim QKDBuffer semantics, adopted verbatim for
     citability. UNITS ARE BITS (qkd-buffer.h documents FetchKeyOfSize as
     "keySize in bits!").
-
-    Defaults are the values in QKDNetSim's shipped SECOQC script
-    scratch/secoqc_p2p_qkd_system.cc, not the code defaults.
-
     The 64 kbit of the original paper draft is ~3 orders of magnitude below
     every published link-level reservoir and has been dropped.
     """

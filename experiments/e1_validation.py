@@ -1,7 +1,5 @@
 """E1 -- Validation gate. Nothing downstream is believed until this passes.
 
-Implements PHASE2_DESIGN.md section 10. Prints a pass/fail table and exits
-non-zero on any failure.
 """
 from __future__ import annotations
 

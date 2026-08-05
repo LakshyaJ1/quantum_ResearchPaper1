@@ -1,40 +1,6 @@
 """Policy-space audit: is the hand-designed heuristic near-optimal in-model?
 
-FRAMING (PHASE2_DESIGN section 12). Learned ROUTING for key-scarce QKD networks
-is saturated -- Johann et al. Photonics 13:198 (2026) already do DRL with graph
-attention and cross-topology generalisation; Hao et al. Photonics 12:969 (2025),
-Xie et al. Opt. Express (2025), Sharma et al. IET QC 4(3) (2023), Seok et al.
-JNSM 33:30 (2025) and Zuo et al. ACP 2020 fill in the rest. Learned ADMISSION
-control is saturated in classical networking (survey: Khani et al., Int. J.
-Commun. Syst., 2024). We therefore do not claim a better router.
 
-What is NOT occupied: a learned policy over the ASSURANCE GRADE, driven by
-information-theoretic key-reservoir exhaustion, per traffic class, under a hard
-safety constraint. The closest prior art is Premakumari et al., Sensors
-25:2056 (2025), whose action is an encryption level -- but driven by a threat
-classifier, with no QKD, no trusted relay and no traffic classes.
-
-The claim is deliberately narrow and falsifiable:
-
-    Within model M, the hand-designed heuristic attains X% of the best policy
-    discoverable in M under a hard constraint on command traffic.
-
-That is a statement about our design's HEADROOM, not about the world. It has
-the same epistemic status as every other simulation result in the paper, and
-that parity is the argument against the circularity objection.
-
-METHOD CHOICE. We use direct policy search (cross-entropy method) over a small
-tabular policy, evaluated by the actual simulator, rather than a DQN. Three
-reasons, all of which strengthen the paper:
-  1. No credit-assignment hand-waving. Serving a session now depletes key for
-     later; a myopic learner would need an invented opportunity-cost term. Here
-     every candidate policy is scored by a FULL simulation rollout, so the
-     sequential key economy is evaluated exactly.
-  2. The searched policy class is auditable BY CONSTRUCTION -- a 12-cell lookup
-     table an operator can read. We therefore do not need VIPER/CART policy
-     distillation to obtain interpretability, which is a stronger position than
-     distilling an opaque network and reporting fidelity loss.
-  3. It runs on CPU in minutes.
 """
 from __future__ import annotations
 

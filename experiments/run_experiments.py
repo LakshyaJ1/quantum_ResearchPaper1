@@ -1,6 +1,5 @@
 """E2-E5: the main experiment grid. Writes CSVs to results/ and prints tables.
 
-Run:  python experiments/run_experiments.py [--seeds N] [--quick]
 """
 from __future__ import annotations
 
