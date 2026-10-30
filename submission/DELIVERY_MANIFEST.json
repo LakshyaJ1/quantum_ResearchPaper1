@@ -1,0 +1,99 @@
+{
+ "paper": "WiCOMM-2026 paper 167",
+ "built_from": "paper.tex",
+ "files": {
+  "Paper167_LaTeX.pdf": {
+   "bytes": 253602,
+   "sha256": "a29d65c3c0fe79a788fe5f6f371d9ea77ab327eb25fddec92fa9f51d50a8ea4f",
+   "pages": 6,
+   "page_size_pt": [
+    595.3,
+    841.9
+   ],
+   "fonts": [
+    "AKHCZK+CMR10",
+    "BYJABP+TimesNewRomanPS-BoldMT",
+    "BYJABP+TimesNewRomanPSMT",
+    "BZIVMZ+NimbusRomNo9L-ReguItal",
+    "CAFSZL+MSAM10",
+    "CZRBLR+STIXGeneral-Regular",
+    "DDIEWW+CMSY8",
+    "DZGKAF+CMR6",
+    "FKPJSN+CMSY10",
+    "FTXWZA+STIXGeneral-Italic",
+    "FZDNHS+CMMI8",
+    "GJMHKB+CMSY6",
+    "IHAIZV+NimbusRomNo9L-Regu",
+    "IXFAWU+NimbusRomNo9L-MediItal",
+    "JAGKKY+CMMI7",
+    "KPXLOM+CMMI5",
+    "LPOGEQ+CMMI6",
+    "NITCSQ+CMR5",
+    "NOMARO+CMSY7",
+    "OAWOZH+TimesNewRomanPS-ItalicMT",
+    "PVTTLK+CMEX10",
+    "TQTHRL+NimbusRomNo9L-Medi",
+    "UBBQTN+CMSY5",
+    "UTACNV+CMR8",
+    "VDVGTR+CMR7",
+    "YEUUOC+CMMI10"
+   ],
+   "all_fonts_embedded": true
+  },
+  "Paper167_LaTeX_Source.zip": {
+   "bytes": 160869,
+   "sha256": "c86da2efaa732c8396e6fd2c47de9a6eac231b1332eb1dd6729428a86ee3f5d8"
+  },
+  "Paper167_Manuscript.docx": {
+   "bytes": 332014,
+   "sha256": "ff6a42d6b9fbc83b1478957ed2d7d55022208a0debb0536e8ec08f0314d802c3"
+  },
+  "Paper167_Manuscript.pdf": {
+   "bytes": 774923,
+   "sha256": "27e8f1be26de9cc236c007494d4b1722cf2b1524be8f65e2073c7d040da4930c",
+   "pages": 6,
+   "page_size_pt": [
+    595.3,
+    841.9
+   ],
+   "fonts": [
+    "BCDEEE+TimesNewRomanPSMT",
+    "BCDFEE+TimesNewRomanPS-ItalicMT",
+    "BCDGEE+TimesNewRomanPS-BoldItalicMT",
+    "BCDHEE+TimesNewRomanPS-BoldMT",
+    "BCDIEE+TimesNewRomanPS-BoldMT",
+    "BCDJEE+TimesNewRomanPS-BoldItalicMT",
+    "BCDKEE+TimesNewRomanPSMT",
+    "BCDLEE+CambriaMath",
+    "BCDMEE+SegoeUISymbol",
+    "BCDNEE+TimesNewRomanPS-ItalicMT"
+   ],
+   "all_fonts_embedded": true
+  },
+  "READ_ME.md": {
+   "bytes": 1601,
+   "sha256": "cc411917c066716c2611694fe671d7c0ac966c700f14581cf4d0d52be1d10ba6"
+  },
+  "Reviewer_Compliance.pdf": {
+   "bytes": 50622,
+   "sha256": "38b9a2f6eb4e413fcb8212704de3c1806969b57ae09fd08e6f864b43e0983b34",
+   "pages": 4,
+   "page_size_pt": [
+    595.3,
+    841.9
+   ],
+   "fonts": [
+    "AKHCZK+CMR10",
+    "BZIVMZ+NimbusRomNo9L-Regu",
+    "CAFSZL+MSAM10",
+    "IHAIZV+NimbusRomNo9L-Medi",
+    "IXFAWU+NimbusRomNo9L-ReguItal",
+    "TQTHRL+StandardSymL",
+    "VDVGTR+CMSY10",
+    "YEUUOC+CMMI10"
+   ],
+   "all_fonts_embedded": true
+  }
+ },
+ "latex_source_standalone_pages": 6
+}

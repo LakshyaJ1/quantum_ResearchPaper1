@@ -1,0 +1,9 @@
+{
+ "file": "conference-template-a4.docx",
+ "sha256": "5cd38344d4458bed0a96af46e18c386993cf1ca3ed33ad7cd310db50ab4be944",
+ "retrieved_utc": "2026-09-28",
+ "source_url": "https://ukrmico.ieee.org.ua/wp-content/uploads/2023/07/conference-template-a4.docx",
+ "official_url": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx",
+ "note": "The official ieee.org URL returns an empty HTTP 202 to non-browser clients; this copy is the IEEE A4 conference template as mirrored by an IEEE Section conference site (docProps creator: IEEE). Verify against the ieee.org download in a browser before relying on byte identity.",
+ "core_properties": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:title>Paper Title (use style: paper title)</dc:title><dc:subject></dc:subject><dc:creator>IEEE</dc:creator><cp:keywords></cp:keywords><cp:lastModifiedBy>Leonid</cp:lastModifiedBy><cp:revision>2</cp:revision><dcterms:created xsi:type=\"dcterms:W3CDTF\">2021-07-20T15:14:00Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2021-07-20T15:14:00Z</dcterms:modified></cp:coreProperties>"
+}

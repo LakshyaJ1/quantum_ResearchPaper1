@@ -1,0 +1,179 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "words": 481,
+      "image": "build\\reviewer_compliance\\render_final\\page-001.png",
+      "sha256": "135fe42e744ed7c97a291f0082de4e4b57e1866b68233705b4363d30bd25f5b4",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 2,
+      "words": 438,
+      "image": "build\\reviewer_compliance\\render_final\\page-002.png",
+      "sha256": "86379be5071637f641cbcd2e73141bc546e7ad007a9109d83e05b5eadf4a3ff8",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 3,
+      "words": 471,
+      "image": "build\\reviewer_compliance\\render_final\\page-003.png",
+      "sha256": "278f4837356ba56d6ce78b7bbd59a4322265fba954b2427696e66b9027252327",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 4,
+      "words": 499,
+      "image": "build\\reviewer_compliance\\render_final\\page-004.png",
+      "sha256": "9c05824f677963c98b05f6b6c53bb6368193c0aff503290273d06b8608215515",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 5,
+      "words": 429,
+      "image": "build\\reviewer_compliance\\render_final\\page-005.png",
+      "sha256": "c725f921d8fb6c6fe7c6aad5a72dcc3af0d9eff371c70eacc62ba40b5bff8811",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 6,
+      "words": 368,
+      "image": "build\\reviewer_compliance\\render_final\\page-006.png",
+      "sha256": "efecc5ce60a23a11af2fe04b8e1b1909a92925b8eab26f4067f838978003885a",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 7,
+      "words": 524,
+      "image": "build\\reviewer_compliance\\render_final\\page-007.png",
+      "sha256": "df5804e5d27c095cd4f1c6d63977b0471e9812f8b7837368356089696f63206a",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 8,
+      "words": 202,
+      "image": "build\\reviewer_compliance\\render_final\\page-008.png",
+      "sha256": "71a103bc4fe70c4fd07a300bc552f2d201ee11eda4651b1eecf9301bea899606",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 9,
+      "words": 365,
+      "image": "build\\reviewer_compliance\\render_final\\page-009.png",
+      "sha256": "506b03e35df1383c865ef6e9d19b87e24681b2419031f48bf65b6af8a8d641b4",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 10,
+      "words": 214,
+      "image": "build\\reviewer_compliance\\render_final\\page-010.png",
+      "sha256": "d5da953de8d669bbec5fe5893541bb54b28f3c63263805f05dffab70d42f597d",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    }
+  ],
+  "fonts": [
+    {
+      "name": "IHAIZV+LMRoman10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 11230
+    },
+    {
+      "name": "BZIVMZ+LMRoman12-Bold",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 7165
+    },
+    {
+      "name": "IXFAWU+LMRoman12-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 2266
+    },
+    {
+      "name": "TQTHRL+LMMathItalic10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 1902
+    },
+    {
+      "name": "YEUUOC+LMRoman10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 2119
+    },
+    {
+      "name": "AKHCZK+LMMathSymbols10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 568
+    },
+    {
+      "name": "VDVGTR+LMMathItalic8-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 482
+    },
+    {
+      "name": "CAFSZL+LMMono10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 6538
+    },
+    {
+      "name": "DDIEWW+LMRoman8-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 785
+    },
+    {
+      "name": "FKPJSN+LMMathSymbols8-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 473
+    }
+  ],
+  "all_fonts_embedded": true,
+  "outside_page_safe_area": [],
+  "text_colors": [
+    0
+  ],
+  "official_ids": [
+    "R1-01",
+    "R1-02",
+    "R1-03",
+    "R1-04",
+    "R1-05",
+    "R1-06",
+    "R1-07",
+    "R1-08",
+    "R1-09",
+    "R1-Q1",
+    "R1-Q2",
+    "R1-Q3",
+    "R1-Q4",
+    "R1-m01",
+    "R1-m02",
+    "R1-m03a",
+    "R1-m03b",
+    "R1-m04",
+    "R1-m05",
+    "R1-m06",
+    "R1-m07"
+  ],
+  "id_count": 21,
+  "replacement_character_count": 0,
+  "links": 0,
+  "pdf_bytes": 66096,
+  "pdf_sha256": "a176a8d2f3f21d275e626ce4be322d15aacd127255c072fe504341733cf5b015"
+}

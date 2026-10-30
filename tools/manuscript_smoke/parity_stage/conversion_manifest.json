@@ -1,0 +1,52 @@
+{
+  "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\canonical_parity_fixture.tex",
+  "source_sha256": "c73c07e8c803ebc226092a9438159939af2fed9bf4a162c119c816dafdc09c6d",
+  "aux": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\parity_latex\\canonical_parity_fixture.aux",
+  "aux_sha256": "647c733270ed5b0abf9a75a06cf34b9ed49e0778676479caad73354eee3cf4b2",
+  "staged": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\parity_stage\\manuscript_for_word.tex",
+  "sections": [
+    [
+      false,
+      "Rendering Check"
+    ],
+    [
+      false,
+      "Interpretation"
+    ]
+  ],
+  "labels": {
+    "sec:check": "I",
+    "eq:check": "1",
+    "tab:check": "I"
+  },
+  "citations": {
+    "sample": "1"
+  },
+  "equations": [
+    {
+      "number": "1",
+      "latex": "e_i(t)=e_0+\\Delta e.",
+      "label": "eq:check"
+    }
+  ],
+  "floats": [
+    {
+      "kind": "table",
+      "number": "I",
+      "wide": false,
+      "labels": [
+        "tab:check"
+      ]
+    }
+  ],
+  "images": [],
+  "word_structure": {
+    "numbered_equations": 1,
+    "native_math_elements": 2,
+    "tables": 1,
+    "inline_shapes": 0,
+    "sections": 2
+  },
+  "output": "tools\\manuscript_smoke\\canonical_parity_fixture.docx",
+  "output_sha256": "1d85efd011f2db04155a98e1a0a9713a3b1c48f97922a51bbea71288b2d8fd9a"
+}

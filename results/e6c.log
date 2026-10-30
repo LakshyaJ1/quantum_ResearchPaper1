@@ -1,0 +1,22 @@
+running 128 configurations ...
+  24/128
+  48/128
+  72/128
+  96/128
+  120/128
+  128/128
+
+=== Does the headline survive authentication recalibration? ===
+ n_auth  cost/hopsource                      FC k=0  FC k=2  FD k=0  FD k=2   key Mb
+      2       750assumed lower bound          0.812   0.302   0.000   0.678    215.5
+      7      1385Cambridge (calibrated)       0.806   0.299   0.000   0.678    215.6
+     20      3036intermediate                 0.795   0.292   0.002   0.678    215.5
+     40      5576SECOQC application tunnel    0.764   0.281   0.156   0.679    215.6
+
+  VERDICT: the headline SURVIVES at every n_auth tested.
+  The fail-closed/fail-degraded exchange rate is therefore not an
+  artefact of the optimistic n_auth = 2 assumption. Reporting the
+  calibrated value (7) makes the key economy harsher and the
+  result holds, which strengthens rather than weakens the claim.
+
+-> results/e6c_nauth.csv

@@ -1,0 +1,202 @@
+{
+  "pdf": "submission\\Reviewer_Compliance.pdf",
+  "pdf_sha256": "c14b4d3f92c375ee4029b68ea94345a29f34f4df9c7449f0737fdc179478fc1c",
+  "page_count": 10,
+  "pages": [
+    {
+      "page": 1,
+      "words": 508,
+      "image": "build\\reviewer_compliance\\render_submission\\page-001.png",
+      "sha256": "e34b1de21d35fc7e1d404f1a2f224813192f45e3f9aa165e7a7ba3a4bad83e28",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 2,
+      "words": 446,
+      "image": "build\\reviewer_compliance\\render_submission\\page-002.png",
+      "sha256": "ab9d329df7e133368b67efa1e5f74b208f8208d8e09d5ac9cfb8b39465df7ef6",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 3,
+      "words": 471,
+      "image": "build\\reviewer_compliance\\render_submission\\page-003.png",
+      "sha256": "5868551fceb594296cbffd353bd3fc3ecd14ea6b87be1e3b89a7a9a504bb308b",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 4,
+      "words": 498,
+      "image": "build\\reviewer_compliance\\render_submission\\page-004.png",
+      "sha256": "32687d56e483f6e44e484de00d431f134691b7cad10aade4ab5938c070f8cf07",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 5,
+      "words": 420,
+      "image": "build\\reviewer_compliance\\render_submission\\page-005.png",
+      "sha256": "6c55d8ce953e108ba06889944026d61eda6383c10e9110e2f7311f8b3b6bb214",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 6,
+      "words": 374,
+      "image": "build\\reviewer_compliance\\render_submission\\page-006.png",
+      "sha256": "c2dac8f5106a08028941ef9c813bb5295ee363b58e1c1eea8c8aa2a9711be193",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 7,
+      "words": 485,
+      "image": "build\\reviewer_compliance\\render_submission\\page-007.png",
+      "sha256": "6f40e4978032caa04dc9c368e454fc9d885a359402713404e58930696c9bc3bf",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 8,
+      "words": 301,
+      "image": "build\\reviewer_compliance\\render_submission\\page-008.png",
+      "sha256": "59354029f3d2bc37924f56127ce7891bebebe28bdbc91256f307aadcfe1058f7",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 9,
+      "words": 251,
+      "image": "build\\reviewer_compliance\\render_submission\\page-009.png",
+      "sha256": "159f2fd3f1337db9a3f2bfff76c529471ad070205a8dbd179879dfcbd6c029ec",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    },
+    {
+      "page": 10,
+      "words": 315,
+      "image": "build\\reviewer_compliance\\render_submission\\page-010.png",
+      "sha256": "3139225523d4c3943065c30aa93ce12f1ee0ecad16942d4d9f8d788a3d50eb3a",
+      "width": 595.280029296875,
+      "height": 841.8900146484375
+    }
+  ],
+  "fonts": [
+    {
+      "name": "IHAIZV+LMRoman10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 11253
+    },
+    {
+      "name": "BZIVMZ+LMRoman12-Bold",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 7165
+    },
+    {
+      "name": "IXFAWU+LMRoman12-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 2266
+    },
+    {
+      "name": "TQTHRL+LMMathItalic10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 1902
+    },
+    {
+      "name": "YEUUOC+LMRoman10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 2119
+    },
+    {
+      "name": "AKHCZK+LMMathSymbols10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 568
+    },
+    {
+      "name": "VDVGTR+LMMathItalic8-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 482
+    },
+    {
+      "name": "CAFSZL+LMMono10-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 6538
+    },
+    {
+      "name": "DDIEWW+LMRoman8-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 785
+    },
+    {
+      "name": "FKPJSN+LMMathSymbols8-Regular",
+      "extension": "cff",
+      "kind": "Type1",
+      "embedded_bytes": 473
+    }
+  ],
+  "text_colors": [
+    0
+  ],
+  "official_ids": [
+    "R1-01",
+    "R1-02",
+    "R1-03",
+    "R1-04",
+    "R1-05",
+    "R1-06",
+    "R1-07",
+    "R1-08",
+    "R1-09",
+    "R1-Q1",
+    "R1-Q2",
+    "R1-Q3",
+    "R1-Q4",
+    "R1-m01",
+    "R1-m02",
+    "R1-m03a",
+    "R1-m03b",
+    "R1-m04",
+    "R1-m05",
+    "R1-m06",
+    "R1-m07"
+  ],
+  "bounds": [],
+  "checks": {
+    "all_official_ids": true,
+    "all_fonts_embedded": true,
+    "no_page_overflow": true,
+    "all_text_black": true,
+    "no_replacement_glyphs": true,
+    "no_broken_file_links": true,
+    "all_pages_a4": true,
+    "no_working_labels": true,
+    "correct_reference_basis": true,
+    "no_stale_five_page_basis": true,
+    "no_latex_overfull_or_missing_glyphs": true,
+    "source_matches_manifest": true,
+    "primary_manuscript_matches_manifest": true,
+    "paper_source_matches_manifest": true,
+    "compliance_pdf_matches_manifest": true,
+    "primary_manuscript_has_six_pages": true,
+    "all_evidence_paths_resolve": true,
+    "exactly_21_source_sections": true,
+    "matrix_has_all_21_official_rows": true,
+    "locator_map_matches_primary_manuscript": true,
+    "response_and_matrix_locators_match_map": true,
+    "regression_count_matches_current_gate": true,
+    "legacy_count_matches_current_gate": true
+  },
+  "all_technical_checks_passed": true
+}

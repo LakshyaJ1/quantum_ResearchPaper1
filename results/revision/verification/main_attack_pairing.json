@@ -1,0 +1,144 @@
+{
+  "phase": "main",
+  "mode_pairs_checked": 180,
+  "target_mismatches": 0,
+  "missing_mode_pairs": 0,
+  "attack_set_variants": [
+    {
+      "configuration": [
+        "formation",
+        "weighted_cut",
+        10.0,
+        0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "weighted_cut",
+        10.0,
+        1
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "weighted_cut",
+        10.0,
+        2.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "ring",
+        "weighted_cut",
+        10.0,
+        0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "ring",
+        "weighted_cut",
+        10.0,
+        1
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "ring",
+        "weighted_cut",
+        10.0,
+        2.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "grid",
+        "weighted_cut",
+        10.0,
+        0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "grid",
+        "weighted_cut",
+        10.0,
+        1
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "grid",
+        "weighted_cut",
+        10.0,
+        2.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        1
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        3.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel4",
+        "weighted_cut",
+        10.0,
+        0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel4",
+        "weighted_cut",
+        10.0,
+        1
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel4",
+        "weighted_cut",
+        10.0,
+        4.0
+      ],
+      "variants": 1
+    }
+  ],
+  "passed": true
+}

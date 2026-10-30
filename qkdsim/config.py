@@ -14,7 +14,10 @@ G3_HYBRID = "G3"     # QKD (partial) (+) ML-KEM-768 via approved combiner
 G4_PQC = "G4"        # ML-KEM-768 only; computational
 
 GRADE_ORDER: Tuple[str, ...] = (G1_OTP, G2_QKD_SYM, G3_HYBRID, G4_PQC)
-"""Strongest first. Index in this tuple is the grade rank: lower == stronger."""
+"""Operator assurance ordering, not a universal cryptographic security order.
+Index in this tuple is the contractual rank: lower == stronger in this model.
+G1 and G2 differ in payload protection; hybrid guarantees depend on the combiner.
+"""
 
 
 def grade_rank(grade: str) -> int:
@@ -54,8 +57,9 @@ class PhysicsConfig:
 
     gamma: float = 1.0
     """Degradation sharpness exponent.
-    gamma=1.0 : asymptotic BB84 physics. Gives rho(0.06)~0.50, cliff at
-                e~0.107, consistent with the ~11% threshold.
+    gamma=1.0 : reduced asymptotic BB84 shape. Gives rho(0.06)~0.50;
+                the entropy expression reaches zero near 0.098 for f=1.16,
+                below the f=1 Shannon-limit threshold near 0.110.
     gamma=3.4 : calibrated to the ONLY measured degraded-link datapoint --
                 Tokyo All-Vienna BBM92 at QBER 5-7% delivered 0.25 kbps vs
                 2-3 kbps nominal, i.e. 8-12% of nominal. 0.50^3.4 ~ 0.098.
@@ -81,8 +85,10 @@ class AccountingConfig:
     arXiv:0910.0312 Eq. (9)."""
 
     n_auth: int = 2
-    """Mutual authentication consumes two independent one-time keys per round.
-    De Lazzari et al. arXiv:2603.25496."""
+    """Optimistic modelling assumption of two tags per relay transaction.
+    Retained for historical API compatibility; this is not an independently
+    validated count. Revised experiments explicitly sweep 2, 7 and 40.
+    """
 
     auth_on: bool = True
     """False reproduces the literature's bare D*n cost law. This ablation is a
@@ -302,11 +308,10 @@ class AdversaryConfig:
         adversary exhausts the (already severed) primary path before touching
         the alternate, so it needs d+1 links to sever quantum supply entirely.
 
-    "mincut" -- minimum edge cut between the rear node and each forward post.
-        This is the HONEST WORST CASE: with two edge-disjoint paths it needs
-        only TWO links regardless of chain depth. Reporting only the
-        betweenness figure would overstate resilience by a factor that grows
-        linearly in depth, so both are reported.
+    "mincut" -- concatenate minimum source-to-terminal cuts, cheapest first.
+        This is exact for disconnecting the one-terminal two-path chain, whose
+        cut size is two. It is not an optimal traffic-weighted interdiction
+        algorithm for an arbitrary multi-terminal formation.
     """
 
     delta_e: float = 0.05
@@ -321,13 +326,12 @@ class AdversaryConfig:
 @dataclass(frozen=True)
 class SimConfig:
     horizon_s: float = 86_400.0   # 24 h
-    """Long enough to reach steady state. MEASURED: with reservoirs initialised
-    full (as QKDNetSim's SECOQC script does) and FSO links generating 240 bit/s
-    against ~1 kbit/s net consumption, the free-space stores take ~12 h to fall
-    from m_max to m_min. A 4 h run -- the horizon used in the original draft --
-    leaves them at ~59% of capacity, so its results are dominated by the
-    initial fill rather than by the key economy. First-half/second-half service
-    and below-ITS fractions agree only from ~12 h onward."""
+    """Arrival horizon. Defaults reproduce the historical 24-hour study setup.
+    A fixed horizon does not certify steady state: depletion time depends on
+    policy, workload, initial inventory, topology and disturbance history.
+    Pending requests are allowed to reach service or their own deadline after
+    new arrivals stop at this horizon.
+    """
 
     warmup_s: float = 43_200.0    # 12 h
     """Sessions arriving before this are excluded from all metrics. The

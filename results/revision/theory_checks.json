@@ -1,0 +1,1547 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-25T23:46:20.230252+00:00",
+  "python_version": "3.12.9",
+  "networkx_version": "3.4.2",
+  "source_sha256": {
+    "experiments/revision_theory_checks.py": "03a523dccbf3d1ea6df2c1547f7f4ea9babee2cbb37a74bc2493f4330ad4de2f",
+    "revision/scenarios.py": "0087884a479b1314dd0b258930a06ab6538afb5acc1eda04cce1a1ca60e274ec",
+    "qkdsim/__init__.py": "858694635b679774ddf36c058271a47ffc1b0914fbfbe264857ccc2395526bb5",
+    "qkdsim/config.py": "51d7fbbed721a4fed39fa95afa014d5be9ba982fe2bdde1e2ab6917e7f694ab6",
+    "qkdsim/network.py": "4d1171d2e2214c13acdfa707c255940494b6b7302e1612504d551acf7913ab3a",
+    "qkdsim/physics.py": "bbf2b83347c5c3b5dd43b86f0c0a10f03bdb94931fb92026f1cc5e4fe90c1d7d",
+    "qkdsim/rl.py": "cf510c304304ae54600b412ccb14f1b4d83150fd80f27105cf1ec791af658ffe",
+    "qkdsim/sim.py": "922471034e6164c588127a9db8ea085ac3939779ee2eab7c94a9ccd9af18af49"
+  },
+  "code_unchanged_during_run": true,
+  "scope": {
+    "reservoir_test": "deterministic fixed-grade requests; generation stopped; classical transport available",
+    "structural_test": "offline edge removal; no key inventory feedback",
+    "evidence_type": "implementation verification of conditional accounting and graph facts; not external validation",
+    "fluid_reference": "requires pooled or balanced continuous demand assumptions for equality"
+  },
+  "reservoir_checks": [
+    {
+      "branches": 1,
+      "hops_per_branch": 2,
+      "spendable_bits_per_edge": 1500,
+      "protected_bits_per_edge": 10,
+      "quantum_key_bits_per_session": 256,
+      "relay_debit_bits_per_edge": 750,
+      "interval_s": 5,
+      "buffer_policy": "retain",
+      "requests": 4,
+      "served": 2,
+      "blocked": 2,
+      "branch_service_counts": {
+        "B0": 2
+      },
+      "retained_exact_branch_capacity": 2,
+      "pooled_cut_bound": 2,
+      "post_discard_cut_bound": 2,
+      "cut_initial_spendable_bits": 1500,
+      "cut_consumed_bits": 1500.0,
+      "cut_generated_bits": 0.0,
+      "cut_discarded_bits": 0.0,
+      "cut_remaining_spendable_bits": 0.0,
+      "full_consumed_bits": 3000.0,
+      "full_generated_bits": 0.0,
+      "full_purged_bits": 0.0,
+      "full_conservation_residual_bits": 0.0,
+      "first_unserved_arrival_s": 10.0,
+      "expected_first_unserved_arrival_s": 10,
+      "retained_fluid_reference_s": 10.0,
+      "fluid_scope": "pooled continuous demand reference; not an exact discrete-store trajectory",
+      "transport_available": true,
+      "generation_stopped": true,
+      "checks": {
+        "expected_session_count": true,
+        "all_branches_reach_expected_count": true,
+        "first_failure_at_expected_arrival": true,
+        "all_cut_events_obey_bound": true,
+        "all_cut_events_conserve_key": true,
+        "full_conservation": true,
+        "one_cut_debit_per_served_request": true,
+        "two_hop_debits_per_served_request": true,
+        "no_new_key": true,
+        "classical_path_unchanged": true,
+        "no_below_floor_service": true
+      },
+      "all_checks_passed": true,
+      "events": [
+        {
+          "time_s": 0.0,
+          "arrivals": 1,
+          "served": 1,
+          "blocked": 0,
+          "cut_consumed_bits": 750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 750.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 5.0,
+          "arrivals": 2,
+          "served": 2,
+          "blocked": 0,
+          "cut_consumed_bits": 1500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 10.0,
+          "arrivals": 3,
+          "served": 2,
+          "blocked": 1,
+          "cut_consumed_bits": 1500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 15.0,
+          "arrivals": 4,
+          "served": 2,
+          "blocked": 2,
+          "cut_consumed_bits": 1500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        }
+      ]
+    },
+    {
+      "branches": 2,
+      "hops_per_branch": 2,
+      "spendable_bits_per_edge": 1500,
+      "protected_bits_per_edge": 10,
+      "quantum_key_bits_per_session": 256,
+      "relay_debit_bits_per_edge": 750,
+      "interval_s": 5,
+      "buffer_policy": "retain",
+      "requests": 6,
+      "served": 4,
+      "blocked": 2,
+      "branch_service_counts": {
+        "B0": 2,
+        "B1": 2
+      },
+      "retained_exact_branch_capacity": 4,
+      "pooled_cut_bound": 4,
+      "post_discard_cut_bound": 4,
+      "cut_initial_spendable_bits": 3000,
+      "cut_consumed_bits": 3000.0,
+      "cut_generated_bits": 0.0,
+      "cut_discarded_bits": 0.0,
+      "cut_remaining_spendable_bits": 0.0,
+      "full_consumed_bits": 6000.0,
+      "full_generated_bits": 0.0,
+      "full_purged_bits": 0.0,
+      "full_conservation_residual_bits": 0.0,
+      "first_unserved_arrival_s": 20.0,
+      "expected_first_unserved_arrival_s": 20,
+      "retained_fluid_reference_s": 20.0,
+      "fluid_scope": "pooled continuous demand reference; not an exact discrete-store trajectory",
+      "transport_available": true,
+      "generation_stopped": true,
+      "checks": {
+        "expected_session_count": true,
+        "all_branches_reach_expected_count": true,
+        "first_failure_at_expected_arrival": true,
+        "all_cut_events_obey_bound": true,
+        "all_cut_events_conserve_key": true,
+        "full_conservation": true,
+        "one_cut_debit_per_served_request": true,
+        "two_hop_debits_per_served_request": true,
+        "no_new_key": true,
+        "classical_path_unchanged": true,
+        "no_below_floor_service": true
+      },
+      "all_checks_passed": true,
+      "events": [
+        {
+          "time_s": 0.0,
+          "arrivals": 1,
+          "served": 1,
+          "blocked": 0,
+          "cut_consumed_bits": 750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 2250.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 5.0,
+          "arrivals": 2,
+          "served": 2,
+          "blocked": 0,
+          "cut_consumed_bits": 1500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 1500.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 10.0,
+          "arrivals": 3,
+          "served": 3,
+          "blocked": 0,
+          "cut_consumed_bits": 2250.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 750.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 15.0,
+          "arrivals": 4,
+          "served": 4,
+          "blocked": 0,
+          "cut_consumed_bits": 3000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 20.0,
+          "arrivals": 5,
+          "served": 4,
+          "blocked": 1,
+          "cut_consumed_bits": 3000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 25.0,
+          "arrivals": 6,
+          "served": 4,
+          "blocked": 2,
+          "cut_consumed_bits": 3000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        }
+      ]
+    },
+    {
+      "branches": 3,
+      "hops_per_branch": 2,
+      "spendable_bits_per_edge": 1500,
+      "protected_bits_per_edge": 10,
+      "quantum_key_bits_per_session": 256,
+      "relay_debit_bits_per_edge": 750,
+      "interval_s": 5,
+      "buffer_policy": "retain",
+      "requests": 8,
+      "served": 6,
+      "blocked": 2,
+      "branch_service_counts": {
+        "B0": 2,
+        "B1": 2,
+        "B2": 2
+      },
+      "retained_exact_branch_capacity": 6,
+      "pooled_cut_bound": 6,
+      "post_discard_cut_bound": 6,
+      "cut_initial_spendable_bits": 4500,
+      "cut_consumed_bits": 4500.0,
+      "cut_generated_bits": 0.0,
+      "cut_discarded_bits": 0.0,
+      "cut_remaining_spendable_bits": 0.0,
+      "full_consumed_bits": 9000.0,
+      "full_generated_bits": 0.0,
+      "full_purged_bits": 0.0,
+      "full_conservation_residual_bits": 0.0,
+      "first_unserved_arrival_s": 30.0,
+      "expected_first_unserved_arrival_s": 30,
+      "retained_fluid_reference_s": 30.0,
+      "fluid_scope": "pooled continuous demand reference; not an exact discrete-store trajectory",
+      "transport_available": true,
+      "generation_stopped": true,
+      "checks": {
+        "expected_session_count": true,
+        "all_branches_reach_expected_count": true,
+        "first_failure_at_expected_arrival": true,
+        "all_cut_events_obey_bound": true,
+        "all_cut_events_conserve_key": true,
+        "full_conservation": true,
+        "one_cut_debit_per_served_request": true,
+        "two_hop_debits_per_served_request": true,
+        "no_new_key": true,
+        "classical_path_unchanged": true,
+        "no_below_floor_service": true
+      },
+      "all_checks_passed": true,
+      "events": [
+        {
+          "time_s": 0.0,
+          "arrivals": 1,
+          "served": 1,
+          "blocked": 0,
+          "cut_consumed_bits": 750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 3750.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 5.0,
+          "arrivals": 2,
+          "served": 2,
+          "blocked": 0,
+          "cut_consumed_bits": 1500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 3000.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 10.0,
+          "arrivals": 3,
+          "served": 3,
+          "blocked": 0,
+          "cut_consumed_bits": 2250.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 2250.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 15.0,
+          "arrivals": 4,
+          "served": 4,
+          "blocked": 0,
+          "cut_consumed_bits": 3000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 1500.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 20.0,
+          "arrivals": 5,
+          "served": 5,
+          "blocked": 0,
+          "cut_consumed_bits": 3750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 750.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 25.0,
+          "arrivals": 6,
+          "served": 6,
+          "blocked": 0,
+          "cut_consumed_bits": 4500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 30.0,
+          "arrivals": 7,
+          "served": 6,
+          "blocked": 1,
+          "cut_consumed_bits": 4500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 35.0,
+          "arrivals": 8,
+          "served": 6,
+          "blocked": 2,
+          "cut_consumed_bits": 4500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        }
+      ]
+    },
+    {
+      "branches": 4,
+      "hops_per_branch": 2,
+      "spendable_bits_per_edge": 1500,
+      "protected_bits_per_edge": 10,
+      "quantum_key_bits_per_session": 256,
+      "relay_debit_bits_per_edge": 750,
+      "interval_s": 5,
+      "buffer_policy": "retain",
+      "requests": 10,
+      "served": 8,
+      "blocked": 2,
+      "branch_service_counts": {
+        "B0": 2,
+        "B1": 2,
+        "B2": 2,
+        "B3": 2
+      },
+      "retained_exact_branch_capacity": 8,
+      "pooled_cut_bound": 8,
+      "post_discard_cut_bound": 8,
+      "cut_initial_spendable_bits": 6000,
+      "cut_consumed_bits": 6000.0,
+      "cut_generated_bits": 0.0,
+      "cut_discarded_bits": 0.0,
+      "cut_remaining_spendable_bits": 0.0,
+      "full_consumed_bits": 12000.0,
+      "full_generated_bits": 0.0,
+      "full_purged_bits": 0.0,
+      "full_conservation_residual_bits": 0.0,
+      "first_unserved_arrival_s": 40.0,
+      "expected_first_unserved_arrival_s": 40,
+      "retained_fluid_reference_s": 40.0,
+      "fluid_scope": "pooled continuous demand reference; not an exact discrete-store trajectory",
+      "transport_available": true,
+      "generation_stopped": true,
+      "checks": {
+        "expected_session_count": true,
+        "all_branches_reach_expected_count": true,
+        "first_failure_at_expected_arrival": true,
+        "all_cut_events_obey_bound": true,
+        "all_cut_events_conserve_key": true,
+        "full_conservation": true,
+        "one_cut_debit_per_served_request": true,
+        "two_hop_debits_per_served_request": true,
+        "no_new_key": true,
+        "classical_path_unchanged": true,
+        "no_below_floor_service": true
+      },
+      "all_checks_passed": true,
+      "events": [
+        {
+          "time_s": 0.0,
+          "arrivals": 1,
+          "served": 1,
+          "blocked": 0,
+          "cut_consumed_bits": 750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 5250.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 5.0,
+          "arrivals": 2,
+          "served": 2,
+          "blocked": 0,
+          "cut_consumed_bits": 1500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 4500.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 10.0,
+          "arrivals": 3,
+          "served": 3,
+          "blocked": 0,
+          "cut_consumed_bits": 2250.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 3750.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 15.0,
+          "arrivals": 4,
+          "served": 4,
+          "blocked": 0,
+          "cut_consumed_bits": 3000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 3000.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 20.0,
+          "arrivals": 5,
+          "served": 5,
+          "blocked": 0,
+          "cut_consumed_bits": 3750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 2250.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 25.0,
+          "arrivals": 6,
+          "served": 6,
+          "blocked": 0,
+          "cut_consumed_bits": 4500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 1500.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 30.0,
+          "arrivals": 7,
+          "served": 7,
+          "blocked": 0,
+          "cut_consumed_bits": 5250.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 750.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 35.0,
+          "arrivals": 8,
+          "served": 8,
+          "blocked": 0,
+          "cut_consumed_bits": 6000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 40.0,
+          "arrivals": 9,
+          "served": 8,
+          "blocked": 1,
+          "cut_consumed_bits": 6000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 45.0,
+          "arrivals": 10,
+          "served": 8,
+          "blocked": 2,
+          "cut_consumed_bits": 6000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        }
+      ]
+    },
+    {
+      "branches": 3,
+      "hops_per_branch": 2,
+      "spendable_bits_per_edge": 1900,
+      "protected_bits_per_edge": 10,
+      "quantum_key_bits_per_session": 256,
+      "relay_debit_bits_per_edge": 750,
+      "interval_s": 5,
+      "buffer_policy": "retain",
+      "requests": 8,
+      "served": 6,
+      "blocked": 2,
+      "branch_service_counts": {
+        "B0": 2,
+        "B1": 2,
+        "B2": 2
+      },
+      "retained_exact_branch_capacity": 6,
+      "pooled_cut_bound": 7,
+      "post_discard_cut_bound": 7,
+      "cut_initial_spendable_bits": 5700,
+      "cut_consumed_bits": 4500.0,
+      "cut_generated_bits": 0.0,
+      "cut_discarded_bits": 0.0,
+      "cut_remaining_spendable_bits": 1200.0,
+      "full_consumed_bits": 9000.0,
+      "full_generated_bits": 0.0,
+      "full_purged_bits": 0.0,
+      "full_conservation_residual_bits": 0.0,
+      "first_unserved_arrival_s": 30.0,
+      "expected_first_unserved_arrival_s": 30,
+      "retained_fluid_reference_s": 38.0,
+      "fluid_scope": "pooled continuous demand reference; not an exact discrete-store trajectory",
+      "transport_available": true,
+      "generation_stopped": true,
+      "checks": {
+        "expected_session_count": true,
+        "all_branches_reach_expected_count": true,
+        "first_failure_at_expected_arrival": true,
+        "all_cut_events_obey_bound": true,
+        "all_cut_events_conserve_key": true,
+        "full_conservation": true,
+        "one_cut_debit_per_served_request": true,
+        "two_hop_debits_per_served_request": true,
+        "no_new_key": true,
+        "classical_path_unchanged": true,
+        "no_below_floor_service": true
+      },
+      "all_checks_passed": true,
+      "events": [
+        {
+          "time_s": 0.0,
+          "arrivals": 1,
+          "served": 1,
+          "blocked": 0,
+          "cut_consumed_bits": 750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 4950.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 5.0,
+          "arrivals": 2,
+          "served": 2,
+          "blocked": 0,
+          "cut_consumed_bits": 1500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 4200.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 10.0,
+          "arrivals": 3,
+          "served": 3,
+          "blocked": 0,
+          "cut_consumed_bits": 2250.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 3450.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 15.0,
+          "arrivals": 4,
+          "served": 4,
+          "blocked": 0,
+          "cut_consumed_bits": 3000.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 2700.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 20.0,
+          "arrivals": 5,
+          "served": 5,
+          "blocked": 0,
+          "cut_consumed_bits": 3750.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 1950.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 25.0,
+          "arrivals": 6,
+          "served": 6,
+          "blocked": 0,
+          "cut_consumed_bits": 4500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 1200.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 30.0,
+          "arrivals": 7,
+          "served": 6,
+          "blocked": 1,
+          "cut_consumed_bits": 4500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 1200.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 35.0,
+          "arrivals": 8,
+          "served": 6,
+          "blocked": 2,
+          "cut_consumed_bits": 4500.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 1200.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        }
+      ]
+    },
+    {
+      "branches": 3,
+      "hops_per_branch": 2,
+      "spendable_bits_per_edge": 1900,
+      "protected_bits_per_edge": 10,
+      "quantum_key_bits_per_session": 256,
+      "relay_debit_bits_per_edge": 750,
+      "interval_s": 5,
+      "buffer_policy": "purge",
+      "requests": 8,
+      "served": 0,
+      "blocked": 8,
+      "branch_service_counts": {
+        "B0": 0,
+        "B1": 0,
+        "B2": 0
+      },
+      "retained_exact_branch_capacity": 6,
+      "pooled_cut_bound": 7,
+      "post_discard_cut_bound": 0,
+      "cut_initial_spendable_bits": 5700,
+      "cut_consumed_bits": 0.0,
+      "cut_generated_bits": 0.0,
+      "cut_discarded_bits": 5700.0,
+      "cut_remaining_spendable_bits": 0.0,
+      "full_consumed_bits": 0.0,
+      "full_generated_bits": 0.0,
+      "full_purged_bits": 11400.0,
+      "full_conservation_residual_bits": 0.0,
+      "first_unserved_arrival_s": 0.0,
+      "expected_first_unserved_arrival_s": 0,
+      "retained_fluid_reference_s": 38.0,
+      "fluid_scope": "pooled continuous demand reference; not an exact discrete-store trajectory",
+      "transport_available": true,
+      "generation_stopped": true,
+      "checks": {
+        "expected_session_count": true,
+        "all_branches_reach_expected_count": true,
+        "first_failure_at_expected_arrival": true,
+        "all_cut_events_obey_bound": true,
+        "all_cut_events_conserve_key": true,
+        "full_conservation": true,
+        "one_cut_debit_per_served_request": true,
+        "two_hop_debits_per_served_request": true,
+        "no_new_key": true,
+        "classical_path_unchanged": true,
+        "no_below_floor_service": true
+      },
+      "all_checks_passed": true,
+      "events": [
+        {
+          "time_s": 0.0,
+          "arrivals": 1,
+          "served": 0,
+          "blocked": 1,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 5.0,
+          "arrivals": 2,
+          "served": 0,
+          "blocked": 2,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 10.0,
+          "arrivals": 3,
+          "served": 0,
+          "blocked": 3,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 15.0,
+          "arrivals": 4,
+          "served": 0,
+          "blocked": 4,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 20.0,
+          "arrivals": 5,
+          "served": 0,
+          "blocked": 5,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 25.0,
+          "arrivals": 6,
+          "served": 0,
+          "blocked": 6,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 30.0,
+          "arrivals": 7,
+          "served": 0,
+          "blocked": 7,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 35.0,
+          "arrivals": 8,
+          "served": 0,
+          "blocked": 8,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 5700.0,
+          "cut_remaining_spendable_bits": 0.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        }
+      ]
+    },
+    {
+      "branches": 4,
+      "hops_per_branch": 2,
+      "spendable_bits_per_edge": 749,
+      "protected_bits_per_edge": 10,
+      "quantum_key_bits_per_session": 256,
+      "relay_debit_bits_per_edge": 750,
+      "interval_s": 5,
+      "buffer_policy": "retain",
+      "requests": 2,
+      "served": 0,
+      "blocked": 2,
+      "branch_service_counts": {
+        "B0": 0,
+        "B1": 0,
+        "B2": 0,
+        "B3": 0
+      },
+      "retained_exact_branch_capacity": 0,
+      "pooled_cut_bound": 3,
+      "post_discard_cut_bound": 3,
+      "cut_initial_spendable_bits": 2996,
+      "cut_consumed_bits": 0.0,
+      "cut_generated_bits": 0.0,
+      "cut_discarded_bits": 0.0,
+      "cut_remaining_spendable_bits": 2996.0,
+      "full_consumed_bits": 0.0,
+      "full_generated_bits": 0.0,
+      "full_purged_bits": 0.0,
+      "full_conservation_residual_bits": 0.0,
+      "first_unserved_arrival_s": 0.0,
+      "expected_first_unserved_arrival_s": 0,
+      "retained_fluid_reference_s": 19.973333333333333,
+      "fluid_scope": "pooled continuous demand reference; not an exact discrete-store trajectory",
+      "transport_available": true,
+      "generation_stopped": true,
+      "checks": {
+        "expected_session_count": true,
+        "all_branches_reach_expected_count": true,
+        "first_failure_at_expected_arrival": true,
+        "all_cut_events_obey_bound": true,
+        "all_cut_events_conserve_key": true,
+        "full_conservation": true,
+        "one_cut_debit_per_served_request": true,
+        "two_hop_debits_per_served_request": true,
+        "no_new_key": true,
+        "classical_path_unchanged": true,
+        "no_below_floor_service": true
+      },
+      "all_checks_passed": true,
+      "events": [
+        {
+          "time_s": 0.0,
+          "arrivals": 1,
+          "served": 0,
+          "blocked": 1,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 2996.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        },
+        {
+          "time_s": 5.0,
+          "arrivals": 2,
+          "served": 0,
+          "blocked": 2,
+          "cut_consumed_bits": 0.0,
+          "cut_generated_bits": 0.0,
+          "cut_discarded_bits": 0.0,
+          "cut_remaining_spendable_bits": 2996.0,
+          "cut_bound_holds": true,
+          "cut_conservation_residual_bits": 0.0
+        }
+      ]
+    }
+  ],
+  "structural_depth_checks": [
+    {
+      "depth": 1,
+      "method": "static_betweenness",
+      "exact_structural_cut_cost": 1.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 1,
+      "isolation_relative_cost": 1.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 1,
+      "method": "adaptive_betweenness",
+      "exact_structural_cut_cost": 1.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 1,
+      "isolation_relative_cost": 1.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 1,
+      "method": "weighted_cut",
+      "exact_structural_cut_cost": 1.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 1,
+      "isolation_relative_cost": 1.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 1,
+      "method": "historical_static_betweenness",
+      "exact_structural_cut_cost": 1.0,
+      "tie_convention": "original NetworkX edge-orientation tuples",
+      "isolation_edge_count": 1,
+      "isolation_relative_cost": 1.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 2,
+      "method": "static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 4,
+      "isolation_relative_cost": 4.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A1",
+          "N0"
+        ],
+        [
+          "A2",
+          "N2"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 2,
+      "method": "adaptive_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ],
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 2,
+      "method": "weighted_cut",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "A2",
+          "N2"
+        ],
+        [
+          "N1",
+          "N2"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 2,
+      "method": "historical_static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "original NetworkX edge-orientation tuples",
+      "isolation_edge_count": 3,
+      "isolation_relative_cost": 3.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "N0",
+          "A1"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 3,
+      "method": "static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 5,
+      "isolation_relative_cost": 5.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A1",
+          "N0"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "N3"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 3,
+      "method": "adaptive_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ],
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 3,
+      "method": "weighted_cut",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "A3",
+          "N3"
+        ],
+        [
+          "N2",
+          "N3"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 3,
+      "method": "historical_static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "original NetworkX edge-orientation tuples",
+      "isolation_edge_count": 4,
+      "isolation_relative_cost": 4.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "N0",
+          "A1"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 4,
+      "method": "static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 6,
+      "isolation_relative_cost": 6.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A1",
+          "N0"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "A4",
+          "N4"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 4,
+      "method": "adaptive_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ],
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 4,
+      "method": "weighted_cut",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "A4",
+          "N4"
+        ],
+        [
+          "N3",
+          "N4"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 4,
+      "method": "historical_static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "original NetworkX edge-orientation tuples",
+      "isolation_edge_count": 5,
+      "isolation_relative_cost": 5.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "N0",
+          "A1"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 5,
+      "method": "static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 7,
+      "isolation_relative_cost": 7.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A1",
+          "N0"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "A4",
+          "A5"
+        ],
+        [
+          "A5",
+          "N5"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 5,
+      "method": "adaptive_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ],
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 5,
+      "method": "weighted_cut",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "A5",
+          "N5"
+        ],
+        [
+          "N4",
+          "N5"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 5,
+      "method": "historical_static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "original NetworkX edge-orientation tuples",
+      "isolation_edge_count": 6,
+      "isolation_relative_cost": 6.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "A4",
+          "A5"
+        ],
+        [
+          "N0",
+          "A1"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 6,
+      "method": "static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 8,
+      "isolation_relative_cost": 8.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A1",
+          "N0"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "A4",
+          "A5"
+        ],
+        [
+          "A5",
+          "A6"
+        ],
+        [
+          "A6",
+          "N6"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 6,
+      "method": "adaptive_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "N0",
+          "N1"
+        ],
+        [
+          "A1",
+          "A2"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 6,
+      "method": "weighted_cut",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "canonical undirected edge names",
+      "isolation_edge_count": 2,
+      "isolation_relative_cost": 2.0,
+      "prefix_edges": [
+        [
+          "A6",
+          "N6"
+        ],
+        [
+          "N5",
+          "N6"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    },
+    {
+      "depth": 6,
+      "method": "historical_static_betweenness",
+      "exact_structural_cut_cost": 2.0,
+      "tie_convention": "original NetworkX edge-orientation tuples",
+      "isolation_edge_count": 7,
+      "isolation_relative_cost": 7.0,
+      "prefix_edges": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "A4",
+          "A5"
+        ],
+        [
+          "A5",
+          "A6"
+        ],
+        [
+          "N0",
+          "A1"
+        ],
+        [
+          "N0",
+          "N1"
+        ]
+      ],
+      "connected_before_last_removal": true,
+      "connected_after_prefix": false
+    }
+  ],
+  "all_checks_passed": true
+}

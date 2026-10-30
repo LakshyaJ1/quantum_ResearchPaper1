@@ -1,0 +1,42 @@
+\RequirePackage[T1]{fontenc}
+\documentclass[conference,a4paper]{IEEEtran}
+\usepackage{amsmath,amssymb,graphicx,booktabs,cite}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\IEEEauthorblockN}[1]{#1\\}
+\newcommand{\IEEEauthorblockA}[1]{#1}
+\newcommand{\IEEEauthorrefmark}[1]{\textsuperscript{#1}}
+\begin{document}
+\typeout{SMOKE DIMENSIONS: paperwidth=\the\paperwidth;paperheight=\the\paperheight;textwidth=\the\textwidth;textheight=\the\textheight;columnsep=\the\columnsep;oddsidemargin=\the\oddsidemargin;topmargin=\the\topmargin;headheight=\the\headheight;headsep=\the\headsep}
+\title{Manuscript Toolchain Verification}
+\author{\IEEEauthorblockN{First Author\IEEEauthorrefmark{1}, Second Author\IEEEauthorrefmark{2}}\IEEEauthorblockA{\IEEEauthorrefmark{1}\textit{First Test Institution}, Test City\\\IEEEauthorrefmark{2}\textit{Second Test Institution}, Test City}}
+\maketitle
+\begin{abstract}This isolated document verifies two-column rendering, mathematical glyphs and an embedded table. It contains no research findings.\end{abstract}
+\begin{quote}Index Terms---Document preparation, verification\end{quote}
+\section{Rendering Check}\label{sec:check}
+An editable manuscript needs consistent text and equations. The capability variable is $\Delta e$, and the illustrative expression is
+
+
+\[ e_i(t)=e_0+\Delta e.\]
+
+WORD-EQUATION-NUMBER:1
+
+
+\begin{table}[h]\centering\caption{TABLE~I\\ Isolated check}\begin{tabular}{lr}\toprule Item&Value\\\midrule Columns&2\\Fonts&Embedded\\\bottomrule\end{tabular}\end{table}
+
+
+WORD-WIDE-START
+
+\begin{figure}[t]\centering\includegraphics[width=7.139892in]{C:/Users/10jai/OneDrive/Desktop/ResearchPaper/tools/manuscript_smoke/full_parity_stage/assets/fixture_figure.png}\caption{Fig.~1. Wide isolated figure.}\end{figure}
+
+WORD-WIDE-END
+
+
+\section{Interpretation}
+\begin{figure}[t]\centering\includegraphics[width=3.486924in]{C:/Users/10jai/OneDrive/Desktop/ResearchPaper/tools/manuscript_smoke/full_parity_stage/assets/fixture_figure.png}\caption{Fig.~2. Column isolated figure.}\end{figure}
+Passing this check establishes only that the local renderer can produce a PDF from a small IEEE-style source. Final page count, content agreement and visual quality must still be checked on the finished manuscript.
+See Figures~1 and~2. See Section~I, Equation~1, Table~I, and the sample reference~[1].
+\section*{References}
+
+[1] A. Example, ``Isolated source reference,'' \emph{Test Journal}, vol.~1, pp.~1--2, 2026.
+
+\end{document}

@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-09-27T22:06:07.460680+00:00",
+  "before_source_sha256": "740a8458b80b572cea4a96fd77e12c6d6f3851a0d1251b0995fb232a8339a7da",
+  "after_source_sha256": "65d3966f91dd1fdae8f115fb963c938fabb5a092501eabad829304035b7920a8",
+  "scientific_source_hash": "97bf3205917c27c2c03b6fde5bdb0932e5370a79773c413ed754213a38d68598",
+  "preserved_blocks": {
+    "title": true,
+    "author_block": true,
+    "abstract": true,
+    "keywords": true,
+    "conclusion": true,
+    "bibliography": true,
+    "six_display_equations_unchanged": true
+  },
+  "prior_numerical_inputs_and_figures_identical": [
+    "figures/revision/fig1_comparable_service.pdf",
+    "figures/revision/fig1_comparable_service.png",
+    "figures/revision/fig1_comparable_service.provenance.json",
+    "figures/revision/fig2_reserve_horizon.pdf",
+    "figures/revision/fig2_reserve_horizon.png",
+    "figures/revision/fig2_reserve_horizon.provenance.json",
+    "figures/revision/fig3_learning_tradeoff.pdf",
+    "figures/revision/fig3_learning_tradeoff.png",
+    "figures/revision/fig3_learning_tradeoff.provenance.json",
+    "results/revision/manuscript/class_table.tex",
+    "results/revision/manuscript/learning_claim_ledger.json",
+    "results/revision/manuscript/learning_numbers.tex",
+    "results/revision/manuscript/main_claim_ledger.json",
+    "results/revision/manuscript/main_numbers.tex",
+    "results/revision/manuscript/remaining_claim_ledger.json",
+    "results/revision/manuscript/remaining_numbers.tex"
+  ],
+  "scientific_code_or_existing_result_changes": false,
+  "scope": "Targeted explanation additions and two tables extracted from existing sensitivity data.",
+  "status": "passed"
+}

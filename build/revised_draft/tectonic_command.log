@@ -1,0 +1,29 @@
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Rerunning TeX because "paper_revised.aux" changed ...
+note: Running xdvipdfmx ...
+note: downloading cmmi6.pfb
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\revised_draft\paper_revised.aux` (7.166015625 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\revised_draft\paper_revised.pdf` (178.111328125 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\revised_draft\paper_revised.log` (17.53515625 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\revised_draft\paper_revised.out` (3.537109375 KiB)
+
+warning: paper_revised.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper_revised.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper_revised.tex:79: Underfull \hbox (badness 10000) in paragraph at lines 78--79
+warning: paper_revised.tex:79: Underfull \hbox (badness 2103) in paragraph at lines 78--79
+warning: paper_revised.tex:79: Underfull \hbox (badness 2126) in paragraph at lines 78--79
+warning: paper_revised.tex:79: Underfull \hbox (badness 3826) in paragraph at lines 78--79
+warning: paper_revised.tex:186: Underfull \hbox (badness 3557) in paragraph at lines 185--186
+warning: paper_revised.tex:186: Underfull \hbox (badness 10000) in paragraph at lines 185--186
+warning: paper_revised.tex:191: Underfull \hbox (badness 1622) in paragraph at lines 190--191
+warning: paper_revised.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper_revised.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper_revised.tex:79: Underfull \hbox (badness 10000) in paragraph at lines 78--79
+warning: paper_revised.tex:79: Underfull \hbox (badness 2103) in paragraph at lines 78--79
+warning: paper_revised.tex:79: Underfull \hbox (badness 2126) in paragraph at lines 78--79
+warning: paper_revised.tex:79: Underfull \hbox (badness 3826) in paragraph at lines 78--79
+warning: paper_revised.tex:186: Underfull \hbox (badness 3557) in paragraph at lines 185--186
+warning: paper_revised.tex:186: Underfull \hbox (badness 10000) in paragraph at lines 185--186
+warning: paper_revised.tex:191: Underfull \hbox (badness 1622) in paragraph at lines 190--191
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

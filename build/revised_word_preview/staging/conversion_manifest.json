@@ -1,0 +1,154 @@
+{
+  "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\paper_revised.tex",
+  "source_sha256": "4ddee85d50b6741850981ab66c6b512aa7fa4e8bf0108c7007c42a11d357eef2",
+  "aux": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\revised_draft\\paper_revised.aux",
+  "aux_sha256": "1849f735ee600b441a7aa6b50c01ddd449d5c913c870bdd06957551a789472c3",
+  "staged": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\revised_word_preview\\staging\\manuscript_for_word.tex",
+  "inputs": [
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\paper_revised.tex",
+      "sha256": "4ddee85d50b6741850981ab66c6b512aa7fa4e8bf0108c7007c42a11d357eef2"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\main_numbers.tex",
+      "sha256": "4693164d8bb02f96a38205b080347e6125f3d234c5423fb7a1713a7af900c9de"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\class_table.tex",
+      "sha256": "7d9d2a19ddc8f9e12ebbdb9548b963f58cc9dd4d111f30f447318624d6ae2964"
+    }
+  ],
+  "sections": [
+    [
+      false,
+      "Introduction"
+    ],
+    [
+      false,
+      "Related Work"
+    ],
+    [
+      false,
+      "Model and Assurance Accounting"
+    ],
+    [
+      false,
+      "Policies and Experimental Protocol"
+    ],
+    [
+      false,
+      "Results"
+    ],
+    [
+      false,
+      "Discussion and Limitations"
+    ],
+    [
+      false,
+      "Conclusion"
+    ],
+    [
+      true,
+      "Reproducibility and Acknowledgement"
+    ]
+  ],
+  "labels": {
+    "sec:model": "III",
+    "eq:stock": "1",
+    "eq:rate": "2",
+    "eq:debit": "3",
+    "sec:metrics": "III-C",
+    "eq:metrics": "4",
+    "sec:bound": "III-D",
+    "eq:cut": "5",
+    "sec:protocol": "IV",
+    "eq:budget": "6",
+    "fig:service": "1",
+    "tab:classes": "I",
+    "sec:results": "V",
+    "sec:limits": "VI"
+  },
+  "citations": {
+    "itu": "1",
+    "tysowski": "2",
+    "spooren": "3",
+    "qulore": "4",
+    "hao": "5",
+    "opportunistic": "6",
+    "quiks": "7",
+    "zhu": "8",
+    "shield": "9",
+    "walenta": "10",
+    "fung": "11",
+    "cem": "12",
+    "qkdnetsim": "13"
+  },
+  "equations": [
+    {
+      "number": "1",
+      "latex": "B_e(t)=B_e(0)+G_e(t)-C_e(t)-O_e(t)-P_e(t),",
+      "label": "eq:stock"
+    },
+    {
+      "number": "2",
+      "latex": "\\frac{R_e(e)}{R_{e,0}}=\\left[\\frac{\\max\\{0,1-(1+f)H_2(e)\\}}{1-(1+f)H_2(e_0)}\\right]^{\\gamma}",
+      "label": "eq:rate"
+    },
+    {
+      "number": "3",
+      "latex": "q_g=D_g+240+127n_{\\mathrm{auth}}\\quad\\text{bits}.",
+      "label": "eq:debit"
+    },
+    {
+      "number": "4",
+      "latex": "A=\\frac{|S|}{N},\\qquad Q=\\frac{|S\\setminus D|}{N},\\qquad L=\\frac{|D|}{N}.",
+      "label": "eq:metrics"
+    },
+    {
+      "number": "5",
+      "latex": "\\sum_{s\\in\\mathcal C_T}q_s\n\\leq\\sum_{e\\in\\delta(U)}\\left[U_e(0)+G_e(T)\\right].",
+      "label": "eq:cut"
+    },
+    {
+      "number": "6",
+      "latex": "V_c(t)+1\\leq\\lfloor\\epsilon_cN_c(t)\\rfloor,",
+      "label": "eq:budget"
+    }
+  ],
+  "floats": [
+    {
+      "kind": "figure",
+      "number": "1",
+      "wide": false,
+      "labels": [
+        "fig:service"
+      ]
+    },
+    {
+      "kind": "table",
+      "number": "I",
+      "wide": false,
+      "labels": [
+        "tab:classes"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\figures\\revision\\fig1_comparable_service.pdf",
+      "source_sha256": "d7bc9e4efff90df491a4ce3d31b6b8ac7209d8d3026daa1afb0b1d8809a25f22",
+      "raster": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\revised_word_preview\\staging\\assets\\fig1_comparable_service.png",
+      "width_in": 3.4869240348692405
+    }
+  ],
+  "word_structure": {
+    "numbered_equations": 6,
+    "native_math_elements": 46,
+    "tables": 1,
+    "equation_layout_tables": 6,
+    "inline_shapes": 1,
+    "sections": 2
+  },
+  "output": "build\\revised_word_preview\\paper_revised.docx",
+  "output_sha256": "a022b0625491348306ca472f1c801ef8bf09503fc0956b62b11a1c900fcb1105"
+}

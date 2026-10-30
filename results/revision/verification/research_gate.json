@@ -1,0 +1,38 @@
+{
+  "timestamp_utc": "2026-09-27T21:48:37.614608+00:00",
+  "python": "3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]",
+  "os_name": "nt",
+  "windows_version": [
+    10,
+    0,
+    22631,
+    2,
+    ""
+  ],
+  "test_modules": {
+    "test_fallback_analysis.py": 6,
+    "test_revision_analysis.py": 4,
+    "test_revision_core.py": 15,
+    "test_revision_fallback.py": 11,
+    "test_revision_learning.py": 13,
+    "test_revision_learning_analysis.py": 10,
+    "test_revision_learning_weights.py": 4,
+    "test_revision_metrics.py": 2,
+    "test_revision_online_adversary.py": 12,
+    "test_revision_online_persistence.py": 8,
+    "test_revision_policies.py": 24,
+    "test_revision_scenarios.py": 9,
+    "test_revision_theory_checks.py": 9
+  },
+  "regression_tests_run": 127,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "legacy_validation": {
+    "returncode": 0,
+    "stdout": "\n============================================================================================================\n                                             E1 VALIDATION GATE                                             \n============================================================================================================\n[ PASS ] cliff: rho(e0) == 1                                                            rho(0.03) = 1.000000\n[ PASS ] cliff: rho(e_abort) == 0                                                       rho(0.075) = 0.0\n[ PASS ] cliff: rho above abort == 0                                                    \n[ PASS ] cliff: monotone decreasing below abort                                         \n[ PASS ] cliff: f=1.00 zero in [0.105, 0.115] (Shor-Preskill ~11%)                      zero at e=0.1105\n[ PASS ] cliff: f=1.16 zero in [0.095, 0.105] (realistic EC lowers it)                  zero at e=0.0985\n[ PASS ] cliff: e_abort sits below both zeros                                           e_abort=0.075 < 0.0985 < 0.1105\n[ PASS ] Tokyo calibration: rho(0.06) in [0.08, 0.12] at gamma=3.4                      rho(0.06) = 0.0977\n[ PASS ] physics variant: rho(0.06) ~ 0.50 at gamma=1                                   rho(0.06) = 0.5046\n[ PASS ] reservoir: starts at m_max                                                     \n[ PASS ] reservoir: overflow discards, never exceeds m_max                              discarded 1000000000\n[ PASS ] reservoir: cannot draw below m_min (auth reserve)                              \n[ PASS ] reservoir: can draw exactly to m_min                                           \n[ PASS ] reservoir: EMPTY at m_min                                                      EMPTY\n[ PASS ] reservoir: READY when >= m_thr                                                 \n[ PASS ] reservoir: level is below m_thr                                                level=11314620 thr=11324620\n[ PASS ] reservoir: below thr and not rising -> WARNING                                 WARNING\n[ PASS ] reservoir: still below thr after small top-up                                  level=11315620\n[ PASS ] reservoir: below thr and rising -> CHARGING                                    CHARGING\n[ PASS ] accounting: AUTH_OFF reproduces the bare D law                                 \n[ PASS ] accounting: AUTH_ON at D=256 is 750 bit/hop                                    750\n[ PASS ] accounting: overhead factor at D=256 in [2.9, 3.6] (Cambridge measured 3.6x)   2.930x\n[ PASS ] accounting: overhead negligible at 1 Mbit blocks (<1%)                         1.00049x\n[ PASS ] accounting: zero demand costs zero                                             \n[ PASS ] conservation [FAIL_DEGRADED]: sum(session debits) == sum(store debits)         29638848.0 vs 29638848.0\n[ PASS ] conservation [FAIL_DEGRADED]: key_bits == hops * cost_per_hop                  0 mismatches\n[ PASS ] conservation [FAIL_DEGRADED]: G4 consumes zero quantum key                     \n[ PASS ] conservation [FAIL_DEGRADED]: no negative reservoir                            \n[ PASS ] conservation [FAIL_CLOSED]: sum(session debits) == sum(store debits)           29638848.0 vs 29638848.0\n[ PASS ] conservation [FAIL_CLOSED]: key_bits == hops * cost_per_hop                    0 mismatches\n[ PASS ] conservation [FAIL_CLOSED]: G4 consumes zero quantum key                       \n[ PASS ] conservation [FAIL_CLOSED]: no negative reservoir                              \n[ PASS ] degenerate: abundant key -> 100% served                                        1.0000\n[ PASS ] degenerate: abundant key -> zero floor violations                              0.0000\n[ PASS ] degenerate: abundant key -> ISR served at G1 (its floor)                       G1 share 1.0000\n[ PASS ] degenerate: zero key + FAIL_DEGRADED -> all served at G4                       served 1.000, G4 1.000\n[ PASS ] degenerate: zero key -> all served are floor violations                        1.000\n[ PASS ] degenerate: zero key + FAIL_CLOSED -> all blocked                              blocked 1.000\n[ PASS ] SECOQC Fig.22: 3.5 MiB drained at 8192 bit/s in ~3584 s                        t = 3584 s (reference 3584 s)\n[ PASS ] SECOQC: OTP key demand == payload bits (Shannon)                               \n[ PASS ] SECOQC: G2 demand is one 256-bit key                                           \n[ PASS ] CRN: identical arrival stream across policies at equal seed                    352 vs 352 sessions\n[ PASS ] CRN: different seed gives a different stream                                   \n------------------------------------------------------------------------------------------------------------\n43/43 checks passed\n",
+    "stderr": ""
+  },
+  "wall_s": 4.082219999996596,
+  "passed": true
+}

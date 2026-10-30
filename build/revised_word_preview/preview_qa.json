@@ -1,0 +1,48 @@
+{
+  "pages": 4,
+  "page_details": [
+    {
+      "page": 1,
+      "characters": 5355,
+      "image_sha256": "accdaa163676288a19bab951e6b600552435270f06ced01b9813c58923835578"
+    },
+    {
+      "page": 2,
+      "characters": 5811,
+      "image_sha256": "32dfbc3196da1609a2c226ba77a4a24661853ce6823f0155966c0a4f2392a36e"
+    },
+    {
+      "page": 3,
+      "characters": 6244,
+      "image_sha256": "1c83fa6b0bfbd0e9d3b4f8bc0f3ee13ce29f0ef4118509797ead5b0458046632"
+    },
+    {
+      "page": 4,
+      "characters": 5612,
+      "image_sha256": "749b5cc3c83112a4a48ee00f569d95986f6b449d6eea8e6fd4e23c548c767667"
+    }
+  ],
+  "changed_since_previous_visual_review": [
+    {
+      "page": 1,
+      "pixels_changed": false
+    },
+    {
+      "page": 2,
+      "pixels_changed": false
+    },
+    {
+      "page": 3,
+      "pixels_changed": true
+    },
+    {
+      "page": 4,
+      "pixels_changed": false
+    }
+  ],
+  "all_fonts_embedded": true,
+  "native_math_objects": 46,
+  "native_math_unchanged_from_pandoc": true,
+  "docx_sha256": "a022b0625491348306ca472f1c801ef8bf09503fc0956b62b11a1c900fcb1105",
+  "pdf_sha256": "cc8c9ec2c560fbc836f048bd6957b10303d6d94d17e24a125fdecd48e8c38195"
+}

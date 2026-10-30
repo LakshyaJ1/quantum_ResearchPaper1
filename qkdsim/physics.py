@@ -1,20 +1,16 @@
-"""Link secret-key-rate model and key reservoir.
+"""Reduced link secret-key-rate model and inventory of accepted key material.
 
-The four-state link replaces the two-state Gilbert-Elliott model of the
-original draft. That model gave a degraded link 5% of nominal rate, which is
-indefensible under attack: Alleaume et al. (quant-ph/0701168) state that a
-denial-of-service adversary acts "on the quantum channel in order to increase
-the noise above the security threshold", and that "any strong enough
-perturbation ... inducing noise above the security threshold ... will in
-practice disrupt the key generation." An adversary applying pressure is by
-definition pushing across the threshold -- modelling that as 5% throughput
-models an adversary who fails.
+The model distinguishes reduced generation, generation abort, and classical
+transport outage. An abort rejects fresh key from the affected generation
+process; it does not retroactively invalidate stored key. This model does not
+simulate photonics or establish composable cryptographic security.
 """
 from __future__ import annotations
 
 import math
 from dataclasses import dataclass
 from enum import Enum
+from functools import lru_cache
 from typing import Optional
 
 from .config import PhysicsConfig, ReservoirConfig
@@ -27,6 +23,7 @@ def h2(x: float) -> float:
     return -x * math.log2(x) - (1.0 - x) * math.log2(1.0 - x)
 
 
+@lru_cache(maxsize=256)
 def rate_fraction(e: float, cfg: PhysicsConfig) -> float:
     """Fraction of nominal secret-key rate delivered at QBER `e`.
 

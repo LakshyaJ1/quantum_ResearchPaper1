@@ -1,0 +1,714 @@
+{
+  "created_utc": "2026-09-26T02:16:39.547083+00:00",
+  "internal_preview": false,
+  "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\RESEARCH_EXPLAINED.md",
+  "source_sha256": "7c8a4e4aac35ff2a3f95091fa9972831318ed1b17cd4681d746764513ec56acd",
+  "builder_sha256": "70cd383e74429a61765375e348711f0b0f8730edb79bfe7fb87c72735896b08e",
+  "pandoc_sha256": "e0057eaf640d08ba028b70721d4f7b63a685c30430de9db89aea84de2d4a1912",
+  "docx": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\Research_Explained.docx",
+  "docx_sha256": "72be7b801fd6ad8032ef289e5af42ec573feb3ed2213eaeded25851c609f7fa4",
+  "pdf": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\Research_Explained.pdf",
+  "pdf_sha256": "45db3625ff23e6ae6a58e2ff7ba7c2ab22643410cc8add6571a5003b6209c10f",
+  "word_export": {
+    "word_version": "16.0",
+    "pages_reported_by_word": 19,
+    "pdf": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\Research_Explained.pdf",
+    "pdf_exists": true,
+    "pdf_bytes": 504279
+  },
+  "native_math_objects": 54,
+  "editable_tables": 3,
+  "embedded_images": 2,
+  "contents": [
+    {
+      "heading": "What this study establishes",
+      "anchor": "guide_section_1"
+    },
+    {
+      "heading": "The practical question",
+      "anchor": "guide_section_2"
+    },
+    {
+      "heading": "What a key is and why encryption needs one",
+      "anchor": "guide_section_3"
+    },
+    {
+      "heading": "What quantum key distribution does",
+      "anchor": "guide_section_4"
+    },
+    {
+      "heading": "What post quantum cryptography means here",
+      "anchor": "guide_section_5"
+    },
+    {
+      "heading": "Why the model has four grades",
+      "anchor": "guide_section_6"
+    },
+    {
+      "heading": "What a trusted relay network is",
+      "anchor": "guide_section_7"
+    },
+    {
+      "heading": "What tactical and satellite context is actually present",
+      "anchor": "guide_section_8"
+    },
+    {
+      "heading": "What channel noise means in the simulation",
+      "anchor": "guide_section_9"
+    },
+    {
+      "heading": "How the reservoir and key bill work",
+      "anchor": "guide_section_10"
+    },
+    {
+      "heading": "What traffic time and routing represent",
+      "anchor": "guide_section_11"
+    },
+    {
+      "heading": "How to read the metrics correctly",
+      "anchor": "guide_section_12"
+    },
+    {
+      "heading": "Why warm up seeds and confidence intervals matter",
+      "anchor": "guide_section_13"
+    },
+    {
+      "heading": "What the original AI and ML part actually does",
+      "anchor": "guide_section_14"
+    },
+    {
+      "heading": "How the revised policy experiment differs",
+      "anchor": "guide_section_15"
+    },
+    {
+      "heading": "How the revised learned tables were chosen",
+      "anchor": "guide_section_16"
+    },
+    {
+      "heading": "Why a better average score can hide a worse result",
+      "anchor": "guide_section_17"
+    },
+    {
+      "heading": "What the completed network experiments show",
+      "anchor": "guide_section_18"
+    },
+    {
+      "heading": "What changes when an attacker follows the routes",
+      "anchor": "guide_section_19"
+    },
+    {
+      "heading": "What verification can establish",
+      "anchor": "guide_section_20"
+    },
+    {
+      "heading": "Where the files fit together",
+      "anchor": "guide_section_21"
+    },
+    {
+      "heading": "Historical document coverage and cautions",
+      "anchor": "guide_section_22"
+    },
+    {
+      "heading": "What the study should leave a reader knowing",
+      "anchor": "guide_section_23"
+    }
+  ],
+  "table_geometry": [
+    {
+      "table": 1,
+      "rows": 5,
+      "columns": 3,
+      "widths_twips": [
+        1209,
+        4556,
+        3533
+      ],
+      "repeated_header": true,
+      "fixed_row_heights": false
+    },
+    {
+      "table": 2,
+      "rows": 22,
+      "columns": 2,
+      "widths_twips": [
+        3626,
+        5672
+      ],
+      "repeated_header": true,
+      "fixed_row_heights": false
+    },
+    {
+      "table": 3,
+      "rows": 16,
+      "columns": 2,
+      "widths_twips": [
+        3626,
+        5672
+      ],
+      "repeated_header": true,
+      "fixed_row_heights": false
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_01.png",
+      "image_sha256": "d30f24c64952ed5ee96b167992cef477d39b5adebfbd4b839f1888eaf5d20e41",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 1498,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 23
+    },
+    {
+      "page": 2,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_02.png",
+      "image_sha256": "75593ce02747c7485cc0a2c563b836bff809dc119fbce2e33114e3d5b28fb81d",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3772,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 3,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_03.png",
+      "image_sha256": "0a8902ded0907a9ffe591172fd736c9f3c2a0382e8d9233a1df0fec9d3dfc45d",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3455,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 4,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_04.png",
+      "image_sha256": "7577fe6bf4a353176cbb9982ae8c30098a21248194811bfaee4ce8e668d33e7d",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 2928,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 5,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_05.png",
+      "image_sha256": "7b11460412307e928ef9bbec53aaafafd098c2b496169e8435a7b1279a250bae",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3539,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 6,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_06.png",
+      "image_sha256": "f95a5dbadb807929a81a4863bdf74c28f4269f3770c60c2009cce596d6ab1b29",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3538,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 7,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_07.png",
+      "image_sha256": "5af83f2b9780e91e86e7f156ab6fa372e9f1f9822b0d1671c8466ffef315c8f2",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 4003,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 8,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_08.png",
+      "image_sha256": "a24deb37428905c121167ea37442a811cf20a20fa44da0155ce59f151cf815ca",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3709,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 9,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_09.png",
+      "image_sha256": "dbdabc2abfd975f2cc1cdadcbc48be91b3c0b185d8bbcaf348e9ec74b7482b51",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3565,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 10,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_10.png",
+      "image_sha256": "b5e64c16307e2120add40e12735541d9f7acb9121745e96e7b1e9b8210621a7a",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3656,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 11,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_11.png",
+      "image_sha256": "068a075a5aa9f690c78bd5c09f420dabdef4520c8ed3fc643e0685fd469741bc",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 4050,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 12,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_12.png",
+      "image_sha256": "87a826608f1e470d2454c61ee1cd38649e07a5f37e562bb2ec1e4bc68c235dc9",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3146,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 13,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_13.png",
+      "image_sha256": "42667568bb6e9fb8d39c5eb1618125f005b732ef9d318f82eacaee7eb87aa22a",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 2844,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 14,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_14.png",
+      "image_sha256": "7bb5445776f0ead5fdd804069a6fceb2f120c8f4e9107c4b933a62d3e78c2ba3",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 2517,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 15,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_15.png",
+      "image_sha256": "0754c26350f9fb65ac424601580d8d01a5a5d8542419553b64fad92086d98a77",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 4034,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 16,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_16.png",
+      "image_sha256": "144a7370aff545585e92f5d2be580b278d07bbc5de8fd2e4f22371ff184789b4",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 3458,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 17,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_17.png",
+      "image_sha256": "9e0afa4f0b882282a7924b0cf9acfd69669ae3749feca6e05d370788216e21f4",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 2249,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 18,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_18.png",
+      "image_sha256": "11403e26c32926c58228a80d269a8d4c1cbb3a48e0b94079045c913024b25cbb",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 2841,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    },
+    {
+      "page": 19,
+      "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_19.png",
+      "image_sha256": "02fc143c637edc2cdbd2658554f96566af18a6509d2a14fec43d3c24dcb987a4",
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562,
+      "text_characters": 2279,
+      "out_of_page_text": [],
+      "all_fonts_embedded": true,
+      "internal_links": 0
+    }
+  ],
+  "logical_output_directory": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\submission",
+  "local_file_links": [
+    {
+      "source_target": "../../FINAL_IMPROVEMENT_REPORT.md",
+      "emitted_target": "../FINAL_IMPROVEMENT_REPORT.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\FINAL_IMPROVEMENT_REPORT.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../PAPER1_QKD_PQC_tactical.md",
+      "emitted_target": "../PAPER1_QKD_PQC_tactical.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\PAPER1_QKD_PQC_tactical.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../PAPER2_terrain_surrogate.md",
+      "emitted_target": "../PAPER2_terrain_surrogate.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\PAPER2_terrain_surrogate.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../PAPER_DRAFT_v2.md",
+      "emitted_target": "../PAPER_DRAFT_v2.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\PAPER_DRAFT_v2.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../PHASE1_LITERATURE_DOSSIER.md",
+      "emitted_target": "../PHASE1_LITERATURE_DOSSIER.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\PHASE1_LITERATURE_DOSSIER.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../PHASE2_DESIGN.md",
+      "emitted_target": "../PHASE2_DESIGN.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\PHASE2_DESIGN.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../PROJECT_HANDOFF.md",
+      "emitted_target": "../PROJECT_HANDOFF.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\PROJECT_HANDOFF.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../README.md",
+      "emitted_target": "../README.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\README.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../RESULTS.md",
+      "emitted_target": "../RESULTS.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\RESULTS.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../REVIEW_self.md",
+      "emitted_target": "../REVIEW_self.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\REVIEW_self.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../Report.md",
+      "emitted_target": "../Report.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\Report.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../abstract_new.tex",
+      "emitted_target": "../abstract_new.tex",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\abstract_new.tex",
+      "exists": true
+    },
+    {
+      "source_target": "../../archive/manuscripts_before_revision/paper.tex",
+      "emitted_target": "../archive/manuscripts_before_revision/paper.tex",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\archive\\manuscripts_before_revision\\paper.tex",
+      "exists": true
+    },
+    {
+      "source_target": "../../experiments/",
+      "emitted_target": "../experiments",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\experiments",
+      "exists": true
+    },
+    {
+      "source_target": "../../experiments/e1_validation.py",
+      "emitted_target": "../experiments/e1_validation.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\experiments\\e1_validation.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../experiments/e7_effective_table.py",
+      "emitted_target": "../experiments/e7_effective_table.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\experiments\\e7_effective_table.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../experiments/e7_policy_audit.py",
+      "emitted_target": "../experiments/e7_policy_audit.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\experiments\\e7_policy_audit.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../experiments/e8_published_validation.py",
+      "emitted_target": "../experiments/e8_published_validation.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\experiments\\e8_published_validation.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../experiments/run_experiments.py",
+      "emitted_target": "../experiments/run_experiments.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\experiments\\run_experiments.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../figures/",
+      "emitted_target": "../figures",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\figures",
+      "exists": true
+    },
+    {
+      "source_target": "../../paper.tex",
+      "emitted_target": "../paper.tex",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\paper.tex",
+      "exists": true
+    },
+    {
+      "source_target": "../../paper_extended.tex",
+      "emitted_target": "../paper_extended.tex",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\paper_extended.tex",
+      "exists": true
+    },
+    {
+      "source_target": "../../prompt.md",
+      "emitted_target": "../prompt.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\prompt.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../qkdsim/config.py",
+      "emitted_target": "../qkdsim/config.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\qkdsim\\config.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../qkdsim/network.py",
+      "emitted_target": "../qkdsim/network.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\qkdsim\\network.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../qkdsim/physics.py",
+      "emitted_target": "../qkdsim/physics.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\qkdsim\\physics.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../qkdsim/rl.py",
+      "emitted_target": "../qkdsim/rl.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\qkdsim\\rl.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../qkdsim/sim.py",
+      "emitted_target": "../qkdsim/sim.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\qkdsim\\sim.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../results/",
+      "emitted_target": "../results",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results",
+      "exists": true
+    },
+    {
+      "source_target": "../../results/revision/analysis/",
+      "emitted_target": "../results/revision/analysis",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\analysis",
+      "exists": true
+    },
+    {
+      "source_target": "../../results/revision/analysis/main_summary.csv",
+      "emitted_target": "../results/revision/analysis/main_summary.csv",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\analysis\\main_summary.csv",
+      "exists": true
+    },
+    {
+      "source_target": "../../results/revision/analysis/sensitivity_summary.csv",
+      "emitted_target": "../results/revision/analysis/sensitivity_summary.csv",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\analysis\\sensitivity_summary.csv",
+      "exists": true
+    },
+    {
+      "source_target": "../../results/revision/analysis/threshold_summary.csv",
+      "emitted_target": "../results/revision/analysis/threshold_summary.csv",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\analysis\\threshold_summary.csv",
+      "exists": true
+    },
+    {
+      "source_target": "../../results/revision/verification/research_gate.json",
+      "emitted_target": "../results/revision/verification/research_gate.json",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\verification\\research_gate.json",
+      "exists": true
+    },
+    {
+      "source_target": "../../review.md",
+      "emitted_target": "../review.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\review.md",
+      "exists": true
+    },
+    {
+      "source_target": "../../revision/metrics.py",
+      "emitted_target": "../revision/metrics.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\revision\\metrics.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../revision/policies.py",
+      "emitted_target": "../revision/policies.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\revision\\policies.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../revision/scenarios.py",
+      "emitted_target": "../revision/scenarios.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\revision\\scenarios.py",
+      "exists": true
+    },
+    {
+      "source_target": "../../tests/test_revision_policies.py",
+      "emitted_target": "../tests/test_revision_policies.py",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tests\\test_revision_policies.py",
+      "exists": true
+    },
+    {
+      "source_target": "FALLBACK_RESULTS.md",
+      "emitted_target": "../docs/revision/FALLBACK_RESULTS.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\FALLBACK_RESULTS.md",
+      "exists": true
+    },
+    {
+      "source_target": "LEARNING_RESULTS.md",
+      "emitted_target": "../docs/revision/LEARNING_RESULTS.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\LEARNING_RESULTS.md",
+      "exists": true
+    },
+    {
+      "source_target": "LEARNING_WEIGHT_SENSITIVITY.md",
+      "emitted_target": "../docs/revision/LEARNING_WEIGHT_SENSITIVITY.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\LEARNING_WEIGHT_SENSITIVITY.md",
+      "exists": true
+    },
+    {
+      "source_target": "ONLINE_ATTACK_RESULTS.md",
+      "emitted_target": "../docs/revision/ONLINE_ATTACK_RESULTS.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\ONLINE_ATTACK_RESULTS.md",
+      "exists": true
+    },
+    {
+      "source_target": "ONLINE_PERSISTENCE_RESULTS.md",
+      "emitted_target": "../docs/revision/ONLINE_PERSISTENCE_RESULTS.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\ONLINE_PERSISTENCE_RESULTS.md",
+      "exists": true
+    },
+    {
+      "source_target": "REVIEWER_RESPONSE.md",
+      "emitted_target": "../docs/revision/REVIEWER_RESPONSE.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\REVIEWER_RESPONSE.md",
+      "exists": true
+    },
+    {
+      "source_target": "finite_reservoir_theory.md",
+      "emitted_target": "../docs/revision/finite_reservoir_theory.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\finite_reservoir_theory.md",
+      "exists": true
+    },
+    {
+      "source_target": "learning_protocol.md",
+      "emitted_target": "../docs/revision/learning_protocol.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\learning_protocol.md",
+      "exists": true
+    },
+    {
+      "source_target": "literature_verified.md",
+      "emitted_target": "../docs/revision/literature_verified.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\literature_verified.md",
+      "exists": true
+    },
+    {
+      "source_target": "theory_checks.md",
+      "emitted_target": "../docs/revision/theory_checks.md",
+      "resolved_target": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\theory_checks.md",
+      "exists": true
+    }
+  ],
+  "missing_local_targets": [],
+  "visual_review": {
+    "status": "passed",
+    "record": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\explainer_final_visual_review.json",
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "changed_pages_reinspected": [
+      16,
+      18,
+      19
+    ],
+    "unchanged_pages_pixel_identical": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17
+    ]
+  },
+  "final_submission_copy": {
+    "pdf": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\submission\\Research_Explained.pdf",
+    "docx": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\submission\\Research_Explained.docx",
+    "hashes_verified": true
+  }
+}

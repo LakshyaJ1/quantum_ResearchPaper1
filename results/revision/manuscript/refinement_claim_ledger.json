@@ -1,0 +1,171 @@
+{
+  "basis": "Existing frozen eight-seed sensitivity cohort; no new runs.",
+  "inputs": {
+    "sensitivity_summary.csv": "cccfe7a92a2b3490916e493a6958ba69c0d2e2cb9fe7da5d7bd0cf4ec9d0dbc1",
+    "sensitivity_canonical_raw_metrics.csv": "28d8ebec1d689e0e4842bc60197c2dfb9dc44c9a4948bf1b12723a61c5b83d92",
+    "sensitivity_paired_comparisons.csv": "8193cc1915a7978b040f5ad176a9614f3c0487b9c13faf5d99b6885a084b0276"
+  },
+  "load": [
+    {
+      "isr_factor": 0.03,
+      "control_case_id": "0e0345bc6ca8c03c",
+      "treatment_case_id": "5ba1b037949b1011",
+      "seeds": [
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007
+      ],
+      "closed_availability": 0.1211178409074147,
+      "fallback_availability": 0.9752927397168036,
+      "fallback_qualified": 0.12056094185523192,
+      "paired_availability_difference": [
+        0.8541748988093889,
+        0.8384089711065998,
+        0.8671171985862841
+      ]
+    },
+    {
+      "isr_factor": 0.1,
+      "control_case_id": "87952e34988b5bcb",
+      "treatment_case_id": "2c82ebb190a73bb6",
+      "seeds": [
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007
+      ],
+      "closed_availability": 0.06966423794333261,
+      "fallback_availability": 0.9752693393125039,
+      "fallback_qualified": 0.06874360079472944,
+      "paired_availability_difference": [
+        0.9056051013691713,
+        0.9004087380515428,
+        0.9110372361522004
+      ]
+    },
+    {
+      "isr_factor": 1.0,
+      "control_case_id": "1f636f4d312980eb",
+      "treatment_case_id": "5b128d9c3aaed93b",
+      "seeds": [
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007
+      ],
+      "closed_availability": 0.027530967128159108,
+      "fallback_availability": 0.974744875283255,
+      "fallback_qualified": 0.022710621668897202,
+      "paired_availability_difference": [
+        0.947213908155096,
+        0.9447055075413604,
+        0.9503238606172357
+      ]
+    }
+  ],
+  "attack_cost": [
+    {
+      "fibre_relative_cost": 1.0,
+      "method": "static_betweenness",
+      "case_id": "c4228880f5c1a896",
+      "forced_entitled_fraction": [
+        0.5865415368331379,
+        0.5814716791105505,
+        0.593142653965808
+      ]
+    },
+    {
+      "fibre_relative_cost": 1.0,
+      "method": "adaptive_betweenness",
+      "case_id": "b2e5bc8830a7beac",
+      "forced_entitled_fraction": [
+        0.8982438973176634,
+        0.8922223722869437,
+        0.9046147198583547
+      ]
+    },
+    {
+      "fibre_relative_cost": 1.0,
+      "method": "weighted_cut",
+      "case_id": "e3f16e94be75245a",
+      "forced_entitled_fraction": [
+        0.8984956427790185,
+        0.8923132187635008,
+        0.9050651888235719
+      ]
+    },
+    {
+      "fibre_relative_cost": 10.0,
+      "method": "static_betweenness",
+      "case_id": "56b0250b1e083cc7",
+      "forced_entitled_fraction": [
+        0.5865415368331379,
+        0.5814716791105505,
+        0.593142653965808
+      ]
+    },
+    {
+      "fibre_relative_cost": 10.0,
+      "method": "adaptive_betweenness",
+      "case_id": "553e8a6d2e941f3c",
+      "forced_entitled_fraction": [
+        0.10133051925823988,
+        0.08720669623002719,
+        0.11516892518775822
+      ]
+    },
+    {
+      "fibre_relative_cost": 10.0,
+      "method": "weighted_cut",
+      "case_id": "2c82ebb190a73bb6",
+      "forced_entitled_fraction": [
+        0.8984956427790185,
+        0.8923132187635008,
+        0.9050651888235719
+      ]
+    },
+    {
+      "fibre_relative_cost": 100.0,
+      "method": "static_betweenness",
+      "case_id": "521f1c3e4fe7fc42",
+      "forced_entitled_fraction": [
+        0.5865415368331379,
+        0.5814716791105505,
+        0.593142653965808
+      ]
+    },
+    {
+      "fibre_relative_cost": 100.0,
+      "method": "adaptive_betweenness",
+      "case_id": "6242946ce25a3375",
+      "forced_entitled_fraction": [
+        0.10133051925823988,
+        0.08720669623002719,
+        0.11516892518775822
+      ]
+    },
+    {
+      "fibre_relative_cost": 100.0,
+      "method": "weighted_cut",
+      "case_id": "a262253b90f9cf55",
+      "forced_entitled_fraction": [
+        0.8984956427790185,
+        0.8923132187635008,
+        0.9050651888235719
+      ]
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+# Reviewer compliance for WiCOMM 2026 paper 167
+
+The revision addresses the nine main concerns, eight separately tracked minor comments, and four explicit questions in the official attachment. It replaces the original universal cut/depth claims with finite-horizon evidence, corrects the formation to eight nodes, and preserves a substantive held-out policy-learning evaluation.
+
+Throughout this response, service means timely key supply or modeled session admission. The simulator does not execute payload encryption, packet delivery, or a KEM. G2 classifies information-theoretic key delivery with computational payload encryption. The main case retains valid stored keys and begins with 2% of spendable capacity; the purge alternative removes working stock while preserving the protected reserve. The 0.35-second fallback setup delay, class priorities, outage processes and attack weights are declared assumptions.
+
+Let $A$ be timely service per arrival, $Q$ floor-compliant service per arrival, and $L=A-Q$ below-floor service per arrival. $F$ counts G1/G2-entitled arrivals served at G3/G4, divided by all entitled arrivals; $F_B$ weights that same entitled population by associated payload bits. These volume measures are not observed compromise. Percentages below are means of seedwise proportions; differences are percentage points (pp), except the unitless utility $J=A-0.75L$. Brackets give marginal 95% percentile bootstrap intervals with 20,000 resamples. Appendix A identifies each experiment's seed count and verification record. No comparison pools duplicate configuration aliases as independent samples.
+
+Page references below identify the authoritative five-page manuscript PDF exported from the final Word file, Paper167_Manuscript.pdf. Section, figure and table identifiers refer to that version. Code and data paths identify the accompanying reproducibility evidence.
+
+## R1-01: Generality beyond the original topology
+
+Revised manuscript: Sections III-D (p. 2), IV-B (p. 3) and V-A–B (pp. 3–4); Figs. 1–2 (pp. 3–4).
+
+We replaced the single-formation headline with five graph families: the eight-node/nine-link formation, an eight-node ring, a $3\times3$ grid, and three/four parallel three-hop paths. A formation leaf has a one-edge individual cut; its weighted all-terminal cut has cost two. The other terminal cuts have sizes two, two, three and four. Appendix B reports the completed 360-run main comparison.
+
+Finite inventory changes the interpretation. The cut inequality bounds cumulative compliant debit by initial usable stock plus generation; it is necessary, not an achievable pooled service count. The deterministic three-branch fixture with 1,900 bits per edge and a 750-bit debit serves six requests although its pooled bound permits seven. The stock sweep varies initial usable fill at fixed 50 Mibit capacity, rather than sweeping capacity. It gives formation $F=89.850$ [89.231,90.507]% at 2% starting stock, 65.414 [63.865,67.059]% at 10%, and zero at full stock during the specified 24-hour cut. Additional paths change inventory and route choices as well as cut size, so the figures do not isolate cardinality alone.
+
+Evidence: [main summary](../../results/revision/analysis/main_summary.csv), [sensitivity summary](../../results/revision/analysis/sensitivity_summary.csv), and [deterministic theory checks](../../results/revision/theory_checks.json).
+
+## R1-02: Comparable meanings of service and assurance
+
+Revised manuscript: Abstract (p. 1), Section III-C (p. 2), Section V-A (p. 3), Table I (p. 3) and Fig. 1 (p. 3).
+
+The abstract and primary figure now report $A$ and $Q$ together. Qualified service, below-floor service and blocking partition all arrivals. ITS-key service, below-ITS service and blocking separately partition all entitled arrivals; LOG is not counted as an ITS entitlement by default. Undefined conditional metrics remain undefined.
+
+In the main formation full-cut comparison, fallback increases $A$ by 90.825 [89.987,91.704] pp but changes $Q$ by -0.094 [-0.114,-0.073] pp. Its below-floor fraction is 90.920% of all arrivals, whereas $F$ is 90.078% of entitled arrivals. The revised abstract therefore does not equate computational fallback with preserving the requested assurance. The scalar preference weight is explicit, and the learning comparison also reports class and payload outcomes rather than replacing them with $J$.
+
+Evidence: [paired main comparisons](../../results/revision/analysis/main_paired_comparisons.csv) and [metric definitions](../../revision/metrics.py).
+
+## R1-03: What the earlier validation checks establish
+
+Revised manuscript: Section IV-B (p. 3), Section VI (pp. 4–5), and this response's Appendix C.
+
+We withdraw “two independent successful reproductions.” V1 is stock/rate arithmetic; V4 is a broad capacity plausibility check. V2 and V3 are the two mismatches in the earlier four-check table. Appendix C preserves their historical numbers and reclassifies them without presenting the original source interpretations as newly verified measurements.
+
+V2 depends on an inferred global-key size and relay interpretation. V3 compares application-tunnel consumption with a per-hop relay charge. Neither uniquely identifies the authentication-message count. The current source register distinguishes retrieved primary evidence, simulator-parameter provenance, and historical details that could not be independently reverified. New conservation/deadline tests verify implementation; they do not validate network policy outcomes against hardware.
+
+Evidence: [literature/source register](literature_verified.md), [historical calculation record](../../results/e8_published_validation.csv), [original-baseline audit](audit_original_baseline.json), and [research verification gate](../../results/revision/verification/research_gate.json).
+
+## R1-04: Authentication accounting in the main comparison
+
+Revised manuscript: Section III-B (p. 2), Section IV-B (p. 3) and Section V-B (p. 4).
+
+All revised main and learning runs explicitly use $n_{\mathrm{auth}}=7$. The completed sensitivity uses 2, 7 and 40 as representative overhead settings. Seven is a conservative scenario relative to two, not a universally calibrated count. The per-hop G2 debits are respectively 750, 1,385 and 5,576 bits.
+
+For the eight-seed formation full-cut sweep, fallback $Q$ is 8.775 [7.754,9.522]%, 6.874 [6.166,7.473]%, and 3.214 [2.744,3.631]% at those three counts. $F$ is 87.940 [87.200,88.801]%, 89.850 [89.231,90.507]%, and 93.490 [93.170,93.841]%. Without attack, the forty-message scenario already has $F=3.700$ [3.417,3.879]%. We therefore withdraw the claim that accounting cancels as a common additive term or cannot change affordability.
+
+Evidence: [sensitivity summary](../../results/revision/analysis/sensitivity_summary.csv), [source register L14–L15](literature_verified.md), and the explicit [Case defaults](../../revision/scenarios.py).
+
+## R1-05: Heterogeneous attack cost
+
+Revised manuscript: Section IV-B (p. 3) and Section V-C (p. 4).
+
+The revised budget is the sum of relative weights on simultaneously suppressed links: free-space weight one, fiber weights one, ten or one hundred. Fiber is unavailable to a budget-two selector when its weight exceeds two. This is budget-conditioned exclusion, not a physical claim that fiber cannot be attacked.
+
+The weighted source/super-sink solution is exact for all-terminal structural isolation. Partial ranked selections and finite-horizon forcing are not optimality claims. In the formation budget-two sensitivity, static betweenness gives $F=58.654$ [58.147,59.314]% at each tested fiber ratio, whereas the offline reachable-target ranking changes from 89.824 [89.222,90.462]% at ratio one to 10.133 [8.721,11.517]% at ratios ten/hundred. The weighted-cut result is 89.850 [89.231,90.507]% in these cells. Thus method and assumed costs must both be specified.
+
+The separate online study also reports realized relative-cost link-hours, distinct links touched and target changes; concurrent capacity and cumulative exposure are not interchangeable. Equipment, sensing and retargeting costs remain unmodeled.
+
+Evidence: [sensitivity records](../../results/revision/analysis/sensitivity_summary.csv), [online report](ONLINE_ATTACK_RESULTS.md), and [persistence report](ONLINE_PERSISTENCE_RESULTS.md).
+
+## R1-06: Correlated disruption and attribution
+
+Revised manuscript: Section III-C (p. 2), Section IV-B (p. 3) and Section V-B (p. 4).
+
+We added a common generation-outage process across free-space links and retained independent all-link transport failures. Attack/no-attack pairs share exogenous arrivals and environment within each condition. Signed differences are retained; a positive-budget outcome is not automatically attributed entirely to the attack.
+
+Under severe 900/600-second generation up/down assumptions, formation baseline $F$ is 1.748 [0.813,2.738]% with independent generation failures and 2.958 [1.572,4.389]% with correlated failures. The full-cut $F$ is 89.850 [89.231,90.507]% in both cases, but paired excess loss is respectively 88.101 [86.814,89.351] and 86.892 [85.566,88.210] pp. Correlated natural disruption therefore changes attribution even when the attacked endpoint looks similar.
+
+Evidence: [signed sensitivity comparisons](../../results/revision/analysis/sensitivity_paired_comparisons.csv), [pairing verification](../../results/revision/verification/main_attack_pairing.json), and [scenario implementation](../../revision/scenarios.py). These are illustrative dependence assumptions, not measured terrain or weather.
+
+## R1-07: Session counts, payload exposure and class importance
+
+Revised manuscript: Section III-C (p. 2), Section V-D (p. 4), Table I (p. 3) and Fig. 3 (p. 4).
+
+The artifact reports per-class service, requested-payload fractions and declared C2/ISR/LOG importance vectors $(1,1,1)$, $(5,2,1)$ and $(10,3,1)$. Offered traffic remains in the denominator when blocked. In the main formation full-cut case, $F=90.078$ [89.200,90.970]% of entitled requests, while $F_B=90.278$ [89.668,90.935]% of their associated payload. Below-floor request loss under the three importance settings is 90.920 [90.092,91.787]%, 90.328 [89.449,91.237]%, and 90.214 [89.323,91.131]%.
+
+The learned result makes the distinction consequential: multi-condition training improves mean $J$ slightly while increasing $F_B$ by 1.706 [1.552,1.854] pp and reducing ISR $Q$ by 2.770 [2.588,2.966] pp relative to budget-greedy. Count-based permission caps therefore do not imply a payload-exposure cap or a uniformly preferable allocation.
+
+Evidence: [importance sensitivity](../../results/revision/analysis/main_importance_sensitivity.csv), [main summary](../../results/revision/analysis/main_summary.csv), and [held-out paired differences](../../results/revision/learning_analysis/paired_differences.csv).
+
+## R1-08: Reduced and overloaded ISR demand
+
+Revised manuscript: Section III-B (p. 2), Section IV-A–B (pp. 2–3), Section V-B (p. 4) and Table I (p. 3).
+
+We retain the original ISR arrival rate only as an overload stress case and evaluate factors 0.03, 0.1 and 1.0 of 0.02 requests/s. The main factor 0.1 gives a floor-compliant mean debit of 397.218 bits/s per common cut crossing, compared with 480 bits/s for two nominal 240-bit/s branches. This is a dimensional capacity check; finite stores, routes and deadlines still matter.
+
+The completed twelve-seed main no-attack formation gives ISR G1 service of 96.997 [96.135,97.876]% under fail closed. In the eight-seed overload sensitivity, no-attack ISR $Q$ falls to 12.604 [12.450,12.759]% under fail closed and 11.788 [11.629,11.947]% under fallback, despite fallback ISR $A=97.257$ [97.048,97.454]%. The main class is therefore substantially serviceable in the tested window; the original load is not representative of that regime.
+
+The SP/KAR sensitivity retains route-dependent outcomes: under reduced load without attack, fallback $Q$ is 97.406 [97.201,97.595]% for SP and 97.527 [97.326,97.710]% for KAR. We report implemented routing behavior, not a reproduction of a named published algorithm. Saved main accounting contains per-link initial/final stock and aggregate production/consumption; it does not provide full per-link flow traces or a queue-stability proof.
+
+Evidence: [main per-class summary](../../results/revision/analysis/main_summary.csv) and [load/routing sensitivity](../../results/revision/analysis/sensitivity_summary.csv).
+
+## R1-09: Scope and evidence for the policy search
+
+Revised manuscript: Section IV-A (pp. 2–3), Section V-D (p. 4), Section VI (pp. 4–5) and Fig. 3 (p. 4).
+
+The fixed-policy crossing is algebra: $\Delta J=\Delta A-\lambda\Delta L$, so $\lambda^\ast=\Delta A/\Delta L$ when $\Delta L\ne0$. Search produces policies and outcomes; it is not needed to derive that crossing. We withdraw the old 104.8%-of-best-search claim as evidence of global optimality or the uselessness of learning.
+
+The completed study searches 18-state/five-action tables by categorical cross-entropy, with ten tables, four generations, two optimizer restarts and six training rollouts per candidate. Training seeds 1000–1005, validation 2000–2003 and final test 5000–5011 are disjoint. Each regime's restart is selected on three conditions times four validation seeds; tables, code/runtime identity and the seven-condition final plan are frozen before test. The monitor permits zero C2 exceptions and at most floor(0.1 times class arrivals) ISR/LOG committed exceptions at every prefix.
+
+Across the fixed seven-condition benchmark, multi-condition training has $\Delta J=0.001066$ [0.000191,0.002032] versus budget-greedy. The six-hour nominal and 24-hour nominal regimes instead have -0.004678 [-0.005774,-0.003459] and -0.003607 [-0.003955,-0.003394]; full nominal selects strict-floor behavior. The multi-condition gain accompanies the payload/ISR trade-off in R1-07. Every audited cap holds.
+
+There were 1,440 requested training rollouts, 1,110 unique executions; 72 validation requests, 60 unique; and 420 final-test executions. Conditions receive equal weight within seed before bootstrapping twelve seed averages. Intervals condition on selected tables; robust training optimizes a mean, not a worst case. The horizon protocols also change simulated exposure and state coverage, so they do not uniquely identify depletion as a cause.
+
+Evidence: [registered protocol](learning_protocol.md), [completed learning report](LEARNING_RESULTS.md), and [integrity/statistical analysis](../../results/revision/learning_analysis/analysis.json).
+
+## R1-m01: Interpretation of the steeper response curve
+
+Revised manuscript: Section III-A, Eq. (2) (p. 2), and Section V-B (p. 4).
+
+The exponent 3.4 is now an illustrative response sensitivity, not a statistically calibrated cross-modality model or confidence bound. At three attacked paths, QBER increment 0.04 and engineering abort 0.075, the six-seed $F$ is zero for exponent one but 83.469 [82.670,84.343]% for exponent 3.4. Thus substantial loss can occur before engineering abort under the steeper assumed rate response.
+
+Evidence: [threshold summary](../../results/revision/analysis/threshold_summary.csv) and [rate implementation](../../qkdsim/physics.py).
+
+## R1-m02: Meaning of an exact zero interval
+
+Revised manuscript: Section IV-B (p. 3), Section V-C (p. 4) and Section V-E (p. 4).
+
+Exact paired equality is described as a consequence of a modeled identity when applicable. In the separate fallback experiment, toggling the online establishment flag has no effect on ideal pre-positioned service by construction. Under a transport cut, both fallback variants have identical service, including the same small post-release deadline-drain cohort. Neither equality establishes physical certainty.
+
+The persistence experiment provides another transparent identity: with two persistent slots, the selected targets become a fixed two-path cover, spend 48 link-hours and match the fixed cut. Its zero difference is not evidence of universal adaptive superiority.
+
+Evidence: [fallback paired comparisons](../../results/revision/fallback/analysis/paired_comparisons.csv) and [persistence analysis](../../results/revision/online_persistence/analysis.json).
+
+## R1-m03a: Confidence intervals in numerical tables
+
+Revised manuscript: Section IV-B (p. 3), Table I (p. 3), and Figs. 1–3 (pp. 3–4).
+
+The main class table, revised figures and this response report seed-bootstrap intervals. Main comparisons use twelve seeds, sensitivity/fallback eight, and threshold/online studies six. The learning aggregate resamples twelve seedwise averages over its seven fixed conditions, not 84 supposedly independent cells. The 20,000-resample intervals are marginal; multiple exploratory contrasts are not advertised as multiplicity-adjusted significance tests.
+
+Evidence: the verification records in Appendix A and complete summary/paired CSVs.
+
+## R1-m03b: Per-class outcomes and the earlier SD bound
+
+Revised manuscript: Table I (p. 3), Section V-D (p. 4), and the complete per-class artifact tables.
+
+The class table now shows fail-closed $Q$, fallback $A$ and fallback $Q$ for C2, ISR and LOG, each with intervals. Full CSVs retain counts, class outcomes and sample standard deviations computed across seeds with denominator $n-1$. The unexplained blanket claim SD at most 0.012 is removed rather than extended to unrelated metrics or conditions. The learning section explicitly reports its adverse ISR outcome.
+
+Evidence: [main summary with metric-specific SD](../../results/revision/analysis/main_summary.csv), [raw main metrics](../../results/revision/analysis/main_raw_metrics.csv), and [learning per-class outcomes](../../results/revision/learning_analysis/per_class.csv).
+
+## R1-m04: Self-favoring comparison table
+
+Revised manuscript: Section II (p. 1).
+
+The all-checkmark comparison is removed. Related Work credits graded delivery, buffering, depletion analysis, weighted service and runtime filtering, including Opportunistic QKD, QuIKS and Zhu. The contribution is the specific completed attack/entitlement/control evaluation, not invention of those ingredients.
+
+Evidence: [verified source register and method comparison](literature_verified.md).
+
+## R1-m05: Crowded architecture panel
+
+Revised manuscript: Section III-A (pp. 1–2), Section V-E (p. 4), and replacement result Figs. 1–3 (pp. 3–4).
+
+The crowded original architecture/control-loop panel is removed. “Stored key and failure surfaces” now separates generation suppression, transport disconnection and online key-establishment failure, including retained versus purged working stock. The new result figures present service, reserve and learning comparisons instead of reusing the crowded panel.
+
+Evidence: [scenario tests](../../tests/test_revision_scenarios.py), [fallback tests](../../tests/test_revision_fallback.py), and [research gate](../../results/revision/verification/research_gate.json).
+
+## R1-m06: Concision and space for evidence
+
+Revised manuscript: Sections I–VII and references, within the five-page revised manuscript.
+
+Repeated novelty and validation disclaimers are consolidated into the model and Discussion. The main paper now prioritizes joint service/assurance, topology/load/stock evidence and the substantive learned-allocation trade-off. Full tables, source provenance and policy search histories remain in the supporting artifact. The revised manuscript contains five pages, including references.
+
+## R1-m07: Publication status of Spooren and coauthors
+
+Revised manuscript: Section I (p. 1) and reference [3] (p. 5).
+
+The reference is confirmed as a QCNC 2026 publication by publisher-deposited metadata: P. Spooren, A. Neuhold, S. Ramacher and T. Huehn, “PQC-Enhanced QKD Networks: A Layered Approach,” DOI 10.1109/QCNC69040.2026.00060. Its accessible author manuscript is arXiv:2604.05599. The cited behavior includes finite refresh/grace timers and a simulated malfunction; it is not characterized as instantaneous failure or absence of prior evaluation.
+
+Evidence: source-register L01 in [literature_verified.md](literature_verified.md), which distinguishes metadata verification from author-manuscript reading.
+
+## R1-Q1: Does the fail-mode gap persist at reduced ISR load?
+
+Revised manuscript: Section III-B (p. 2), Section V-A–B (pp. 3–4), Table I (p. 3), and the matched load table in this response.
+
+Yes, for the specified low-stock, full-generation-cut scenario; its size is load-dependent. The table gives the common eight-seed formation sensitivity with all other parameters fixed. The original arrival rate is the last row.
+
+| ISR arrival factor | Closed $A$ % | Fallback $A$ % | Fallback $Q$ % | Paired fallback-minus-closed $A$, pp |
+|---|---|---|---|---|
+| 0.03 | 12.112 [10.903,13.548] | 97.529 [97.260,97.785] | 12.056 [10.847,13.495] | 85.418 [83.841,86.712] |
+| 0.1 | 6.966 [6.240,7.587] | 97.527 [97.332,97.705] | 6.874 [6.166,7.473] | 90.561 [90.041,91.104] |
+| 1.0 | 2.753 [2.430,2.926] | 97.475 [97.316,97.622] | 2.271 [2.002,2.438] | 94.721 [94.471,95.032] |
+
+Reduced load narrows the service gap in this sweep but does not eliminate it at 2% starting stock. Full starting stock eliminates observed forced loss over this horizon, as R1-01 reports. The no-attack reduced-load ISR result in R1-08 verifies that the main workload is substantially serviceable before attack. These are new matched comparisons, not a direct substitution for the old headline with different attack targets and reporting windows.
+
+Evidence: [sensitivity summary](../../results/revision/analysis/sensitivity_summary.csv) and [paired comparisons](../../results/revision/analysis/sensitivity_paired_comparisons.csv). 
+
+## R1-Q2: Does capability/budget non-substitution hold above cut size two?
+
+Revised manuscript: Section III-A, Eq. (2) (p. 2), Section III-D (p. 2), and Section V-B (p. 4).
+
+Only as a conditional observation of the tested rate response, not a general law. With environmental outages disabled, exponent one and two-percent initial stock, a one-link budget yields zero $F$ on both three- and four-path graphs at increments 0.03, 0.045 and 0.05. At the full cut, increment 0.03 still yields zero $F$; increments 0.045 and 0.05 yield 90.165 [89.466,90.879]% for three paths and 87.470 [86.400,88.715]% for four. Adding one further attacked link leaves these particular outcomes unchanged.
+
+The abort at increment 0.045 follows nominal QBER 0.03 plus engineering cutoff 0.075. It is not an empirical discovery. With cutoff 0.11, exponent one and increment 0.06, the three-path $F$ is 40.897 [40.114,41.775]%; increment 0.07 reaches the entropy-response zero even below that engineering cutoff and restores the zero-generation outcome. The exponent-3.4 result in R1-m01 further shows substantial pre-abort loss. Together with stock/duration dependence, this rules out a universal minimum-cut or capability/budget equality.
+
+Evidence: [408-run verification](../../results/revision/analysis/threshold_verification.json) and [complete threshold summary](../../results/revision/analysis/threshold_summary.csv).
+
+## R1-Q3: Does retargeting preserve the apparent linear depth cost?
+
+Revised manuscript: Section V-C (p. 4) and Section VI (pp. 4–5).
+
+We withdraw the general linear-depth claim. The original static chain result depends on ranking and tie conventions: historical ties give $d+1$ structural removals, canonical edge names give $d+2$, and an offline reachable-target ranking needs two at depths two through six. These are structural checks, not finite-time forcing costs.
+
+We then ran 126 online-study simulations at depths 2, 4 and 6, concurrent budgets one/two, and six seeds. The route-feedback selector updates every 60 seconds using recently committed positive-key routes and current transport reachability; it has no inventory contents or future information. Its release-on-unusable rule gives two-slot excess $F$ of 73.27 [71.03,75.08]%, 52.82 [50.98,54.67]% and 35.90 [33.22,38.84]% across those depths. However, realized exposure falls from 43.89 to 38.95 link-hours, while the fixed cut spends 48. Releasing targets during transport outages can allow subsequent replenishment. Equal slot caps therefore did not mean equal persistence/exposure.
+
+A separate post-hoc mechanism test uses disjoint seeds 3100–3105 and another 126 runs. It keeps route scoring/update rules but fills unused slots from prior targets. With two slots, persistent targeting becomes a fixed two-path cover, spends exactly 48 link-hours and matches the fixed-cut outcomes; paired differences are zero. Persistent-minus-release $F$ increases by 20.66 [18.37,22.91], 37.42 [33.82,41.51] and 54.19 [49.72,58.08] pp at depths 2, 4 and 6. One-slot persistence has mixed relative performance. The result identifies a release/exposure mechanism, not universal adaptive superiority or optimal physical attack cost.
+
+Evidence: [structural checks](theory_checks.md), [online report with target/cost logs](ONLINE_ATTACK_RESULTS.md), and [disjoint-seed persistence confirmation](ONLINE_PERSISTENCE_RESULTS.md).
+
+## R1-Q4: Would pre-positioned symmetric keys change classical dependence?
+
+Revised manuscript: Section III-A (pp. 1–2) and Section V-E (p. 4).
+
+They change establishment dependence while valid shared material remains usable, but cannot bypass an unavailable transport path. The separate 48-run study introduces online-establishment-only denial, preserving the data path and the main simulator's frozen semantics.
+
+Under a formation generation cut with establishment unavailable, online KEM service is 5.035 [4.468,5.598]%, versus 97.545 [97.350,97.724]% for ideal pre-positioned keys: a paired increase of 92.510 [91.907,93.075] pp. $Q$ improves by only 1.903 [1.153,2.622] pp. Online-control denial has zero $F$ but blocks 92.046 [91.171,92.919]% of entitled arrivals; pre-positioned fallback instead blocks 3.274 [3.011,3.562]% and serves 89.872 [89.255,90.528]% below ITS entitlement. The decomposition prevents refusal from appearing to preserve service.
+
+Under the transport cut, both variants give 0.064 [0.042,0.085]% service and an exact zero difference. This residual cohort completes after the attack releases at the arrival horizon; neither serves through the active cut. Pre-positioned stock is idealized as sufficient and unexpired. Finite lifetime, expiry, refresh and authentication costs remain unmodeled, so no lifetime or deployment-security result is claimed.
+
+Evidence: [completed fallback report](FALLBACK_RESULTS.md) and [48-run verification](../../results/revision/fallback/analysis/verification.json).
+
+## Appendix A: Evidence ledger and completion scope
+
+| Evidence set | Recorded scope | Verification/source |
+|---|---|---|
+| Main grid | 360 case/seed rows, five graphs, twelve seeds | [main_verification.json](../../results/revision/analysis/main_verification.json) |
+| Sensitivity | 1,264 recorded rows; 144 canonical cases × eight seeds = 1,152 analyzed rows; 112 duplicate aliases verified | [sensitivity_verification.json](../../results/revision/analysis/sensitivity_verification.json) |
+| Threshold | 408 case/seed rows, six seeds per stored case | [threshold_verification.json](../../results/revision/analysis/threshold_verification.json) |
+| Fallback establishment/transport | 48 runs, six conditions, eight seeds | [fallback verification](../../results/revision/fallback/analysis/verification.json) |
+| Learning | 1,110 unique train, 60 unique validation, 420 test rollouts | [learning analysis](../../results/revision/learning_analysis/analysis.json) |
+| Online targeting | 126 runs including 18 shared no-attack controls | [online analysis](../../results/revision/online_adversary/analysis.json) |
+| Persistence confirmation | 126 runs, separate seeds 3100–3105 | [persistence analysis](../../results/revision/online_persistence/analysis.json) |
+| Deterministic resources/rankings | Seven reservoir cases and 24 structural cases | [theory_checks.json](../../results/revision/theory_checks.json) |
+| Software verification | 127 regression tests and the legacy 43-check gate pass | [research_gate.json](../../results/revision/verification/research_gate.json) |
+
+These row counts are not a count of independent hardware trials or independent draws across every study. Integer/float serializations created 112 duplicate recorded sensitivity rows. Reporting verifies equivalent summaries, hourly outcomes, topology, accounting and arrival traces, then selects one deterministic case ID per condition; the canonical analysis has 144 cases and eight independent seeds per case. Original records are preserved. Shared controls and cached runs are explicit. The main/sensitivity/threshold scientific source hash is 97bf3205917c27c2c03b6fde5bdb0932e5370a79773c413ed754213a38d68598; the separate studies carry their own fingerprints.
+
+All scientific simulation batches listed above are complete. External field validation, a universally calibrated authentication count, finite pre-positioned-key lifetime, physical attacker expenditure and deployment security remain outside the achieved evidence. No external certification is inferred from these simulation and software checks.
+
+## Appendix B: Main full-cut comparison
+
+All entries are percentages with twelve-seed intervals, using retained keys, 24-hour arrivals, two-percent initial spendable stock, ISR factor 0.1 and $n_{\mathrm{auth}}=7$. This differs from the eight-seed sensitivity subsets quoted above.
+
+| Graph / weighted all-terminal cut | Closed $A=Q$ | Fallback $A$ | Fallback $Q$ | Fallback $F$ |
+|---|---|---|---|---|
+| Formation / 2 | 6.705 [5.808,7.578] | 97.530 [97.396,97.654] | 6.610 [5.727,7.471] | 90.078 [89.200,90.970] |
+| Ring / 2 | 6.584 [5.694,7.456] | 99.150 [98.963,99.312] | 6.626 [5.725,7.509] | 92.037 [91.081,93.018] |
+| Grid / 2 | 6.452 [5.540,7.424] | 99.635 [99.492,99.757] | 6.488 [5.611,7.301] | 92.883 [92.075,93.763] |
+| Three paths / 3 | 9.587 [8.536,10.503] | 99.967 [99.942,99.988] | 9.623 [8.595,10.505] | 90.185 [89.322,91.222] |
+| Four paths / 4 | 12.344 [11.438,13.237] | 99.989 [99.974,100.000] | 12.258 [11.356,13.148] | 87.587 [86.725,88.479] |
+
+## Appendix C: Reclassification of historical checks
+
+The figures below reproduce the earlier calculation record for auditability, not a new verification of the attributed field measurements. The previous “PASS” labels are not retained as evidence of independent controller validation.
+
+| Historical check | Earlier calculation/comparison | Revised interpretation |
+|---|---|---|
+| V1 | 3.5 MiB divided by 8,192 bit/s gives 3,584 s | Internal stock/rate arithmetic and a reservoir implementation check. |
+| V2 | 1,475 attributed bits per inferred 400-bit global key versus modeled 894 bits; reported ratio 1.65 | Mismatch sensitive to inferred key size, byte convention and relay accounting; not a unique calibration of message count. |
+| V3 | Attributed tunnel authentication share 91.2% versus modeled relay share 65.9% | Mismatch between different protocol scopes; a tunnel aggregate does not directly determine per-hop tags. |
+| V4 | Attributed 11 simultaneous pairs lies within an arithmetic range 1.2–12.6 | Coarse capacity plausibility, not reproduction of a routed deployment or its policy outcomes. |
+
+The final manuscript removes the old success-count and blanket calibration claims. The source register ([literature_verified.md](literature_verified.md)) identifies unavailable primary revalidation and the rejected misidentified Peev download, which is not used as supporting evidence.

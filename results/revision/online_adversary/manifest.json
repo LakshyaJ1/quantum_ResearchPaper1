@@ -1,0 +1,736 @@
+{
+  "schema_version": 1,
+  "files": {
+    "qkdsim/__init__.py": "858694635b679774ddf36c058271a47ffc1b0914fbfbe264857ccc2395526bb5",
+    "qkdsim/config.py": "51d7fbbed721a4fed39fa95afa014d5be9ba982fe2bdde1e2ab6917e7f694ab6",
+    "qkdsim/network.py": "4d1171d2e2214c13acdfa707c255940494b6b7302e1612504d551acf7913ab3a",
+    "qkdsim/physics.py": "bbf2b83347c5c3b5dd43b86f0c0a10f03bdb94931fb92026f1cc5e4fe90c1d7d",
+    "qkdsim/rl.py": "cf510c304304ae54600b412ccb14f1b4d83150fd80f27105cf1ec791af658ffe",
+    "qkdsim/sim.py": "922471034e6164c588127a9db8ea085ac3939779ee2eab7c94a9ccd9af18af49",
+    "revision/scenarios.py": "0087884a479b1314dd0b258930a06ab6538afb5acc1eda04cce1a1ca60e274ec",
+    "revision/metrics.py": "1deb62f2e8fc9bfcbe87d1f0a9f7e899a52c38f27a6db00688014636781fad44",
+    "experiments/revision_online_adversary.py": "1a2ef5c91d870a0d829d4d7829625d1a76aba73efa241790f6ca14076743d133"
+  },
+  "runtime": {
+    "python": "3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "networkx": "3.4.2",
+    "os_name": "nt",
+    "windows": [
+      10,
+      0,
+      22631,
+      2,
+      ""
+    ]
+  },
+  "source_hash": "f007330e9cf450df6ce9ea2bd9b0a5bc09992f49f144c015e2908fc8042fb388",
+  "protocol": {
+    "depths": [
+      2,
+      4,
+      6
+    ],
+    "methods": [
+      "static_betweenness",
+      "weighted_cut",
+      "online_route_feedback"
+    ],
+    "simultaneous_budgets": [
+      1,
+      2
+    ],
+    "seed_ids": [
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3005
+    ],
+    "case_defaults": {
+      "topology": "formation",
+      "horizon_s": 86400,
+      "warmup_s": 0,
+      "isr_scale": 0.1,
+      "rate_scale": 1.0,
+      "initial_spendable_fraction": 0.02,
+      "reservoir_scale": 1.0,
+      "n_auth": 7,
+      "attack_budget": 0.0,
+      "attack_method": "weighted_cut",
+      "attack_surface": "generation",
+      "attack_start_s": 0.0,
+      "attack_duration_s": 86400.0,
+      "delta_e": 0.05,
+      "e_abort": 0.075,
+      "gamma": 1.0,
+      "fibre_attack_cost": 10.0,
+      "outage_model": "independent",
+      "mean_uptime_s": 3600.0,
+      "mean_outage_s": 120.0,
+      "transport_uptime_s": 3600.0,
+      "transport_outage_s": 120.0,
+      "routing": "KAR",
+      "fail_mode": "FAIL_DEGRADED",
+      "fallback": "online_kem",
+      "buffer_policy": "retain"
+    },
+    "update_period_s": 60,
+    "unobserved_path_weight": 0.01,
+    "tie_rule": "canonical undirected edge lexicographic order",
+    "requested_runs": 126,
+    "attacked_runs": 108,
+    "shared_control_runs": 18,
+    "thresholds": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "excess_thresholds": [
+      0.5
+    ],
+    "FAL_denominator": "all G1/G2-entitled arrivals, including blocked requests",
+    "retarget_overhead_modelled": false,
+    "zero_budget_control_included": true,
+    "environment_digest_interval": "fixed arrival horizon, excluding deadline drain"
+  },
+  "protocol_sha256": "ec48453b977689d581a9016cd7dfbeaad2f6777176aa46e7f1d7de791a748531",
+  "started_utc": "2026-09-26T00:26:58.460780+00:00",
+  "workers": 1,
+  "completed_utc": "2026-09-26T00:43:45.222227+00:00",
+  "wall_s": 1006.7563344000009,
+  "completed_runs": 126,
+  "runs": [
+    {
+      "cached": false,
+      "key": "ff04e85373eebf13a3fed57bc2f9105d915d309c630739250979ba446bd32d10",
+      "wall_s": 4.982920400001603
+    },
+    {
+      "cached": false,
+      "key": "b66693617acb37b2b8014e98b333bdb84ee3b0a3467da6bf8d8b5673aeba044f",
+      "wall_s": 5.310767800001486
+    },
+    {
+      "cached": false,
+      "key": "91994c06ffdedb3d967abb34a65f8416e48590e3fdbbfb4d5bad547ec72e72f4",
+      "wall_s": 5.173080599997775
+    },
+    {
+      "cached": false,
+      "key": "302c5f4cb318692799478d2bb0b9f39e13d318edd4ba14ce7bed7274272e391f",
+      "wall_s": 5.053221300000587
+    },
+    {
+      "cached": false,
+      "key": "27330b45cfafe06bfa0fcfef959bca190bcfb78dcee081a57d61b82929a9af9a",
+      "wall_s": 5.117630900000222
+    },
+    {
+      "cached": false,
+      "key": "17e186675a1e61a7ac9147d62a92c37410036cdaff8e6fbca7ec9dd638eb2436",
+      "wall_s": 5.479057199998351
+    },
+    {
+      "cached": false,
+      "key": "92589edb3c3d41165c41fd146e3c235800633279f4802a62541bb156f0b6cca1",
+      "wall_s": 4.887061299999914
+    },
+    {
+      "cached": false,
+      "key": "6af44b2eb3aa5ca8e889e29408891ec8482c4e92fb9908fa306062b8a9cdb39e",
+      "wall_s": 5.164642399999138
+    },
+    {
+      "cached": false,
+      "key": "00eab938b017aa4b7d382899717dd7598228c5afd9be72326f5320841e0a3bc2",
+      "wall_s": 5.542714799998066
+    },
+    {
+      "cached": false,
+      "key": "20cf5c75369710983f6081bd8a405f410bcec91fd8df6865fc68f22a3252bfdb",
+      "wall_s": 4.997016500001337
+    },
+    {
+      "cached": false,
+      "key": "4c5402b5467e7366b016ba9e512754cf0af0bba3c8d6ac2c7d4b82cfcf19a8a0",
+      "wall_s": 5.1046623000002
+    },
+    {
+      "cached": false,
+      "key": "6dbe99191dde442589a0e9057c5aec2ec805bc6e4cbbbae4d853dc526e3f1a2f",
+      "wall_s": 5.699594599998818
+    },
+    {
+      "cached": false,
+      "key": "34046e28bc95efb57d8080d926bd4a79cefa5564b198b99d39ea9281729ba85f",
+      "wall_s": 5.947043100000883
+    },
+    {
+      "cached": false,
+      "key": "b8fa9f89d26ef72f73bcaa40d273cab47aa008f97db3614ce7e93a4bb99b0678",
+      "wall_s": 5.255444200000056
+    },
+    {
+      "cached": false,
+      "key": "c9f46b481228675e31343f24372cc2067f4dee387c227b1aa7b05415d9fb886f",
+      "wall_s": 5.203786999998556
+    },
+    {
+      "cached": false,
+      "key": "b60f8694055cccb09afd982e3e2b03eb34b1ca5738d975b973b9e0592d83c547",
+      "wall_s": 5.205465800001548
+    },
+    {
+      "cached": false,
+      "key": "a460daf34ec2fd9b379abddcdc3be6f25b6c3d15828da07b47ccd68f91857915",
+      "wall_s": 5.253572900001018
+    },
+    {
+      "cached": false,
+      "key": "6406df5fc5a63cf3385f6fc9e6e483fc73884359474977665e3e0dab467f711a",
+      "wall_s": 4.471495399997366
+    },
+    {
+      "cached": false,
+      "key": "bca214723fadd92aa5bd8a2261c1f25df499ca7943117bdf704f6832abd31f36",
+      "wall_s": 4.392076600001019
+    },
+    {
+      "cached": false,
+      "key": "fd273ad09e384ac1188596bce98d5362b7fede744f0564e4ffb830d975afa118",
+      "wall_s": 4.318343100003403
+    },
+    {
+      "cached": false,
+      "key": "5146f49571abecd753d82f449aaf554feffb167e6cb2d589ed22261924710207",
+      "wall_s": 4.784783199997037
+    },
+    {
+      "cached": false,
+      "key": "1453c37a91c0200198c2231087242a299792573cd6b6e1b3f5cb50911f84cc0d",
+      "wall_s": 4.959743600000365
+    },
+    {
+      "cached": false,
+      "key": "ea9f56b77e555d73836f95eb40f73109654c53b445b34ebeaa24cde3b1d6e5ae",
+      "wall_s": 5.136944000001677
+    },
+    {
+      "cached": false,
+      "key": "3ddde44a56d7e5ce02a96cc53957e71101c223cf2661d70abd8a7368c561c6a9",
+      "wall_s": 4.65471289999914
+    },
+    {
+      "cached": false,
+      "key": "6c442d47468d81ce20c510ac26ee10ba06b68e85a1178d50b23dfdfb5f0afbbc",
+      "wall_s": 5.135250800001813
+    },
+    {
+      "cached": false,
+      "key": "456bf254f24a924a72c82c2854d7ae97ea9d24313798231b2c1a655afc762ae6",
+      "wall_s": 5.203879699998652
+    },
+    {
+      "cached": false,
+      "key": "075de12688ade19402a721968dd706988fab6fa5fd6edf1798d844501c99b6ef",
+      "wall_s": 5.2330511000000115
+    },
+    {
+      "cached": false,
+      "key": "8f847e3c847171cfa04e6663ff3e1acf40c4d2be704573e0c039bc80b0adabca",
+      "wall_s": 5.345895200000086
+    },
+    {
+      "cached": false,
+      "key": "d5f8dfa477c91eb5cf277c426980105f256ee689d2c5c719d43e08d6184c9dad",
+      "wall_s": 5.470456199996988
+    },
+    {
+      "cached": false,
+      "key": "5cc0d90e8ef7a5983f8bb259684ce022c1cbb521101586eee7eeaf29bf90746c",
+      "wall_s": 5.746363100002782
+    },
+    {
+      "cached": false,
+      "key": "8a06a55dc95eecf4275780da2aeff1704ba454fe99810f37bead5dccc323a4f0",
+      "wall_s": 5.59478659999877
+    },
+    {
+      "cached": false,
+      "key": "3982644ba21cb9dc1ff112e64a4292efe6a725a970bd583a3c5f05d5fe8b20a3",
+      "wall_s": 5.402709400001186
+    },
+    {
+      "cached": false,
+      "key": "3962abc319baff4c741ce5b3ef3b4faac08082a4b4f758a64fb508517b812841",
+      "wall_s": 5.302331599999889
+    },
+    {
+      "cached": false,
+      "key": "6a518d853bf892cab9d55bf05339cba31408ee3a272d223036793cd1a4f77fb3",
+      "wall_s": 5.1825158999999985
+    },
+    {
+      "cached": false,
+      "key": "d16020835ed9cdc6a8e31bb8b74fc0a610c7fd79eda299c5f0312300f9c086c7",
+      "wall_s": 4.899934099998063
+    },
+    {
+      "cached": false,
+      "key": "d69de814309e597b3226ebf224453a8466a7f372da80e5bbf0e4e809e39f8677",
+      "wall_s": 5.332342400000925
+    },
+    {
+      "cached": false,
+      "key": "49533f812b92fba72dd4db99ecfecd05cd202b20869707423b0ac5181428beaf",
+      "wall_s": 8.044293999999354
+    },
+    {
+      "cached": false,
+      "key": "8e0e6b01a2af98209cd8529f9def973d91c86f3f093daa0b85adce28866cce8f",
+      "wall_s": 7.993921400000545
+    },
+    {
+      "cached": false,
+      "key": "8823611d5fa577eb8497ce4cd73d98cb2c5982455dc14db0762c9551bcfb1550",
+      "wall_s": 7.994605500000034
+    },
+    {
+      "cached": false,
+      "key": "c20680b81225821e1bbab2df66303b155b5b97afe25d8af3b88bed95bff3ec49",
+      "wall_s": 8.156017299999803
+    },
+    {
+      "cached": false,
+      "key": "150825d8244f391f9f1857e38bef9e1d41076a77b5d2eac42325cc5d9ff55af5",
+      "wall_s": 8.0145257999975
+    },
+    {
+      "cached": false,
+      "key": "df9b794ce297549251fe6806f9e45a232f258ac5c3f5e0143560f608e4fda487",
+      "wall_s": 7.55496210000274
+    },
+    {
+      "cached": false,
+      "key": "6416b9f2d3fa2c7ba768c095261f1f962e4773dad4caa1f07479045e6cb28f14",
+      "wall_s": 7.825753999997687
+    },
+    {
+      "cached": false,
+      "key": "517294eccb4b57d970eb4c5124a286d6d672a7d205ad3857faa19d8c1c77065e",
+      "wall_s": 7.703166399998736
+    },
+    {
+      "cached": false,
+      "key": "04fdb7f2d75bba870249c78169863eeba3ccd01faac029b173149ddbd5b6096f",
+      "wall_s": 7.63709270000254
+    },
+    {
+      "cached": false,
+      "key": "c45e7ab32ed054423febe54de93c53511f38761a01e4658d32239467ffef9419",
+      "wall_s": 7.903375800000504
+    },
+    {
+      "cached": false,
+      "key": "5809c27f469bb3acde6cc35aae3d3dd81dca5340ab7276691e232d59655973e1",
+      "wall_s": 7.50281940000059
+    },
+    {
+      "cached": false,
+      "key": "6f55564a84427031af6d2352328efb9d5a8e1d79b1fdc5c155154294a9c3dc2a",
+      "wall_s": 7.949523899998894
+    },
+    {
+      "cached": false,
+      "key": "fa7f4e830fbbe1ed55d1c43f9d79f623b6bc58f0b9cf6084c7d981c4d6f30e19",
+      "wall_s": 8.700305400001525
+    },
+    {
+      "cached": false,
+      "key": "e0efccc16ca6e30cd2dc63ad3be4e796464227029a805b25cabaf562a2636be7",
+      "wall_s": 8.112901799999236
+    },
+    {
+      "cached": false,
+      "key": "2617b83f02963d89d332da2a5c0783b15d78da52d0a5459beec82e11db68cef5",
+      "wall_s": 7.900740900000528
+    },
+    {
+      "cached": false,
+      "key": "f749e4ba094fddd0753e654cde0d78c2c282fde93bbc37f42afa68b81ac68da1",
+      "wall_s": 8.391250000000582
+    },
+    {
+      "cached": false,
+      "key": "6d601c13bce65629a78f4cf9fe464964c5ea6beb7c8218bb1c53f24bcd50a35d",
+      "wall_s": 8.682008699997823
+    },
+    {
+      "cached": false,
+      "key": "53e36d68246fedaf1a3d0ac548a12d9184a8f9d75950afe948c59d5dd81ea3fb",
+      "wall_s": 8.78411369999958
+    },
+    {
+      "cached": false,
+      "key": "30213d4be4dd5099c109123890dbd944abdf449bae3475b24099cf1017bb4b6d",
+      "wall_s": 7.861402599999565
+    },
+    {
+      "cached": false,
+      "key": "03de3269540f8c8b15fae5676d5ce139df6c71632a12fd60904a6a2f8f6815d6",
+      "wall_s": 8.557780200000707
+    },
+    {
+      "cached": false,
+      "key": "a97b52d68170639fa30f87b1af41bfaebe75f08fabddf00a23034df78b8c5ab8",
+      "wall_s": 7.663665899999614
+    },
+    {
+      "cached": false,
+      "key": "18b381ccc919f713f4f025fdab33e95e5f346454d1ee5975402b9c593fc726f6",
+      "wall_s": 7.554293400000461
+    },
+    {
+      "cached": false,
+      "key": "66e92bf4a05568c2cec621cd4eda8b190aa796138830b1b17ebae8e1ee072554",
+      "wall_s": 8.11701350000294
+    },
+    {
+      "cached": false,
+      "key": "ee583450ae5a50ce65e45ff90a6414812beb96d1c3823a8470fe4f70efdc47be",
+      "wall_s": 7.594801199997164
+    },
+    {
+      "cached": false,
+      "key": "22a0e0dfaaef233e1e186fbebddad66f86643b2f0229c069fc1132bf8d72f3c5",
+      "wall_s": 8.234332299998641
+    },
+    {
+      "cached": false,
+      "key": "3df5d6e67e650c7ae3f403814d4b3234b43d499bcfc824d6db162b952b4b4625",
+      "wall_s": 8.455973399999493
+    },
+    {
+      "cached": false,
+      "key": "50d09792e45bad4e6ac85bc239a5c4bf1360570f1339bdf79d6f1c25fbbe098d",
+      "wall_s": 7.684766900001705
+    },
+    {
+      "cached": false,
+      "key": "1ebaa9c2f70e0486a32181ab7f3fe043e9ae0ce885f261e8e1a9d00b8707ddcd",
+      "wall_s": 7.622422199998255
+    },
+    {
+      "cached": false,
+      "key": "1963fff81e7f06f561d693a15210446aaf326825864295acf644421a5ec340ff",
+      "wall_s": 8.187391499999649
+    },
+    {
+      "cached": false,
+      "key": "b4a3efc50f044241fa86dbd31af14677db8832db7824f11a6cf7d0903bed2f5c",
+      "wall_s": 9.179656399999658
+    },
+    {
+      "cached": false,
+      "key": "17c97af9f5b3acdebba7bf5317c78831ca8043338b107ad570d96bcffe6dffbb",
+      "wall_s": 8.18744329999754
+    },
+    {
+      "cached": false,
+      "key": "1aec2baff698cab5016b6cce4d0019974f9261fdab3406f1e61a1746c16d1b0b",
+      "wall_s": 7.744786300001579
+    },
+    {
+      "cached": false,
+      "key": "6afb6630c00875c4dcd614516118623d03f08e1790938a5803e2ffcacb3c51bb",
+      "wall_s": 8.302872899999784
+    },
+    {
+      "cached": false,
+      "key": "25c6f2256569cf648404388526398e0f375022f0da6a3607cebc56f586c92c7a",
+      "wall_s": 7.694747000001371
+    },
+    {
+      "cached": false,
+      "key": "355593bfffc385525ae348baf7680dd90f8b8de1871bd6e80cf265f544f31937",
+      "wall_s": 7.782246700000542
+    },
+    {
+      "cached": false,
+      "key": "8db21143c6d090faf49eaef020b36ad7f9b6c46a76e4bdfa402a5941686e927d",
+      "wall_s": 8.098114600001281
+    },
+    {
+      "cached": false,
+      "key": "2c1f54ad93b5e8589e8214b96e904add75d62d8492a0951942ff3e70548d6e58",
+      "wall_s": 10.54626570000255
+    },
+    {
+      "cached": false,
+      "key": "ee5083cf5f4146cf235d6e33c088646a3895f93e922d4cc29c02a0ace3f0e50e",
+      "wall_s": 10.91775509999934
+    },
+    {
+      "cached": false,
+      "key": "3ea78356978dd5187d82101489bcb7fdf261bcb4176b1f5d92fe91aeebf7d0e8",
+      "wall_s": 10.58898279999994
+    },
+    {
+      "cached": false,
+      "key": "9fc145e4349999dfb96087cfd2577f46655165215ea5adca7e810a1c907d9ce9",
+      "wall_s": 10.861412300000666
+    },
+    {
+      "cached": false,
+      "key": "c45586b075398de2e1a7aba654090630917c41039dd7333f70f42a34d0c705ce",
+      "wall_s": 10.541143200000079
+    },
+    {
+      "cached": false,
+      "key": "0d0be92eee4bf2940ff2967c9b836611a46b8d8ed3014154bf2f35e28426e29a",
+      "wall_s": 10.489675299999362
+    },
+    {
+      "cached": false,
+      "key": "d981afde82fe566eea9154968065fe42aba8337697a6dc1c81228c3238a4a0c9",
+      "wall_s": 9.219614300000103
+    },
+    {
+      "cached": false,
+      "key": "79bc3706a294568262894ce6abe68d9510edd04158a121ed4d35bf9cfe944bff",
+      "wall_s": 10.396968000000925
+    },
+    {
+      "cached": false,
+      "key": "9673a69d96f20f74e78a0a09f0511a1fa5838f2a7fe11a47072eea2d1bd17d2c",
+      "wall_s": 10.464023599997745
+    },
+    {
+      "cached": false,
+      "key": "ffcfe2892fb495fa5355248a78892254e63ec106dc7bac7cc991ee47f92be90c",
+      "wall_s": 11.281862700001511
+    },
+    {
+      "cached": false,
+      "key": "629af340b06693d5042bdfc989b930b3ac91b1ac51f7ccedd7a6c1b64be4a337",
+      "wall_s": 10.311719100001937
+    },
+    {
+      "cached": false,
+      "key": "e23703a0daab662ba2bfca61ffd9d35de85e6fad73d519ecd784f476b2f1080b",
+      "wall_s": 10.034820000000764
+    },
+    {
+      "cached": false,
+      "key": "6bcc32eb160848c1ee16a2868b66bd8554ee14ed01f15b29d857008682f4e5a1",
+      "wall_s": 10.836108600000443
+    },
+    {
+      "cached": false,
+      "key": "561763b5bc68fc857e5342ebddc06fea8624a7d8529471f7370893876496dcfe",
+      "wall_s": 10.558700400000816
+    },
+    {
+      "cached": false,
+      "key": "c1b3e055f6a6d725db4c9145cc6f73b23125b0eff7540f1f8ecab3f869fc35ef",
+      "wall_s": 10.932864399997925
+    },
+    {
+      "cached": false,
+      "key": "efb5ecad2b93afa52a0d6c221fc4f560156b3d83931e5ee6f3c415c09d86319b",
+      "wall_s": 11.037357999997766
+    },
+    {
+      "cached": false,
+      "key": "ed623f6a7909d36368e3d571bc4a32b8e377c8ee7256ffdb4ee7a631489d6820",
+      "wall_s": 11.129376800003229
+    },
+    {
+      "cached": false,
+      "key": "49186f96938a0cbba4cbd34d5e5bb3676261e5831ae8929d540ef9299e4cda0b",
+      "wall_s": 10.642392499998095
+    },
+    {
+      "cached": false,
+      "key": "949e5e81bb5362b8b9cc6e4f57e024b594599202bc64ed0511f060fb95da1ed5",
+      "wall_s": 10.276702099999966
+    },
+    {
+      "cached": false,
+      "key": "ea602dd8e45de428101a7962870ae99bafda25f6cf80bd6fb577ebb6179ec899",
+      "wall_s": 10.326533899999049
+    },
+    {
+      "cached": false,
+      "key": "e18cec82aa4c2922f18b7fa703b0591b16f2b0baf34bc24b40ef45e25cd6e4df",
+      "wall_s": 9.790433300000586
+    },
+    {
+      "cached": false,
+      "key": "4185f8554ecd92895a9f5db77461e41854e952c20b90e7b6314b222c0d84c80d",
+      "wall_s": 10.440137000001414
+    },
+    {
+      "cached": false,
+      "key": "693b36ae91fc8565dfd295a3440af260b11121fac28a1f43148d94830cb92e0b",
+      "wall_s": 10.093495299999631
+    },
+    {
+      "cached": false,
+      "key": "5576fc64504d82f644bf2620dd910aca56d2eaf65dc85a3511f31ccbc8505c33",
+      "wall_s": 10.381407599998056
+    },
+    {
+      "cached": false,
+      "key": "48e3157e942cf6da4bf470ebbda92515cbe8ec216360c459080df067ee49b4ba",
+      "wall_s": 10.907267200000206
+    },
+    {
+      "cached": false,
+      "key": "675d22fe98495da80123a36bb36c28538f4f775a1f619158ebad1842ba863cd4",
+      "wall_s": 10.731181099999958
+    },
+    {
+      "cached": false,
+      "key": "c34dc28f95224344d94aaafd4f87b1cac7f4e936e5dd521b0a02c4c475e704bd",
+      "wall_s": 10.785772900002485
+    },
+    {
+      "cached": false,
+      "key": "c0ff7d26eae9c0d9926932d485a802faa998e18464b317c50f94e4af1bfc70bd",
+      "wall_s": 11.361253700000816
+    },
+    {
+      "cached": false,
+      "key": "84355827cab1f6ba209e4faaf6e8dba4a3455f798fd5794ccbf5136603690956",
+      "wall_s": 10.759138699999312
+    },
+    {
+      "cached": false,
+      "key": "b0868e359257faddc4f7334e84a35464b9be81763dc6a5485faabedc9ba83ac8",
+      "wall_s": 10.823880800002371
+    },
+    {
+      "cached": false,
+      "key": "feb125a6ed98e21c6995256ddaaa8f0befe5063594992d41bdafc8860421d04d",
+      "wall_s": 10.72767130000284
+    },
+    {
+      "cached": false,
+      "key": "7b27637198b9e52a955589d4ad6e8179191244b0f79f41689d3ee8df75b9e25c",
+      "wall_s": 10.27988429999823
+    },
+    {
+      "cached": false,
+      "key": "de63b787e630141652d2b1702d32582f4a5ae8bcf214da90db0124743b000902",
+      "wall_s": 10.96821379999892
+    },
+    {
+      "cached": false,
+      "key": "54d88d8fc9c8246e8748e14aa660d61dd4fc254eb22b18eea2c93b985623281d",
+      "wall_s": 10.665109400000802
+    },
+    {
+      "cached": false,
+      "key": "6dc4c394160cca48326f093ab43d51a84e29200416db8345c605f6fc4fe766a6",
+      "wall_s": 10.729289800001425
+    },
+    {
+      "cached": false,
+      "key": "d6a31bbbf94000fddf7908bf1c5e95ecff277e46722ff9acd5190b338797be6f",
+      "wall_s": 10.713609800000995
+    },
+    {
+      "cached": false,
+      "key": "6b7937b808264b1dda44d5dc6e987dbe6077772229ba3059fe745e52eac27071",
+      "wall_s": 5.407458899997437
+    },
+    {
+      "cached": false,
+      "key": "143018765d693f96ded2701bce64fba5df10115187b0df83f3b7551cb7d7b3c5",
+      "wall_s": 5.479950400000234
+    },
+    {
+      "cached": false,
+      "key": "6f5cb4fd7c0dfbd76c32a2fadeb8ba015cbcea8cce805754b9756761d490550c",
+      "wall_s": 5.297595000000001
+    },
+    {
+      "cached": false,
+      "key": "c47fea53011fd810ee423327bd180240feb2668522eed2eef5bf0235771d019e",
+      "wall_s": 5.2775119000034465
+    },
+    {
+      "cached": false,
+      "key": "edc9763719d9e308396a308393aa91ed114bb89db46a3e92591c4ff20d174d8b",
+      "wall_s": 5.152427099998022
+    },
+    {
+      "cached": false,
+      "key": "f23d41ed8bce0c890c1f55fe702df254f4fc60e7f1c21c0aca1ec6f547978a01",
+      "wall_s": 5.428169300001173
+    },
+    {
+      "cached": false,
+      "key": "81579890608b7fadeb9b247c5b7cf142751d290159071d141166776b613e9c17",
+      "wall_s": 8.346386799999891
+    },
+    {
+      "cached": false,
+      "key": "3a84516a5bca39d980fef50d73958b58a26f078640f59fd84b1ff8021e52df51",
+      "wall_s": 8.184171099997911
+    },
+    {
+      "cached": false,
+      "key": "a102906f8cc526429a0414496453f047cbf29ff9fbcd7c1e9eb49783cc2654c5",
+      "wall_s": 8.287315900000976
+    },
+    {
+      "cached": false,
+      "key": "a98597aae51d4c84c17425963d7223bfd11ffcd577efc92a4894372a86f635c9",
+      "wall_s": 8.099029599998175
+    },
+    {
+      "cached": false,
+      "key": "eec101298a5ac5c9ba47366d6f9b062837d215e9f812e2256574045103a8d4c7",
+      "wall_s": 7.881687500001135
+    },
+    {
+      "cached": false,
+      "key": "7f7ad951e30c84baf03cd367221fbaa508eed5b31af34ea0afbc6c3ed1153559",
+      "wall_s": 8.22532769999816
+    },
+    {
+      "cached": false,
+      "key": "92daae188de11718724b7ee61a0e3d6af6a49422533dee2034082abcb92074cf",
+      "wall_s": 10.986978699998872
+    },
+    {
+      "cached": false,
+      "key": "a282f25915380c34a0cf01abee1ef7b10be3ced05eb8b673579ea97eb1f58e47",
+      "wall_s": 10.990556900000229
+    },
+    {
+      "cached": false,
+      "key": "25408a7b86ba146d02b7afeecf3448dafffdb6e4c16966c18c1d9644ed770e87",
+      "wall_s": 10.963192499999423
+    },
+    {
+      "cached": false,
+      "key": "6b3999335e182ebcc74c424aae08e9ebcbb3f65d2cd05be14f493d9936740659",
+      "wall_s": 10.90600600000107
+    },
+    {
+      "cached": false,
+      "key": "19e125468a4c1ed4cb59d4a238d4daf4b2e7bdd0285da7d8712a93ca820efc81",
+      "wall_s": 10.877803400002449
+    },
+    {
+      "cached": false,
+      "key": "092e9008c93a638d4d74f29b9d791371baa96723499b365560c488670e272618",
+      "wall_s": 10.655282899999293
+    }
+  ]
+}

@@ -21,7 +21,7 @@ Why a purpose-built simulator rather than an existing tool (dossier 2.6):
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from enum import Enum
 from typing import Dict, List, Optional, Sequence, Tuple
 
@@ -73,16 +73,73 @@ class Results:
     generated_bits: float = 0.0
     consumed_bits: float = 0.0
     discarded_bits: float = 0.0
+    # Supply/overflow use the event window [warmup, horizon). consumed_bits
+    # instead sums debits for the measured arrival cohort, including service
+    # after horizon. Full counters support exact reservoir conservation.
+    full_generated_bits: float = 0.0
+    full_consumed_bits: float = 0.0
+    full_discarded_bits: float = 0.0
+    window_consumed_bits: float = 0.0
+    initial_stored_bits: float = 0.0
+    final_stored_bits: float = 0.0
+    window_initial_stored_bits: float = 0.0
+    window_final_stored_bits: float = 0.0
     link_state_ticks: Dict[str, int] = field(default_factory=dict)
     warmup_s: float = 0.0
-    """Sessions arriving before this are excluded from every metric below."""
+    horizon_s: float = float("inf")
+    """Outcome metrics use arrivals in [warmup_s, horizon_s)."""
 
     # ---- aggregate views -------------------------------------------------
     def _sel(self, cls: Optional[str] = None,
              include_warmup: bool = False) -> List[Session]:
         return [s for s in self.sessions
                 if (cls is None or s.cls == cls)
+                and s.arrival_t < self.horizon_s
                 and (include_warmup or s.arrival_t >= self.warmup_s)]
+
+    def outcome_metrics(self, cls: Optional[str] = None) -> Dict[str, float | int]:
+        """Counts and fixed-denominator outcomes for a measured arrival cohort.
+
+        The legacy methods below retain their explicitly conditional fractions.
+        Here violations and blocking share an arrival denominator, preventing
+        selective blocking from making an unsafe policy appear safe. Payload
+        bits indicate service below a requested assurance, not a demonstrated
+        cryptographic disclosure. G2 provides computational payload encryption.
+        """
+        xs = self._sel(cls)
+        served = [s for s in xs if s.outcome is Outcome.SERVED]
+        timely = [s for s in served if s.ttk is not None
+                  and s.ttk <= s.deadline_s + 1e-9]
+        violations = [s for s in served
+                      if not is_at_least(s.grade, s.authorised_floor)]
+        entitled = [s for s in xs if is_at_least(s.authorised_floor, G2_QKD_SYM)]
+        forced = [s for s in violations
+                  if is_at_least(s.authorised_floor, G2_QKD_SYM)
+                  and not is_at_least(s.grade, G2_QKD_SYM)]
+        authorized = [s for s in timely if is_at_least(s.grade, s.authorised_floor)]
+        blocked = [s for s in xs if s.outcome is Outcome.BLOCKED]
+        ratio = lambda n, d: n / d if d else float("nan")
+        return {
+            "n_arrivals": len(xs), "n_served": len(served),
+            "n_timely_served": len(timely), "n_blocked": len(blocked),
+            "n_pending": sum(s.outcome is Outcome.PENDING for s in xs),
+            "n_authorized_served": len(authorized),
+            "n_floor_violations": len(violations),
+            "n_its_entitled": len(entitled), "n_forced_below_its": len(forced),
+            "served_arrival_fraction": ratio(len(served), len(xs)),
+            "timely_served_arrival_fraction": ratio(len(timely), len(xs)),
+            "blocked_arrival_fraction": ratio(len(blocked), len(xs)),
+            "authorized_served_arrival_fraction": ratio(len(authorized), len(xs)),
+            "floor_violation_arrival_fraction": ratio(len(violations), len(xs)),
+            "forced_below_its_arrival_fraction": ratio(len(forced), len(xs)),
+            "forced_below_its_entitled_arrival_fraction": ratio(len(forced), len(entitled)),
+            "payload_bits_total": sum(s.payload_bits for s in xs),
+            "payload_bits_served": sum(s.payload_bits for s in served),
+            "floor_violation_payload_bits": sum(s.payload_bits for s in violations),
+            "forced_below_its_payload_bits": sum(s.payload_bits for s in forced),
+            "payload_its_bits": sum(s.payload_bits for s in served if s.grade == G1_OTP),
+            "cohort_key_bits": sum(s.key_bits for s in served),
+        }
 
     def n_sessions(self, cls: Optional[str] = None) -> int:
         return len(self._sel(cls))
@@ -169,7 +226,7 @@ class Results:
         return float(a.mean()), float(np.percentile(a, 95))
 
     def mean_hops(self) -> float:
-        vals = [s.hops for s in self.sessions if s.outcome is Outcome.SERVED]
+        vals = [s.hops for s in self._sel() if s.outcome is Outcome.SERVED]
         return float(np.mean(vals)) if vals else float("nan")
 
 
@@ -210,7 +267,8 @@ class Simulator:
         self._apply_adversary()
 
         self.pending: List[Session] = []
-        self.results = Results(warmup_s=cfg.warmup_s, cfg_summary={
+        self.results = Results(warmup_s=cfg.warmup_s, horizon_s=cfg.horizon_s,
+                               cfg_summary={
             "horizon_s": cfg.horizon_s,
             "warmup_s": cfg.warmup_s,
             "routing": cfg.routing,
@@ -222,6 +280,8 @@ class Simulator:
             "adv_budget_links": cfg.adversary.budget_links,
             "adv_delta_e": cfg.adversary.delta_e,
             "seed": cfg.seed,
+            "config": asdict(cfg),
+            "simulator_semantics": "0.2.0-buffered-relay-cohort-metrics",
         })
         self._next_sid = 0
 
@@ -237,7 +297,7 @@ class Simulator:
         return [(rear[0], f) for f in sorted(fwd)]
 
     def _apply_adversary(self) -> None:
-        """Worst-case adversary: suppress the k most path-critical links.
+        """Apply one of the explicitly specified static targeting heuristics.
 
         Selection is by edge betweenness centrality, so it is deterministic
         given the topology and therefore reproducible. Pressure is expressed in
@@ -266,13 +326,14 @@ class Simulator:
                 lk.excess_qber = adv.delta_e
 
     def _mincut_order(self) -> List[Tuple[str, str]]:
-        """Edges ordered so that the smallest prefix severs the most traffic.
+        """Concatenate minimum source-to-terminal cuts, cheapest first.
 
         Takes the minimum edge cut isolating each forward post from the rear
         node, ordered by cut size (cheapest target first), then any remaining
         edges. With two edge-disjoint paths to a post, this needs 2 edges no
-        matter how deep the relay chain is -- the honest worst case against
-        which the betweenness adversary's d+1 figure must be read.
+        matter how deep the relay chain is. This is an exact disconnecting cut
+        only for that single-terminal case, not a general optimal interdiction
+        algorithm for the formation's multiple terminals.
         """
         g = self.topo.graph
         rear = [n for n, r in self.topo.node_roles.items() if r == "rear"]
@@ -285,7 +346,7 @@ class Simulator:
                     cut = nx.minimum_edge_cut(g, rear[0], f)
                 except Exception:
                     continue
-                cuts.append((len(cut), [Topology.key(u, v) for u, v in cut]))
+                cuts.append((len(cut), sorted(Topology.key(u, v) for u, v in cut)))
         for _, edges in sorted(cuts, key=lambda t: t[0]):
             for e in edges:
                 if e not in order:
@@ -323,8 +384,7 @@ class Simulator:
             st = self.topo.links[k].state(self.cfg.physics)
             self.results.link_state_ticks[st.value] = (
                 self.results.link_state_ticks.get(st.value, 0) + 1)
-            if rate > 0.0:
-                self.topo.stores[k].accumulate(rate * dt)
+            self.topo.stores[k].accumulate(rate * dt)
 
     def _tick_arrivals(self, t: float) -> None:
         for tc in self.traffic:
@@ -368,6 +428,12 @@ class Simulator:
 
     def _try_grade(self, s: Session, grade: str, t: float) -> bool:
         """Attempt to serve `s` at `grade`. Returns True on success."""
+        if self.cfg.fail_mode == "FAIL_CLOSED" and not is_at_least(grade, s.authorised_floor):
+            return False
+        setup = self.cfg.pqc_setup_s if grade in (G3_HYBRID, G4_PQC) else 0.0
+        completion = t + setup
+        if completion > s.arrival_t + s.deadline_s + 1e-9:
+            return False
         demand = quantum_key_demand(grade, s.payload_bits)
         floors = self._reservation_floors(s.priority)
 
@@ -377,9 +443,10 @@ class Simulator:
                 if self._path_ok_classical(p):
                     s.outcome = Outcome.SERVED
                     s.grade = grade
-                    s.served_t = t + self.cfg.pqc_setup_s
+                    s.served_t = completion
                     s.hops = len(p) - 1
                     s.key_bits = 0.0
+                    s.floor_violation = not is_at_least(grade, s.authorised_floor)
                     return True
             return False
 
@@ -411,9 +478,10 @@ class Simulator:
 
         s.outcome = Outcome.SERVED
         s.grade = grade
-        s.served_t = t
+        s.served_t = completion
         s.hops = len(lks)
         s.key_bits = per_hop * len(lks)
+        s.floor_violation = not is_at_least(grade, s.authorised_floor)
         return True
 
     def _serve_or_wait(self, s: Session, t: float) -> None:
@@ -466,6 +534,10 @@ class Simulator:
         self.pending.sort(key=lambda s: (s.priority, s.arrival_t, s.sid))
         still: List[Session] = []
         for s in self.pending:
+            if t > s.arrival_t + s.deadline_s + 1e-9:
+                s.outcome = Outcome.BLOCKED
+                self.results.sessions.append(s)
+                continue
             self._serve_or_wait(s, t)
             if s.outcome is Outcome.SERVED:
                 self.results.sessions.append(s)
@@ -479,26 +551,47 @@ class Simulator:
 
     # -- run --------------------------------------------------------------
     def run(self) -> Results:
+        def totals():
+            stores = self.topo.stores.values()
+            return tuple(sum(getattr(s, name) for s in stores) for name in
+                         ("generated_bits", "consumed_bits", "discarded_bits", "level"))
+
+        r = self.results
+        initial = totals()
+        r.initial_stored_bits = initial[3]
+        window_start = None
         t = 0.0
         while t < self.cfg.horizon_s:
+            if window_start is None and t >= self.cfg.warmup_s:
+                window_start = totals()
             self._tick_outages()
             self._tick_generate()
             self._tick_arrivals(t)
             self._tick_serve(t)
             t += self.cfg.tick_s
 
-        # flush anything still pending as blocked
-        for s in self.pending:
-            s.outcome = Outcome.BLOCKED
-            self.results.sessions.append(s)
-        self.pending = []
+        window_end = totals()
+        if window_start is None:
+            window_start = window_end
+        r.generated_bits = window_end[0] - window_start[0]
+        r.window_consumed_bits = window_end[1] - window_start[1]
+        r.discarded_bits = window_end[2] - window_start[2]
+        r.window_initial_stored_bits = window_start[3]
+        r.window_final_stored_bits = window_end[3]
 
-        r = self.results
-        for k in self.topo.all_link_keys():
-            st = self.topo.stores[k]
-            r.generated_bits += st.generated_bits
-            r.consumed_bits += st.consumed_bits
-            r.discarded_bits += st.discarded_bits
+        # Stop new arrivals at the horizon, but let the admitted arrival cohort
+        # reach service or its own deadline instead of treating censoring as
+        # blocking. Quantum generation and outages continue during this drain.
+        while self.pending:
+            self._tick_outages()
+            self._tick_generate()
+            self._tick_serve(t)
+            t += self.cfg.tick_s
+        full = totals()
+        (r.full_generated_bits, r.full_consumed_bits,
+         r.full_discarded_bits) = (full[i] - initial[i] for i in range(3))
+        r.final_stored_bits = full[3]
+        r.consumed_bits = sum(s.key_bits for s in r._sel() if s.outcome is Outcome.SERVED)
         return r
 
 

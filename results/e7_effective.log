@@ -1,0 +1,16 @@
+state                        heuristic  searched(raw)  searched(effective)   note
+C2   | starved(<=m_min)             G3             G1                   G1   differs
+C2   | warning(<m_thr)              G2             G2                   G2   
+C2   | mid(<60%)                    G2             G4                   G1   SHIELD CLIPPED
+C2   | ample(>=60%)                 G2             G2                   G2   
+ISR  | starved(<=m_min)             G2             G3                   G3   differs
+ISR  | warning(<m_thr)              G1             G4                   G4   differs
+ISR  | mid(<60%)                    G1             G1                   G1   
+ISR  | ample(>=60%)                 G1             G1                   G1   
+LOG  | starved(<=m_min)             G4             G3                   G3   differs
+LOG  | warning(<m_thr)              G3             G4                   G4   differs
+LOG  | mid(<60%)                    G3             G2                   G2   differs
+LOG  | ample(>=60%)                 G3             G2                   G2   differs
+
+shield intervened in 1/12 states; effective policy differs from the heuristic in 8/12 states.
+-> results/e7_policy_table_effective.csv

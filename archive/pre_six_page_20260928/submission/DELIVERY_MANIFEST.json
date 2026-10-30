@@ -1,0 +1,336 @@
+{
+  "verified_utc": "2026-09-26T02:24:46.890891+00:00",
+  "status": "local_revision_complete",
+  "scientific_source_hash": "97bf3205917c27c2c03b6fde5bdb0932e5370a79773c413ed754213a38d68598",
+  "regression_tests": 127,
+  "legacy_internal_checks": 43,
+  "test_failures": 0,
+  "test_errors": 0,
+  "test_skips": 0,
+  "phase_verification": {
+    "main": {
+      "phase": "main",
+      "source_hash": "97bf3205917c27c2c03b6fde5bdb0932e5370a79773c413ed754213a38d68598",
+      "manifest_sha256": "89bf4be9c8031bfd2c8b48db9d9d02f9a724f42a79a31b5f9a6f1b86ed841de8",
+      "runs_checked": 360,
+      "canonical_cases": 30,
+      "canonical_runs": 360,
+      "duplicate_recorded_runs": 0,
+      "summary_rows": 120,
+      "paired_comparison_rows": 2100,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 71,
+      "bootstrap_unit": "independent simulator seed",
+      "interval": "marginal percentile bootstrap95percent; not simultaneous",
+      "weight_scenarios": "declared relative priorities, not calibrated harm",
+      "analysis_script_sha256": "63fe887e34d9cd79e7c515deb5a48d6f54899cb1bba1534a6ae29d91c0b8dcfc"
+    },
+    "sensitivity": {
+      "phase": "sensitivity",
+      "source_hash": "97bf3205917c27c2c03b6fde5bdb0932e5370a79773c413ed754213a38d68598",
+      "manifest_sha256": "599263c36a1c6458b52594f3c4f187f18d727f816d7a6a0ef6dd151809ceae62",
+      "runs_checked": 1264,
+      "canonical_cases": 144,
+      "canonical_runs": 1152,
+      "duplicate_recorded_runs": 112,
+      "summary_rows": 576,
+      "paired_comparison_rows": 8160,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 71,
+      "bootstrap_unit": "independent simulator seed",
+      "interval": "marginal percentile bootstrap95percent; not simultaneous",
+      "weight_scenarios": "declared relative priorities, not calibrated harm",
+      "analysis_script_sha256": "63fe887e34d9cd79e7c515deb5a48d6f54899cb1bba1534a6ae29d91c0b8dcfc"
+    },
+    "threshold": {
+      "phase": "threshold",
+      "source_hash": "97bf3205917c27c2c03b6fde5bdb0932e5370a79773c413ed754213a38d68598",
+      "manifest_sha256": "7a1c35b330ab992fe85f1920c4da5a22e0fb05a8e072b36abe2d0aa7505a6342",
+      "runs_checked": 408,
+      "canonical_cases": 68,
+      "canonical_runs": 408,
+      "duplicate_recorded_runs": 0,
+      "summary_rows": 272,
+      "paired_comparison_rows": 2040,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 71,
+      "bootstrap_unit": "independent simulator seed",
+      "interval": "marginal percentile bootstrap95percent; not simultaneous",
+      "weight_scenarios": "declared relative priorities, not calibrated harm",
+      "analysis_script_sha256": "63fe887e34d9cd79e7c515deb5a48d6f54899cb1bba1534a6ae29d91c0b8dcfc"
+    }
+  },
+  "artifacts": [
+    {
+      "file": "Paper167_Manuscript.docx",
+      "sha256": "11c40920d0b520351f91ddaea0e6c29357ef9fe42ddb0904627a8d1821699611",
+      "bytes": 175739
+    },
+    {
+      "file": "Paper167_Manuscript.pdf",
+      "sha256": "7d4aa184773678dbee8f9159a94ca9994fffc315130a8f827a7b64d457cb8854",
+      "bytes": 498729,
+      "pages": 5,
+      "all_fonts_embedded": true,
+      "page_sizes_pt": [
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ]
+      ]
+    },
+    {
+      "file": "Paper167_LaTeX.pdf",
+      "sha256": "fa392508f196bda7b279cda9e3b21875265218c41ad17bb7d77e24d941ffca96",
+      "bytes": 182451,
+      "pages": 5,
+      "all_fonts_embedded": true,
+      "page_sizes_pt": [
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ]
+      ]
+    },
+    {
+      "file": "Reviewer_Compliance.pdf",
+      "sha256": "dd826518074ba94a8fc3ead7ae184fffea752aaf1539f42334fbb484e4f24484",
+      "bytes": 66175,
+      "pages": 10,
+      "all_fonts_embedded": true,
+      "page_sizes_pt": [
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ],
+        [
+          595.28,
+          841.89
+        ]
+      ]
+    },
+    {
+      "file": "Research_Explained.docx",
+      "sha256": "72be7b801fd6ad8032ef289e5af42ec573feb3ed2213eaeded25851c609f7fa4",
+      "bytes": 171087
+    },
+    {
+      "file": "Research_Explained.pdf",
+      "sha256": "45db3625ff23e6ae6a58e2ff7ba7c2ab22643410cc8add6571a5003b6209c10f",
+      "bytes": 504279,
+      "pages": 19,
+      "all_fonts_embedded": true,
+      "page_sizes_pt": [
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ],
+        [
+          595.32,
+          841.92
+        ]
+      ]
+    },
+    {
+      "file": "READ_ME.md",
+      "sha256": "98b9e7f8bf2fbc8e80e8504e365d97fecfe4501adfa1ae3fb68983f0ef3c16cc",
+      "bytes": 4079
+    },
+    {
+      "file": "Manuscript_Source.zip",
+      "sha256": "86ef7c3d65086c375d25553176b8f2bbf5fe60d26fd54021062a40992f96bb3d",
+      "bytes": 306580
+    },
+    {
+      "file": "Research_Revision_Source.zip",
+      "sha256": "1bea8f933d66597ec6eda881cdee6dbe509e9218261244fc7f9901658f98407b",
+      "bytes": 19846233
+    }
+  ],
+  "archives": [
+    {
+      "file": "Manuscript_Source.zip",
+      "members_including_manifest": 23,
+      "bytes": 306580,
+      "sha256": "86ef7c3d65086c375d25553176b8f2bbf5fe60d26fd54021062a40992f96bb3d",
+      "crc_and_all_member_hashes_verified": true
+    },
+    {
+      "file": "Research_Revision_Source.zip",
+      "members_including_manifest": 4110,
+      "bytes": 19846233,
+      "sha256": "1bea8f933d66597ec6eda881cdee6dbe509e9218261244fc7f9901658f98407b",
+      "crc_and_all_member_hashes_verified": true
+    }
+  ],
+  "manuscript_pdf_pages": 5,
+  "reviewer_compliance_pages": 10,
+  "beginner_guide_pages": 19,
+  "official_actionable_review_points_addressed": 21,
+  "packaged_latex_build_verified": {
+    "source_archive": "submission\\Manuscript_Source.zip",
+    "source_archive_sha256": "86ef7c3d65086c375d25553176b8f2bbf5fe60d26fd54021062a40992f96bb3d",
+    "extracted_members_verified": true,
+    "build_exit_code": 0,
+    "rebuilt_pdf_sha256": "97c200aff18020cc2f6d1888b001c558d1a686504545cbf145dae2bd4b0e1de7",
+    "reference_pdf_sha256": "fa392508f196bda7b279cda9e3b21875265218c41ad17bb7d77e24d941ffca96",
+    "pages": 5,
+    "pixel_identical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "renderer": "Tectonic 0.17.0 with installed standard IEEEtran/TeX dependencies",
+    "passed": true
+  },
+  "guide_evidence_links_in_archive": {
+    "annotations": 77,
+    "unique_targets": 49,
+    "all_present": true
+  },
+  "historical_upload_identity": "Exact CMT-upload binary not established; both supplied reviews addressed and source versions distinguished.",
+  "external_actions": {
+    "pdf_express_certified": false,
+    "cmt_submitted": false,
+    "copyright_transfer_completed": false,
+    "registration_completed_by_agent": false,
+    "author_details_final_check": "reserved_by_author_for_submission",
+    "conference_id": "69954X",
+    "deadline_from_author_email": "2026-09-30"
+  },
+  "archive_scope": "Private author handoff; no automatic public release. Historical authored notes are audit evidence only."
+}

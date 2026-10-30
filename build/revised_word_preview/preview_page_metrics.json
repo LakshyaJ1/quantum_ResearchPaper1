@@ -1,0 +1,38 @@
+{
+  "pages": 4,
+  "page_metrics": [
+    {
+      "page": 1,
+      "chars": 5355,
+      "lowest_text_pt": 712.6513671875,
+      "image_count": 0,
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562
+    },
+    {
+      "page": 2,
+      "chars": 5993,
+      "lowest_text_pt": 707.371337890625,
+      "image_count": 0,
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562
+    },
+    {
+      "page": 3,
+      "chars": 6148,
+      "lowest_text_pt": 715.111083984375,
+      "image_count": 0,
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562
+    },
+    {
+      "page": 4,
+      "chars": 5516,
+      "lowest_text_pt": 714.2113647460938,
+      "image_count": 1,
+      "width_pt": 595.3200073242188,
+      "height_pt": 841.9199829101562
+    }
+  ],
+  "fonts_embedded": true
+}

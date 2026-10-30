@@ -1,0 +1,39 @@
+==============================================================================
+EXPERIMENT GRID  (24 h horizon, 12 h warm-up excluded)
+seeds=6  workers=8  quick=False
+==============================================================================
+
+[E4] Downgrade-forcing cost k*(phi) vs relay-chain depth
+    -> results/e4_forcing_cost.csv  (624 rows)
+
+  k*(phi) = minimum links the adversary must suppress to FORCE a
+  fraction phi of ENTITLED sessions (authorised floor >= G2) below an
+  information-theoretically delivered key. Measured on forced
+  degradation, not raw below-ITS: LOG traffic is authorised at G3, so
+  counting it would credit the adversary before it acted.
+
+  --- adversary targeting: betweenness ---
+  depth links  nominal   k*(0.1)  k*(0.25)   k*(0.5)
+      1     1    0.000         1         1         1
+      2     5    0.000         3         3         3
+      3     7    0.000         4         4         4
+      4     9    0.000         1         5         5
+      5    11    0.000         1         6         6
+      6    13    0.000         1         7         7
+
+  --- adversary targeting: mincut ---
+  depth links  nominal   k*(0.1)  k*(0.25)   k*(0.5)
+      1     1    0.000         1         1         1
+      2     5    0.000         1         2         2
+      3     7    0.000         1         2         2
+      4     9    0.000         1         2         2
+      5    11    0.000         1         2         2
+      6    13    0.000         1         2         2
+
+  A betweenness-guided adversary exhausts the already-severed
+  primary path before touching the alternate; the min-cut adversary
+  does not. The gap IS the finding: reporting only the greedy figure
+  overstates resilience by a factor growing in chain depth.
+    -> results/e4_kstar.csv  (12 rows)
+
+total wall time: 434.6 s

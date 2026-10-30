@@ -1,0 +1,23 @@
+In multi-hop trusted-relay quantum key distribution (QKD), secret key is a
+depletable per-link resource, since each hop of a relayed path consumes it. How a
+network should behave when that key runs short is unsettled. ITU-T Y.3803 permits
+degradation, allowing a symmetric cipher to replace one-time-pad key relay, and
+field deployments follow it. A parallel line of security engineering refuses,
+treating the same transition as a downgrade attack and failing closed instead.
+Neither position has been measured against the other. This paper quantifies the
+trade-off. We model a nine-node tactical relay formation with per-link key
+reservoirs, under an adversary that raises the quantum bit error rate (QBER) until
+affected links abort key generation. We introduce \emph{forced assurance
+loss}---the fraction of sessions entitled to an information-theoretically secure
+key that are served without one---and the \emph{downgrade-forcing cost}, the
+adversary budget required to induce it. Suppressing links equal in number to the
+minimum edge cut forces the choice. Fail-closed operation then loses availability,
+from 0.812 to 0.304. Fail-degraded operation instead preserves availability at
+0.973, but serves 69\% of entitled traffic below its authorised grade. The forcing
+cost obeys a two-threshold law: the adversary must both exceed a per-link QBER
+margin and hold at least the minimum cut; below either threshold its effect is
+negligible. A post-quantum fallback removes the sensitivity of availability to
+routing policy, but protects only against quantum-channel attacks. These findings
+indicate that the assurance-grade composition of served traffic belongs in QKD
+resilience reporting alongside key-supply continuity. The simulator, validated
+against four published measurements, is released with all configurations.

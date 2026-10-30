@@ -1,0 +1,14 @@
+{
+  "figure": "fig1_comparable_service",
+  "inputs": {
+    "results\\revision\\analysis\\main_summary.csv": "8e2cd5742ce35e49e8da734953db811cff0b2e5d0c738201db629c2678c6a72a",
+    "results\\revision\\analysis\\main_verification.json": "3b68fc96850e8c2719aa884ae84d49a51e675f6cbd235503315c99c55762fccd"
+  },
+  "provenance_refresh": {
+    "timestamp_utc": "2026-09-26T02:17:23.748104+00:00",
+    "reason": "Canonical verification record rerun; plotted main_summary.csv bytes are unchanged. No plot regeneration or numerical change.",
+    "previous_verification_sha256": "efc93849e411b8ca6b2c97c13982f06c684492cf59e1dabd3276511d7a392de7",
+    "current_verification_sha256": "3b68fc96850e8c2719aa884ae84d49a51e675f6cbd235503315c99c55762fccd",
+    "unchanged_plotted_summary_sha256": "8e2cd5742ce35e49e8da734953db811cff0b2e5d0c738201db629c2678c6a72a"
+  }
+}

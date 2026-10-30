@@ -1,0 +1,124 @@
+{
+  "reviewed_utc": "2026-09-26T01:45:59.6986039Z",
+  "reviewer": "/root/explainer_finalize/guide_content_check",
+  "method": "Every final page PNG opened once at original image resolution; no contact sheets or older preview pages used",
+  "status": "pass",
+  "internal_preview": false,
+  "page_count": 19,
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "final_hashes": {
+    "pdf": "297a9bebefd9d9ca38db719e12aad23fcaf7bf5861e5d98a25b1522b3228096a",
+    "docx": "a12e6fa4cef5af3b256d6fd5c9c84a061b4a2eb2ed9fbae2fb0289d8d0414f9b",
+    "source": "2a6cc17aac271715b17b0b869971239543f5cf5805a0f0082d4a816edf63fb0c"
+  },
+  "submission_hashes_match_manifest": true,
+  "page_image_hashes_match_manifest": true,
+  "page_image_hashes": [
+    {
+      "page": 1,
+      "sha256": "d30f24c64952ed5ee96b167992cef477d39b5adebfbd4b839f1888eaf5d20e41"
+    },
+    {
+      "page": 2,
+      "sha256": "75593ce02747c7485cc0a2c563b836bff809dc119fbce2e33114e3d5b28fb81d"
+    },
+    {
+      "page": 3,
+      "sha256": "0a8902ded0907a9ffe591172fd736c9f3c2a0382e8d9233a1df0fec9d3dfc45d"
+    },
+    {
+      "page": 4,
+      "sha256": "7577fe6bf4a353176cbb9982ae8c30098a21248194811bfaee4ce8e668d33e7d"
+    },
+    {
+      "page": 5,
+      "sha256": "7b11460412307e928ef9bbec53aaafafd098c2b496169e8435a7b1279a250bae"
+    },
+    {
+      "page": 6,
+      "sha256": "f95a5dbadb807929a81a4863bdf74c28f4269f3770c60c2009cce596d6ab1b29"
+    },
+    {
+      "page": 7,
+      "sha256": "5af83f2b9780e91e86e7f156ab6fa372e9f1f9822b0d1671c8466ffef315c8f2"
+    },
+    {
+      "page": 8,
+      "sha256": "a24deb37428905c121167ea37442a811cf20a20fa44da0155ce59f151cf815ca"
+    },
+    {
+      "page": 9,
+      "sha256": "dbdabc2abfd975f2cc1cdadcbc48be91b3c0b185d8bbcaf348e9ec74b7482b51"
+    },
+    {
+      "page": 10,
+      "sha256": "b5e64c16307e2120add40e12735541d9f7acb9121745e96e7b1e9b8210621a7a"
+    },
+    {
+      "page": 11,
+      "sha256": "068a075a5aa9f690c78bd5c09f420dabdef4520c8ed3fc643e0685fd469741bc"
+    },
+    {
+      "page": 12,
+      "sha256": "87a826608f1e470d2454c61ee1cd38649e07a5f37e562bb2ec1e4bc68c235dc9"
+    },
+    {
+      "page": 13,
+      "sha256": "42667568bb6e9fb8d39c5eb1618125f005b732ef9d318f82eacaee7eb87aa22a"
+    },
+    {
+      "page": 14,
+      "sha256": "7bb5445776f0ead5fdd804069a6fceb2f120c8f4e9107c4b933a62d3e78c2ba3"
+    },
+    {
+      "page": 15,
+      "sha256": "0754c26350f9fb65ac424601580d8d01a5a5d8542419553b64fad92086d98a77"
+    },
+    {
+      "page": 16,
+      "sha256": "ce3a2ea4d3b52b4132c35ff361efb6b53ab8423a3b72996fe344352c53704e73"
+    },
+    {
+      "page": 17,
+      "sha256": "9e0afa4f0b882282a7924b0cf9acfd69669ae3749feca6e05d370788216e21f4"
+    },
+    {
+      "page": 18,
+      "sha256": "df3bf660c09c7ac68369137cf14ea403f43c50a903fd7cff8a587bc3a564f9ea"
+    },
+    {
+      "page": 19,
+      "sha256": "df87dc54d9c54bc63c3f875605ef796db715423c1785e1952cba81cb30839c0d"
+    }
+  ],
+  "checks": {
+    "native_math": "Readable, with intact glyphs, fractions, subscripts and floor brackets",
+    "figures_and_captions": "Learning trade-off on page 13 and starting-stock plot on page 14 readable and complete",
+    "tables": "Three tables readable; no split rows observed; continuation headers repeat on pages 17 and 19",
+    "headers_and_footers": "Consistent running header; footer numbers 1 through 19 correct",
+    "preview_language": "No preview label or scientific-pending language observed; external author/submission caveats remain appropriately separate",
+    "rate_shape_counterexample": "Page 14 clearly renders gamma=1, gamma=3.4, F_N, 83.469 percent, and marginal 95 percent interval 82.670 to 84.343 percent"
+  },
+  "observed_layout_issues": [],
+  "scope": "Visual QA plus file/image identity and page count only; no scientific edits, experiments, rebuild, or Word session"
+}

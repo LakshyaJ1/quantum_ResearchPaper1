@@ -1,0 +1,2592 @@
+{
+  "aliases": {
+    "3c66dc80207cdecc": "3c66dc80207cdecc",
+    "2d7d1b399df8fc14": "2d7d1b399df8fc14",
+    "accd920e0d7b0e1f": "accd920e0d7b0e1f",
+    "12be28116c46f166": "12be28116c46f166",
+    "3b1c66af44a96a0b": "3b1c66af44a96a0b",
+    "88b3d66537fea20f": "88b3d66537fea20f",
+    "4cec5656c7420e5b": "4cec5656c7420e5b",
+    "c33827ada342cdb7": "c33827ada342cdb7",
+    "5cc4bce0e46af7c4": "5cc4bce0e46af7c4",
+    "6b2ad139f256df1b": "6b2ad139f256df1b",
+    "179f07f9141d19f2": "179f07f9141d19f2",
+    "95f77277cfb3bc99": "95f77277cfb3bc99",
+    "d99a2e5d70c7c5a9": "d99a2e5d70c7c5a9",
+    "7d06a99bb8852f8c": "7d06a99bb8852f8c",
+    "e7fafca93738ceba": "e7fafca93738ceba",
+    "f0cfcab53ccab9ff": "f0cfcab53ccab9ff",
+    "78fa73d874083b91": "78fa73d874083b91",
+    "e9e3350eaeca3bb1": "e9e3350eaeca3bb1",
+    "4b99a0470f452c0d": "4b99a0470f452c0d",
+    "9d39eb68011701aa": "9d39eb68011701aa",
+    "37b90234b45560e7": "37b90234b45560e7",
+    "feec5068907e1c96": "feec5068907e1c96",
+    "254f8e802b7a7874": "254f8e802b7a7874",
+    "a475191d0cddb20e": "a475191d0cddb20e",
+    "941190e15ffd50ec": "941190e15ffd50ec",
+    "ccb3220a624f1d2c": "ccb3220a624f1d2c",
+    "aec3470707bb247c": "aec3470707bb247c",
+    "e5988e46f5a6b11d": "e5988e46f5a6b11d",
+    "499642d86171c068": "499642d86171c068",
+    "d36b4cc6b7aca7a6": "d36b4cc6b7aca7a6",
+    "4fe47cb54c3678b4": "4fe47cb54c3678b4",
+    "91583d6e4223d1e8": "91583d6e4223d1e8",
+    "1b906717abbb2c8c": "1b906717abbb2c8c",
+    "2839cd249e05148c": "2839cd249e05148c",
+    "5b25ddb9701a54c3": "5b25ddb9701a54c3",
+    "d636f7e6b22233c2": "d636f7e6b22233c2",
+    "75f02c9fee0ed054": "75f02c9fee0ed054",
+    "e9ed73c212c9ea7d": "e9ed73c212c9ea7d",
+    "55336ba83ec87fbf": "55336ba83ec87fbf",
+    "3d0b973586e6d7d5": "3d0b973586e6d7d5",
+    "4ea41ae131a58306": "4ea41ae131a58306",
+    "4aadb7ece33f94d9": "4aadb7ece33f94d9",
+    "f6be97274768a0b2": "f6be97274768a0b2",
+    "8bc4ffabcfd446f7": "8bc4ffabcfd446f7",
+    "69aead4d9d916896": "69aead4d9d916896",
+    "539b89fa4950b981": "539b89fa4950b981",
+    "81886cfbae75eef3": "81886cfbae75eef3",
+    "86124fe2ba523226": "86124fe2ba523226",
+    "f7f15162f67f2441": "f7f15162f67f2441",
+    "fb59b59a9099a11e": "fb59b59a9099a11e",
+    "b8682e1c67e04111": "b8682e1c67e04111",
+    "96d4b362eb86ca1c": "96d4b362eb86ca1c",
+    "b15f3d4e1b53c63c": "b15f3d4e1b53c63c",
+    "8cc9db14aa6e3abe": "8cc9db14aa6e3abe",
+    "d774faf88b40918b": "d774faf88b40918b",
+    "aad446af8d225ada": "aad446af8d225ada",
+    "f13fb6ad2e184a71": "f13fb6ad2e184a71",
+    "a0afce78e230816a": "a0afce78e230816a",
+    "e7db56a1833dd797": "e7db56a1833dd797",
+    "cd1eeb2ee91b1ed0": "cd1eeb2ee91b1ed0",
+    "f7b6b6f8446985cc": "f7b6b6f8446985cc",
+    "f4a9cab210a0f2de": "f4a9cab210a0f2de",
+    "149dcdde60364205": "149dcdde60364205",
+    "38244aa590a3c8d5": "38244aa590a3c8d5",
+    "aa03026338b21294": "aa03026338b21294",
+    "330489da3c7632bb": "330489da3c7632bb",
+    "d4c4c6bbb3854513": "d4c4c6bbb3854513",
+    "b8ff4db9377f5cad": "b8ff4db9377f5cad"
+  },
+  "canonical_cases": [
+    {
+      "case_id": "3c66dc80207cdecc",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "3c66dc80207cdecc"
+      ]
+    },
+    {
+      "case_id": "2d7d1b399df8fc14",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "2d7d1b399df8fc14"
+      ]
+    },
+    {
+      "case_id": "accd920e0d7b0e1f",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "accd920e0d7b0e1f"
+      ]
+    },
+    {
+      "case_id": "12be28116c46f166",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "12be28116c46f166"
+      ]
+    },
+    {
+      "case_id": "3b1c66af44a96a0b",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "3b1c66af44a96a0b"
+      ]
+    },
+    {
+      "case_id": "88b3d66537fea20f",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "88b3d66537fea20f"
+      ]
+    },
+    {
+      "case_id": "4cec5656c7420e5b",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "4cec5656c7420e5b"
+      ]
+    },
+    {
+      "case_id": "c33827ada342cdb7",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "c33827ada342cdb7"
+      ]
+    },
+    {
+      "case_id": "5cc4bce0e46af7c4",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "5cc4bce0e46af7c4"
+      ]
+    },
+    {
+      "case_id": "6b2ad139f256df1b",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "6b2ad139f256df1b"
+      ]
+    },
+    {
+      "case_id": "179f07f9141d19f2",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "179f07f9141d19f2"
+      ]
+    },
+    {
+      "case_id": "95f77277cfb3bc99",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "95f77277cfb3bc99"
+      ]
+    },
+    {
+      "case_id": "d99a2e5d70c7c5a9",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "d99a2e5d70c7c5a9"
+      ]
+    },
+    {
+      "case_id": "7d06a99bb8852f8c",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "7d06a99bb8852f8c"
+      ]
+    },
+    {
+      "case_id": "e7fafca93738ceba",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "e7fafca93738ceba"
+      ]
+    },
+    {
+      "case_id": "f0cfcab53ccab9ff",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "f0cfcab53ccab9ff"
+      ]
+    },
+    {
+      "case_id": "78fa73d874083b91",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "78fa73d874083b91"
+      ]
+    },
+    {
+      "case_id": "e9e3350eaeca3bb1",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "e9e3350eaeca3bb1"
+      ]
+    },
+    {
+      "case_id": "4b99a0470f452c0d",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "4b99a0470f452c0d"
+      ]
+    },
+    {
+      "case_id": "9d39eb68011701aa",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "9d39eb68011701aa"
+      ]
+    },
+    {
+      "case_id": "37b90234b45560e7",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "37b90234b45560e7"
+      ]
+    },
+    {
+      "case_id": "feec5068907e1c96",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "feec5068907e1c96"
+      ]
+    },
+    {
+      "case_id": "254f8e802b7a7874",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "254f8e802b7a7874"
+      ]
+    },
+    {
+      "case_id": "a475191d0cddb20e",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 1,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "a475191d0cddb20e"
+      ]
+    },
+    {
+      "case_id": "941190e15ffd50ec",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "941190e15ffd50ec"
+      ]
+    },
+    {
+      "case_id": "ccb3220a624f1d2c",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "ccb3220a624f1d2c"
+      ]
+    },
+    {
+      "case_id": "aec3470707bb247c",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "aec3470707bb247c"
+      ]
+    },
+    {
+      "case_id": "e5988e46f5a6b11d",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "e5988e46f5a6b11d"
+      ]
+    },
+    {
+      "case_id": "499642d86171c068",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "499642d86171c068"
+      ]
+    },
+    {
+      "case_id": "d36b4cc6b7aca7a6",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 4.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "d36b4cc6b7aca7a6"
+      ]
+    },
+    {
+      "case_id": "4fe47cb54c3678b4",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 5.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "4fe47cb54c3678b4"
+      ]
+    },
+    {
+      "case_id": "91583d6e4223d1e8",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 5.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.03,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "91583d6e4223d1e8"
+      ]
+    },
+    {
+      "case_id": "1b906717abbb2c8c",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 5.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "1b906717abbb2c8c"
+      ]
+    },
+    {
+      "case_id": "2839cd249e05148c",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 5.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.045,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "2839cd249e05148c"
+      ]
+    },
+    {
+      "case_id": "5b25ddb9701a54c3",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 5.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "5b25ddb9701a54c3"
+      ]
+    },
+    {
+      "case_id": "d636f7e6b22233c2",
+      "tags": [
+        "capability_budget"
+      ],
+      "case": {
+        "topology": "parallel4",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 5.0,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.05,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "d636f7e6b22233c2"
+      ]
+    },
+    {
+      "case_id": "75f02c9fee0ed054",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "75f02c9fee0ed054"
+      ]
+    },
+    {
+      "case_id": "e9ed73c212c9ea7d",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "e9ed73c212c9ea7d"
+      ]
+    },
+    {
+      "case_id": "55336ba83ec87fbf",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "55336ba83ec87fbf"
+      ]
+    },
+    {
+      "case_id": "3d0b973586e6d7d5",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "3d0b973586e6d7d5"
+      ]
+    },
+    {
+      "case_id": "4ea41ae131a58306",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "4ea41ae131a58306"
+      ]
+    },
+    {
+      "case_id": "4aadb7ece33f94d9",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "4aadb7ece33f94d9"
+      ]
+    },
+    {
+      "case_id": "f6be97274768a0b2",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "f6be97274768a0b2"
+      ]
+    },
+    {
+      "case_id": "8bc4ffabcfd446f7",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.075,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "8bc4ffabcfd446f7"
+      ]
+    },
+    {
+      "case_id": "69aead4d9d916896",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "69aead4d9d916896"
+      ]
+    },
+    {
+      "case_id": "539b89fa4950b981",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "539b89fa4950b981"
+      ]
+    },
+    {
+      "case_id": "81886cfbae75eef3",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "81886cfbae75eef3"
+      ]
+    },
+    {
+      "case_id": "86124fe2ba523226",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "86124fe2ba523226"
+      ]
+    },
+    {
+      "case_id": "f7f15162f67f2441",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "f7f15162f67f2441"
+      ]
+    },
+    {
+      "case_id": "fb59b59a9099a11e",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "fb59b59a9099a11e"
+      ]
+    },
+    {
+      "case_id": "b8682e1c67e04111",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "b8682e1c67e04111"
+      ]
+    },
+    {
+      "case_id": "96d4b362eb86ca1c",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.11,
+        "gamma": 1.0,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "96d4b362eb86ca1c"
+      ]
+    },
+    {
+      "case_id": "b15f3d4e1b53c63c",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "b15f3d4e1b53c63c"
+      ]
+    },
+    {
+      "case_id": "8cc9db14aa6e3abe",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "8cc9db14aa6e3abe"
+      ]
+    },
+    {
+      "case_id": "d774faf88b40918b",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "d774faf88b40918b"
+      ]
+    },
+    {
+      "case_id": "aad446af8d225ada",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "aad446af8d225ada"
+      ]
+    },
+    {
+      "case_id": "f13fb6ad2e184a71",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "f13fb6ad2e184a71"
+      ]
+    },
+    {
+      "case_id": "a0afce78e230816a",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "a0afce78e230816a"
+      ]
+    },
+    {
+      "case_id": "e7db56a1833dd797",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "e7db56a1833dd797"
+      ]
+    },
+    {
+      "case_id": "cd1eeb2ee91b1ed0",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.075,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "cd1eeb2ee91b1ed0"
+      ]
+    },
+    {
+      "case_id": "f7b6b6f8446985cc",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "f7b6b6f8446985cc"
+      ]
+    },
+    {
+      "case_id": "f4a9cab210a0f2de",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.04,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "f4a9cab210a0f2de"
+      ]
+    },
+    {
+      "case_id": "149dcdde60364205",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "149dcdde60364205"
+      ]
+    },
+    {
+      "case_id": "38244aa590a3c8d5",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.06,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "38244aa590a3c8d5"
+      ]
+    },
+    {
+      "case_id": "aa03026338b21294",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "aa03026338b21294"
+      ]
+    },
+    {
+      "case_id": "330489da3c7632bb",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.07,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "330489da3c7632bb"
+      ]
+    },
+    {
+      "case_id": "d4c4c6bbb3854513",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_CLOSED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "d4c4c6bbb3854513"
+      ]
+    },
+    {
+      "case_id": "b8ff4db9377f5cad",
+      "tags": [
+        "rate_threshold"
+      ],
+      "case": {
+        "topology": "parallel3",
+        "horizon_s": 86400,
+        "warmup_s": 0,
+        "isr_scale": 0.1,
+        "rate_scale": 1.0,
+        "initial_spendable_fraction": 0.02,
+        "reservoir_scale": 1.0,
+        "n_auth": 7,
+        "attack_budget": 3,
+        "attack_method": "weighted_cut",
+        "attack_surface": "generation",
+        "attack_start_s": 0.0,
+        "attack_duration_s": 86400.0,
+        "delta_e": 0.08,
+        "e_abort": 0.11,
+        "gamma": 3.4,
+        "fibre_attack_cost": 10.0,
+        "outage_model": "none",
+        "mean_uptime_s": 3600.0,
+        "mean_outage_s": 120.0,
+        "transport_uptime_s": 3600.0,
+        "transport_outage_s": 120.0,
+        "routing": "KAR",
+        "fail_mode": "FAIL_DEGRADED",
+        "fallback": "online_kem",
+        "buffer_policy": "retain"
+      },
+      "equivalent_recorded_case_ids": [
+        "b8ff4db9377f5cad"
+      ]
+    }
+  ],
+  "duplicate_recorded_runs": 0,
+  "check": "All duplicate scientific outcomes and traces agree exactly per seed"
+}

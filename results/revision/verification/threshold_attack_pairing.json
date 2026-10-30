@@ -1,0 +1,63 @@
+{
+  "phase": "threshold",
+  "mode_pairs_checked": 204,
+  "target_mismatches": 0,
+  "missing_mode_pairs": 0,
+  "attack_set_variants": [
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        1
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        3.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        4.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel4",
+        "weighted_cut",
+        10.0,
+        1
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel4",
+        "weighted_cut",
+        10.0,
+        4.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel4",
+        "weighted_cut",
+        10.0,
+        5.0
+      ],
+      "variants": 1
+    }
+  ],
+  "passed": true
+}

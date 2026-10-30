@@ -1,71 +1,76 @@
-# Forced assurance loss in contested multi-hop QKD networks
+# Forced assurance loss in finite-reservoir QKD networks
 
-Code and results for our WiCOMM-2026 paper, *Fail-Closed or Fail-Degraded? A
-Simulation Study of Forced Assurance Loss in Contested Multi-Hop QKD Networks*.
+This workspace contains the WiCOMM-2026 paper 167 revision: a key-service simulator, a constrained policy-learning study, official-review traceability, numerical evidence and manuscript sources. The model asks how finite stored key, interrupted generation and fallback permissions affect timely and compliant key service.
 
-The question is what a trusted-relay QKD network should do once it can no longer
-supply enough key: refuse service, or keep the circuit up on a computationally secure
-key instead. We built a discrete-event simulator to measure what each choice costs and
-what an adversary has to spend to force it.
+The current revision uses `revision/`, `experiments/revision_*.py` and `results/revision/`. Historical CSVs directly under `results/` belong to the earlier model and are preserved for audit. Their headline numbers must not be attributed to the corrected model. The original tracked code is archived at `archive/code_before_revision_0d1e2fa.zip`; original manuscripts and notes are under `archive/manuscripts_before_revision/`.
 
-## Running it
+## Start with the evidence
 
-Python 3.10+, with `numpy`, `pandas` and `matplotlib`. Nothing else, and no network
-access at run time.
+| File or directory | Purpose |
+|---|---|
+| `docs/revision/RESEARCH_EXPLAINED.md` | Beginner explanation, terminology, repository map and limits of the evidence. |
+| `docs/revision/official_review_matrix.md` | Every official reviewer comment and question. |
+| `docs/revision/REVIEWER_RESPONSE.md` | Point-by-point responses and evidence links. |
+| `docs/revision/literature_verified.md` | Primary-source verification, prior-art overlap and parameter provenance. |
+| `docs/revision/independent_method_review.md` | Independent audit of model, metrics and completed main records. |
+| `paper.tex` | Exactly six-page IEEE manuscript source. `paper_revised.tex` is a synchronized copy. |
+| `paper_extended.tex` | Compatibility entry point for the current paper; the old extended draft is archived. |
+| `submission/` | Final manuscript, reviewer compliance, beginner guide and source packages. |
+| `results/revision/analysis/` | Per-seed tables, means, intervals, paired comparisons and verification records. |
 
-Run the validation gate first — if it fails, don't trust anything downstream:
+## Numerical reproduction
 
-```bash
-python experiments/e1_validation.py
+Python 3.12 was tested. The exact numerical package versions are in `requirements.txt`; their package releases were checked on PyPI. The simulator needs no network connection or GPU. Keep the total number of concurrent simulation workers at eight or fewer. Complete recomputation is substantial; verified caches allow interrupted runs to resume without changing the protocol.
+
+```powershell
+python -m pip install -r requirements.txt
+python tools/verify_research.py
+python experiments/revision_theory_checks.py
+python experiments/revision_suite.py --phase main --seeds 12 --workers 6
+python experiments/revision_suite.py --phase sensitivity --seeds 8 --workers 6
+python experiments/revision_suite.py --phase threshold --seeds 6 --workers 6
+python experiments/revision_learning.py --phase all --workers 6
+python experiments/revision_fallback.py
+python experiments/analyze_revision_fallback.py
+python experiments/revision_online_adversary.py --phase all --workers 6
+python experiments/revision_online_persistence.py --phase all --workers 6
+python tools/normalize_result_json.py
 ```
 
-Then the experiments, in any order:
+Run those commands sequentially when using six workers per command. Each main/sensitivity/threshold manifest records full configurations, seeds, source hash and completion. Learning records all candidate tables and training/validation outcomes, then writes `results/revision/learning_policy_freeze.json` before the reserved test seeds are used. It rejects a changed protocol or corrupted cache instead of silently reusing it. Changing a scientific source requires a separate output/archive decision; do not mix new runs with existing evidence.
 
-```bash
-python experiments/run_experiments.py         # main grid, E2-E5
-python experiments/e6b_sensitivity.py         # gamma, abort threshold, operating envelope
-python experiments/e6c_nauth.py               # authentication cost
-python experiments/e7_policy_audit.py         # policy search
-python experiments/e8_published_validation.py # checks against published measurements
-python experiments/make_figures.py            # figures, from the CSVs in results/
+After completion, regenerate analysis and manuscript inputs:
+
+```powershell
+python experiments/revision_analyze.py --phase main
+python experiments/revision_analyze.py --phase sensitivity
+python experiments/revision_analyze.py --phase threshold
+python experiments/revision_learning_analysis.py
+python experiments/revision_learning_weights.py
+python experiments/revision_manuscript_data.py
+python tools/export_refinement_tables.py
+python experiments/revision_figures.py --figure main
+python experiments/revision_figures.py --figure reserve
+python experiments/revision_figures.py --figure learning
+python experiments/revision_figures.py --figure learning-conditions
 ```
 
-The whole set takes about half an hour on eight cores. Seeds are fixed and policies
-share common random numbers, so re-running gives the same numbers we report — worth
-checking, since that is the point of releasing this.
+The analysis programs refuse incomplete registered data. Numeric configuration aliases are checked for exact duplicate outcomes and collapsed for reporting, with their original records preserved. Undefined fractions are encoded as JSON null by the documented normalization step. Intervals use independent simulator seeds; the learning aggregate first averages the seven fixed conditions within each seed. Conditions and repeated records are not independent extra replicates. The refinement exporter reproduces the additional load and attack-cost tables from existing sensitivity data, checks matched arrival cohorts, and independently recalculates the paired load intervals; `--check` detects stale table inputs. Full artifact verification is recorded under `results/revision/verification/`.
 
-`e6b_sensitivity.py --from-csv` re-derives its tables from the stored CSV without
-re-simulating, which saves a lot of time if you only want to inspect the output.
+## What the model measures
 
-## Layout
+These are modeled key-supply/session-admission outcomes, not measured payload throughput, an implemented KEM, field-tested security or a composable cryptographic proof. Timely service `A`, floor-compliant service `Q`, and below-floor service `L` share the arrival denominator, with `A=Q+L`. ITS-key-entitled requests are separately partitioned into ITS-delivered, below-ITS-delivered and blocked outcomes. Payload weighting is an associated-payload exposure proxy, not calibrated harm.
 
-```
-qkdsim/config.py     every parameter, with the paper or spec it came from
-qkdsim/physics.py    key-rate model, four link states, reservoir semantics
-qkdsim/network.py    topologies and path selection
-qkdsim/sim.py        arrivals, admission, grade assignment, key accounting
-qkdsim/rl.py         grade-assignment policy search and the safety shield
-experiments/         one script per reported result, plus two diagnostics
-results/             the CSVs behind every table and figure
-figures/             generated figures, PDF and PNG
-```
+Stopping generation can leave previously accepted keys usable under the stated retention assumptions. Working-key purge is a separate scenario. Classical transport failure and online key-establishment failure are distinct. Default revision accounting uses seven authentication tags per relay request, with two and forty as sensitivity settings; this is not a universal protocol calibration. The main initial reserve is a stressed 2% of usable capacity, and larger starting reserves are evaluated explicitly. Historical provenance comments should be read alongside the current verification register, which distinguishes selected simulator parameters from measurements.
 
-## Reading the results
+The 18-state learned policies and greedy baseline share an explicit per-class exception monitor. C2 receives no below-floor exceptions; ISR and LOG have declared 10% arrival-count allowances. The guarantee belongs to the monitor. A selected policy is a validation-selected candidate from a limited search, and its test intervals do not capture uncertainty across every possible training run.
 
-Two columns in the CSVs are easy to confuse, and they are not interchangeable:
+## Manuscript tools
 
-- `floor_viol` — sessions served below the grade their traffic class authorises. These
-  may still have been delivered by QKD.
-- `forced_below_its` — sessions *entitled* to an information-theoretically secure key
-  that were served without one.
+`docs/revision/build_environment.md` records the tested IEEEtran/Tectonic build, editable Word conversion, native equation/table preservation, fonts and page checks. Optional document packages are listed in `requirements-documents.txt`. The portable tool downloads and their hashes are recorded under `tools/`; Microsoft Word is required for the tested hidden Word export path. The conference permits 4-6 manuscript pages; the final author requirement is exactly six pages, including references, in both manuscript renderings. The explanatory guide and reviewer response have separate page counts.
 
-The second is the metric the paper is about. At zero adversary budget the first is
-non-zero and the second is zero, which is the distinction `diag_baseline_forced.py`
-exists to demonstrate.
+`MANUSCRIPT_BUILD.md` explains the small LaTeX source package. `tools/verify_packaged_manuscript.py` checks its members and recompiles it with the prepared renderer. `tools/build_delivery.py` is a workspace packaging utility that requires the original or regenerated `build/final_word`, `build/final_latex` and reviewer QA products. The full archive supplies completed documents and copies of their QA evidence under `docs/revision/delivery_checks`; those evidence copies are not a replacement build tree. Numerical reproduction uses the commands above and does not require Word, TeX or those build directories.
 
-`config.py` carries the provenance for every number. Where we could not ground a value
-in the literature we sweep it rather than assert it; the count of authenticated
-messages per key delivery is the one such term, and we report at the optimistic end of
-its calibrated range and sweep the rest.
+On this Windows host, `platform.platform()` can trigger a native Python failure. The verification runner avoids pytest's system-version header and executes the same test functions through unittest; it does not skip parameterized checks. The minimal reproducer and safe `sys.getwindowsversion()` alternative are documented in `docs/revision/revision_layer_audit.md`.
 
-ITU-T and ETSI documents referenced by the model are not redistributed here.
+PDF eXpress processing with conference ID 69954X is a separate external certification step. A local PDF build and embedded-font check are not that certification. Third-party standards/papers, tool caches and historical drafts should not be automatically redistributed with a reproducibility package.

@@ -1,0 +1,295 @@
+{
+  "reviewed_utc": "2026-09-26T02:18:32.237685+00:00",
+  "reviewer": "/root/official_reviews/final_visual_qc",
+  "method": "All 19 pages rerendered at the unchanged 1.5 scale. Raw pixel SHA256 compared with the prior full-page visual review. Changed pages 16, 18 and 19 inspected in full at original PNG resolution; the other 16 pages are exactly pixel-identical to their previously reviewed renders.",
+  "status": "pass",
+  "internal_preview": false,
+  "page_count": 19,
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "final_hashes": {
+    "pdf": "45db3625ff23e6ae6a58e2ff7ba7c2ab22643410cc8add6571a5003b6209c10f",
+    "docx": "72be7b801fd6ad8032ef289e5af42ec573feb3ed2213eaeded25851c609f7fa4",
+    "source": "7c8a4e4aac35ff2a3f95091fa9972831318ed1b17cd4681d746764513ec56acd"
+  },
+  "submission_hashes_match_manifest": true,
+  "page_image_hashes_match_manifest": true,
+  "page_image_hashes": [
+    {
+      "page": 1,
+      "sha256": "d30f24c64952ed5ee96b167992cef477d39b5adebfbd4b839f1888eaf5d20e41"
+    },
+    {
+      "page": 2,
+      "sha256": "75593ce02747c7485cc0a2c563b836bff809dc119fbce2e33114e3d5b28fb81d"
+    },
+    {
+      "page": 3,
+      "sha256": "0a8902ded0907a9ffe591172fd736c9f3c2a0382e8d9233a1df0fec9d3dfc45d"
+    },
+    {
+      "page": 4,
+      "sha256": "7577fe6bf4a353176cbb9982ae8c30098a21248194811bfaee4ce8e668d33e7d"
+    },
+    {
+      "page": 5,
+      "sha256": "7b11460412307e928ef9bbec53aaafafd098c2b496169e8435a7b1279a250bae"
+    },
+    {
+      "page": 6,
+      "sha256": "f95a5dbadb807929a81a4863bdf74c28f4269f3770c60c2009cce596d6ab1b29"
+    },
+    {
+      "page": 7,
+      "sha256": "5af83f2b9780e91e86e7f156ab6fa372e9f1f9822b0d1671c8466ffef315c8f2"
+    },
+    {
+      "page": 8,
+      "sha256": "a24deb37428905c121167ea37442a811cf20a20fa44da0155ce59f151cf815ca"
+    },
+    {
+      "page": 9,
+      "sha256": "dbdabc2abfd975f2cc1cdadcbc48be91b3c0b185d8bbcaf348e9ec74b7482b51"
+    },
+    {
+      "page": 10,
+      "sha256": "b5e64c16307e2120add40e12735541d9f7acb9121745e96e7b1e9b8210621a7a"
+    },
+    {
+      "page": 11,
+      "sha256": "068a075a5aa9f690c78bd5c09f420dabdef4520c8ed3fc643e0685fd469741bc"
+    },
+    {
+      "page": 12,
+      "sha256": "87a826608f1e470d2454c61ee1cd38649e07a5f37e562bb2ec1e4bc68c235dc9"
+    },
+    {
+      "page": 13,
+      "sha256": "42667568bb6e9fb8d39c5eb1618125f005b732ef9d318f82eacaee7eb87aa22a"
+    },
+    {
+      "page": 14,
+      "sha256": "7bb5445776f0ead5fdd804069a6fceb2f120c8f4e9107c4b933a62d3e78c2ba3"
+    },
+    {
+      "page": 15,
+      "sha256": "0754c26350f9fb65ac424601580d8d01a5a5d8542419553b64fad92086d98a77"
+    },
+    {
+      "page": 16,
+      "sha256": "144a7370aff545585e92f5d2be580b278d07bbc5de8fd2e4f22371ff184789b4"
+    },
+    {
+      "page": 17,
+      "sha256": "9e0afa4f0b882282a7924b0cf9acfd69669ae3749feca6e05d370788216e21f4"
+    },
+    {
+      "page": 18,
+      "sha256": "11403e26c32926c58228a80d269a8d4c1cbb3a48e0b94079045c913024b25cbb"
+    },
+    {
+      "page": 19,
+      "sha256": "02fc143c637edc2cdbd2658554f96566af18a6509d2a14fec43d3c24dcb987a4"
+    }
+  ],
+  "checks": {
+    "native_math": "Readable, with intact glyphs, fractions, subscripts and floor brackets",
+    "figures_and_captions": "Learning trade-off on page 13 and starting-stock plot on page 14 readable and complete",
+    "tables": "Three tables readable; no split rows observed; continuation headers repeat on pages 17 and 19",
+    "headers_and_footers": "Consistent running header; footer numbers 1 through 19 correct",
+    "preview_language": "No preview label or scientific-pending language observed; external author/submission caveats remain appropriately separate",
+    "rate_shape_counterexample": "Page 14 clearly renders gamma=1, gamma=3.4, F_N, 83.469 percent, and marginal 95 percent interval 82.670 to 84.343 percent",
+    "consistency_corrections": "Page 16 reports 127 regression tests. Page 18 correctly describes abstract_new.tex as the exact expanded revised abstract and paper_extended.tex as the paper.tex compatibility entry point, with originals archived. Page 19 continuation header, rows and closing text remain intact.",
+    "link_destinations": "Markdown link destinations and final local-link relationships unchanged; all targets resolve from submission."
+  },
+  "observed_layout_issues": [],
+  "scope": "Narrow source-consistency correction, final rebuild, complete pixel comparison and changed-page visual reinspection. Main paper, manuscript artifacts, scientific code and result files unchanged.",
+  "pages_reinspected_current_build": [
+    16,
+    18,
+    19
+  ],
+  "unchanged_pages_relying_on_prior_full_review": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    17
+  ],
+  "prior_full_review": {
+    "reviewer": "/root/explainer_finalize/guide_content_check",
+    "reviewed_utc": "2026-09-26T01:45:59.6986039Z",
+    "final_hashes": {
+      "pdf": "297a9bebefd9d9ca38db719e12aad23fcaf7bf5861e5d98a25b1522b3228096a",
+      "docx": "a12e6fa4cef5af3b256d6fd5c9c84a061b4a2eb2ed9fbae2fb0289d8d0414f9b",
+      "source": "2a6cc17aac271715b17b0b869971239543f5cf5805a0f0082d4a816edf63fb0c"
+    },
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "pixel_comparison": [
+    {
+      "page": 1,
+      "before": "2da0eaccd34fc999e6307d81c1927dcca244bd10318da6d0e84a613edaf22471",
+      "after": "2da0eaccd34fc999e6307d81c1927dcca244bd10318da6d0e84a613edaf22471",
+      "identical": true
+    },
+    {
+      "page": 2,
+      "before": "b8d10421c4ce9edd3dec5726d2ab6b27480bfe2352cd89c5893372bbf1a424a9",
+      "after": "b8d10421c4ce9edd3dec5726d2ab6b27480bfe2352cd89c5893372bbf1a424a9",
+      "identical": true
+    },
+    {
+      "page": 3,
+      "before": "fb7514a04045a67b069e15f23e2ddf910badd2548a97ed338c62dff9dc983b8f",
+      "after": "fb7514a04045a67b069e15f23e2ddf910badd2548a97ed338c62dff9dc983b8f",
+      "identical": true
+    },
+    {
+      "page": 4,
+      "before": "896decd10c853238f71b6ecff16ba5c5228a5fe337423dcf567300506a14add9",
+      "after": "896decd10c853238f71b6ecff16ba5c5228a5fe337423dcf567300506a14add9",
+      "identical": true
+    },
+    {
+      "page": 5,
+      "before": "8423ced935d993b74804d475041634b2f10e660a2d0f828f1308898a09a67063",
+      "after": "8423ced935d993b74804d475041634b2f10e660a2d0f828f1308898a09a67063",
+      "identical": true
+    },
+    {
+      "page": 6,
+      "before": "ce735194b8f0100a31d1b01345ad0dedc9ec48cf44d6af2c204e8f4343e2257e",
+      "after": "ce735194b8f0100a31d1b01345ad0dedc9ec48cf44d6af2c204e8f4343e2257e",
+      "identical": true
+    },
+    {
+      "page": 7,
+      "before": "91371ee54f81bc75fe8b33f58cf0927d74ca6c01404507beb86c9732049fd486",
+      "after": "91371ee54f81bc75fe8b33f58cf0927d74ca6c01404507beb86c9732049fd486",
+      "identical": true
+    },
+    {
+      "page": 8,
+      "before": "1eac89022ace42e18a7b156f053c34839c94b8d171dfa33b7f1386b3dae23e6b",
+      "after": "1eac89022ace42e18a7b156f053c34839c94b8d171dfa33b7f1386b3dae23e6b",
+      "identical": true
+    },
+    {
+      "page": 9,
+      "before": "ef7624a264c62d9bf2b2e3d74b6c74c8cb6cb7b811e8093e1bf22ccd7d58cbd3",
+      "after": "ef7624a264c62d9bf2b2e3d74b6c74c8cb6cb7b811e8093e1bf22ccd7d58cbd3",
+      "identical": true
+    },
+    {
+      "page": 10,
+      "before": "b55d5ebfec1c745b2f4a8f5a353a3bf20f9b77984fc7c32c4f4e4dfaaab7d6d4",
+      "after": "b55d5ebfec1c745b2f4a8f5a353a3bf20f9b77984fc7c32c4f4e4dfaaab7d6d4",
+      "identical": true
+    },
+    {
+      "page": 11,
+      "before": "3eeb3bcd7a31553b6dd6722557e418ae90bb7bfc3cc0ca936cdff9d3798c03f6",
+      "after": "3eeb3bcd7a31553b6dd6722557e418ae90bb7bfc3cc0ca936cdff9d3798c03f6",
+      "identical": true
+    },
+    {
+      "page": 12,
+      "before": "02c709df3ef22749195696a97b406a1600a2b5f7b1fb75bdd41f5cb159f30b39",
+      "after": "02c709df3ef22749195696a97b406a1600a2b5f7b1fb75bdd41f5cb159f30b39",
+      "identical": true
+    },
+    {
+      "page": 13,
+      "before": "6ad5777ac903936fd5961c667adc7f7360948de574fc03d9c170b4d28066f9fc",
+      "after": "6ad5777ac903936fd5961c667adc7f7360948de574fc03d9c170b4d28066f9fc",
+      "identical": true
+    },
+    {
+      "page": 14,
+      "before": "bdfa9609e3a4d3ec765957adcb6da75f9e324f25b352ff504c7fc21918c7b1a4",
+      "after": "bdfa9609e3a4d3ec765957adcb6da75f9e324f25b352ff504c7fc21918c7b1a4",
+      "identical": true
+    },
+    {
+      "page": 15,
+      "before": "538b0a375faf3a5466c57694aefecdcafb5e68f7c1f37f19bbaff682f984dad5",
+      "after": "538b0a375faf3a5466c57694aefecdcafb5e68f7c1f37f19bbaff682f984dad5",
+      "identical": true
+    },
+    {
+      "page": 16,
+      "before": "82da4c7648c723e5e091d9e8d88d35e6788e036270286af61f257e05dbec21aa",
+      "after": "9b616a5edaa61761b421eef27e8360b64c7edf88affb75d7160d67698e5e4dbf",
+      "identical": false
+    },
+    {
+      "page": 17,
+      "before": "43dca64d75801b573f321553da232be36906025adf4721620b97aa86d34ecd7c",
+      "after": "43dca64d75801b573f321553da232be36906025adf4721620b97aa86d34ecd7c",
+      "identical": true
+    },
+    {
+      "page": 18,
+      "before": "af5f1341af403401ebe8c76359329f12433f9907127f05581d2f61998659751e",
+      "after": "342a156f4fdfe55be60510b4abeb2648a7143f0b4a34187e77389ebe5f9e4671",
+      "identical": false
+    },
+    {
+      "page": 19,
+      "before": "58c5d700f646d7324fb0af206a507c65132d0dbe71c515d485c1e9f6680a1456",
+      "after": "a591ded2592c66903dbfe250f7a1a82ae2d823e7a5b81791a20d6776288de8ea",
+      "identical": false
+    }
+  ]
+}

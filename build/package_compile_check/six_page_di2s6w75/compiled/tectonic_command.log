@@ -1,0 +1,30 @@
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Rerunning TeX because "paper.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\package_compile_check\six_page_di2s6w75\compiled\paper.pdf` (184.583984375 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\package_compile_check\six_page_di2s6w75\compiled\paper.log` (17.693359375 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\package_compile_check\six_page_di2s6w75\compiled\paper.aux` (8.3642578125 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\build\package_compile_check\six_page_di2s6w75\compiled\paper.out` (3.6845703125 KiB)
+
+warning: paper.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper.tex:79: Underfull \hbox (badness 10000) in paragraph at lines 78--79
+warning: paper.tex:79: Underfull \hbox (badness 2103) in paragraph at lines 78--79
+warning: paper.tex:79: Underfull \hbox (badness 2126) in paragraph at lines 78--79
+warning: paper.tex:79: Underfull \hbox (badness 3826) in paragraph at lines 78--79
+warning: paper.tex:181: Underfull \hbox (badness 1496) in paragraph at lines 180--181
+warning: paper.tex:215: Underfull \hbox (badness 3557) in paragraph at lines 214--215
+warning: paper.tex:215: Underfull \hbox (badness 10000) in paragraph at lines 214--215
+warning: paper.tex:220: Underfull \hbox (badness 1622) in paragraph at lines 219--220
+warning: paper.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper.tex:68: Underfull \hbox (badness 10000) in paragraph at lines 67--68
+warning: paper.tex:79: Underfull \hbox (badness 10000) in paragraph at lines 78--79
+warning: paper.tex:79: Underfull \hbox (badness 2103) in paragraph at lines 78--79
+warning: paper.tex:79: Underfull \hbox (badness 2126) in paragraph at lines 78--79
+warning: paper.tex:79: Underfull \hbox (badness 3826) in paragraph at lines 78--79
+warning: paper.tex:181: Underfull \hbox (badness 1496) in paragraph at lines 180--181
+warning: paper.tex:215: Underfull \hbox (badness 3557) in paragraph at lines 214--215
+warning: paper.tex:215: Underfull \hbox (badness 10000) in paragraph at lines 214--215
+warning: paper.tex:220: Underfull \hbox (badness 1622) in paragraph at lines 219--220
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

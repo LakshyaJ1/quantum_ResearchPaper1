@@ -1,0 +1,26 @@
+{
+  "source_sha256": "65d3966f91dd1fdae8f115fb963c938fabb5a092501eabad829304035b7920a8",
+  "pdf_sha256": "88f7b9dc3f2add96cc97e6d1c408c2593ff14cbd93fa940981eb59f46918299a",
+  "pages": 6,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "passed",
+  "blocking_findings": [],
+  "reviewed_utc": "2026-09-27T22:06:07.460680+00:00",
+  "reviewer": "root",
+  "method": "All six current 144 dpi page images opened and inspected. Equations, captions, three figures, three data tables, references, column flow and page boundaries reviewed.",
+  "page_png_sha256": {
+    "1": "6a428f0a5f9fc55191b3042562e9870cc586ff4c84d3ecc6734bbf41e816a24f",
+    "2": "a9db87988f5badb3f0a0173d427638f0b20d8ec4369fd61ad4fa212c48b572c0",
+    "3": "6e8a4df04c678144b570870055059cc2f49edffd4ee3d98365c3086ae64a1e0f",
+    "4": "a94409af2bf5db55260a22b32023f3fe0971fc79d2a8a1f06cd80666bc0f7e00",
+    "5": "ff879dbf1a291cf898964435ff6144d37e55441d599a1e916805731e021d6a76",
+    "6": "4b6a2eb3672d16f392ea4921460a5a249a498ec2742d834a1b03cd966539d67a"
+  }
+}

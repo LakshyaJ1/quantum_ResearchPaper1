@@ -1,0 +1,304 @@
+\RequirePackage[T1]{fontenc}
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=20mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathptmx}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlist{nosep,leftmargin=14pt}
+\newcommand{\loc}[1]{\textit{Manuscript: #1.}}
+\newcommand{\GI}{G\textsubscript{1}}
+\newcommand{\GII}{G\textsubscript{2}}
+\newcommand{\GIII}{G\textsubscript{3}}
+\newcommand{\GIV}{G\textsubscript{4}}
+\newcommand{\comment}[2]{\par\medskip\noindent\textbf{#1}\hspace{0.4em}\textit{#2}\par}
+
+\begin{document}
+\begin{center}
+{\large\bfseries Reviewer compliance report}\\[2pt]
+WiCOMM-2026, Paper ID 167\\
+\emph{Fail-Closed or Fail-Degraded? A Simulation Study of Forced Assurance Loss in
+Contested Multi-Hop QKD Networks}\\[2pt]
+Lakshya Jain, Siddhi Arora
+\end{center}
+
+We thank the reviewer for a careful and constructive review. The camera-ready
+manuscript keeps the submitted title, research question, structure and core metrics,
+adding floor-compliant service $Q$ and below-floor service $L$. It responds to every
+main concern, minor point and question below; the one suggestion we did not follow in
+full (point 9) is explained. Page numbers refer to the six-page camera-ready PDF. The
+manuscript itself presents the corrected results without referring to the review;
+this report records what changed and why.
+
+\section*{Corrections found during revision}
+While re-running the study we found and corrected the following. Each is backed by
+runs that are released with the paper.
+
+\begin{itemize}
+\item \textbf{Stored key after abort.} The submitted simulator treated key already
+stored on a link as unusable once the link aborted generation. Stored key does not
+expire when generation stops. With every other submitted setting and identical random
+streams, correcting this one rule moves fail-closed availability at $k=2$ from 0.304
+to 0.767, and forced assurance loss (as defined in the submission, over served
+entitled requests) from 67.4\% to 4.3\%; reverting it reproduces the submitted values
+to within 0.07 points. The submitted cliff therefore measured the loss of stock, not
+of key generation. The camera-ready model keeps stored key spendable, declares the
+stock through an initial usable fill (2\% in the main runs), and reports stock and
+attack duration as part of the forcing cost (\S V-D).
+\item \textbf{The submitted $k=2$ attack was not the minimum cut.} The static-betweenness adversary bought BDE1--BDE2 and BDE1--REL1, which isolate two of the
+three forward posts. Table II now reports this adversary beside the cost-weighted
+minimum cut; with stock retained, its first link costs 0.7 points of fail-closed
+service, so the submitted rise at $k=1$ disappears.
+\item \textbf{Formation size.} The formation has eight nodes and nine links, not
+nine nodes.
+\item \textbf{Chain forcing cost.} On the chain every link lies on one cycle with
+equal betweenness, so the static ranking is decided by tie order; with our tie
+order it needs $d+2$ links (the submitted order needed $d+1$). Residual betweenness
+needs two at every depth $d\ge2$ (\S V-C).
+\item \textbf{Key-aware routing.} The submitted 2.7-point fail-closed loss of
+key-aware routing reproduces, but only in a window after a 12\,h warm-up from full
+stores; from $t=0$ or from 2\% fill key-aware routing gains 0.08--0.13 points
+(\S V-B).
+\item \textbf{Withdrawn claims.} Class-aware reservation floors are tunable
+(fail-closed service 96.6, 81.2 and 59.9\% at floor scales 0.05, 0.25 and 1), and the
+per-class shield is no longer circumvented through omitted classes; both submitted
+statements are withdrawn. The rate formula's ITS zero at $f=1.16$ is 9.8\%, not
+9.9\%, so at $e_{\mathrm{abort}}=0.11$ complete suppression needs $\Delta e=0.068$,
+not 0.08.
+\end{itemize}
+
+All results are regenerated with the corrected code; 127 regression tests and the
+43-check validation gate pass.
+
+\textbf{Settings changed at the reviewer's request} (point numbers refer to the
+review): $n_{\mathrm{auth}}=7$ in all results, with 2 and 40 as sensitivities
+(point 4); ISR arrival rate rescaled from 0.02 to 0.002\,s$^{-1}$, so the mean debit
+across the formation's cut is 83\% of its supply, with the submitted rate kept as an
+overload case (point 8); per-link attack costs (point 5); weather-matched baselines
+(point 6). Main comparisons use twelve seeds, sensitivities eight, and the online
+adversary and abort-threshold sweep six, with 95\% percentile bootstrap intervals
+over seeds (20\,000 resamples) and common random numbers for paired differences.
+
+\section*{Main concerns}
+
+\comment{1. Single topology.}{All headline numbers come from one nine-node graph \ldots\ Evaluate on multiple topologies with varying cut size and report how the metric scales.}
+We added four graphs---an eight-node ring, a $3\times3$ grid and three- and
+four-path parallel graphs---giving minimum cuts of two, two, three and four links
+beside the formation (\S III, Fig.~2). We agree that the headline numbers are a
+property of one graph; the paper now says so and reports how the result scales.
+With the budget equal to the cut, forced assurance loss is 87.6--92.9\% on all five
+graphs, and fail-closed service follows a stock-limited prediction from a new cut
+condition, Eq.~(4): 6.0/9.0/12.0\% predicted for cuts of 2/3/4 against
+6.5--6.7/9.6/12.3\% observed. With one cut link suppressed, loss appears only where
+the remaining cut links cannot carry the demand (4.8--11.5\% on two-link cuts, 0.71\%
+and 0.05\% on three- and four-link cuts). The conclusion states the five-graph result.
+\loc{\S III and \S III-C, Eq.~(4), pp.~2--3; \S V-A and Fig.~2, pp.~3--4; \S VII, p.~6}
+
+\comment{2. Non-equivalent metrics.}{Under fail-degraded, a session counts as available even when served with post-quantum crypto only \ldots\ make the asymmetry explicit in the abstract.}
+Of the two options offered, we took the second, and added a common denominator: timely service $A$, floor-compliant
+service $Q$ and below-floor service $L$ share one arrival denominator, $A=Q+L$
+(Eq.~3), and every headline comparison reports $A$ and $Q$ together. The abstract
+states the asymmetry directly: fail-degraded operation keeps 97.5\% of requests
+served but only 6.6\% at their authorised grade, against fail-closed service of
+6.7\%. Forced assurance loss keeps blocked entitled requests in its denominator, so
+both modes are scored against the same entitled arrivals. The composite
+$J=A-0.75L$ is used only in the policy audit, where the value of below-floor service
+is an explicit choice.
+\loc{Abstract; \S III-C, Eq.~(3), p.~3; \S V-A and Table II, pp.~3--4}
+
+\comment{3. Validation overstated.}{V1 compares the model against its own accounting; V4 bounds only to an order of magnitude \ldots\ State what each check establishes.}
+We withdrew the claim of two reproductions. V1 is described as arithmetic
+consistency, V4 as a bound to an order of magnitude, and V2 and V3 as two failures in
+the same direction, which fix the direction of the accounting bias and motivate the
+new default $n_{\mathrm{auth}}=7$. The abstract no longer mentions validation.
+\loc{\S IV-A, p.~3}
+
+\comment{4. Wrong default parameter.}{Field data implies $n_{\mathrm{auth}}$ of 7 to 40 \ldots\ Report main tables at the calibrated value with 2 as the optimistic sensitivity.}
+All results now use $n_{\mathrm{auth}}=7$ (a \GII\ debit of 1385\,bit per hop), with 2
+and 40 as sensitivities; the one exception, labelled in the text, is the stored-key
+contrast run at the submitted settings. As the reviewer anticipated, the choice is
+load-bearing where scarcity binds: under the cut, fail-closed service is
+8.5/7.0/3.3\% and forced loss 87.9/89.9/93.5\% at $n_{\mathrm{auth}}=2/7/40$ (eight
+seeds). We withdrew the claim that policy differences cancel as a common additive
+term. The \GI\ affordability and routing results were re-run at the calibrated value.
+\loc{\S III-B, p.~3; \S V-D, p.~5}
+
+\comment{5. Uniform attack cost.}{The topology mixes fibre and free-space links, yet budget $k$ assumes all links are equally attackable.}
+Each link now carries a relative attack cost, 1 for free-space and 10 for the fibre,
+with ratios 1 and 100 as sensitivities, and budgets are spent in these units. The
+paper states that the costs are scenario weights, not measured expenditure. The
+results are cost-conditioned: with the fibre 10 or 100 times dearer, a
+residual-betweenness adversary avoids it and forces 10.1\% at budget two, against
+89.8\% when all links cost the same, while the cost-weighted minimum cut, which
+contains no fibre, is unaffected (eight-seed sensitivity; ratios 10 and 100 give
+identical results).
+\loc{\S III-A, p.~2; \S V-C, p.~4}
+
+\comment{6. Correlated outage affects the baseline.}{Weather or terrain masking could sever the min-cut with no adversary present \ldots\ Address the implication for the zero baseline.}
+We agree, and no longer claim that all loss under attack is attack-attributable.
+Attack effects are reported as paired differences between attacked and unattacked runs under
+identical environmental draws. With up/down times of 900/600\,s the unattacked forced
+loss is 1.7\% (independent links) and 3.0\% (all free-space generation failing
+together), while the paired attack excess stays at 88.1 and 86.9 points. The paper
+states that $F$ counts loss whatever its cause, that attribution needs the
+weather-matched baseline, and that ``a held correlated outage looks like an attack''.
+\loc{\S IV, p.~3; \S V-D, p.~5}
+
+\comment{7. Metric ignores exposure.}{A downgraded 2\,kbit command message is weighted the same as a 320\,kbit logistics transfer \ldots\ Add weighting by data sensitivity.}
+We added a payload-weighted forced loss $F_B$ and class-importance weights $(5,2,1)$
+and $(10,3,1)$ for (C2, ISR, LOG), labelled as exposure proxies rather than measured
+harm. At the headline cut the payload-weighted forced loss is 90.3\% against 90.1\%
+by count. In the policy audit the weighting matters: the learned controller's small
+utility gain comes with $+1.7$ points of below-ITS payload exposure, which the
+count-based $\Delta F$ ($+0.33$ points) understates; class weighting leaves its gain
+unchanged.
+\loc{\S III-C, p.~3; \S V-A; \S V-E and Table IV, p.~5}
+
+\comment{8. Rescale the \GI\ class.}{A class that cannot be served under any configuration distorts the grade mix and the routing comparison. Rescale ISR to what the links can carry.}
+ISR is rescaled to 0.002\,s$^{-1}$, so the mean debit across the formation's cut is
+397\,bit/s, 83\% of its 480\,bit/s supply; the submitted rate (over six times the
+supply) is kept as an overload case and 0.03 of it as light load. At the rescaled load
+ISR reaches its one-time-pad floor in 97.0\% of arrivals, against 12.6\% at the
+submitted rate, so the submitted verdict that the floor was unimplementable is
+corrected: a \GI\ floor fails through overload, not by construction. The routing
+comparison is re-run at the rescaled load.
+\loc{\S III-B, p.~3; \S V-A, p.~4; \S V-B, p.~4}
+
+\comment{9. Policy search is not required.}{The useful output is the threshold, which follows from the objective definition \ldots\ ``104.8\%'' bounds only the search budget. Compress \S V-E.}
+We agree that the crossing price is algebra on measured outcome differences, and the
+paper now presents it that way, reporting the $\lambda$ threshold directly: in
+$J=A-\lambda L$ the heuristic beats the strict floor rule for $\lambda<0.98$ (CI
+$[0.96,1.00]$). The 104.8\% claim is removed, and the paper states that the
+heuristic's share of the learned policy (now 99.8\%) reflects the search budget, not
+the headroom. We compressed \S V-E rather than removing it: its text is shorter than
+in the submission (about 235 against 250 words), its numbers moved into the new
+Table IV, and with that table it occupies the same space as before; the room for the
+topology sweep came from compressing \S I--\S IV.
+
+We kept a compact learning study because it now supports a claim the objective alone
+does not give, and one the paper's main result depends on. Where the reviewer's
+$\lambda$ algebra ranks fixed policies, a learned controller shows what an optimiser
+does with the shield's exception allowance: it spends it where it costs the most
+one-time-pad payload (below-ITS payload exposure $+1.7$ points, ISR compliant service
+$-2.8$), a gain invisible to $\lambda$ because $\Delta L$ is indistinguishable from
+zero and reversed only by pricing forced loss ($\mu^\ast=0.32$). This is the policy
+counterpart of the paper's argument that assurance loss must be measured, not
+inferred from availability. It also shows that tables trained on nominal traffic
+alone fail on stressed conditions ($-4.7$ and $-3.6\times10^{-3}$), because nominal
+runs never reach depletion. The protocol now uses disjoint training, validation and
+test seeds, frozen tables, a per-class shield and seven test conditions including two
+unseen graphs. If the reviewer prefers, \S V-E can be reduced to its first paragraph
+and Table IV without affecting any other result.
+\loc{\S V-E and Table IV, p.~5}
+
+\section*{Minor points}
+
+\comment{$\gamma=3.4$ is fitted to one datapoint from a different QKD modality.}{Call it an illustrative bound, not a calibration.}
+$\gamma=3.4$ is now described as an illustrative steeper response, not a calibration.
+The new sub-threshold results show where it matters: below the abort threshold a steep
+response can force loss without aborting any link (Table III).
+\loc{\S III-A, p.~2; Table III, p.~5}
+
+\comment{\S V-B(1): the zero-width CI follows from the setup.}{Soften the wording.}
+The paper now states that the zero-width interval is an identity of the model, not a
+measured precision, and that floor-compliant service $Q$ still discriminates between
+the routing policies.
+\loc{\S V-B(1), p.~4}
+
+\comment{Table III needs confidence intervals; Table II needs a per-class breakdown and how SD $\le0.012$ was computed.}{}
+The former Table III is replaced by a capability-against-budget table over three
+graphs, which reports every non-zero cell with its 95\% bootstrap interval. Table II
+gives floor-compliant service per class (C2, ISR, LOG), and its caption states the
+largest bootstrap half-width and the largest sample standard deviation across seeds,
+computed per cell over the twelve seeds. The blanket ``SD $\le 0.012$'' statement was
+removed.
+\loc{Tables II and III, pp.~3 and 5}
+
+\comment{Table I: the all-\checkmark\ row for ``This work'' is self-serving.}{State the gap in prose.}
+The row is removed; the gap is stated in the Related Work prose, scoped to the studies
+we located. We also added prior work found during revision: denial-of-service key
+depletion (Mehic \emph{et al.}, 2022) and single-link studies of attack- or
+failure-triggered KEM fallback (Agalya and Priyadarsini, 2026; Hernandez-Hernandez
+\emph{et al.}, 2026).
+\loc{\S II and Table I, pp.~1--2}
+
+\comment{Fig.~1(b) is overloaded.}{Separate the two attack surfaces.}
+Fig.~1 is redrawn. Panel (a) shows the eight-node formation and the minimum cut that
+isolates its forward posts; panel (b) lists the three failure surfaces separately---
+quantum-channel attack, classical-transport denial and online key-establishment
+denial---with what each stops and what still works.
+\loc{Fig.~1, p.~2}
+
+\comment{Nearly every clause carries a caveat.}{Compress and use the space for the missing topology sweep.}
+Caveats are stated where a choice is introduced and collected once in the limitations
+paragraph (\S VI); for example, attack costs and payload weights are declared as
+scenario choices. The space is used for the topology sweep, the cut condition and the
+answers to the questions below.
+\loc{\S VI, p.~6}
+
+\comment{Reference [5] is dated 2026.}{Confirm publication status.}
+Confirmed: P. Spooren, A. Neuhold, S. Ramacher and T. H\"uhn, ``PQC-enhanced QKD
+networks: A layered approach,'' \emph{Proc. IEEE QCNC}, Kobe, Japan, 2026,
+pp.~354--358, doi:10.1109/QCNC69040.2026.00060. All other references were checked
+against publisher records; several were updated to their published versions (for
+example, the IETF hybrid key exchange draft is now RFC~9954).
+
+\section*{Questions}
+
+\comment{Q1. If ISR demand is scaled to what the free-space hops can sustain, does the fail-mode gap persist, narrow, or invert?}{}
+It persists under attack, narrows modestly, and never inverts. Unattacked, the gap
+vanishes at sustainable load (paired $\Delta A$ of 0.00 and $+0.01$ points at 0.03 and
+0.1 of the submitted rate) and appears only through overload at the submitted rate
+($+17.2$). Under the cut, $\Delta A$ is 85.4, 90.6 and 94.7 points at 0.03, 0.1 and 1
+of the submitted rate (eight seeds; 90.8 on the twelve main seeds), narrowing only
+because a lighter load drains the stock more slowly, and fallback never raises the
+formation's compliant service. The size of the gap is set by the stock behind the
+cut and the attack's duration: from full stores the same 24\,h attack forces nothing.
+\loc{\S V-D, p.~5}
+
+\comment{Q2. Does the capability/budget non-substitution hold for graphs with min-cut greater than 2?}{}
+For the linear response ($\gamma=1$) and without outages, yes: on cuts of two, three
+and four links, sub-threshold injection forces under 0.1\% at any budget, and a budget
+one short of the cut forces under 0.1\% at any injection; only a full cut past the
+threshold forces loss (93.1, 90.4 and 87.7\%), and every budget from the cut upward
+gives the same value. With outages, a budget one short of a two-link cut forces
+4.8--11.5\% (Fig.~2b), because the remaining link cannot carry the demand. For the
+steep illustrative response ($\gamma=3.4$), no: sub-threshold injection lowers the
+cut's supply toward what the entitled classes need and forces 63.0, 41.6 and 17.3\% at
+$\Delta e=0.03$ without aborting any link. Table III reports every non-zero cell with
+its interval. We also corrected the submitted statement about raising the abort
+threshold to 0.11: complete suppression then needs $\Delta e=0.068$, not 0.08,
+because the rate formula's ITS zero (9.8\%) binds before the abort threshold.
+\loc{\S V-D and Table III, pp.~4--5}
+
+\comment{Q3. Under an adversary that re-targets as the router reroutes, does the centrality-guided forcing cost still grow linearly with depth?}{}
+Not for a competent adversary. The linear growth came from a static ranking that, on
+the chain, is decided by tie-breaking, since every chain edge lies on one cycle with
+equal betweenness. An adversary that recomputes betweenness on the residual graph needs
+two links, the minimum cut, at every depth beyond one. We also tested an online
+adversary that sees only committed routes and updates every 60\,s (depths 2, 4 and 6):
+if it keeps its slots it holds a cut from its first choice and forces 89.7--92.9\%
+with 48 link-hours; if it releases slots whenever its path is momentarily
+unreachable, its forced loss falls with depth (72.3\% to 35.5\%), so depth protects
+only against that less persistent variant.
+\loc{\S V-C and Fig.~3, p.~4}
+
+\comment{Q4. Would the classical-channel dependency change if the fallback used pre-placed symmetric keys instead of an online KEM?}{}
+Not the transport dependency: denying the classical channel on the cut drops service
+to 0.06\% with either fallback, because ciphertext still needs a path. Pre-placed keys
+remove a different dependency, on a live key-establishment service: with that service
+down under the held cut, an online KEM fallback serves 5.0\% and pre-placed keys
+97.5\%. They still force 89.9\% of entitled requests below ITS, so they relocate the
+dependency without reducing assurance loss. The model treats pre-placed keys as ideal;
+their lifetime, refresh and distribution cost are stated as unmodelled.
+\loc{\S III-A and Fig.~1(b), p.~2; \S V-D, p.~5}
+
+\section*{Reproducibility}
+The code, configurations, per-seed results, the scripts that generate every table and
+figure, and the experiment that compares the submitted and corrected simulators on
+identical random streams are in the project repository. The manuscript's numerical
+tables are generated from raw run files by a single script, which also records each
+cited value with its cases and seeds.
+\end{document}

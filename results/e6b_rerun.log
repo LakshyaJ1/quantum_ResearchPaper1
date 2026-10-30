@@ -1,0 +1,90 @@
+running 576 configurations ...
+  24/576 done
+  48/576 done
+  72/576 done
+  96/576 done
+  120/576 done
+  144/576 done
+  168/576 done
+  192/576 done
+  216/576 done
+  240/576 done
+  264/576 done
+  288/576 done
+  312/576 done
+  336/576 done
+  360/576 done
+  384/576 done
+  408/576 done
+  432/576 done
+  456/576 done
+  480/576 done
+  504/576 done
+  528/576 done
+  552/576 done
+  576/576 done
+
+=== A1/A2: does the k=0 -> k=2 headline hold across gamma and e_abort? (QBER injection) ===
+ gamma  e_abortmode             avail k=0 avail k=2  forced k=0  forced k=2
+   1.0    0.075FAIL_CLOSED         0.8102    0.5234      0.0000      0.0000
+   1.0    0.075FAIL_DEGRADED       0.9703    0.9703      0.0000      0.3759
+   1.0    0.110FAIL_CLOSED         0.8102    0.6857      0.0000      0.0000
+   1.0    0.110FAIL_DEGRADED       0.9703    0.9703      0.0000      0.1548
+   3.4    0.075FAIL_CLOSED         0.8102    0.3020      0.0000      0.0000
+   3.4    0.075FAIL_DEGRADED       0.9703    0.9703      0.0000      0.6765
+   3.4    0.110FAIL_CLOSED         0.8102    0.7668      0.0000      0.0000
+   3.4    0.110FAIL_DEGRADED       0.9703    0.9703      0.0000      0.0433
+
+  VERDICT: the qualitative headline DOES NOT HOLD in all four (gamma, e_abort) combinations.
+  (fail-closed loses >20 pts availability; fail-degraded gains
+   >20 pts forced assurance loss, at k=2 vs k=0)
+
+=== A3: classical-channel denial -- the attack that defeats fail-degraded ===
+attack                    mode                avail  blocked   forced  G4 share
+QBER injection            FAIL_CLOSED        0.5234   0.4766   0.0000    0.0000
+QBER injection            FAIL_DEGRADED      0.9703   0.0297   0.3759    0.3759
+classical denial          FAIL_CLOSED        0.2963   0.7037   0.0000    0.0000
+classical denial          FAIL_DEGRADED      0.3127   0.6873   0.0000    0.0000
+
+=== A4: the delta_e axis -- the cliff is at delta_e >= e_abort - e0 (e0 = 0.03) ===
+ e_abort  needs de  delta_e  FC avail  FD forced
+   0.075     0.045     0.01    0.8055     0.0002
+   0.075     0.045     0.02    0.8014     0.0000
+   0.075     0.045     0.03    0.7982     0.0000
+   0.075     0.045     0.04    0.7956     0.0001
+   0.075     0.045     0.05    0.3020     0.6765  <-- crosses abort
+   0.075     0.045     0.06    0.3020     0.6765  <-- crosses abort
+   0.075     0.045     0.08    0.3020     0.6765  <-- crosses abort
+   0.075     0.045     0.10    0.3020     0.6765  <-- crosses abort
+   0.110     0.080     0.01    0.8055     0.0002
+   0.110     0.080     0.02    0.8014     0.0000
+   0.110     0.080     0.03    0.7982     0.0000
+   0.110     0.080     0.04    0.7956     0.0001
+   0.110     0.080     0.05    0.7929     0.0018
+   0.110     0.080     0.06    0.7807     0.0362
+   0.110     0.080     0.08    0.3020     0.6765  <-- crosses abort
+   0.110     0.080     0.10    0.3020     0.6765  <-- crosses abort
+
+=== A5: does BUDGET substitute for CAPABILITY below threshold? ===
+  e_abort=0.075, so the capability threshold is delta_e = 0.045.
+   delta_e       k=1       k=2       k=3       k=4       k=5   FC availability
+      0.01    0.8102    0.8055    0.8055    0.8055    0.8055   span 0.0047
+      0.02    0.8102    0.8014    0.8014    0.8014    0.8014   span 0.0087
+      0.03    0.8102    0.7982    0.7982    0.7982    0.7982   span 0.0120
+      0.04    0.8102    0.7956    0.7956    0.7956    0.7956   span 0.0146
+   delta_e       k=1       k=2       k=3       k=4       k=5   FD forced loss
+      0.01    0.0000    0.0002    0.0002    0.0002    0.0002   max 0.0002
+      0.02    0.0000    0.0000    0.0000    0.0000    0.0000   max 0.0000
+      0.03    0.0000    0.0000    0.0000    0.0000    0.0000   max 0.0000
+      0.04    0.0000    0.0001    0.0001    0.0001    0.0001   max 0.0001
+
+  VERDICT: budget DOES NOT substitute for capability below the threshold.
+  (flat = availability spans <0.05 across a 5x range in link budget)
+
+  Fail-degraded availability under QBER injection: 0.9703
+  Fail-degraded availability under classical denial:  0.3127   (delta -0.6576)
+  A post-quantum fallback needs the classical channel. Denying that
+  channel removes the fallback, so fail-degraded is NOT immune --
+  it is immune only to attacks on the QUANTUM channel.
+
+-> results/e6b_sensitivity.csv

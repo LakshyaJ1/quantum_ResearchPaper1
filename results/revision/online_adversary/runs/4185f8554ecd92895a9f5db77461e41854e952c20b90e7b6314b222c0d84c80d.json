@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "run_key": "4185f8554ecd92895a9f5db77461e41854e952c20b90e7b6314b222c0d84c80d",
+  "source_hash": "f007330e9cf450df6ce9ea2bd9b0a5bc09992f49f144c015e2908fc8042fb388",
+  "depth": 6,
+  "method": "weighted_cut",
+  "budget": 2,
+  "seed": 3003,
+  "case": {
+    "topology": "formation",
+    "horizon_s": 86400,
+    "warmup_s": 0,
+    "isr_scale": 0.1,
+    "rate_scale": 1.0,
+    "initial_spendable_fraction": 0.02,
+    "reservoir_scale": 1.0,
+    "n_auth": 7,
+    "attack_budget": 2,
+    "attack_method": "weighted_cut",
+    "attack_surface": "generation",
+    "attack_start_s": 0.0,
+    "attack_duration_s": 86400,
+    "delta_e": 0.05,
+    "e_abort": 0.075,
+    "gamma": 1.0,
+    "fibre_attack_cost": 10.0,
+    "outage_model": "independent",
+    "mean_uptime_s": 3600.0,
+    "mean_outage_s": 120.0,
+    "transport_uptime_s": 3600.0,
+    "transport_outage_s": 120.0,
+    "routing": "KAR",
+    "fail_mode": "FAIL_DEGRADED",
+    "fallback": "online_kem",
+    "buffer_policy": "retain"
+  },
+  "summary": {
+    "all": {
+      "n_arrivals": 7033,
+      "n_served": 6848,
+      "n_qualified": 567,
+      "n_degraded": 6281,
+      "n_blocked": 185,
+      "n_entitled": 4450,
+      "n_forced": 3926,
+      "availability": 0.9736954358026447,
+      "qualified_availability": 0.08061993459405659,
+      "degraded_arrival_fraction": 0.893075501208588,
+      "blocked_arrival_fraction": 0.026304564197355326,
+      "forced_entitled_fraction": 0.8822471910112359,
+      "entitled_blocked_fraction": 0.03910112359550562,
+      "entitled_its_fraction": 0.07865168539325842,
+      "conditional_forced_fraction": 0.9181478016838166,
+      "degraded_payload_fraction": 0.9110572214541919,
+      "forced_payload_fraction": 0.9046871138253514,
+      "qualified_payload_fraction": 0.08393246156511026,
+      "key_Mbit": 13.349637,
+      "mean_hops": 6.176693925233645,
+      "latency_p95": 0.35000000000582077,
+      "first_degraded_s": 5937.35,
+      "first_forced_s": 5937.35,
+      "utility": 0.3038888098962037
+    },
+    "C2": {
+      "n_arrivals": 4288,
+      "n_served": 4117,
+      "n_qualified": 339,
+      "n_degraded": 3778,
+      "n_blocked": 171,
+      "n_entitled": 4288,
+      "n_forced": 3778,
+      "availability": 0.9601212686567164,
+      "qualified_availability": 0.07905783582089553,
+      "degraded_arrival_fraction": 0.8810634328358209,
+      "blocked_arrival_fraction": 0.03987873134328358,
+      "forced_entitled_fraction": 0.8810634328358209,
+      "entitled_blocked_fraction": 0.03987873134328358,
+      "entitled_its_fraction": 0.07905783582089553,
+      "conditional_forced_fraction": 0.9176584891911587,
+      "degraded_payload_fraction": 0.8810634328358209,
+      "forced_payload_fraction": 0.8810634328358209,
+      "qualified_payload_fraction": 0.07905783582089553,
+      "key_Mbit": 3.004065,
+      "mean_hops": 6.16856934661161,
+      "latency_p95": 0.35000000000582077,
+      "first_degraded_s": 5937.35,
+      "first_forced_s": 5937.35,
+      "utility": 0.2993236940298507
+    },
+    "ISR": {
+      "n_arrivals": 162,
+      "n_served": 159,
+      "n_qualified": 9,
+      "n_degraded": 150,
+      "n_blocked": 3,
+      "n_entitled": 162,
+      "n_forced": 148,
+      "availability": 0.9814814814814815,
+      "qualified_availability": 0.05555555555555555,
+      "degraded_arrival_fraction": 0.9259259259259259,
+      "blocked_arrival_fraction": 0.018518518518518517,
+      "forced_entitled_fraction": 0.9135802469135802,
+      "entitled_blocked_fraction": 0.018518518518518517,
+      "entitled_its_fraction": 0.06790123456790123,
+      "conditional_forced_fraction": 0.9308176100628931,
+      "degraded_payload_fraction": 0.9259259259259259,
+      "forced_payload_fraction": 0.9135802469135802,
+      "qualified_payload_fraction": 0.05555555555555555,
+      "key_Mbit": 8.582001,
+      "mean_hops": 6.19496855345912,
+      "latency_p95": 0.35000000000582077,
+      "first_degraded_s": 6010.35,
+      "first_forced_s": 6010.35,
+      "utility": 0.2870370370370371
+    },
+    "LOG": {
+      "n_arrivals": 2583,
+      "n_served": 2572,
+      "n_qualified": 219,
+      "n_degraded": 2353,
+      "n_blocked": 11,
+      "n_entitled": 0,
+      "n_forced": 0,
+      "availability": 0.9957413859852884,
+      "qualified_availability": 0.08478513356562137,
+      "degraded_arrival_fraction": 0.910956252419667,
+      "blocked_arrival_fraction": 0.004258614014711576,
+      "forced_entitled_fraction": null,
+      "entitled_blocked_fraction": null,
+      "entitled_its_fraction": null,
+      "conditional_forced_fraction": null,
+      "degraded_payload_fraction": 0.910956252419667,
+      "forced_payload_fraction": null,
+      "qualified_payload_fraction": 0.08478513356562137,
+      "key_Mbit": 1.763571,
+      "mean_hops": 6.188569206842923,
+      "latency_p95": 0.35000000000582077,
+      "first_degraded_s": 5941.35,
+      "first_forced_s": null,
+      "utility": 0.3125241966705381
+    }
+  },
+  "counters": {
+    "all": {
+      "n_arrivals": 7033,
+      "n_served": 6848,
+      "n_timely_served": 6848,
+      "n_blocked": 185,
+      "n_pending": 0,
+      "n_authorized_served": 567,
+      "n_floor_violations": 6281,
+      "n_its_entitled": 4450,
+      "n_forced_below_its": 3926,
+      "served_arrival_fraction": 0.9736954358026447,
+      "timely_served_arrival_fraction": 0.9736954358026447,
+      "blocked_arrival_fraction": 0.026304564197355326,
+      "authorized_served_arrival_fraction": 0.08061993459405659,
+      "floor_violation_arrival_fraction": 0.893075501208588,
+      "forced_below_its_arrival_fraction": 0.5582255083179297,
+      "forced_below_its_entitled_arrival_fraction": 0.8822471910112359,
+      "payload_bits_total": 858669824,
+      "payload_bits_served": 854367616,
+      "floor_violation_payload_bits": 782297344,
+      "forced_below_its_payload_bits": 29049344,
+      "payload_its_bits": 1296000,
+      "cohort_key_bits": 13349637.0
+    },
+    "C2": {
+      "n_arrivals": 4288,
+      "n_served": 4117,
+      "n_timely_served": 4117,
+      "n_blocked": 171,
+      "n_pending": 0,
+      "n_authorized_served": 339,
+      "n_floor_violations": 3778,
+      "n_its_entitled": 4288,
+      "n_forced_below_its": 3778,
+      "served_arrival_fraction": 0.9601212686567164,
+      "timely_served_arrival_fraction": 0.9601212686567164,
+      "blocked_arrival_fraction": 0.03987873134328358,
+      "authorized_served_arrival_fraction": 0.07905783582089553,
+      "floor_violation_arrival_fraction": 0.8810634328358209,
+      "forced_below_its_arrival_fraction": 0.8810634328358209,
+      "forced_below_its_entitled_arrival_fraction": 0.8810634328358209,
+      "payload_bits_total": 8781824,
+      "payload_bits_served": 8431616,
+      "floor_violation_payload_bits": 7737344,
+      "forced_below_its_payload_bits": 7737344,
+      "payload_its_bits": 0,
+      "cohort_key_bits": 3004065.0
+    },
+    "ISR": {
+      "n_arrivals": 162,
+      "n_served": 159,
+      "n_timely_served": 159,
+      "n_blocked": 3,
+      "n_pending": 0,
+      "n_authorized_served": 9,
+      "n_floor_violations": 150,
+      "n_its_entitled": 162,
+      "n_forced_below_its": 148,
+      "served_arrival_fraction": 0.9814814814814815,
+      "timely_served_arrival_fraction": 0.9814814814814815,
+      "blocked_arrival_fraction": 0.018518518518518517,
+      "authorized_served_arrival_fraction": 0.05555555555555555,
+      "floor_violation_arrival_fraction": 0.9259259259259259,
+      "forced_below_its_arrival_fraction": 0.9135802469135802,
+      "forced_below_its_entitled_arrival_fraction": 0.9135802469135802,
+      "payload_bits_total": 23328000,
+      "payload_bits_served": 22896000,
+      "floor_violation_payload_bits": 21600000,
+      "forced_below_its_payload_bits": 21312000,
+      "payload_its_bits": 1296000,
+      "cohort_key_bits": 8582001.0
+    },
+    "LOG": {
+      "n_arrivals": 2583,
+      "n_served": 2572,
+      "n_timely_served": 2572,
+      "n_blocked": 11,
+      "n_pending": 0,
+      "n_authorized_served": 219,
+      "n_floor_violations": 2353,
+      "n_its_entitled": 0,
+      "n_forced_below_its": 0,
+      "served_arrival_fraction": 0.9957413859852884,
+      "timely_served_arrival_fraction": 0.9957413859852884,
+      "blocked_arrival_fraction": 0.004258614014711576,
+      "authorized_served_arrival_fraction": 0.08478513356562137,
+      "floor_violation_arrival_fraction": 0.910956252419667,
+      "forced_below_its_arrival_fraction": 0.0,
+      "forced_below_its_entitled_arrival_fraction": null,
+      "payload_bits_total": 826560000,
+      "payload_bits_served": 823040000,
+      "floor_violation_payload_bits": 752960000,
+      "forced_below_its_payload_bits": 0,
+      "payload_its_bits": 0,
+      "cohort_key_bits": 1763571.0
+    }
+  },
+  "arrival_sha256": "b0000c7977b106ab9ce28d91f4fe0c852a74bcbdae2940fe72d2846c1fb41ce0",
+  "attack": {
+    "method": "weighted_cut",
+    "simultaneous_budget": 2,
+    "maximum_concurrent_relative_cost": 2.0,
+    "relative_cost_link_seconds": 172800.0,
+    "distinct_links_touched": [
+      [
+        "A6",
+        "N6"
+      ],
+      [
+        "N5",
+        "N6"
+      ]
+    ],
+    "distinct_links_touched_count": 2,
+    "retarget_count": 0,
+    "attack_changes": [
+      {
+        "time_s": 0.0,
+        "kind": "initial",
+        "selected_edges": [
+          [
+            "A6",
+            "N6"
+          ],
+          [
+            "N5",
+            "N6"
+          ]
+        ],
+        "concurrent_relative_cost": 2.0
+      }
+    ],
+    "feedback_update_period_s": 60,
+    "unobserved_path_weight": 0.01,
+    "feedback_updates": [],
+    "route_registry": {
+      "p0": [
+        [
+          "N0",
+          "N1"
+        ],
+        [
+          "N1",
+          "N2"
+        ],
+        [
+          "N2",
+          "N3"
+        ],
+        [
+          "N3",
+          "N4"
+        ],
+        [
+          "N4",
+          "N5"
+        ],
+        [
+          "N5",
+          "N6"
+        ]
+      ],
+      "p1": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A1",
+          "N0"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "A4",
+          "A5"
+        ],
+        [
+          "A5",
+          "A6"
+        ],
+        [
+          "A6",
+          "N6"
+        ]
+      ]
+    },
+    "lifetime_committed_route_counts": {
+      "p0": 338,
+      "p1": 231
+    },
+    "quantum_route_observations": 569,
+    "observation_sha256": "a407b0569b3c6d9a1e6848095ba95d94b326893f452a7ffa73fa604fee034168",
+    "environment_trace_sha256": "68ff1ac65228262a81e7b28b9ee6f952e62d8438dcccd43a20cf1a84df22a043",
+    "retarget_overhead_modelled": false
+  },
+  "accounting": {
+    "initial_stored_bits": 26990346.24,
+    "final_stored_bits": 208669109.24,
+    "generated_bits_full": 195028400.0,
+    "consumed_bits_full": 13349637.0,
+    "discarded_bits_full": 0.0,
+    "purged_bits": 0.0,
+    "conservation_residual_bits": 0.0
+  },
+  "wall_s": 10.440137000001414,
+  "record_sha256": "c55ac116bf73d6a5c032b73beac06497c53063b1f26727fe48e1a0a36cfc4c90"
+}

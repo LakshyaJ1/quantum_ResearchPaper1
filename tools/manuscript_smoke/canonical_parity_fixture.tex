@@ -1,0 +1,22 @@
+\RequirePackage[T1]{fontenc}
+\documentclass[conference,a4paper]{IEEEtran}
+\usepackage{amsmath,amssymb,graphicx,booktabs,cite}
+\usepackage[hidelinks]{hyperref}
+\begin{document}
+\typeout{SMOKE DIMENSIONS: paperwidth=\the\paperwidth;paperheight=\the\paperheight;textwidth=\the\textwidth;textheight=\the\textheight;columnsep=\the\columnsep;oddsidemargin=\the\oddsidemargin;topmargin=\the\topmargin;headheight=\the\headheight;headsep=\the\headsep}
+\title{Manuscript Toolchain Verification}
+\author{\IEEEauthorblockN{Isolated Test Document}\IEEEauthorblockA{Not a research manuscript}}
+\maketitle
+\begin{abstract}This isolated document verifies two-column rendering, mathematical glyphs and an embedded table. It contains no research findings.\end{abstract}
+\begin{IEEEkeywords}Document preparation, verification\end{IEEEkeywords}
+\section{Rendering Check}\label{sec:check}
+An editable manuscript needs consistent text and equations. The capability variable is $\Delta e$, and the illustrative expression is
+\begin{equation} e_i(t)=e_0+\Delta e.\label{eq:check}\end{equation}
+\begin{table}[h]\centering\caption{Isolated check}\label{tab:check}\begin{tabular}{lr}\toprule Item&Value\\\midrule Columns&2\\Fonts&Embedded\\\bottomrule\end{tabular}\end{table}
+\section{Interpretation}
+Passing this check establishes only that the local renderer can produce a PDF from a small IEEE-style source. Final page count, content agreement and visual quality must still be checked on the finished manuscript.
+See Section~\ref{sec:check}, Equation~\ref{eq:check}, Table~\ref{tab:check}, and the sample reference~\cite{sample}.
+\begin{thebibliography}{00}
+\bibitem{sample} A. Example, ``Isolated source reference, \emph{Test Journal}, vol.~1, pp.~1--2, 2026.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,384 @@
+{
+ "figure": "figures/camera_ready/fig2_cut_scaling.pdf/.png",
+ "script": "experiments/make_fig_cut_scaling_cr.py",
+ "size_in": [
+  3.45,
+  1.75
+ ],
+ "sources": {
+  "summary": "results/revision/analysis/main_summary.csv (traffic_class 'all', default Case)",
+  "runs": "results/revision/runs/<case_id>_seed<seed>.json summary.all.<metric>",
+  "seeds": [
+   3000,
+   3001,
+   3002,
+   3003,
+   3004,
+   3005,
+   3006,
+   3007,
+   3008,
+   3009,
+   3010,
+   3011
+  ],
+  "interval": "95% marginal percentile bootstrap over seeds, as stored in main_summary.csv"
+ },
+ "constants": {
+  "D_bar_bps": 397.21799999999996,
+  "demand_terms": [
+   {
+    "class": "C2",
+    "floor": "G2",
+    "rate_per_s": 0.05,
+    "debit_bits": 1385
+   },
+   {
+    "class": "ISR",
+    "floor": "G1",
+    "rate_per_s": 0.002,
+    "debit_bits": 145129
+   },
+   {
+    "class": "LOG",
+    "floor": "G3",
+    "rate_per_s": 0.03,
+    "debit_bits": 1257
+   }
+  ],
+  "U_bits": 1027604.48,
+  "auth_reserve_bits": 1048576,
+  "T_s": 86400.0,
+  "R_cut_bps": 240.0,
+  "attack": {
+   "surface": "generation",
+   "duration_s": 86400.0,
+   "qber": 0.08,
+   "e_abort": 0.075
+  }
+ },
+ "dodge": {
+  "panel_a_pct_points": {
+   "ring": -0.85,
+   "grid": 0.85
+  },
+  "panel_b_ratio_units": {
+   "ring": -0.055,
+   "grid": 0.055
+  }
+ },
+ "points": {
+  "formation": {
+   "label": "formation",
+   "k": 2,
+   "nodes": 8,
+   "links": 9,
+   "cut": [
+    [
+     "BDE1",
+     "REL1"
+    ],
+    [
+     "BDE2",
+     "REL2"
+    ]
+   ],
+   "attacked_edges_budget1": [
+    [
+     "BDE1",
+     "REL1"
+    ]
+   ],
+   "panel_a": {
+    "x_pred": 0.05988434748863532,
+    "x_plotted_pct": 5.988434748863532,
+    "A": {
+     "case_id": "87952e34988b5bcb",
+     "fail_mode": "FAIL_CLOSED",
+     "attack_budget": 2.0,
+     "metric": "availability",
+     "value": 0.06704842217900762,
+     "ci95_lo": 0.058083849880481896,
+     "ci95_hi": 0.075777547893249,
+     "raw_seed_mean": 0.06704842217900762
+    },
+    "Q": {
+     "case_id": "2c82ebb190a73bb6",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 2.0,
+     "metric": "qualified_availability",
+     "value": 0.06610479211296716,
+     "ci95_lo": 0.057267963224615755,
+     "ci95_hi": 0.07470978981165238,
+     "raw_seed_mean": 0.06610479211296716
+    }
+   },
+   "panel_b": {
+    "x_residual_ratio": 0.6042022264852046,
+    "x_plotted_ratio": 0.6042022264852046,
+    "F": {
+     "case_id": "fc4a2e6f3b2c81ee",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 1.0,
+     "metric": "forced_entitled_fraction",
+     "value": 0.048184947361373374,
+     "ci95_lo": 0.04150963760126726,
+     "ci95_hi": 0.05523778215795995,
+     "raw_seed_mean": 0.048184947361373374
+    }
+   }
+  },
+  "ring": {
+   "label": "ring",
+   "k": 2,
+   "nodes": 8,
+   "links": 8,
+   "cut": [
+    [
+     "N3",
+     "N4"
+    ],
+    [
+     "N4",
+     "N5"
+    ]
+   ],
+   "attacked_edges_budget1": [
+    [
+     "N3",
+     "N4"
+    ]
+   ],
+   "panel_a": {
+    "x_pred": 0.05988434748863532,
+    "x_plotted_pct": 5.138434748863532,
+    "A": {
+     "case_id": "951b27314b9e3735",
+     "fail_mode": "FAIL_CLOSED",
+     "attack_budget": 2.0,
+     "metric": "availability",
+     "value": 0.06583683745758613,
+     "ci95_lo": 0.05694194675353074,
+     "ci95_hi": 0.07456043301616327,
+     "raw_seed_mean": 0.06583683745758613
+    },
+    "Q": {
+     "case_id": "a791b3ff438bd1a3",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 2.0,
+     "metric": "qualified_availability",
+     "value": 0.06625504760087851,
+     "ci95_lo": 0.057254944144982056,
+     "ci95_hi": 0.07509381686628788,
+     "raw_seed_mean": 0.06625504760087851
+    }
+   },
+   "panel_b": {
+    "x_residual_ratio": 0.6042022264852046,
+    "x_plotted_ratio": 0.5492022264852046,
+    "F": {
+     "case_id": "c615987b267d6729",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 1.0,
+     "metric": "forced_entitled_fraction",
+     "value": 0.11280019353733828,
+     "ci95_lo": 0.10608055620126487,
+     "ci95_hi": 0.12048213025215206,
+     "raw_seed_mean": 0.11280019353733829
+    }
+   }
+  },
+  "grid": {
+   "label": "grid",
+   "k": 2,
+   "nodes": 9,
+   "links": 12,
+   "cut": [
+    [
+     "N5",
+     "N8"
+    ],
+    [
+     "N7",
+     "N8"
+    ]
+   ],
+   "attacked_edges_budget1": [
+    [
+     "N5",
+     "N8"
+    ]
+   ],
+   "panel_a": {
+    "x_pred": 0.05988434748863532,
+    "x_plotted_pct": 6.8384347488635315,
+    "A": {
+     "case_id": "57f87de0e4a42c49",
+     "fail_mode": "FAIL_CLOSED",
+     "attack_budget": 2.0,
+     "metric": "availability",
+     "value": 0.06451964446827728,
+     "ci95_lo": 0.05539680801012769,
+     "ci95_hi": 0.07423904036719912,
+     "raw_seed_mean": 0.06451964446827729
+    },
+    "Q": {
+     "case_id": "03cedc28adbd1677",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 2.0,
+     "metric": "qualified_availability",
+     "value": 0.06488107924875684,
+     "ci95_lo": 0.056111364565311905,
+     "ci95_hi": 0.07300583540822479,
+     "raw_seed_mean": 0.06488107924875684
+    }
+   },
+   "panel_b": {
+    "x_residual_ratio": 0.6042022264852046,
+    "x_plotted_ratio": 0.6592022264852047,
+    "F": {
+     "case_id": "a6d9678bfa48c890",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 1.0,
+     "metric": "forced_entitled_fraction",
+     "value": 0.11489349294805563,
+     "ci95_lo": 0.10578644088708815,
+     "ci95_hi": 0.12406308937425904,
+     "raw_seed_mean": 0.11489349294805563
+    }
+   }
+  },
+  "parallel3": {
+   "label": "3-path",
+   "k": 3,
+   "nodes": 8,
+   "links": 9,
+   "cut": [
+    [
+     "N2",
+     "N3"
+    ],
+    [
+     "N3",
+     "N5"
+    ],
+    [
+     "N3",
+     "N7"
+    ]
+   ],
+   "attacked_edges_budget1": [
+    [
+     "N2",
+     "N3"
+    ]
+   ],
+   "panel_a": {
+    "x_pred": 0.08982652123295297,
+    "x_plotted_pct": 8.982652123295297,
+    "A": {
+     "case_id": "305f4311e6cb3207",
+     "fail_mode": "FAIL_CLOSED",
+     "attack_budget": 3.0,
+     "metric": "availability",
+     "value": 0.09587360420474193,
+     "ci95_lo": 0.0853588795545396,
+     "ci95_hi": 0.10503350773981791,
+     "raw_seed_mean": 0.09587360420474193
+    },
+    "Q": {
+     "case_id": "803d342ded4c1b89",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 3.0,
+     "metric": "qualified_availability",
+     "value": 0.09623318022437681,
+     "ci95_lo": 0.08595069386656327,
+     "ci95_hi": 0.10505004215569363,
+     "raw_seed_mean": 0.09623318022437681
+    }
+   },
+   "panel_b": {
+    "x_residual_ratio": 1.2084044529704092,
+    "x_plotted_ratio": 1.2084044529704092,
+    "F": {
+     "case_id": "eefb6bf17f2f3af1",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 1.0,
+     "metric": "forced_entitled_fraction",
+     "value": 0.0070528925767628405,
+     "ci95_lo": 0.005265359507383284,
+     "ci95_hi": 0.009255473923304915,
+     "raw_seed_mean": 0.007052892576762841
+    }
+   }
+  },
+  "parallel4": {
+   "label": "4-path",
+   "k": 4,
+   "nodes": 10,
+   "links": 12,
+   "cut": [
+    [
+     "N2",
+     "N3"
+    ],
+    [
+     "N3",
+     "N5"
+    ],
+    [
+     "N3",
+     "N7"
+    ],
+    [
+     "N3",
+     "N9"
+    ]
+   ],
+   "attacked_edges_budget1": [
+    [
+     "N2",
+     "N3"
+    ]
+   ],
+   "panel_a": {
+    "x_pred": 0.11976869497727063,
+    "x_plotted_pct": 11.976869497727064,
+    "A": {
+     "case_id": "b0e83478ba49265c",
+     "fail_mode": "FAIL_CLOSED",
+     "attack_budget": 4.0,
+     "metric": "availability",
+     "value": 0.12344254592090165,
+     "ci95_lo": 0.11437688976406765,
+     "ci95_hi": 0.1323691728404304,
+     "raw_seed_mean": 0.12344254592090165
+    },
+    "Q": {
+     "case_id": "afd528537f484962",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 4.0,
+     "metric": "qualified_availability",
+     "value": 0.12258107432090327,
+     "ci95_lo": 0.1135560094305361,
+     "ci95_hi": 0.13148145131884423,
+     "raw_seed_mean": 0.1225810743209033
+    }
+   },
+   "panel_b": {
+    "x_residual_ratio": 1.812606679455614,
+    "x_plotted_ratio": 1.812606679455614,
+    "F": {
+     "case_id": "b1f2d55f18bdfc22",
+     "fail_mode": "FAIL_DEGRADED",
+     "attack_budget": 1.0,
+     "metric": "forced_entitled_fraction",
+     "value": 0.0005404726950465903,
+     "ci95_lo": 0.00016769763949718236,
+     "ci95_hi": 0.0010798119877847936,
+     "raw_seed_mean": 0.0005404726950465904
+    }
+   }
+  }
+ }
+}

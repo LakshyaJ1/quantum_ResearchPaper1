@@ -1,0 +1,297 @@
+{
+  "manifest": {
+    "created_utc": "2026-09-26T00:25:32.123323+00:00",
+    "internal_preview": true,
+    "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\docs\\revision\\RESEARCH_EXPLAINED.md",
+    "source_sha256": "d6efac4410a5f2b0afae59510df2a333dc7d464e35a82b77af069b656fd36c07",
+    "builder_sha256": "f091638ce71baab13d9796a7cdbe8fcacb374fc423bb8b7bb71f22150364cfec",
+    "pandoc_sha256": "e0057eaf640d08ba028b70721d4f7b63a685c30430de9db89aea84de2d4a1912",
+    "docx": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\Research_Explained_INTERNAL_PREVIEW.docx",
+    "docx_sha256": "134035d79aa8ec490e536d80986020da79e591ba5d43edbd9839a7f5fb26076f",
+    "pdf": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\Research_Explained_INTERNAL_PREVIEW.pdf",
+    "pdf_sha256": "9fbcb91ad2c68f396769227f194803685bdc42784322f39a65be7944a2a8beff",
+    "word_export": {
+      "word_version": "16.0",
+      "pages_reported_by_word": 14,
+      "pdf": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\Research_Explained_INTERNAL_PREVIEW.pdf",
+      "pdf_exists": true,
+      "pdf_bytes": 342090
+    },
+    "native_math_objects": 39,
+    "editable_tables": 3,
+    "contents": [
+      {
+        "heading": "Revision in progress",
+        "anchor": "guide_section_1"
+      },
+      {
+        "heading": "The practical question",
+        "anchor": "guide_section_2"
+      },
+      {
+        "heading": "What a key is and why encryption needs one",
+        "anchor": "guide_section_3"
+      },
+      {
+        "heading": "What quantum key distribution does",
+        "anchor": "guide_section_4"
+      },
+      {
+        "heading": "What post quantum cryptography means here",
+        "anchor": "guide_section_5"
+      },
+      {
+        "heading": "Why the model has four grades",
+        "anchor": "guide_section_6"
+      },
+      {
+        "heading": "What a trusted relay network is",
+        "anchor": "guide_section_7"
+      },
+      {
+        "heading": "What tactical and satellite context is actually present",
+        "anchor": "guide_section_8"
+      },
+      {
+        "heading": "What channel noise means in the simulation",
+        "anchor": "guide_section_9"
+      },
+      {
+        "heading": "How the reservoir and key bill work",
+        "anchor": "guide_section_10"
+      },
+      {
+        "heading": "What traffic time and routing represent",
+        "anchor": "guide_section_11"
+      },
+      {
+        "heading": "How to read the metrics correctly",
+        "anchor": "guide_section_12"
+      },
+      {
+        "heading": "Why warm up seeds and confidence intervals matter",
+        "anchor": "guide_section_13"
+      },
+      {
+        "heading": "What the original AI and ML part actually does",
+        "anchor": "guide_section_14"
+      },
+      {
+        "heading": "How the revised policy experiment differs",
+        "anchor": "guide_section_15"
+      },
+      {
+        "heading": "What verification can establish",
+        "anchor": "guide_section_16"
+      },
+      {
+        "heading": "Where the files fit together",
+        "anchor": "guide_section_17"
+      },
+      {
+        "heading": "Historical document coverage and cautions",
+        "anchor": "guide_section_18"
+      },
+      {
+        "heading": "What the study should leave a reader knowing",
+        "anchor": "guide_section_19"
+      }
+    ],
+    "table_geometry": [
+      {
+        "table": 1,
+        "rows": 5,
+        "columns": 3,
+        "widths_twips": [
+          1209,
+          4556,
+          3533
+        ],
+        "repeated_header": true,
+        "fixed_row_heights": false
+      },
+      {
+        "table": 2,
+        "rows": 18,
+        "columns": 2,
+        "widths_twips": [
+          3626,
+          5672
+        ],
+        "repeated_header": true,
+        "fixed_row_heights": false
+      },
+      {
+        "table": 3,
+        "rows": 15,
+        "columns": 2,
+        "widths_twips": [
+          3626,
+          5672
+        ],
+        "repeated_header": true,
+        "fixed_row_heights": false
+      }
+    ],
+    "pages": [
+      {
+        "page": 1,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_01.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 1438,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 19
+      },
+      {
+        "page": 2,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_02.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3789,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 3,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_03.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3694,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 4,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_04.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 2943,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 5,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_05.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 2848,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 6,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_06.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3453,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 7,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_07.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3298,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 8,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_08.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3332,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 9,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_09.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3777,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 10,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_10.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3392,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 11,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_11.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 3989,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 12,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_12.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 2826,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 13,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_13.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 2823,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      },
+      {
+        "page": 14,
+        "image": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\explainer_preview\\page_14.png",
+        "width_pt": 595.3200073242188,
+        "height_pt": 841.9199829101562,
+        "text_characters": 2797,
+        "out_of_page_text": [],
+        "all_fonts_embedded": true,
+        "internal_links": 0
+      }
+    ],
+    "visual_review": "Required on every rendered page before delivery",
+    "final_submission_copy": "Not performed by this builder; coordinating agent controls delivery"
+  },
+  "reviewed_page_sha256": {
+    "page_01.png": "267d360a1400c0ab75896190308f566b7722bc585322f5ac509753c5d2ffc9c8",
+    "page_02.png": "c113ea3a355582bc09f07d9fc7f06132277de0b5df6457541a2e6914e2f36f8f",
+    "page_03.png": "4ecf5f584ea2249c0e457bc4081bd98224448222ef13df0f6315897923457ef3",
+    "page_04.png": "1a17a9393eba25c1e1ddbf977b20ba9feffcfeeb8fb441cf24d8af2516851b70",
+    "page_05.png": "af2a93f3729b1fccc7128bf161046099b526bdebe210bbd03689665a24f56b0b",
+    "page_06.png": "59add1ee54c176aa614b06f6c187acefed31479ca2ca21e76d0188dfa48e8a6c",
+    "page_07.png": "db1ea82058083b4a71ee5d3fd06d0d330fe503d14f6a04c7f84c11fcff170587",
+    "page_08.png": "84d6b8967a93edbc06d82901cd705c11f5ff5cf15b291a565a2095beb03acb93",
+    "page_09.png": "aefec8356ddd939385c84fb913a246810862301bbf764f2c230aecb1ba294a85",
+    "page_10.png": "89aed142fcb6120056223f7877c9c440f675da96d461e5f367bc824bb8c142f7",
+    "page_11.png": "b163acf03cd9ae956d4e551b8195ede5a419870d2e4d4c530cd2ee580be0c63c",
+    "page_12.png": "b73776c9c411e483f0f75023fd28e37e0f511f97b5b32bcf9de673bdaa2741a9",
+    "page_13.png": "3eab23314cced1f33f971849a60515484907664dd37b2e0d21bb8e886aec4c18",
+    "page_14.png": "6c7304932a27606f34d9bc2de58ab33bd522bb892196fc253dc13af9193b9427"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_archive": "submission\\Manuscript_Source.zip",
+  "source_archive_sha256": "68f30d3d8b9136c4fdeab0e23e0d892488b508072f1b5f5a70af0cc63c6d9c3a",
+  "extracted_members_verified": true,
+  "fresh_extraction_directory": "build\\package_compile_check\\six_page_di2s6w75",
+  "build_exit_code": 0,
+  "rebuilt_pdf_sha256": "549669bd996fb277691fd61416d33ba49c03daca42a73a8699dd302265782fb7",
+  "reference_pdf_sha256": "88f7b9dc3f2add96cc97e6d1c408c2593ff14cbd93fa940981eb59f46918299a",
+  "pages": 6,
+  "pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "renderer": "Tectonic 0.17.0 with installed standard IEEEtran/TeX dependencies",
+  "passed": true
+}

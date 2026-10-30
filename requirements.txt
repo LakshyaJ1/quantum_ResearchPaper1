@@ -1,0 +1,6 @@
+# Numerical environment used for the camera-ready revision (Python 3.12).
+numpy==2.5.3
+pandas==2.2.3
+networkx==3.4.2
+matplotlib==3.9.2
+pytest==8.4.2

@@ -1,0 +1,17 @@
+{
+  "phase": "sensitivity",
+  "source_hash": "97bf3205917c27c2c03b6fde5bdb0932e5370a79773c413ed754213a38d68598",
+  "manifest_sha256": "599263c36a1c6458b52594f3c4f187f18d727f816d7a6a0ef6dd151809ceae62",
+  "runs_checked": 1264,
+  "canonical_cases": 144,
+  "canonical_runs": 1152,
+  "duplicate_recorded_runs": 112,
+  "summary_rows": 576,
+  "paired_comparison_rows": 8160,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 71,
+  "bootstrap_unit": "independent simulator seed",
+  "interval": "marginal percentile bootstrap95percent; not simultaneous",
+  "weight_scenarios": "declared relative priorities, not calibrated harm",
+  "analysis_script_sha256": "63fe887e34d9cd79e7c515deb5a48d6f54899cb1bba1534a6ae29d91c0b8dcfc"
+}

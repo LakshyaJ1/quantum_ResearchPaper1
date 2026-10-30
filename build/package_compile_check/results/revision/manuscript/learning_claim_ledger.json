@@ -1,0 +1,481 @@
+{
+  "LearnUtilityDelta": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "utility",
+      "denominator": "Timely served / arrivals - 0.75 * below-floor timely served / arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0010664579164516,
+      "ci_low": 0.000190793249112,
+      "ci_high": 0.0020320256723501,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 1,
+    "display_value": "0.0011"
+  },
+  "LearnUtilityDeltaLo": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "utility",
+      "denominator": "Timely served / arrivals - 0.75 * below-floor timely served / arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0010664579164516,
+      "ci_low": 0.000190793249112,
+      "ci_high": 0.0020320256723501,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_low",
+    "scale": 1,
+    "display_value": "0.0002"
+  },
+  "LearnUtilityDeltaHi": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "utility",
+      "denominator": "Timely served / arrivals - 0.75 * below-floor timely served / arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0010664579164516,
+      "ci_low": 0.000190793249112,
+      "ci_high": 0.0020320256723501,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_high",
+    "scale": 1,
+    "display_value": "0.0020"
+  },
+  "LearnQualifiedDelta": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0010396552670293,
+      "ci_low": 0.0001488538852451,
+      "ci_high": 0.0020070883137502,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 100,
+    "display_value": "0.10"
+  },
+  "LearnQualifiedDeltaLo": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0010396552670293,
+      "ci_low": 0.0001488538852451,
+      "ci_high": 0.0020070883137502,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_low",
+    "scale": 100,
+    "display_value": "0.01"
+  },
+  "LearnQualifiedDeltaHi": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0010396552670293,
+      "ci_low": 0.0001488538852451,
+      "ci_high": 0.0020070883137502,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_high",
+    "scale": 100,
+    "display_value": "0.20"
+  },
+  "LearnPayloadDelta": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "forced_payload_fraction",
+      "denominator": "Payload bits of eligible requests served at G3/G4 / all eligible arrival payload bits",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0170611664856714,
+      "ci_low": 0.0155242406437007,
+      "ci_high": 0.018535285020994,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 100,
+    "display_value": "1.71"
+  },
+  "LearnPayloadDeltaLo": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "forced_payload_fraction",
+      "denominator": "Payload bits of eligible requests served at G3/G4 / all eligible arrival payload bits",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0170611664856714,
+      "ci_low": 0.0155242406437007,
+      "ci_high": 0.018535285020994,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_low",
+    "scale": 100,
+    "display_value": "1.55"
+  },
+  "LearnPayloadDeltaHi": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "forced_payload_fraction",
+      "denominator": "Payload bits of eligible requests served at G3/G4 / all eligible arrival payload bits",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0170611664856714,
+      "ci_low": 0.0155242406437007,
+      "ci_high": 0.018535285020994,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_high",
+    "scale": 100,
+    "display_value": "1.85"
+  },
+  "LearnISRDelta": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "ISR",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": -0.0276989857290985,
+      "ci_low": -0.0296565550766281,
+      "ci_high": -0.0258795419273512,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 100,
+    "display_value": "-2.77"
+  },
+  "LearnISRDeltaLo": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "ISR",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": -0.0276989857290985,
+      "ci_low": -0.0296565550766281,
+      "ci_high": -0.0258795419273512,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_low",
+    "scale": 100,
+    "display_value": "-2.97"
+  },
+  "LearnISRDeltaHi": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "ISR",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": -0.0276989857290985,
+      "ci_low": -0.0296565550766281,
+      "ci_high": -0.0258795419273512,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_high",
+    "scale": 100,
+    "display_value": "-2.59"
+  },
+  "LearnCommandDelta": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "C2",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0013092081196298,
+      "ci_low": 0.0003862333817207,
+      "ci_high": 0.0022926308597416,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 100,
+    "display_value": "0.13"
+  },
+  "LearnCommandDeltaLo": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "C2",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0013092081196298,
+      "ci_low": 0.0003862333817207,
+      "ci_high": 0.0022926308597416,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_low",
+    "scale": 100,
+    "display_value": "0.04"
+  },
+  "LearnCommandDeltaHi": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "C2",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0013092081196298,
+      "ci_low": 0.0003862333817207,
+      "ci_high": 0.0022926308597416,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_high",
+    "scale": 100,
+    "display_value": "0.23"
+  },
+  "LearnLogisticsDelta": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "LOG",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0024846490948948,
+      "ci_low": 0.0015050923139623,
+      "ci_high": 0.0035881128747601,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 100,
+    "display_value": "0.25"
+  },
+  "LearnLogisticsDeltaLo": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "LOG",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0024846490948948,
+      "ci_low": 0.0015050923139623,
+      "ci_high": 0.0035881128747601,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_low",
+    "scale": 100,
+    "display_value": "0.15"
+  },
+  "LearnLogisticsDeltaHi": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "LOG",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": 0.0024846490948948,
+      "ci_low": 0.0015050923139623,
+      "ci_high": 0.0035881128747601,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "ci_high",
+    "scale": 100,
+    "display_value": "0.36"
+  },
+  "LearnPayloadGreedy": {
+    "source_row": {
+      "policy": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "forced_payload_fraction",
+      "denominator": "Payload bits of eligible requests served at G3/G4 / all eligible arrival payload bits",
+      "condition_count": 7,
+      "mean": 0.0198500764884627,
+      "ci_low": 0.0194427830467612,
+      "ci_high": 0.0202751495738857,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 100,
+    "display_value": "1.99"
+  },
+  "LearnPayloadMulti": {
+    "source_row": {
+      "policy": "full_robust",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "forced_payload_fraction",
+      "denominator": "Payload bits of eligible requests served at G3/G4 / all eligible arrival payload bits",
+      "condition_count": 7,
+      "mean": 0.0369112429741341,
+      "ci_low": 0.0352072733519021,
+      "ci_high": 0.0384904881645967,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 100,
+    "display_value": "3.69"
+  },
+  "LearnISRLoss": {
+    "source_row": {
+      "treatment": "full_robust",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "ISR",
+      "metric": "qualified_availability",
+      "denominator": "Timely served at authorized floor or higher / all class arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": -0.0276989857290985,
+      "ci_low": -0.0296565550766281,
+      "ci_high": -0.0258795419273512,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": -100,
+    "display_value": "2.77"
+  },
+  "LearnShortDelta": {
+    "source_row": {
+      "treatment": "short_nominal",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "utility",
+      "denominator": "Timely served / arrivals - 0.75 * below-floor timely served / arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": -0.004678454671804,
+      "ci_low": -0.0057741229455689,
+      "ci_high": -0.0034593564748871,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 1,
+    "display_value": "-0.0047"
+  },
+  "LearnLongDelta": {
+    "source_row": {
+      "treatment": "full_nominal",
+      "control": "budget_greedy",
+      "condition": "fixed_seven_condition_average",
+      "class": "all",
+      "metric": "utility",
+      "denominator": "Timely served / arrivals - 0.75 * below-floor timely served / arrivals",
+      "condition_count": 7,
+      "difference": "treatment minus control",
+      "mean": -0.003606730008501,
+      "ci_low": -0.0039552503153029,
+      "ci_high": -0.0033936255429385,
+      "n_seeds": 12,
+      "n_defined": 12,
+      "status": "defined"
+    },
+    "field": "mean",
+    "scale": 1,
+    "display_value": "-0.0036"
+  }
+}

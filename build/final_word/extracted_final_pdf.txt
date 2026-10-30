@@ -1,0 +1,339 @@
+PAGE 1
+ Fail-Closed or Fail-Degraded? A Simulation Study
+ of Forced Assurance Loss in Contested Multi-Hop
+          QKD Networks
+
+                                   Lakshya Jain1, Siddhi Arora2, Divya Mishra3
+                  1Maharaja Agrasen Institute of Technology, Delhi, India, 10jainlakshya@gmail.com
+             2Noida Institute of Engineering and Technology, Greater Noida, India, Sid.arora1701@gmail.com
+             3G.L. Bajaj Institute of Technology and Management, Greater Noida, India, divya_rbl2@yahoo.com
+Abstract—Stopping quantum key generation need not
+immediately exhaust a trusted-relay network’s stored keys. We                                   II. RELATED WORK
+study how finite reserves, interruption duration and fallback                                                            Adaptive  graded  key   delivery  already  appears   in
+policy jointly determine timely key service and assurance loss.
+                                                   QuLore [4], and Q-learning has been applied to resource-Generation, transport and online key-establishment failures are
+                                                       aware  trusted-relay  routing  [5]. Our  learned  action  is aseparated, with paired policy comparisons within each condition.
+A 360-run, five-topology grid includes 24-hour generation cuts      requested assurance grade. Routing uses the explicitly defined
+with only 2% of usable capacity initially filled. In the eight-node    implementation below; the study does not compare against
+formation, fail-closed service is 6.70%, compared with 97.53%     reimplemented published routing algorithms.
+under fallback; compliant fallback service is only 6.61%. The         Opportunistic QKD  studies  single-link  reservoirs  and
+fraction of offered requests entitled to information-theoretically     correlated depletion/recovery [6]; QuIKS combines end-to-
+secure (ITS) key delivery but served below it is 90.08% (95%      end buffering, reactive control and device traces  [7]; Zhu
+interval 89.20–90.97%). With full starting reserves, the same cut                                                                  studies  finite buffers, fallback fractions and class-sensitive
+produces no observed forced loss in the 24-hour cohort. An
+                                                              output [8]. Building on these, we jointly evaluate targetedinterpretable controller trained across several conditions raises
+                                                              generation  interruptions,  relative  link  costs, paired excessmean count-based utility by 0.0011 on a held-out benchmark, yet
+increases associated below-ITS payload exposure by 1.71           entitlement loss and learned class-exception allocation.
+percentage points while respecting every class exception cap. The      Established runtime filtering [9] motivates our deterministic
+results characterize modeled key service and contractual           prefix-count exception monitor, whose contract is specified
+exposure, rather than payload throughput or field-validated       below.
+security.
+      Index Terms— Quantum key distribution, trusted relays,                        III. MODEL AND ASSURANCE ACCOUNTING
+      key management, post-quantum cryptography,
+      assurance metrics, constrained policy search.                 A. Stored key and failure surfaces
+                                      A  trusted-relay  graph  has  one  shared  key  store  per
+                               I. INTRODUCTION                        undirected link. Relaying a session key debits every traversed
+  Quantum key distribution (QKD) supply interruptions can   link once. For link 𝑒, stored stock obeys
+be handled by waiting, blocking or computational fallback.      𝐵𝑒(𝑡) = 𝐵𝑒(0) + 𝐺𝑒(𝑡) −𝐶𝑒(𝑡) −𝑂𝑒(𝑡) −𝑃𝑒(𝑡),      (1)
+ITU-T Y.3803  permits  policy-controlled symmetric  relay     where 𝐺𝑒  is gross incoming  distilled-key supply before
+substitution and records the method  [1]; Tysowski  et  al.   buffer overflow, 𝐶𝑒 useful relay consumption, 𝑂𝑒 overflow
+describe  fallback and  blocking  [2], and  Spooren  et  al.   discard, and 𝑃𝑒 intentional working-key purge. Usable stock is
+implement layered failure timers [3]. We examine how these                                      𝑈𝑒= (𝐵𝑒−𝑏min)+. Admission checks every hop before any
+choices interact with usable stored key.                            debit;  partial  relay  transactions and  in-flight  failures  are
+ A relay formation may mix command-key requests, an   outside this abstraction.
+expensive one-time-pad (OTP) class and logistics traffic. We     Stored keys are retained while synchronized, unexpired and
+distinguish successful key service from  satisfaction of  its   uncompromised. The purge  alternative discards spendable
+assurance requirement, and loss of replenishment from loss of   stock when generation fails but preserves the protected reserve.
+accepted stored key.                                      These alternatives reflect the generation/storage distinction [1]
+ We evaluate finite reserves, interruption duration, relative   and implementation-dependent shutdown or synchronization
+link-suppression budgets and learned grade allocation under                                                                    policies [2]. The reserve is an unavailable inventory floor;
+class-specific  exception  permissions.  Timely  and  floor-   periodic QKD post-processing does not debit it in this model.
+compliant service share an arrival denominator; entitlement to    Its  presence  therefore  does  not  establish  authentication
+information-theoretically  secure  (ITS)  keys,  payload  and   continuity during an outage.
+class-importance   metrics  expose   different   losses.  A     Generation  suppression  leaves  classical  relay  transport
+cumulative cut-budget inequality and exact fixtures delimit   available. A transport-disconnected request cannot be served,
+feasible  service. The learning study compares a compact   even with pre-positioned key material. An isolated online key-
+controller with a greedy policy under the same monitor.          establishment failure is a third surface: it can prevent a key-
+                                                          encapsulation-mechanism (KEM) fallback without blocking a
+
+PAGE 2
+valid  pre-positioned  symmetric  key.  These  surfaces  are    Thus 𝐴= 𝑄+ 𝐿; blocking is 1 −𝐴. This identity makes
+modeled separately.                                              fallback’s  service  advantage  distinguishable  from  floor
+  Nominal generation is a parameterized input. For quantum   compliance.
+bit error rate (QBER) 𝑥, nominal 𝑥0 = 0.03 and reconciliation     Let 𝐸 be requests entitled to G1 or G2, and 𝐷ITS ⊆𝐸∩𝑆
+factor 𝑓= 1.16, we use the reduced response                   those served at G3 or G4. Offered-request forced assurance
+        𝑅𝑒(𝑥)        −(1 + 𝑓)𝐻2(𝑥)} 𝛾                  loss  is 𝐹= |𝐷ITS|/|𝐸| . ITS-delivered, below-ITS-delivered         = [max{0,1                   ]             (2)  and blocked  fractions sum to one on  this  entitled-arrival
+          𝑅𝑒,0       1 −(1 + 𝑓)𝐻2(𝑥0)
+                                                                 cohort. The accompanying tables retain 𝐹∣𝑆= |𝐷ITS|/|𝐸∩𝑆|
+  below 𝑥abort, and zero at or above it; 𝐻2 is binary entropy   separately.  LOG   is  excluded  from   the   ITS-entitled
+in  bits and  the  ratio  is capped  at one. The engineering                                                            denominator.
+threshold is 0.075, with 0.11 as a sensitivity. The entropy
+                                                           For  associated  payload  size 𝑏𝑠,  define 𝐹𝐵= ∑𝑠∈𝐷ITSnumerator can become zero before a selected abort threshold,
+                                                   𝑏𝑠/ ∑ 𝑠∈𝐸 𝑏𝑠 ; 𝐿𝐵 similarly weights below-floor service over allso the latter alone does not set the zero-rate boundary. The
+                                                                         arrivals.  These   are  exposure   proxies,   not  observedexponents 1 and 3.4 are illustrative response shapes, not a
+                                                     compromise  or  calibrated harm. Class-importance  vectors
+cross-modality calibration or a finite-key security proof.
+                                                                (1,1,1) , (5,2,1) and (10,3,1) provide  another  transparent
+B. Grades, requests and debits                                  reweighting. Attack-attributable change is a paired attacked-
+  The policy order is G1, G2, G3, G4. G1 requires payload-   minus-unattacked  difference  under  the  same  exogenous
+length OTP key; G2 a 256-bit QKD-delivered symmetric key;   environment; no zero baseline is assumed.
+G3 128 QKD bits as a hybrid ingredient; and G4 no quantum     For example, an ISR request served at G2 violates its G1
+key. G2  classifies information-theoretic key delivery with   floor and contributes to 𝐿, while retaining the modeled ITS
+computational payload  encryption. The  ordering  specifies   key-delivery entitlement and hence not contributing to 𝐹. An
+contracts, not  universal cryptographic  strength  or hybrid-   allowed exception still counts as a floor violation: permission
+combiner security.                                                 to  accept a weaker grade does  not  rewrite  the  original
+  For a nonzero quantum-key demand 𝐷𝑔, the per-hop debit   requirement. A  fraction  with  an  empty  denominator  is
+is                                                            undefined, recorded as null alongside its counts, and is never
+                                                                   interpreted as zero loss.       𝑞𝑔= 𝐷𝑔+ 240 + 127𝑛auth bits.              (3)
+  The metadata allocation  is an explicit choice within the   D. A finite cut-budget check
+key-file abstraction of Y.3803 [1]. The tag size is motivated     For an edge cut 𝛿(𝑊) , 𝑊⊂𝑉, every compliant relay
+by Walenta et al. [10]; reusable-hash authentication charges   between separated endpoints must consume key on a crossing
+are discussed by Fung  et  al. [11]. These sources do not   edge. Let 𝒞𝑇 contain these compliant requests completed by
+establish a universal number of authenticated messages per   time 𝑇, and 𝑞𝑠 be their minimum per-hop debit. Then
+relayed request. We use 𝑛auth = 7 as a conservative relay-
+                                     ∑𝑞𝑠 ≤ ∑[𝑈𝑒(0) + 𝐺𝑒(𝑇)].              (5)overhead setting relative to the optimistic value 2, and also
+evaluate 40. The corresponding G2 debits are 1385, 750 and               𝑠∈𝒞𝑇      𝑒∈𝛿(𝑊)
+5576  bits per hop. This  is a  simplified  cost model, not     Discard, competing traffic and repeated cut crossings only
+protocol-level calibration.                                        tighten this upper bound. Each completed compliant request
+  Command-and-control                               (C2),   contributes at least 𝑞𝑠 to consumption summed over the cut.
+intelligence/surveillance/reconnaissance (ISR), and  logistics   Equation 1 and nonnegative final usable stock then bound that
+(LOG) requests have payloads 2048, 144000 and 320000 bits;  sum  by  initial  usable  stock  plus  generation;  dropping
+floors G2, G1 and G3; deadlines 5, 30 and 120 seconds; and   nonnegative discard and competing consumption yields (5).
+strict scheduling priorities in that order. Independent Poisson   This  is  a  necessary  resource  condition,  not  a  sufficient
+arrival  rates are 0.05, 0.002 and 0.03 per second  in the   scheduling condition.  It does not account for whether key
+reduced-load case. These are declared workload scenarios.   reaches the right path before a deadline. A generation cut
+The required mean key debit is 397.218 bits/s across a cut   removes replenishment, not the initial term.
+traversed once per request, compared with 480 bits/s for two    The pooled bound need not be  attainable. With  three
+nominal 240-bit/s branches. This is a nominal capacity check,   disjoint two-hop branches, 1900 spendable bits per edge and a
+not a queue-stability proof. ISR arrival-rate factors 0.03, 0.1   750-bit debit,  it permits seven requests, but the simulator
+and 1 relative to 0.02/s separate lighter load from overload.      serves only  six: each branch  retains an unusable 400-bit
+                                                             fragment. Four 749-bit stores permit three requests under the
+C. Common-denominator outcomes                                                          pooled  relaxation  and  none  in  the  actual  graph.  Exact
+  For all 𝑁 requests arriving in a fixed observation window,   divisible-stock and purge cases also pass. These fixtures check
+let 𝑆 receive key service within their deadlines and 𝐷⊆𝑆   implementation and the bound’s scope.
+receive a grade below their class floor. Define
+              |𝑆|          |𝑆\𝐷|          |𝐷|                        IV. POLICIES AND EXPERIMENTAL PROTOCOL
+    𝐴= 𝑁,   𝑄= 𝑁     ,   𝐿= 𝑁.           (4)   A. Compared control policies
+                                                                       Fail closed waits for the authorized floor and blocks at
+                                                                 deadline. Unrestricted fallback attempts progressively weaker
+
+PAGE 3
+grades when  that  floor cannot be met. Our  shortest-path   B. Scenarios, uncertainty and verification
+baseline  chooses  the  first  transport-usable minimum-hop    The graph families are an eight-node, nine-link formation;
+candidate.  The   key-aware   implementation   minimizes   an eight-node ring; a 3 × 3 grid; and three or four parallel
+bottleneck estimated refill time plus a 0.5-second penalty per   three-hop  branches.  The  latter  have  (8,9) and (10,12)
+hop. Candidate enumeration is limited to four simple paths   nodes/edges. Individual formation terminals are leaves, with
+within two  extra hops  of  the  shortest. The comparison   cut size one; isolating all formation terminals requires two
+concerns these implementations.                                edges. The other source-terminal cut sizes are two, two, three
+  The learned controller uses 18 states: three classes, three   and four. These different notions of cut are not conflated.
+floor-feasibility   categories,  and  two   deadline-urgency     Formation rates are 200–400 bits/s on eight free-space links
+categories.  Feasibility  distinguishes  affordable now,  refill   and 300 kbits/s on one fiber; the other graphs use 240-bit/s
+estimated within the remaining deadline, and neither; urgency   links. Capacities, threshold and reserve are selected legacy
+means at most 20% of the deadline remains. Estimated refill  QKDNetSim example parameters [13]: 52428800, 11324620
+uses current rates and ignores future competing arrivals. The   and 1048576  bits. Capacity  is 50 Mibit, not a measured
+five proposed actions are the class floor, strongest affordable   hardware   specification.  Our  overflow  model  clamps
+fallback, defer, G4 and G2.                                   continuous stock and discards excess; it is not byte-for-byte
+  All learned and budget-greedy actions pass through the   equivalence  to  a  discrete  block  buffer.  Initial  spendable
+same monitor. If 𝑁𝑐(𝑡) class-𝑐 requests have arrived and 𝑉𝑐(𝑡)   fractions are 0.02, 0.1 and 1; the main stressed initial stock is
+below-floor  services  have  been  committed,  a  proposed   1027604.48 usable bits per edge.
+exception is permitted only when                                Link-suppression cost is one for free-space links and ten for
+                 𝑉𝑐(𝑡) + 1 ≤⌊𝜖𝑐𝑁𝑐(𝑡)⌋,                    (6)   fiber, with ratios one and one hundred as sensitivities. These
+  with (𝜖C2, 𝜖ISR, 𝜖LOG) = (0,0.1,0.1). Failed attempts spend   are  relative  scenario  weights,  not  measured  adversary
+no allowance. Since arrivals only increase the right-hand side   expenditure. A  weighted  source-to-all-terminals  cut  is  a
+and  every  committed  exception  is  checked  before  use,   structural reference, not an optimal finite-horizon attack. Main
+induction gives the prefix bound. Completed exceptions are a   generation attacks add Δ𝑥= 0.05 to selected  links, taking
+subset  of committed  exceptions. This  is an  arrival-count   their nominal QBER from 0.03 to 0.08, above the 0.075
+permission guarantee within  the  simulator, not a learned   engineering   abort   threshold.   Independent   free-space
+cryptographic guarantee. Strict-floor and greedy policies are   generation and all-link transport failures use declared mean
+explicit baselines.                                      up/down  times  of  3600/120  seconds.  The  correlated-
+  Categorical  cross-entropy  policy  search  [12]  uses  ten   generation  sensitivity  gives  all  free-space  generators  a
+unique  tables  per  generation,  four  generations  and two  common   900/600-second   up/down    process.   Policy
+optimizer restarts. Every generation includes the strict, greedy   comparisons within each condition share exogenous draws
+and incumbent tables. Short-nominal training uses six-hour   that are independent of policy and attack choices.
+rollouts; full-nominal uses 24 hours; full-robust uses a mean     Simulation uses one-second steps and a 24-hour arrival
+over  nominal,   generation-cut  and   correlated   low-rate  window without a steady-state claim. Pending requests are
+conditions. Each candidate receives six rollouts. Validation   followed to their deadlines; an interruption scheduled to end at
+selects between the two training-selected finalists on three  24 hours can release before the last completion. Equation 5
+conditions and four separate seeds. Final testing uses twelve   uses the completion horizon for such a cohort. Twelve seeds
+previously  unused  seeds  over  seven  fixed  conditions,   support  the main  grid,  eight  the  sensitivity and  fallback
+including unseen topologies. The objective 𝐽= 𝐴−0.75𝐿=   comparisons, and six the threshold sweeps. Percentages are
+𝑄+ 0.25𝐿 assigns one-quarter value to below-floor service.  means of seedwise proportions. Intervals are marginal 95%
+Tables, histories, objective, validation rule and test plan are   percentile bootstrap intervals over independent seeds, with
+frozen before final testing; optimality is not established.        20000 resamples,  conditional on  the parameters and,  for
+   Per-state action probabilities start uniformly at 0.2. The top   learning, the selected table.
+three  training  candidates form  the  elite  set,  with  a  0.5     Within a tick, outages and attack status are updated first,
+pseudocount per action before normalization  for the next   followed by one tick of generation, Poisson arrival counts, and
+generation. Optimizer seeds 7000 and 7001 are paired across   service  attempts  in  class-priority/FIFO  order.  Pending
+regimes. Simulator seeds 1000–1005, 2000–2003 and 5000–   requests retry on later ticks. G3/G4 online establishment adds
+5011  are  reserved  for  training,  validation  and  testing,   a selected 0.35-second completion delay; G1/G2 and ideal
+respectively. Robust training assigns two of its six rollouts to   pre-positioned fallback add none. The predicted completion
+each condition; it optimizes their mean rather than the worst   must meet the deadline before any debit, and equality at the
+case. Repeated candidate tables reuse identical cached rollouts,  deadline is accepted. These are atomic admission transactions,
+which  do  not  add  independent  evidence.  The  18-cell   not simulated KEM packet exchanges. All revision cohorts
+observation  records  class,  floor  feasibility  and  deadline    start at time zero without a discarded warmup; the follow-up
+urgency,  omitting  full  inventory  and  queue  state;  the   admits no new requests. Conservation compares counters over
+controller does not observe the full network state, and the   the same event horizon, rather than mixing arrival-cohort
+search establishes no policy optimality.                      consumption  with  generation  measured  only  before  the
+                                                              follow-up.
+
+PAGE 4
+C. Verification scope                                            ITS-entitled requests, whereas below-floor payload exposure
+   Verification  checks  conservation,  reserve and  deadline  𝐿𝐵 is 92.24% of  all associated payload  bits. The different
+invariants, exact resource fixtures, matched exogenous traces   values reflect different denominators and requirements.
+and  prefix  budgets.  The  historical  four-check  literature                                                             B. Reserve and operating-envelope dependence
+comparison is retained in the artifact with explicit limits: V1                                                     The  eight-seed  stock sweep changes  the  interpretation
+is stored-volume/rate arithmetic, and V4 is a coarse capacity                                                                      substantially. Under  the same  formation  cut,  fail-closed
+plausibility calculation. V2 and V3 are the two mismatches,                                                                 service is 6.97%, 31.65% and 97.54% at 2%, 10% and 100%
+involving  inferred  global-key  size and  application-tunnel                                                                               initial usable fill. Full-stock runs show no forced loss and the
+consumption versus a per-hop charge, respectively. They do                                                     two  modes  have  equal  service.  At 2%   fill,  six-hour
+not  uniquely  calibrate  the  authentication-message  count.                                                             suppression produces 𝐹= 17.62% [17.07,18.16], compared
+Neither V1 nor V4 is an independent reproduction of network                                                           with 89.85% for 24 hours. Figure 2 shows why a cut size
+policy  behavior.  Published  sources  motivate  parameter                                                            without a stock level and observation window is insufficient.
+choices;  implementation  checks do  not  validate network
+                                                            Table  II  isolates  offered ISR  load  while  holding  the
+predictions  against  hardware  or  establish  cryptographic
+                                                            formation  cut,  initial  stock and  other assumptions  fixed.
+security.
+                                                               Relative to the original 0.02/s ISR rate, the 0.03 factor yields a
+                                                               paired availability gap of 85.42 points, compared with 94.72                     V. RESULTS
+                                                                points  at  the  original  rate.  Fallback  availability remains
+A. Availability is not compliant service                        approximately 97.5%, but  its compliant service tracks fail-
+  At the main low-reserve setting, suppressing the weighted   closed service. Reduced load narrows rather than eliminates
+generation cut leaves formation fail-closed service at 6.70%,   the gap in this low-stock cohort; the full-stock comparison
+compared with 97.53% without attack. Fallback serves 97.53% separately shows that this outcome is not universal. The eight-
+of  arrivals, but only 6.61% meet  their  original  floor.  Its   seed sensitivity estimates are distinct from the twelve-seed
+compliant-service     difference    from      fail     closed  main estimates.
+is -0.09 percentage points, with interval [−0.11, −0.07]. The                       TABLE II
+large availability difference therefore cannot be interpreted as     ISR-load sensitivity under the formation generation cut and 2% usable fill.
+preserved authorized protection.                                         Service columns are seed-mean percentages; Δ𝐴 is fallback minus closed,
+                                                                                         with its paired 95% interval below (𝑛= 8).
+
+                                                           ISR factor       Closed 𝐴     Fallback 𝑄      Δ𝐴 (pp)
+                                                                           0.03                12.11         12.06               85.42
+                                                                                                                                        (83.84, 86.71)
+                                                                               0.1                  6.97           6.87               90.56
+                                                                                                                                        (90.04, 91.10)
+                                                                 1                    2.75           2.27               94.72
+                                                                                                                                        (94.47, 95.03)
+
+
+
+
+
+Fig. 1. Timely and floor-compliant key service under full generation-cut
+suppression, 24-hour arrival cohorts and 2% initial usable stock. Bars are 95%
+seed-bootstrap intervals (𝑛= 12). The horizontal scales differ.
+                     TABLE I
+  Formation class outcomes under the two-edge generation cut. Entries are
+   percent of class arrivals; 95% intervals appear below the means, from 12
+                                    seeds.
+                                                                                  Fig. 2. Hourly entitled-arrival loss under a held generation cut, with 2%, 10%Class         Closed 𝑄          Fallback 𝐴         Fallback 𝑄
+                                                                    and 100% initial usable fill. Lines and pointwise 95% bands use eight seeds.
+C2                6.67               96.72                6.65           These are hourly cohorts, not a cumulative failure probability.
+                 (5.70, 7.61)         (96.52, 96.89)         (5.68, 7.59)
+ISR               5.67               97.50                5.67           Accounting remains consequential: raising 𝑛auth from 2 to
+                 (5.41, 5.97)         (96.66, 98.32)         (5.41, 5.97)      40 reduces closed service from 8.53% to 3.27%, a paired loss
+LOG             6.83               98.88                6.60          of 5.26 points [4.34,6.07]. Common-cause generation outages
+                 (5.91, 7.67)         (98.74, 99.01)         (5.73, 7.41)       already  produce  unattacked 𝐹= 2.96%  [1.57,4.39] ;  the
+  Figure 1 shows the same distinction across all five graphs.   paired attack excess is 86.89 points [85.57,88.21]. Observed
+Table  I prevents an aggregate score from hiding a class’s   loss is therefore not automatically attack-attributable.
+admission failure. Formation forced loss is 90.08% of offered
+
+PAGE 5
+  With 𝛾= 1, no environmental outages and increment Δ𝑥=  D. Learning and the exposure trade-off
+0.045, full three- and four-path cuts produce 𝐹= 90.17%     Across the seven fixed test conditions, the multi-condition
+[89.47,90.88] and 87.47% [86.40,88.71]; at increment 0.03   controller improves mean utility over budget-greedy by Δ𝐽=
+both are zero. At Δ𝑥= 0.04, absolute QBER is 0.07, below  0.0011 with  interval [0.0002,0.0020] . Mean  compliant
+the 0.075 engineering abort. The three-path case then gives   service increases 0.10 percentage points. This  is a small,
+𝐹= 0 for 𝛾= 1 and 83.47% [82.67,84.34] for the illustrative   objective-dependent  gain:  associated  below-ITS  payload
+𝛾= 3.4 response. Slow positive generation can force loss   exposure rises from 1.99% to 3.69%, a paired increase of 1.71
+before abort; an engineering threshold and a minimum cut do   points [1.55,1.85].
+not define a universal finite-horizon forcing rule.
+
+C. Target persistence and attack cost
+  Table III compares three selectors at relative budget two.
+Static ranking uses initial edge betweenness divided by link
+cost.  Offline  residual  ranking  recomputes  source-to-still-
+reachable-terminal betweenness per cost after each structural
+removal;   it  is  distinct  from  the  online  route-feedback
+controller below. The cut reference minimizes total weight for
+isolating all terminals. Raising fiber cost from one to ten or
+one hundred excludes fiber from budget-two selections and
+changes residual-ranking loss substantially, while these static                                                                                  Fig. 3. Learned policies relative to budget-greedy. Seven condition means are
+and cut outcomes remain unchanged. The  table therefore     first averaged within each of 12 held-out seeds; bars are paired 95% intervals.
+supports a cost- and method-conditioned result, not a claim   Higher 𝐽 is favorable, while higher 𝐹𝐵 means more associated entitled payload
+that  fiber  is  physically unattackable or  that any  selector    served below ITS.
+optimizes finite-horizon loss.                              The class breakdown explains the aggregate: C2 and LOG
+                     TABLE III                           compliant service increase 0.13 and 0.25 points, while ISR
+ Offered-entitlement loss 𝐹 (%) at relative budget two. Free-space cost is one;   compliant service falls 2.77 points. All recorded prefix audits
+  means and 95% seed intervals use eight formation runs per cell. Residual     respect the declared class caps. The two additional priority                   denotes the offline residual ranking.
+                                                                vectors preserve the small positive mean  utility difference
+Fiber cost          Static           Residual           Cut        when reweighting these frozen outcomes. The six-hour and
+1                  58.65              89.82              89.85         24-hour nominal training regimes instead change mean utility                 (58.15, 59.31)       (89.22, 90.46)       (89.23, 90.51)
+                                                     by -0.0047 and -0.0036 relative to greedy; the latter selects the10                 58.65              10.13              89.85
+                 (58.15, 59.31)        (8.72, 11.52)       (89.23, 90.51)        strict-floor table. Figure 3 reports these unfavorable outcomes
+100               58.65              10.13              89.85          alongside the multi-condition gain. Count-based scores and
+                 (58.15, 59.31)        (8.72, 11.52)       (89.23, 90.51)       class exception caps  therefore  leave a  separate payload-
+  At tested two-path chain depths 𝑑= 2, … ,6, deterministic   exposure trade-off.
+fixed-centrality  prefixes  require 𝑑+ 1 or 𝑑+ 2 removals                                                             E. Key establishment is not data transport
+depending on tie handling, despite connectivity two. At depths
+                                                       With  the  generation  cut and  online  key-establishmenttwo, four and six, we also test an online selector using past
+                                                                 service unavailable, timely key service is 5.03%. Ideal pre-committed-route counts and current  transport  reachability.
+                                                               positioned secrets restore 97.54%, a paired gain of 92.51Every 60 seconds  it maximizes uncovered route weight per
+                                                                points [91.91,93.08], but compliant service improves onlylink cost; unobserved viable paths receive weight 0.01. A six-
+                                                            1.90 points [1.15,2.62]. Under the transport cut both variantsseed exploratory study releases targets when routes become
+                                                              serve 0.064% of the arrival cohort, entirely after cut releaseunusable. A post-hoc diagnostic on six disjoint seeds retains
+                                                            during deadline follow-up. Neither serves through the activetargets to fill unused slots.
+                                                                       cut. This pre-positioned-key comparison assumes sufficient  Feedback  counts  successful  positive-quantum-key  route
+                                                           unexpired material; lifetime, refresh and distribution costs arecommitments  within  the  preceding  60-second  interval,
+                                                                outside the model.excludes G4, and  resets  after each  update. The  selector
+observes neither future arrivals nor stored-key inventories.                                                                          VI. DISCUSSION AND LIMITATIONS
+  At depth six and two slots, retaining targets raises excess 𝐹
+                                                     The simulator assumes trusted relays, synchronized validfrom 35.50% to 89.69%, a paired increase of 54.19 points
+                                                                       stores, instant state information and atomic debits. It does not[49.72,58.08]. The persistent variant spends 48 relative-cost
+                                                     model  payload  transmission,  cipher/KEM  execution  orlink-hours and becomes a fixed cover, matching the structural-
+                                                     compromised key material. Finite candidate routes, fixed classcut outcomes  at depths two, four and  six. This identifies
+                                                           payloads  and   illustrative  supply/outage  processes  limitpersistence/exposure  as  the  intervention,  not an  intrinsic
+                                                                 external  validity. Payload and  priority weights summarizeadvantage of adaptivity. Concurrent capacity, realized link-
+                                                     modeled exposure, not realized harm.time and  distinct  links  touched  are  reported  separately;
+                                                                      Finite  buffers, depletion analysis and runtime shieldingretargeting overhead is unmodeled.
+                                                        have established precedents. The practical question here is
+
+PAGE 6
+their interaction with explicit entitlement, interruption cost                      REFERENCES
+and a constrained learned controller. A favorable scalar utility    [1] ITU-T, Quantum key distribution networks—Key management,
+does not waive a class requirement, and a low forced-loss      Recommendation Y.3803, Dec. 2020.
+value can result from blocking rather than preserving service.    [2] P. K. Tysowski, X. Ling, N. Lütkenhaus, and M. Mosca, “The engineering
+Both  outcomes  must  remain   visible.  Training-horizon       of a scalable multi-site communications system utilizing quantum key                                                                                         distribution (QKD),” Quantum Sci. Technol., vol. 3, 024001, 2018, doi:
+comparisons concern the registered protocols, including their      10.1088/2058-9565/aa9a5d.
+different simulated exposure and state coverage; they do not    [3] P. Spooren, A. Neuhold, S. Ramacher, and T. Huehn, “PQC-enhanced
+isolate depletion as the unique cause of a learned-policy    QKD networks: A layered approach,” in Proc. IEEE QCNC, 2026, doi:
+difference.                                                            10.1109/QCNC69040.2026.00060.                                                                                    [4] A. Sanz et al., “QuLore: An adaptive security framework to extend
+                                                                           quantum-safe communications to real-world networks,”
+                      VII. CONCLUSION                               arXiv:2511.22416v2, 2026.
+  For finite-reservoir trusted-relay QKD, a generation cut, a    [5] Y. Hao et al., “Q-learning for resource-aware and adaptive routing in
+                                                                                        trusted-relay QKD network,” Photonics, vol. 12, no. 10, 969, 2025, doi:
+key-store policy and a service policy are separate decisions.      10.3390/photonics12100969.
+Starting stock, rate response and target persistence prevent cut    [6] S. Chaudhary, P. Munar Vallespir, A. Viladomat Jasso, and J. Noetzel,
+size alone from determining finite-horizon assurance  loss.       “Opportunistic QKD: Exploiting idle capacity of classical WDM systems,”
+Fallback can preserve timely key service while adding little      arXiv:2604.12982v2, 2026.
+                                                                                    [7] Y. Chen et al., “QuIKS: Near-zero latency key supply with adaptive
+compliant service. A learned allocator can also improve a       buffering for resource-efficient quantum key distribution networks,”
+count-based  score  within  all  class caps while  increasing      arXiv:2604.09144v1, 2026.
+entitled-payload exposure. Reporting these outcomes together    [8] Z. Zhu, “Techno-economic feasibility analysis of quantum key
+makes the operational trade-off explicit.                                     distribution for power-system communications,” arXiv:2510.15248v1,
+                                                                            2025.
+                                                                                    [9] M. Alshiekh et al., “Safe reinforcement learning via shielding,”
+       REPRODUCIBILITY AND ACKNOWLEDGEMENT                arXiv:1708.08611v2, 2017.
+  The  artifact includes fixed configurations, raw per-seed    [10] N. Walenta et al., “A fast and versatile QKD system with hardware key
+                                                                                                distillation and wavelength multiplexing,” New J. Phys., vol. 16, 013047,
+outcomes,  source   hashes,   numerical-table  and   figure                                                                            2014, doi: 10.1088/1367-2630/16/1/013047.
+generators,  tests, policy-search  histories and a  validation-    [11] C.-H. F. Fung, X. Ma, and H. F. Chau, “Practical issues in quantum-key-
+selected  policy  freeze.  Historical  outputs  are  preserved        distribution post-processing,” Phys. Rev. A, vol. 81, 012318, 2010, doi:
+separately. The authors used a large language model to assist      10.1103/PhysRevA.81.012318.
+                                                                              [12] R. Rubinstein, “The cross-entropy method for combinatorial and
+coding, analysis and drafting; the reported numerical evidence                                                                              continuous optimization,” Methodol. Comput. Appl. Probab., vol. 1, pp.
+is generated by the accompanying executable experiments.          127–190, 1999, doi: 10.1023/A:1010091220143.
+                                                                              [13] QKDNetSim, “SECOQC example and key-buffer implementation,”
+                                                                                 qkdnetsim-v1-old, commit 394bfed, 2024. [Online]. Available:
+                                                             https://github.com/QKDNetSim/qkdnetsim-v1-old

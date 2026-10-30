@@ -1,0 +1,7 @@
+{
+  "figure": "supp_learning_conditions",
+  "inputs": {
+    "results\\revision\\learning_analysis\\paired_differences.csv": "4a5d66d2b598f43e2a1cd31db74367f8846c29b4d79bb128ba5e7d0458b1f5ce",
+    "results\\revision\\learning_policy_freeze.json": "0039d9b4dfa51bc479c704ce899055c4400798eb6baa448435ff5f53e03baed3"
+  }
+}

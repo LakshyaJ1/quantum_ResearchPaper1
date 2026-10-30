@@ -1,0 +1,22 @@
+m_min=1048576  m_thr=11324620 (10.8x m_min)  m_max=52428800 (50x m_min)
+
+Floor levels implied by each setting, as a multiple of m_min:
+  shipped: frac x (m_max - m_min)    ISR  10.80x   LOG  20.60x
+  m_thr basis, same fracs            ISR   2.96x   LOG   4.92x
+  m_thr basis, compressed 10x        ISR   1.20x   LOG   1.39x
+  m_thr basis, compressed 100x       ISR   1.02x   LOG   1.04x
+  flat: all classes at m_min         ISR   1.00x   LOG   1.00x
+
+setting                              avail    <ITS      C2     ISR     LOG
+shipped: frac x (m_max - m_min)     0.5137  0.0000  0.9593  0.1498  0.0000
+m_thr basis, same fracs             0.5156  0.0012  0.9593  0.1566  0.0020
+m_thr basis, compressed 10x         0.5290  0.0192  0.9593  0.1745  0.0349
+m_thr basis, compressed 100x        0.8110  0.3617  0.9593  0.1698  0.9883
+flat: all classes at m_min          0.8111  0.3616  0.9593  0.1706  0.9883
+
+======================================================================
+VERDICT
+======================================================================
+PARAMETRIC. Compressing the floor stack restores LOG service, so
+the shipped 0.0000 is a badly scaled constant, not a property of
+reservation floors. Report the corrected setting.

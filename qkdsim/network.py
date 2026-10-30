@@ -12,7 +12,7 @@ from typing import Dict, List, Sequence, Tuple
 import networkx as nx
 
 from .config import LINK_CLASSES, PhysicsConfig, ReservoirConfig, SimConfig
-from .physics import KeyStore, Link
+from .physics import KeyStore, Link, LinkState
 
 
 @dataclass
@@ -21,7 +21,7 @@ class Topology:
     links: Dict[Tuple[str, str], Link]
     stores: Dict[Tuple[str, str], KeyStore]
     node_roles: Dict[str, str]
-    path_cache: Dict[Tuple[str, str], List[List[str]]] = field(default_factory=dict)
+    path_cache: Dict[Tuple[str, str, int, int], List[List[str]]] = field(default_factory=dict)
     """Candidate paths are a function of the graph only, and the graph is static
     (link *state* varies, topology does not). Enumerating simple paths per
     pending session per tick dominated runtime, so it is cached once."""
@@ -68,8 +68,8 @@ def _build(edges: Sequence[Tuple[str, str, str]],
     return Topology(graph=g, links=links, stores=stores, node_roles=dict(roles))
 
 
-def formation_9node(res: ReservoirConfig) -> Topology:
-    """T1: nine-node tactical formation. Main policy comparison.
+def formation_8node(res: ReservoirConfig) -> Topology:
+    """T1: eight-node, nine-link formation. Main policy comparison.
 
     BASE (rear area) - REL1/REL2 (relays) - BDE1/BDE2 (brigade) -
     FWD1..FWD3 (forward posts). One fibre backbone segment, the rest free-space
@@ -91,6 +91,11 @@ def formation_9node(res: ReservoirConfig) -> Topology:
              "BDE1": "brigade", "BDE2": "brigade",
              "FWD1": "forward", "FWD2": "forward", "FWD3": "forward"}
     return _build(edges, roles, res)
+
+
+def formation_9node(res: ReservoirConfig) -> Topology:
+    """Historical name retained for callers; this topology has eight nodes."""
+    return formation_8node(res)
 
 
 def chain_topology(depth: int, res: ReservoirConfig) -> Topology:
@@ -133,7 +138,7 @@ def candidate_paths(topo: Topology, src: str, dst: str,
     Bounded because every extra hop consumes key on an ADDITIONAL link -- path
     length is a key-budget decision, not merely a latency one.
     """
-    ck = (src, dst)
+    ck = (src, dst, max_paths, max_extra_hops)
     hit = topo.path_cache.get(ck)
     if hit is not None:
         return hit
@@ -154,8 +159,13 @@ def candidate_paths(topo: Topology, src: str, dst: str,
 
 
 def _usable(topo: Topology, lk: Tuple[str, str], phys: PhysicsConfig) -> bool:
-    """A link in OUTAGE or ABORT carries no traffic and generates no key."""
-    return topo.links[lk].current_rate_bps(phys) > 0.0
+    """Transport needs the classical channel, independently of fresh QKD key.
+
+    ABORT stops generation, not consumption of keys already accepted before the
+    abort. OUTAGE denotes classical unreachability and blocks relay. Stored keys
+    are retained in either case; affordability is checked separately.
+    """
+    return topo.links[lk].state(phys) is not LinkState.OUTAGE
 
 
 def select_path_sp(topo: Topology, paths: Sequence[Sequence[str]],

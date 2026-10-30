@@ -1,0 +1,46 @@
+{
+  "source_sha256": "65d3966f91dd1fdae8f115fb963c938fabb5a092501eabad829304035b7920a8",
+  "pdf_sha256": "88f7b9dc3f2add96cc97e6d1c408c2593ff14cbd93fa940981eb59f46918299a",
+  "pages": 6,
+  "all_fonts_embedded": true,
+  "page_sizes_pt": [
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ],
+    [
+      595.28,
+      841.89
+    ]
+  ],
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "visual_review_status": "passed",
+  "visual_review_record_sha256": "c0e5e13f783500619dc1e137954b94a2e64987972a573b3d159f884da8389b9b",
+  "visual_reviewed_utc": "2026-09-27T22:06:07.460680+00:00",
+  "overfull_boxes_unresolved_references_missing_glyphs_font_warnings": false,
+  "nonblocking_underfull_box_warnings": true,
+  "pdf_express_certified": false
+}

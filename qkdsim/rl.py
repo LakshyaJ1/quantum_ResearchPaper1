@@ -85,13 +85,20 @@ class Shield:
 
     enabled: bool = True
     c2_floor: str = G2_QKD_SYM
+    all_class_floors: bool = False
+    """If true, enforce each request's authorised floor for every class.
+
+    The default retains the historical C2-only ablation. New experiments should
+    choose the intended scope explicitly rather than infer it from a reward.
+    """
 
     def allowed(self, s: Session) -> Tuple[int, ...]:
         acts = tuple(range(len(ACTION_NAMES)))
-        if not self.enabled or s.cls != "C2":
+        if not self.enabled or (not self.all_class_floors and s.cls != "C2"):
             return acts
+        floor = s.authorised_floor if self.all_class_floors else self.c2_floor
         return tuple(a for a in acts
-                     if a == DEFER or is_at_least(ACTIONS[a], self.c2_floor))
+                     if a == DEFER or is_at_least(ACTIONS[a], floor))
 
 
 # ---------------------------------------------------------------------------
@@ -110,9 +117,10 @@ class TablePolicy:
         a = self.table[state_index(s, sim)]
         ok = self.shield.allowed(s)
         if a not in ok:
-            # project onto the shield: strongest permitted grade, else defer
+            # Use the least costly permitted grade; overprovisioning G1 can
+            # deplete keys while satisfying the same floor guarantee as G2.
             grades = [x for x in ok if x != DEFER]
-            a = min(grades, key=lambda x: grade_rank(ACTIONS[x])) if grades else DEFER
+            a = max(grades, key=lambda x: grade_rank(ACTIONS[x])) if grades else DEFER
         return None if a == DEFER else ACTIONS[a]
 
     def as_rows(self) -> List[Tuple[str, str]]:

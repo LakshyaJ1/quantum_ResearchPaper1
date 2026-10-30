@@ -1,0 +1,222 @@
+{
+  "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\paper.tex",
+  "source_sha256": "65d3966f91dd1fdae8f115fb963c938fabb5a092501eabad829304035b7920a8",
+  "aux": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\final_latex\\paper.aux",
+  "aux_sha256": "5f9b435a4ba0baf6c6dd9de0eff1fce3cafe06e3c42ce6f67f2aad0bb4ae7cf5",
+  "staged": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\final_word\\manuscript_for_word.tex",
+  "inputs": [
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\paper.tex",
+      "sha256": "65d3966f91dd1fdae8f115fb963c938fabb5a092501eabad829304035b7920a8"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\main_numbers.tex",
+      "sha256": "4693164d8bb02f96a38205b080347e6125f3d234c5423fb7a1713a7af900c9de"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\learning_numbers.tex",
+      "sha256": "8333049374fe467cc54bb404e8dd197d3824367c98775cb10b159f25abb676f2"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\remaining_numbers.tex",
+      "sha256": "2e6b623a465407eabe8be6e756669c4b8962460209f323a0271a3e1f6d62ea50"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\class_table.tex",
+      "sha256": "7d9d2a19ddc8f9e12ebbdb9548b963f58cc9dd4d111f30f447318624d6ae2964"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\load_table.tex",
+      "sha256": "463734f8c616b5db1b20a4e3f1dbed90bf34b19e6d9efcfb2383f6286778186c"
+    },
+    {
+      "path": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\results\\revision\\manuscript\\cost_table.tex",
+      "sha256": "0488a9c313c327b42bcfb5343b74e148b8226a913412b20951e1555f7e61efe6"
+    }
+  ],
+  "sections": [
+    [
+      false,
+      "Introduction"
+    ],
+    [
+      false,
+      "Related Work"
+    ],
+    [
+      false,
+      "Model and Assurance Accounting"
+    ],
+    [
+      false,
+      "Policies and Experimental Protocol"
+    ],
+    [
+      false,
+      "Results"
+    ],
+    [
+      false,
+      "Discussion and Limitations"
+    ],
+    [
+      false,
+      "Conclusion"
+    ],
+    [
+      true,
+      "Reproducibility and Acknowledgement"
+    ]
+  ],
+  "labels": {
+    "sec:model": "III",
+    "eq:stock": "1",
+    "eq:rate": "2",
+    "eq:debit": "3",
+    "sec:metrics": "III-C",
+    "eq:metrics": "4",
+    "sec:bound": "III-D",
+    "eq:cut": "5",
+    "sec:protocol": "IV",
+    "eq:budget": "6",
+    "tab:classes": "I",
+    "sec:results": "V",
+    "fig:service": "1",
+    "tab:load": "II",
+    "sec:sensitivity": "V-B",
+    "fig:reserve": "2",
+    "tab:cost": "III",
+    "sec:persistence": "V-C",
+    "fig:learning": "3",
+    "sec:learning": "V-D",
+    "sec:fallback": "V-E",
+    "sec:limits": "VI"
+  },
+  "citations": {
+    "itu": "1",
+    "tysowski": "2",
+    "spooren": "3",
+    "qulore": "4",
+    "hao": "5",
+    "opportunistic": "6",
+    "quiks": "7",
+    "zhu": "8",
+    "shield": "9",
+    "walenta": "10",
+    "fung": "11",
+    "cem": "12",
+    "qkdnetsim": "13"
+  },
+  "equations": [
+    {
+      "number": "1",
+      "latex": "B_e(t)=B_e(0)+G_e(t)-C_e(t)-O_e(t)-P_e(t),",
+      "label": "eq:stock"
+    },
+    {
+      "number": "2",
+      "latex": "\\frac{R_e(x)}{R_{e,0}}=\\left[\\frac{\\max\\{0,1-(1+f)H_2(x)\\}}{1-(1+f)H_2(x_0)}\\right]^{\\gamma}",
+      "label": "eq:rate"
+    },
+    {
+      "number": "3",
+      "latex": "q_g=D_g+240+127n_{\\mathrm{auth}}\\quad\\text{bits}.",
+      "label": "eq:debit"
+    },
+    {
+      "number": "4",
+      "latex": "A=\\frac{|S|}{N},\\qquad Q=\\frac{|S\\setminus D|}{N},\\qquad L=\\frac{|D|}{N}.",
+      "label": "eq:metrics"
+    },
+    {
+      "number": "5",
+      "latex": "\\sum_{s\\in\\mathcal C_T}q_s\n\\leq\\sum_{e\\in\\delta(W)}\\left[U_e(0)+G_e(T)\\right].",
+      "label": "eq:cut"
+    },
+    {
+      "number": "6",
+      "latex": "V_c(t)+1\\leq\\lfloor\\epsilon_cN_c(t)\\rfloor,",
+      "label": "eq:budget"
+    }
+  ],
+  "floats": [
+    {
+      "kind": "figure",
+      "number": "1",
+      "wide": false,
+      "labels": [
+        "fig:service"
+      ]
+    },
+    {
+      "kind": "table",
+      "number": "I",
+      "wide": false,
+      "labels": [
+        "tab:classes"
+      ]
+    },
+    {
+      "kind": "table",
+      "number": "II",
+      "wide": false,
+      "labels": [
+        "tab:load"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "2",
+      "wide": false,
+      "labels": [
+        "fig:reserve"
+      ]
+    },
+    {
+      "kind": "table",
+      "number": "III",
+      "wide": false,
+      "labels": [
+        "tab:cost"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "3",
+      "wide": false,
+      "labels": [
+        "fig:learning"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\figures\\revision\\fig1_comparable_service.pdf",
+      "source_sha256": "c73e71d7e18418839886918070531758f871f3b0132dd0235a321136f10ab8a4",
+      "raster": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\final_word\\assets\\fig1_comparable_service.png",
+      "width_in": 3.4869240348692405
+    },
+    {
+      "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\figures\\revision\\fig2_reserve_horizon.pdf",
+      "source_sha256": "1e93ca38e3f6805fb965126d1b18c583501edfe616825a0e25a265d5fb5b7f31",
+      "raster": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\final_word\\assets\\fig2_reserve_horizon.png",
+      "width_in": 3.4869240348692405
+    },
+    {
+      "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\figures\\revision\\fig3_learning_tradeoff.pdf",
+      "source_sha256": "eb8c8e2edf91695e702bcc29a604b76588d4b8188b27a125e5c915dd282c472f",
+      "raster": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\final_word\\assets\\fig3_learning_tradeoff.png",
+      "width_in": 3.4869240348692405
+    }
+  ],
+  "word_structure": {
+    "numbered_equations": 6,
+    "native_math_elements": 92,
+    "tables": 3,
+    "equation_layout_tables": 6,
+    "inline_shapes": 3,
+    "sections": 3
+  },
+  "output": "submission\\Paper167_Manuscript.docx",
+  "output_sha256": "66c060ff88465ada5b6c263cc0e1d07ce83c28db4c94477ea7e332ea131833ad"
+}

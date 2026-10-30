@@ -1,0 +1,3813 @@
+{
+  "schema_version": 1,
+  "source_hash": "10b972ad12db9859da4e2785b267b154a94527e0fd5097df8758673f175d8aab",
+  "regime": "full_nominal",
+  "restart": 0,
+  "optimizer_seed": 7000,
+  "completed_iterations": 4,
+  "registered_iterations": 4,
+  "history": [
+    {
+      "iteration": 0,
+      "population": [
+        {
+          "table": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "table_sha256": "1c092e73351bc7e576a3d903948eb95415f6e7212afcb04aeda7e34dfeab03e8",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741626672722564,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9741626672722564,
+                "degraded_arrival_fraction": 0.0,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872844671744413
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "minimum_condition_utility": 0.9741626672722564,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "f141f1780b5ca1c22431d5e9a6427931875dec63bce24f74a9e2bc4f2d0c2c2c",
+            "2248775edf761d5e5754c80dfae454156fe36ec709915deedb02dab4f652b52c",
+            "02d5c3f378a3fbbe504740ea2e715e150f4592bd56fc29a943a5838983178882",
+            "242b1a41b59847a38957bcae9a4496eee8ecdc4207b1bdc69644a8b778ba4c3e",
+            "add4a9382adbc19bdbd1d02cc72717459362dd59deec6596075aa178e2d0bc27",
+            "39692ac890a2ab61cd7086f230722dc5951f8ad0d4e0ecf58be58f5782d26af4"
+          ]
+        },
+        {
+          "table": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "table_sha256": "2919a9e34399cfdd9eecac7a626f6e402d2a1f0bd56e7897e60a123db8b59d3d",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741109002926872,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9740936446328307,
+                "degraded_arrival_fraction": 6.902263942573163e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872026185270685
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "minimum_condition_utility": 0.9741109002926872,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "2e3b2a0bd14e144b14f766ce1572a6ed492a4461e6d58fd95584d64a0645a1a6",
+            "bb0a91feb233d957a84d05d3d0a19986ff126a1d0b5f930276068304cf262074",
+            "88ff1afe49cb8e4b3c6f00c235174976f080e3b4ebf5811191743b7d5fcc19cc",
+            "2e042f304d338b62a0c7c3992864ce2bacc33373b53c2b968d600a0689207c8d",
+            "1bfbe48bf006292664fb4485507bd9a54080eae24398eed24e281f74fa4c5457",
+            "b105695fbbf582f6ad2e6503e103393273a810763bac7282ffd05c4277ad0657"
+          ]
+        },
+        {
+          "table": [
+            2,
+            4,
+            4,
+            1,
+            2,
+            3,
+            2,
+            1,
+            0,
+            2,
+            2,
+            1,
+            3,
+            1,
+            1,
+            3,
+            4,
+            4
+          ],
+          "table_sha256": "8de326911f18930144d2264470a3ff9a2337cf0603f367121829d4078d1ca290",
+          "training_score": {
+            "mean": {
+              "utility": 0.945752829560582,
+              "availability": 0.9732496202177651,
+              "qualified_availability": 0.9365872326748544,
+              "degraded_arrival_fraction": 0.03666238754291052,
+              "blocked_arrival_fraction": 0.026750379782235018,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8910425759279171
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.945752829560582,
+                "availability": 0.9732496202177651,
+                "qualified_availability": 0.9365872326748544,
+                "degraded_arrival_fraction": 0.03666238754291052,
+                "blocked_arrival_fraction": 0.026750379782235018,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.8910425759279171
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.945752829560582,
+              "availability": 0.9732496202177651,
+              "qualified_availability": 0.9365872326748544,
+              "degraded_arrival_fraction": 0.03666238754291052,
+              "blocked_arrival_fraction": 0.026750379782235018,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8910425759279171
+            },
+            "minimum_condition_utility": 0.945752829560582,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "954965c94669046bfdf88f218bb9c090394c781ff32bcbb2f22e2ed24470c021",
+            "9c3bfb689c884dda2cb5628e1f58ba731aeecb7df4c6dc9c3b3876bf8d152593",
+            "9de0bb2ed7deea813c592f40ea32857f94e7dcd1012c2df51b1c9d636b84d2d6",
+            "4626564f076d399b31d5ad4228121c8cf65408f744e4d940693e079b31a55baf",
+            "092a4cb577e569b2f58ee60d1447298c6680dcf2dbffbcaa1da86f3c80e2c36f",
+            "2ee828c4d54594c8851118fb31c2b4f09bcfe7563647e24e0b3abff77b684a2d"
+          ]
+        },
+        {
+          "table": [
+            2,
+            4,
+            0,
+            4,
+            1,
+            4,
+            0,
+            0,
+            3,
+            2,
+            1,
+            1,
+            3,
+            2,
+            2,
+            2,
+            0,
+            2
+          ],
+          "table_sha256": "aebc3296e40b1b837073b390da80e680960d339b4e8b4b6e5862999698a6c0df",
+          "training_score": {
+            "mean": {
+              "utility": 0.9450108443835155,
+              "availability": 0.9725248907005547,
+              "qualified_availability": 0.935839495611169,
+              "degraded_arrival_fraction": 0.036685395089385765,
+              "blocked_arrival_fraction": 0.0274751092994453,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8887393498511541
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9450108443835155,
+                "availability": 0.9725248907005547,
+                "qualified_availability": 0.935839495611169,
+                "degraded_arrival_fraction": 0.036685395089385765,
+                "blocked_arrival_fraction": 0.0274751092994453,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.8887393498511541
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9450108443835155,
+              "availability": 0.9725248907005547,
+              "qualified_availability": 0.935839495611169,
+              "degraded_arrival_fraction": 0.036685395089385765,
+              "blocked_arrival_fraction": 0.0274751092994453,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8887393498511541
+            },
+            "minimum_condition_utility": 0.9450108443835155,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "58497ee8c9f9e72cccfd5d7b50f3d294a8f3617a8725c6862061b8ea49756e02",
+            "9f27cdd26cc967b0498798f08d0a52ae378fed02ecda7f3d87e9c703a75721d3",
+            "ba4278624081fe51ab4df122f49c4eea82166a02b0dc3c8d3f26d4151459e3b7",
+            "48ae38214609fb4eb2e22d9219ec1f50065f5344e1b4d4e0babc8bf88c827e41",
+            "ca05b34703259472bc38bfb4c383749638bbc8dcdeddd82c14ef505ee2b3a3c3",
+            "3044ae7d7ab412b41a2c76e732c81c187a7a6817c3fe708efc1e8a364d03e732"
+          ]
+        },
+        {
+          "table": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            1,
+            1,
+            3,
+            4,
+            3,
+            1,
+            0,
+            4,
+            0,
+            2,
+            2,
+            3,
+            1
+          ],
+          "table_sha256": "dd465b82106e0b9e5b4e411075aaad1d02e3a968e2059a859232773657b60d23",
+          "training_score": {
+            "mean": {
+              "utility": 0.9740926911947237,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740693658355463,
+              "degraded_arrival_fraction": 9.330143671021975e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.9871741093679772
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9740926911947237,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9740693658355463,
+                "degraded_arrival_fraction": 9.330143671021975e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 3.7268932617769825e-05,
+                "qualified_payload_fraction": 0.9871741093679772
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9740926911947237,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740693658355463,
+              "degraded_arrival_fraction": 9.330143671021975e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.9871741093679772
+            },
+            "minimum_condition_utility": 0.9740926911947237,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "7cb8d315e174a38e5aa1e50366c3bcba08248c57f9d227d404ad92fa44472ccf",
+            "28a706d7354d8cc4737018582914d277eee9231e7d4e07b03d02219189689069",
+            "4f879021018a87f78a5f95de62aaeedeef5d9daacf52e935ef92123ca4b82cf0",
+            "ba99e5f753200a95d6459d370b232a9b051803a13717c3e18ae3c05187d6758b",
+            "b3efa6e12c41413c6128b4cbbd2d193d1680f9d5acabbf724c39f9b0665185a2",
+            "8492fd9f1c877c76c610a14d1731d10b345b22bb5a15e1520ab76ed874286083"
+          ]
+        },
+        {
+          "table": [
+            4,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            2,
+            0,
+            1,
+            0,
+            0,
+            2,
+            3,
+            0,
+            2,
+            1
+          ],
+          "table_sha256": "ef71678f3585139db7829708268d4981780f0d21b760249ab98c844e75c6cd23",
+          "training_score": {
+            "mean": {
+              "utility": 0.9731750590481583,
+              "availability": 0.9732271611362359,
+              "qualified_availability": 0.9731576916854657,
+              "degraded_arrival_fraction": 6.946945077017066e-05,
+              "blocked_arrival_fraction": 0.02677283886376409,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.984745173116321
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9731750590481583,
+                "availability": 0.9732271611362359,
+                "qualified_availability": 0.9731576916854657,
+                "degraded_arrival_fraction": 6.946945077017066e-05,
+                "blocked_arrival_fraction": 0.02677283886376409,
+                "forced_entitled_fraction": 3.7268932617769825e-05,
+                "qualified_payload_fraction": 0.984745173116321
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9731750590481583,
+              "availability": 0.9732271611362359,
+              "qualified_availability": 0.9731576916854657,
+              "degraded_arrival_fraction": 6.946945077017066e-05,
+              "blocked_arrival_fraction": 0.02677283886376409,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.984745173116321
+            },
+            "minimum_condition_utility": 0.9731750590481583,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "6dc6e88639f311161fa3858c34ac8ccba1d96e5708adf0699b4429ff496fbeb5",
+            "0e1d06f12954e31b6a1964f633091a4a10a93d735e3dd9190e00a26f12bd0da9",
+            "113f23461b8841c6524c62196b1c337e9ffcee1fa17132311a4c58af2c7b612b",
+            "ccd85ebf27a6da510efb34ebcf40eb8fdd43d83273ba3fc15ae4845d41b41aa0",
+            "4ebb5c42dc2e39dcc92d7185c515102cfeb53428d526876e1e9b662a110eaa51",
+            "95f20c57e6128c77dc982d162c971f6dee11ff64b1fff2d909e5fe8572ea06a9"
+          ]
+        },
+        {
+          "table": [
+            1,
+            2,
+            4,
+            1,
+            0,
+            2,
+            2,
+            4,
+            4,
+            3,
+            1,
+            4,
+            2,
+            2,
+            3,
+            2,
+            3,
+            4
+          ],
+          "table_sha256": "a1708fb538729333e09218b6d85f1d05b13aa2891209467e66df43ed7182196c",
+          "training_score": {
+            "mean": {
+              "utility": 0.9636838281455203,
+              "availability": 0.965473647024743,
+              "qualified_availability": 0.9630872218524461,
+              "degraded_arrival_fraction": 0.0023864251722968887,
+              "blocked_arrival_fraction": 0.034526352975256934,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.96306442888257
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9636838281455203,
+                "availability": 0.965473647024743,
+                "qualified_availability": 0.9630872218524461,
+                "degraded_arrival_fraction": 0.0023864251722968887,
+                "blocked_arrival_fraction": 0.034526352975256934,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.96306442888257
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9636838281455203,
+              "availability": 0.965473647024743,
+              "qualified_availability": 0.9630872218524461,
+              "degraded_arrival_fraction": 0.0023864251722968887,
+              "blocked_arrival_fraction": 0.034526352975256934,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.96306442888257
+            },
+            "minimum_condition_utility": 0.9636838281455203,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "f02fafd8e2fa7d3f82f738897d7e3d6b9a1e8e43bba57c871535c17a2d336ebb",
+            "4e87ee15866aa540e85a0213a2e68f5d3c8b4321707d14bc265287c6c133e81a",
+            "27fdc68b7237594b3756d6f91290480abcf14315a72cfb5a8de723642e52f7bb",
+            "896a0a23603d079d3a87b36ec046fa243cebb85b20b3e3ed64abec00c20df9df",
+            "13de0fc3008f5a09362d64c6c69f9c6387322b91bf7de335e5b0706899a0eaf9",
+            "5a050b2de5dce9d2268ed203304cb8cd315abbc92766b3503d170e1dcb8a081d"
+          ]
+        },
+        {
+          "table": [
+            3,
+            1,
+            2,
+            2,
+            0,
+            0,
+            3,
+            1,
+            1,
+            3,
+            4,
+            1,
+            2,
+            1,
+            4,
+            3,
+            2,
+            3
+          ],
+          "table_sha256": "e4f4cade3b28d7186c919ba4881aa06ef7d6abe24a018037554ace58ea41d368",
+          "training_score": {
+            "mean": {
+              "utility": 0.9668118884280559,
+              "availability": 0.9685665505079536,
+              "qualified_availability": 0.9662270010680901,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.03143344949204633,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9698756945169595
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9668118884280559,
+                "availability": 0.9685665505079536,
+                "qualified_availability": 0.9662270010680901,
+                "degraded_arrival_fraction": 0.0023395494398635694,
+                "blocked_arrival_fraction": 0.03143344949204633,
+                "forced_entitled_fraction": 0.0036946914049050695,
+                "qualified_payload_fraction": 0.9698756945169595
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9668118884280559,
+              "availability": 0.9685665505079536,
+              "qualified_availability": 0.9662270010680901,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.03143344949204633,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9698756945169595
+            },
+            "minimum_condition_utility": 0.9668118884280559,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "0be1fb98484b28edfb96046a0e58e6d4a27006d5f651ecf8b896936cb31bdca7",
+            "7bf34a8148d766df278d9c9a4b7392406204ad00e622a11c0467a1818aeb5c45",
+            "c36672f960eb74b53badbbe470555524a8c058dbaf9cd95a4bd30625ca15968f",
+            "8b50d7898d8378b05b05967bebda15eda92a027bd09796f28f770849e5392ea2",
+            "cab9458b405d20d6830e48bd5829f68b17495c5f76dacf33b47560f140b1a407",
+            "c749d233d1956b0835930a00ffe31fdb84906c06914dc2d70ae648ee3340b844"
+          ]
+        },
+        {
+          "table": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            0,
+            1,
+            2,
+            3,
+            4,
+            0,
+            4,
+            3,
+            2,
+            4,
+            4,
+            1,
+            2
+          ],
+          "table_sha256": "0ec3b70fc1d3e01dbd8e3ad5898304b52bc5b4ce0cdda8c91a4de958eb0d1c27",
+          "training_score": {
+            "mean": {
+              "utility": 0.9457069161212331,
+              "availability": 0.9732037067784162,
+              "qualified_availability": 0.9365413192355058,
+              "degraded_arrival_fraction": 0.03666238754291052,
+              "blocked_arrival_fraction": 0.026796293221583774,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.888751092827511
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9457069161212331,
+                "availability": 0.9732037067784162,
+                "qualified_availability": 0.9365413192355058,
+                "degraded_arrival_fraction": 0.03666238754291052,
+                "blocked_arrival_fraction": 0.026796293221583774,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.888751092827511
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9457069161212331,
+              "availability": 0.9732037067784162,
+              "qualified_availability": 0.9365413192355058,
+              "degraded_arrival_fraction": 0.03666238754291052,
+              "blocked_arrival_fraction": 0.026796293221583774,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.888751092827511
+            },
+            "minimum_condition_utility": 0.9457069161212331,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "092bb245a464e82a3d211c83c8bf8bdad27fed358d5c699a70e38c6396b68163",
+            "f1244aab3f2a62ab9ef5a19fc16a9cf3bb0b2167460941b59e2c45c3b082f39c",
+            "1f8946d15e9789225c35dcb46681c8dd444cee6d58b6dec3b5f18e19282a51c9",
+            "89f24f63a9e094058ad8d1591ea19b39030fac7e7e22475df14343475ad5c62e",
+            "12715e5acb61635e786342a6c9b63f310176d554e7706f28e079a85eafa5d40e",
+            "ace359120db99b796e3ae884809144c765986ee3c2f5c7ebe63567094cc5d07d"
+          ]
+        },
+        {
+          "table": [
+            0,
+            2,
+            2,
+            4,
+            3,
+            2,
+            3,
+            3,
+            3,
+            4,
+            2,
+            2,
+            4,
+            3,
+            1,
+            3,
+            2,
+            1
+          ],
+          "table_sha256": "21408df1d05a98ab4339eb69d5624caee67bbaaa69cfafbcdfccf8e09234b5a0",
+          "training_score": {
+            "mean": {
+              "utility": 0.9712620191093873,
+              "availability": 0.9737183107913004,
+              "qualified_availability": 0.9704432552154163,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.02628168920869967,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9820053302905807
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9712620191093873,
+                "availability": 0.9737183107913004,
+                "qualified_availability": 0.9704432552154163,
+                "degraded_arrival_fraction": 0.003275055575884022,
+                "blocked_arrival_fraction": 0.02628168920869967,
+                "forced_entitled_fraction": 0.0036946914049050695,
+                "qualified_payload_fraction": 0.9820053302905807
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9712620191093873,
+              "availability": 0.9737183107913004,
+              "qualified_availability": 0.9704432552154163,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.02628168920869967,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9820053302905807
+            },
+            "minimum_condition_utility": 0.9712620191093873,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "a9dd6109603edc8452b81e6af8c4cd16cf16dc311bdf129fae695d72ede8acf8",
+            "c996f3cf59a035ce95efaac42f777fee4bac668cb3abeba82d401a144c61deb0",
+            "08e3a8a3eb56063a545d18fd4da51551bb4d64dc3f5ab87379797c91b62cd69b",
+            "a809c7633fc312a761ca4054977203cb215a950e8875ad0a62d708d0d4063533",
+            "afbe9d2a10dc8aeb1c9ab3105bd5134a0b41f2848bffd8641e5f0720b44e046a",
+            "a43083f2d4d53377abe415f040ff2b58acdf801e8214e77baa369d2eab7c9ba1"
+          ]
+        }
+      ],
+      "probabilities_before": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ],
+      "probabilities_after": [
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ]
+      ],
+      "incumbent_table": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "incumbent_training_utility": 0.9741626672722564,
+      "optimizer_rng_state": {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 31638042441930326229418354688372284839,
+          "inc": 243370909585270774436545750675754934523
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      "requested_candidates": 10,
+      "requested_rollouts": 60
+    },
+    {
+      "iteration": 1,
+      "population": [
+        {
+          "table": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "table_sha256": "1c092e73351bc7e576a3d903948eb95415f6e7212afcb04aeda7e34dfeab03e8",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741626672722564,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9741626672722564,
+                "degraded_arrival_fraction": 0.0,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872844671744413
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "minimum_condition_utility": 0.9741626672722564,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "f141f1780b5ca1c22431d5e9a6427931875dec63bce24f74a9e2bc4f2d0c2c2c",
+            "2248775edf761d5e5754c80dfae454156fe36ec709915deedb02dab4f652b52c",
+            "02d5c3f378a3fbbe504740ea2e715e150f4592bd56fc29a943a5838983178882",
+            "242b1a41b59847a38957bcae9a4496eee8ecdc4207b1bdc69644a8b778ba4c3e",
+            "add4a9382adbc19bdbd1d02cc72717459362dd59deec6596075aa178e2d0bc27",
+            "39692ac890a2ab61cd7086f230722dc5951f8ad0d4e0ecf58be58f5782d26af4"
+          ]
+        },
+        {
+          "table": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "table_sha256": "2919a9e34399cfdd9eecac7a626f6e402d2a1f0bd56e7897e60a123db8b59d3d",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741109002926872,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9740936446328307,
+                "degraded_arrival_fraction": 6.902263942573163e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872026185270685
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "minimum_condition_utility": 0.9741109002926872,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "2e3b2a0bd14e144b14f766ce1572a6ed492a4461e6d58fd95584d64a0645a1a6",
+            "bb0a91feb233d957a84d05d3d0a19986ff126a1d0b5f930276068304cf262074",
+            "88ff1afe49cb8e4b3c6f00c235174976f080e3b4ebf5811191743b7d5fcc19cc",
+            "2e042f304d338b62a0c7c3992864ce2bacc33373b53c2b968d600a0689207c8d",
+            "1bfbe48bf006292664fb4485507bd9a54080eae24398eed24e281f74fa4c5457",
+            "b105695fbbf582f6ad2e6503e103393273a810763bac7282ffd05c4277ad0657"
+          ]
+        },
+        {
+          "table": [
+            4,
+            3,
+            4,
+            0,
+            1,
+            0,
+            3,
+            2,
+            3,
+            3,
+            1,
+            1,
+            0,
+            4,
+            0,
+            1,
+            4,
+            3
+          ],
+          "table_sha256": "1af0431ded49500096524fcfbd1e3efb72a4b5bd46204ac42e930fecbc32bf48",
+          "training_score": {
+            "mean": {
+              "utility": 0.9723845508345391,
+              "availability": 0.9741392129144368,
+              "qualified_availability": 0.971799663474573,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.02586078708556332,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9844972936766784
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9723845508345391,
+                "availability": 0.9741392129144368,
+                "qualified_availability": 0.971799663474573,
+                "degraded_arrival_fraction": 0.0023395494398635694,
+                "blocked_arrival_fraction": 0.02586078708556332,
+                "forced_entitled_fraction": 0.0036946914049050695,
+                "qualified_payload_fraction": 0.9844972936766784
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9723845508345391,
+              "availability": 0.9741392129144368,
+              "qualified_availability": 0.971799663474573,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.02586078708556332,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9844972936766784
+            },
+            "minimum_condition_utility": 0.9723845508345391,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "62a1847189bd7624a013552d5bd6ea8668bcaf8c9a0470928ea2fac0d5af9e66",
+            "cb05c16cedcb1187a42e772187009658643c952a8790d9d2da04829a91f6de4d",
+            "90cfa6d2bc4954b56660c83835cf829ca4c37ab2e66293564c59743e29cd1e3e",
+            "95e90de10d0949405055e245803d8284791800042f121a773130d1072adfba6b",
+            "8ce7552028a969c7de032898bd0361c884835ddc7cb1b5686e3cd6b51947a520",
+            "ca0724b5493cf3e68e7960eab8933960aa6d2a429f85ac690fa653e0f02b7f48"
+          ]
+        },
+        {
+          "table": [
+            1,
+            0,
+            1,
+            3,
+            1,
+            0,
+            1,
+            4,
+            1,
+            2,
+            3,
+            0,
+            1,
+            0,
+            3,
+            0,
+            4,
+            3
+          ],
+          "table_sha256": "513734b78c441b19d5b41740780bab11dc5d41d3605678e81917c9bcf94c80a2",
+          "training_score": {
+            "mean": {
+              "utility": 0.9740933095243224,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.974070190275011,
+              "degraded_arrival_fraction": 9.247699724541453e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 7.241653993772178e-05,
+              "qualified_payload_fraction": 0.9871752797493087
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9740933095243224,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.974070190275011,
+                "degraded_arrival_fraction": 9.247699724541453e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 7.241653993772178e-05,
+                "qualified_payload_fraction": 0.9871752797493087
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9740933095243224,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.974070190275011,
+              "degraded_arrival_fraction": 9.247699724541453e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 7.241653993772178e-05,
+              "qualified_payload_fraction": 0.9871752797493087
+            },
+            "minimum_condition_utility": 0.9740933095243224,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "501f3f674e2d549221836c84c17c7f9410073d15b8accc048d03090dce7514af",
+            "5b8865542c933b0937492d07ee94896e51614db091d4d981bad5a40c288145fa",
+            "f232de4968308b03d142f472bc9c9b5ab340d928399c8df37ed8184d6e608215",
+            "a45f07e1b1d4f2982475590f71440c4229a6ca6bac95a1c9102f6a795c472680",
+            "1c82cec23b7b275895e1ff3a086bcd329b81eaf0998cef33567b9259bca7fc94",
+            "78fe7d8b9d5b18e23db7ff1e72c974579193f930328bff1c156e0a50f03db4f5"
+          ]
+        },
+        {
+          "table": [
+            1,
+            1,
+            2,
+            4,
+            0,
+            1,
+            0,
+            2,
+            3,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            0,
+            4,
+            1
+          ],
+          "table_sha256": "d6e150c86217d2f5962490354d7c101ea784c18752c881ab41ff7aaa60619eb9",
+          "training_score": {
+            "mean": {
+              "utility": 0.9684268255636598,
+              "availability": 0.9685665340163506,
+              "qualified_availability": 0.9683802560794295,
+              "degraded_arrival_fraction": 0.00018627793692112284,
+              "blocked_arrival_fraction": 0.03143346598364936,
+              "forced_entitled_fraction": 7.241653993772178e-05,
+              "qualified_payload_fraction": 0.9723167445156716
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9684268255636598,
+                "availability": 0.9685665340163506,
+                "qualified_availability": 0.9683802560794295,
+                "degraded_arrival_fraction": 0.00018627793692112284,
+                "blocked_arrival_fraction": 0.03143346598364936,
+                "forced_entitled_fraction": 7.241653993772178e-05,
+                "qualified_payload_fraction": 0.9723167445156716
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9684268255636598,
+              "availability": 0.9685665340163506,
+              "qualified_availability": 0.9683802560794295,
+              "degraded_arrival_fraction": 0.00018627793692112284,
+              "blocked_arrival_fraction": 0.03143346598364936,
+              "forced_entitled_fraction": 7.241653993772178e-05,
+              "qualified_payload_fraction": 0.9723167445156716
+            },
+            "minimum_condition_utility": 0.9684268255636598,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "996eaa7b0df28f3a30b399fc7533bb646e8d60671312258009d38918d959b314",
+            "a9953f631fd0c9af47b52bf7878e98b642c699cf817bb8bd3738736b2eceaa00",
+            "dd2b2392c7df2d908b6fe9fe93d261c484778813734cb6a5999ccfec9bb040a4",
+            "2c6cf8d091cc6fe5463b4555cf7fd89488a053f6c60d0cc208411a8de7a843e2",
+            "416f5da3ebe25427849169654bee0e3d28f353ee3d9ac9c7cc9c0ad06f26bfa1",
+            "63c334f99c28e0d6151d1f5e4f1d89312022fd180c1d3622da0bb911eb25dca9"
+          ]
+        },
+        {
+          "table": [
+            4,
+            0,
+            1,
+            1,
+            0,
+            1,
+            4,
+            1,
+            2,
+            1,
+            4,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "table_sha256": "bee3205240e9e7d15b4c5a072c086c21c3c4ec4038ea41bfe1d3894c70c9d927",
+          "training_score": {
+            "mean": {
+              "utility": 0.9724080051923587,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9718231178323927,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9845246324544382
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9724080051923587,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9718231178323927,
+                "degraded_arrival_fraction": 0.0023395494398635694,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9845246324544382
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9724080051923587,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9718231178323927,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9845246324544382
+            },
+            "minimum_condition_utility": 0.9724080051923587,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "285d31630b6666c4d51546c6bd34157a455527f8b22135de62a3a1b82c1e78ad",
+            "3db8af5c9a0a9493c212f3e1d02aac31e6890ccea86c22bf5c8730c7781eaced",
+            "7c06ed44d8858d744f5b8cab6d80d52f634ba3763b1a21c6d4792dc8cd93d5c6",
+            "562032170d21eeb28f603f85a03dcfa7b530b9c29bc4550438c0296c65996e26",
+            "7dbe387dd491d0fe969596c408215cef72c89e8daa359fe67d231ca1cfd49877",
+            "578b5023fe23005aa17217e62a06a1c9bc7038085f9d344b1570254fca7c7cc0"
+          ]
+        },
+        {
+          "table": [
+            4,
+            2,
+            1,
+            4,
+            3,
+            0,
+            1,
+            2,
+            2,
+            3,
+            0,
+            4,
+            4,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "table_sha256": "08af1c9875c0bcc08c1c6e51f779019390eae8e6152b4a55897d82864b6d63f5",
+          "training_score": {
+            "mean": {
+              "utility": 0.9737241537662515,
+              "availability": 0.973741732165914,
+              "qualified_availability": 0.9737182942996974,
+              "degraded_arrival_fraction": 2.3437866216659635e-05,
+              "blocked_arrival_fraction": 0.026258267834086035,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872228422311483
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9737241537662515,
+                "availability": 0.973741732165914,
+                "qualified_availability": 0.9737182942996974,
+                "degraded_arrival_fraction": 2.3437866216659635e-05,
+                "blocked_arrival_fraction": 0.026258267834086035,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872228422311483
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9737241537662515,
+              "availability": 0.973741732165914,
+              "qualified_availability": 0.9737182942996974,
+              "degraded_arrival_fraction": 2.3437866216659635e-05,
+              "blocked_arrival_fraction": 0.026258267834086035,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872228422311483
+            },
+            "minimum_condition_utility": 0.9737241537662515,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "ca2251b2fa2f8fafe6cef8ea8fb95a40fcc2d2f34348c2c6eaea510ab1af172c",
+            "43df0d5798c9a7e20d68df147e7504307efe656ea8fff3072343ebee8a9d5ad9",
+            "064166a4af7ca67be905cf60cc9bd9e7e5e0ec77f2ab9405ab1f06c8555853bf",
+            "3d4de833818c05fb8b0f851c77ac0c2ff48785a6342ba7a65ab253796493c46b",
+            "bb39f5e4c2d27aed1591199319fefbe595f8f796b206d385e37cf1f42c230d11",
+            "a3c80a68a0dda1685f190564fb88b4fb761d31611109e0a10793955e1e41270b"
+          ]
+        },
+        {
+          "table": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            2,
+            0,
+            3,
+            1,
+            2,
+            4,
+            4,
+            3,
+            2,
+            2,
+            1
+          ],
+          "table_sha256": "0b71accab144f93bda149c5b10ded9a8bcafde2681c86dee0c0f55d08f400f9d",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741043788549177,
+              "availability": 0.9741392129144368,
+              "qualified_availability": 0.9740927675017449,
+              "degraded_arrival_fraction": 4.644541269190352e-05,
+              "blocked_arrival_fraction": 0.02586078708556332,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872022190313449
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741043788549177,
+                "availability": 0.9741392129144368,
+                "qualified_availability": 0.9740927675017449,
+                "degraded_arrival_fraction": 4.644541269190352e-05,
+                "blocked_arrival_fraction": 0.02586078708556332,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872022190313449
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741043788549177,
+              "availability": 0.9741392129144368,
+              "qualified_availability": 0.9740927675017449,
+              "degraded_arrival_fraction": 4.644541269190352e-05,
+              "blocked_arrival_fraction": 0.02586078708556332,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872022190313449
+            },
+            "minimum_condition_utility": 0.9741043788549177,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "04c025ff27fc43b65d77bcf367b9ffa38e8435fc3bd1bc53ca64163ca93066ea",
+            "c28a24258bf23fef59d69238911e48a2f843ef6199d623f79683a5f5d7cf3aab",
+            "a9c6b38b9f3404c11d07dda17986f494b093bcd0c1dd606448f66ef87fcc4f11",
+            "374a635f12f73320cdcbe2719dd9f23bbdd1a0bbcec87e01a06e7ed7cc0f1e19",
+            "27635c0cb8c09a88133099c76107bf56b9f0648599e16f4e7c2f53e91a65aa1a",
+            "a097137cc76e5fa05aa42b51c9ab04241c655ca3c22c979dd00f66c99c418223"
+          ]
+        },
+        {
+          "table": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            3,
+            4,
+            1,
+            1,
+            0,
+            4,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "table_sha256": "ced35aec52923693c8fb01c23f1758739a1820d9d683ae3f0aa961ea3a1cdc89",
+          "training_score": {
+            "mean": {
+              "utility": 0.9716829377241267,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9708641738301558,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.982039616456114
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9716829377241267,
+                "availability": 0.9741392294060397,
+                "qualified_availability": 0.9708641738301558,
+                "degraded_arrival_fraction": 0.003275055575884022,
+                "blocked_arrival_fraction": 0.0258607705939603,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.982039616456114
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9716829377241267,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9708641738301558,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.982039616456114
+            },
+            "minimum_condition_utility": 0.9716829377241267,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "2a48b8a43b63aec8e3b075bf9eed38cd66d15ff10fb6a6100e8659c20b799d89",
+            "ef56a3e08bc441e344a29cb8d62651cdb961141a84db678415f454ea3eb2093a",
+            "596c80ff452f949b4c82a76ee6bbcf730c0ddb3f415c85c0121ddb11398048ef",
+            "8656068250ddf920d1902544f1b69a81583892728ea67db9e0a11ac6dc0c0011",
+            "6d0211367ee0b56edcae644f04200b4873a17f48a8b9fee44f14b41bfce5f381",
+            "d0413949b61a1e0c727310bc5ab623ff900fc48c379658eda3ec67b473f0911e"
+          ]
+        },
+        {
+          "table": [
+            3,
+            2,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            1,
+            3,
+            1,
+            1,
+            0,
+            0,
+            2,
+            1,
+            3,
+            1
+          ],
+          "table_sha256": "983ccdcdba189f8d2a8a997ac02daf1336b92cec2ff165602e4820d4680f1777",
+          "training_score": {
+            "mean": {
+              "utility": 0.9737134195441643,
+              "availability": 0.9737651865237337,
+              "qualified_availability": 0.9736961638843079,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.026234813476266352,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9871959588444142
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9737134195441643,
+                "availability": 0.9737651865237337,
+                "qualified_availability": 0.9736961638843079,
+                "degraded_arrival_fraction": 6.902263942573163e-05,
+                "blocked_arrival_fraction": 0.026234813476266352,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9871959588444142
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9737134195441643,
+              "availability": 0.9737651865237337,
+              "qualified_availability": 0.9736961638843079,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.026234813476266352,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9871959588444142
+            },
+            "minimum_condition_utility": 0.9737134195441643,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "e03387a387f70412ddc8251752322af6e557645a0a3b9e8e0e24f0880905fb9f",
+            "5b04f216ffd74a70f6c76a63097366119eef77473ea448f9283c366b93dffed1",
+            "eb68dabf75708c44b37da88d9a611d3a10a4c281dfc526bbee085cd46a8604d2",
+            "8777762440c09d606d9cbd7f05bd67d70dd7a25d40be8d52c1d589e61a24fc99",
+            "1bc073e332a52fabcdd7dccf4fb667311895b787f1f89887172848a15b422d9c",
+            "e090220555b1d0da17d6657b5e3ba827b6d3c77674bb93c93a9c806332d057cd"
+          ]
+        }
+      ],
+      "probabilities_before": [
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ]
+      ],
+      "probabilities_after": [
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ]
+      ],
+      "incumbent_table": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "incumbent_training_utility": 0.9741626672722564,
+      "optimizer_rng_state": {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 91098445961112032224242668719470449335,
+          "inc": 243370909585270774436545750675754934523
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      "requested_candidates": 10,
+      "requested_rollouts": 60
+    },
+    {
+      "iteration": 2,
+      "population": [
+        {
+          "table": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "table_sha256": "1c092e73351bc7e576a3d903948eb95415f6e7212afcb04aeda7e34dfeab03e8",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741626672722564,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9741626672722564,
+                "degraded_arrival_fraction": 0.0,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872844671744413
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "minimum_condition_utility": 0.9741626672722564,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "f141f1780b5ca1c22431d5e9a6427931875dec63bce24f74a9e2bc4f2d0c2c2c",
+            "2248775edf761d5e5754c80dfae454156fe36ec709915deedb02dab4f652b52c",
+            "02d5c3f378a3fbbe504740ea2e715e150f4592bd56fc29a943a5838983178882",
+            "242b1a41b59847a38957bcae9a4496eee8ecdc4207b1bdc69644a8b778ba4c3e",
+            "add4a9382adbc19bdbd1d02cc72717459362dd59deec6596075aa178e2d0bc27",
+            "39692ac890a2ab61cd7086f230722dc5951f8ad0d4e0ecf58be58f5782d26af4"
+          ]
+        },
+        {
+          "table": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "table_sha256": "2919a9e34399cfdd9eecac7a626f6e402d2a1f0bd56e7897e60a123db8b59d3d",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741109002926872,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9740936446328307,
+                "degraded_arrival_fraction": 6.902263942573163e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872026185270685
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "minimum_condition_utility": 0.9741109002926872,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "2e3b2a0bd14e144b14f766ce1572a6ed492a4461e6d58fd95584d64a0645a1a6",
+            "bb0a91feb233d957a84d05d3d0a19986ff126a1d0b5f930276068304cf262074",
+            "88ff1afe49cb8e4b3c6f00c235174976f080e3b4ebf5811191743b7d5fcc19cc",
+            "2e042f304d338b62a0c7c3992864ce2bacc33373b53c2b968d600a0689207c8d",
+            "1bfbe48bf006292664fb4485507bd9a54080eae24398eed24e281f74fa4c5457",
+            "b105695fbbf582f6ad2e6503e103393273a810763bac7282ffd05c4277ad0657"
+          ]
+        },
+        {
+          "table": [
+            1,
+            0,
+            1,
+            4,
+            0,
+            0,
+            4,
+            3,
+            0,
+            1,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "table_sha256": "3c8d2db488262a0003598c4cc34da22652b6a5b2c78348370299903348a98aa7",
+          "training_score": {
+            "mean": {
+              "utility": 0.972384567326142,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9717996799661761,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9844970059715591
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.972384567326142,
+                "availability": 0.9741392294060397,
+                "qualified_availability": 0.9717996799661761,
+                "degraded_arrival_fraction": 0.0023395494398635694,
+                "blocked_arrival_fraction": 0.0258607705939603,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9844970059715591
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.972384567326142,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9717996799661761,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9844970059715591
+            },
+            "minimum_condition_utility": 0.972384567326142,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "2f93b97908e7ded319e6fb6413771ef1f2760d61adc4fe5df7d2a2994b09a2e7",
+            "34ac84a6f69a5499c4f18a48d8a0750842a74d1ec2a1861f84dd9f023cfd3e98",
+            "faa691abda3441442cb47a62e8ed3ee9cab0b5f4c832d6287cc8d04655a6ef74",
+            "1deab7482b0ae98ea267bef4115614a8045e8d7788f34bc1885933c7a878eda9",
+            "4befb494c0b84497c0f2c6fc15a5fa17296867783d57407ecdb139a012a0ef8e",
+            "b0f7783d15ec323f98e764e3e130c06c199fee1d5fac3ef199480dbda68ead2c"
+          ]
+        },
+        {
+          "table": [
+            1,
+            3,
+            3,
+            3,
+            1,
+            4,
+            0,
+            0,
+            1,
+            4,
+            1,
+            2,
+            4,
+            4,
+            0,
+            4,
+            0,
+            1
+          ],
+          "table_sha256": "7589e342630f1006131314a2be7a1d9dd772ce46cd70d88568bae12c6d10ee9f",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741278332127375,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741162218595645,
+              "degraded_arrival_fraction": 4.644541269190352e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872295578091047
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741278332127375,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9741162218595645,
+                "degraded_arrival_fraction": 4.644541269190352e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872295578091047
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741278332127375,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741162218595645,
+              "degraded_arrival_fraction": 4.644541269190352e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872295578091047
+            },
+            "minimum_condition_utility": 0.9741278332127375,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "bf1d3efd700ae300be6a58dcebcf3dfe4f6346149b49b373e3f93a2c52610623",
+            "99470dacbd7898a56c5fd441ce4f78bd2c624f4a274d71852efac50fd03fae42",
+            "c938bc4b64c5ae4e2125c80791cba79d55d74cb7b0b888799605df1a587e510f",
+            "d937b5b4eb1720121c0eff837caa396d4f477ac92ade4d82641d2bc382e12460",
+            "5fd2db53d2f6cd55836d774f0e421bb15d1006042e2a8d960573a08979a2e8b6",
+            "9934a794af65da73e6b5c38906bf737bd9f2381b66278141893057b0e3b2179b"
+          ]
+        },
+        {
+          "table": [
+            3,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            4,
+            4,
+            1,
+            2,
+            0,
+            4
+          ],
+          "table_sha256": "70948b7c095c478b2851ec2f7af3dd469473c65c1902a4d7a0da9326eb944eb7",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741621941225316,
+              "availability": 0.9741621941225316,
+              "qualified_availability": 0.9741621941225316,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837805877468433,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9873506217787252
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741621941225316,
+                "availability": 0.9741621941225316,
+                "qualified_availability": 0.9741621941225316,
+                "degraded_arrival_fraction": 0.0,
+                "blocked_arrival_fraction": 0.025837805877468433,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9873506217787252
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741621941225316,
+              "availability": 0.9741621941225316,
+              "qualified_availability": 0.9741621941225316,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837805877468433,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9873506217787252
+            },
+            "minimum_condition_utility": 0.9741621941225316,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "b1a6f653dca61e3c30eaaf15827e42a400909afd9b3a81169b41a3cc9937e31d",
+            "1adf3ab629b4853b9519fb60594c7001a5162d00260583e64005a7712683da97",
+            "a79b3f5f94141f0930b24789b3a5a21bbf6cdf046d3918eafe94d8b3a820636f",
+            "82033bfe26fe7ffce4727583416246a6c781011e9ef56318e4ea9fed99a94ce9",
+            "c41ca333f899ceaf42fac0ebf69ee9c8116b1a05f5d3f08d839c70ce3ac58c2e",
+            "845e4efba2a005857f52153bd32e000920742bd6159349fa0495c471bd1d0aac"
+          ]
+        },
+        {
+          "table": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            2,
+            1,
+            1,
+            1
+          ],
+          "table_sha256": "49984c63009df5c84bfe874becf5ce25e363cd9ba4cb297f5caab67c3b00152c",
+          "training_score": {
+            "mean": {
+              "utility": 0.9466486209552172,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9374772721828705,
+              "degraded_arrival_fraction": 0.036685395089385765,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8912085382382585
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9466486209552172,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9374772721828705,
+                "degraded_arrival_fraction": 0.036685395089385765,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.8912085382382585
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9466486209552172,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9374772721828705,
+              "degraded_arrival_fraction": 0.036685395089385765,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8912085382382585
+            },
+            "minimum_condition_utility": 0.9466486209552172,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "c7e264179dbbd225221487028db0cbbde7028dc6be2b81f1976dc1f379a4accd",
+            "fcbe20dd1450000648c83fbc162e307f034d517f43ef5c896826f56354af7af7",
+            "e514869b5c3dc1a9217ced3a5f9faf7c7508766595942eedfccdee9ab7d85c73",
+            "47a817541b03252d7110e5ae4c3c7f350ab0b6b034d007af3658388ac53908b1",
+            "d1fd08a707ed9b7bd074026cf10d384e11845877d218340f8f86afa259819472",
+            "37e656772fbfb31aa5df75282b07cf48e98f6452137b0d81a3cf3c0e1009034c"
+          ]
+        },
+        {
+          "table": [
+            4,
+            0,
+            1,
+            4,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            2,
+            2,
+            0,
+            1,
+            0,
+            2,
+            1
+          ],
+          "table_sha256": "b9f95b12ca2bf2c5d57b8e2cb02db5b4a5200255acb27db16a43edebc8ccb176",
+          "training_score": {
+            "mean": {
+              "utility": 0.9684502799214795,
+              "availability": 0.9685899883741702,
+              "qualified_availability": 0.968403710437249,
+              "degraded_arrival_fraction": 0.00018627793692112284,
+              "blocked_arrival_fraction": 0.031410011625829674,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9723440832934315
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9684502799214795,
+                "availability": 0.9685899883741702,
+                "qualified_availability": 0.968403710437249,
+                "degraded_arrival_fraction": 0.00018627793692112284,
+                "blocked_arrival_fraction": 0.031410011625829674,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9723440832934315
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9684502799214795,
+              "availability": 0.9685899883741702,
+              "qualified_availability": 0.968403710437249,
+              "degraded_arrival_fraction": 0.00018627793692112284,
+              "blocked_arrival_fraction": 0.031410011625829674,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9723440832934315
+            },
+            "minimum_condition_utility": 0.9684502799214795,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "8b58695f6c1261bbd8ccb023eef68a2ba71466f7ee9869eecee4c24dabf65511",
+            "5cc64162c0f66fb2dbec035b81aed07e63f4ad1273393458fc7b9bdadfdf8eac",
+            "526e7cf52ccff4a3bf420d13f91f2db565a336d39c9083b0ced6452b3b96ceba",
+            "4912c3558fba701d17cad276a867649de26074f27b2dfaa8116d4c6c1e63c3ae",
+            "c1daf6ecc9cede7a0bc779cdfdd096c9c2bdb5b978c31a52bbc7a21a4740ec2b",
+            "4e0f2cf76456ad483f039915068e4575a1cb38d928b314015e82b7e7c9be6ab2"
+          ]
+        },
+        {
+          "table": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            2,
+            0,
+            4,
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            3,
+            4,
+            0
+          ],
+          "table_sha256": "1d27a4b7cc629813985df1d6922bf7c089242af4d479ed87a9c38948090f3a4a",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741105651841789,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740931978214863,
+              "degraded_arrival_fraction": 6.946945077017066e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872025626317663
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741105651841789,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9740931978214863,
+                "degraded_arrival_fraction": 6.946945077017066e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872025626317663
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741105651841789,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740931978214863,
+              "degraded_arrival_fraction": 6.946945077017066e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872025626317663
+            },
+            "minimum_condition_utility": 0.9741105651841789,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "484e50f5e7e1911bfb0764255c67ecbc1369584d0be70d79aa0e66ac4a02ba7b",
+            "fa1c93ecf7951d09a51cb9ce9d1ee9740b9e028a31e714246510e4223dcab54b",
+            "241fa5a151989e955865851ce1885ed40a4fdc5564aaf67203145e0f353a9a06",
+            "73bf7080ed3051403b5b8aeb3d3673febc11b9bc4e6841a71be86631383a576d",
+            "7050d1d0a1e55b16ad44c862271af54789c361348b20149684ec7b8d87849c8b",
+            "7545d9c0b86b07339192fd60e42cde3b5d12039e0801f1dca69fdea6e898eaeb"
+          ]
+        },
+        {
+          "table": [
+            1,
+            4,
+            1,
+            2,
+            0,
+            4,
+            0,
+            3,
+            4,
+            3,
+            1,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "table_sha256": "bef09c1b88b6b3b28873f3673a279cba44527eeb86ad522b96960852fb32d6c2",
+          "training_score": {
+            "mean": {
+              "utility": 0.9740933095243224,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.974070190275011,
+              "degraded_arrival_fraction": 9.247699724541453e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.9871752797493087
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9740933095243224,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.974070190275011,
+                "degraded_arrival_fraction": 9.247699724541453e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 3.7268932617769825e-05,
+                "qualified_payload_fraction": 0.9871752797493087
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9740933095243224,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.974070190275011,
+              "degraded_arrival_fraction": 9.247699724541453e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.9871752797493087
+            },
+            "minimum_condition_utility": 0.9740933095243224,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "0a29fd8007e083b9e439b177416d0ab82be20d6bdf72f19b35c7858b7813ea69",
+            "4bd441c3fc1367b55a2997051901b82cbb5915dd896f7d7d2c3573c69a2068a9",
+            "faa7bf58ae611c3f0160240079f474d6d7e54f299e38a2424a6fe98a96af2742",
+            "ef0e38defe441c0e75d9867986a6b8667f02c4ba6a1c88879c004e473ea536a0",
+            "543999006c900a9f598dc2095ba8e54766c803d06be643d99b1920720a93e367",
+            "618fa30869186480484bc8ce0ecf862c1694a039e08f3b6ab0d3b663023e5d61"
+          ]
+        },
+        {
+          "table": [
+            0,
+            0,
+            0,
+            4,
+            0,
+            4,
+            4,
+            2,
+            0,
+            2,
+            2,
+            2,
+            1,
+            1,
+            4,
+            3,
+            2,
+            4
+          ],
+          "table_sha256": "735e82ceb83b75809cea6496fe9ca43224952c710b09eae541793220faee8b59",
+          "training_score": {
+            "mean": {
+              "utility": 0.9724309699088506,
+              "availability": 0.9741856319887482,
+              "qualified_availability": 0.9718460825488847,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.02581436801125177,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9846184135416015
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9724309699088506,
+                "availability": 0.9741856319887482,
+                "qualified_availability": 0.9718460825488847,
+                "degraded_arrival_fraction": 0.0023395494398635694,
+                "blocked_arrival_fraction": 0.02581436801125177,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9846184135416015
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9724309699088506,
+              "availability": 0.9741856319887482,
+              "qualified_availability": 0.9718460825488847,
+              "degraded_arrival_fraction": 0.0023395494398635694,
+              "blocked_arrival_fraction": 0.02581436801125177,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9846184135416015
+            },
+            "minimum_condition_utility": 0.9724309699088506,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "60039369ab2b9bcdc7f14ceb2a2a17266f53c9223800b793e46311f63a32d93e",
+            "97923b059ad35595f492b0b6eb089e1f0293661001cb69487435bb172ade02f9",
+            "a9cdd165f26fc8a791152e813da22d916fb8a7db80595f57c6bfd0ee59e5a95f",
+            "875d5fc5ba14c8ce00f48891820dc27e431ad614adff2025fb0fe3214a720280",
+            "213cd11925346f81fb1343c4b99929cdb890e93e7829af28c3b73e03d75b533f",
+            "9c90ec1215f3b2649b8a7a6e7b63fc84d7100324656dca4a17efb234ab1d5632"
+          ]
+        }
+      ],
+      "probabilities_before": [
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ]
+      ],
+      "probabilities_after": [
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ]
+      ],
+      "incumbent_table": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "incumbent_training_utility": 0.9741626672722564,
+      "optimizer_rng_state": {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 78702253988388718112106431377632093127,
+          "inc": 243370909585270774436545750675754934523
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      "requested_candidates": 10,
+      "requested_rollouts": 60
+    },
+    {
+      "iteration": 3,
+      "population": [
+        {
+          "table": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "table_sha256": "1c092e73351bc7e576a3d903948eb95415f6e7212afcb04aeda7e34dfeab03e8",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741626672722564,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9741626672722564,
+                "degraded_arrival_fraction": 0.0,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872844671744413
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741626672722564,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9741626672722564,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872844671744413
+            },
+            "minimum_condition_utility": 0.9741626672722564,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "f141f1780b5ca1c22431d5e9a6427931875dec63bce24f74a9e2bc4f2d0c2c2c",
+            "2248775edf761d5e5754c80dfae454156fe36ec709915deedb02dab4f652b52c",
+            "02d5c3f378a3fbbe504740ea2e715e150f4592bd56fc29a943a5838983178882",
+            "242b1a41b59847a38957bcae9a4496eee8ecdc4207b1bdc69644a8b778ba4c3e",
+            "add4a9382adbc19bdbd1d02cc72717459362dd59deec6596075aa178e2d0bc27",
+            "39692ac890a2ab61cd7086f230722dc5951f8ad0d4e0ecf58be58f5782d26af4"
+          ]
+        },
+        {
+          "table": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "table_sha256": "2919a9e34399cfdd9eecac7a626f6e402d2a1f0bd56e7897e60a123db8b59d3d",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741109002926872,
+                "availability": 0.9741626672722564,
+                "qualified_availability": 0.9740936446328307,
+                "degraded_arrival_fraction": 6.902263942573163e-05,
+                "blocked_arrival_fraction": 0.025837332727743637,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872026185270685
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741109002926872,
+              "availability": 0.9741626672722564,
+              "qualified_availability": 0.9740936446328307,
+              "degraded_arrival_fraction": 6.902263942573163e-05,
+              "blocked_arrival_fraction": 0.025837332727743637,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872026185270685
+            },
+            "minimum_condition_utility": 0.9741109002926872,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "2e3b2a0bd14e144b14f766ce1572a6ed492a4461e6d58fd95584d64a0645a1a6",
+            "bb0a91feb233d957a84d05d3d0a19986ff126a1d0b5f930276068304cf262074",
+            "88ff1afe49cb8e4b3c6f00c235174976f080e3b4ebf5811191743b7d5fcc19cc",
+            "2e042f304d338b62a0c7c3992864ce2bacc33373b53c2b968d600a0689207c8d",
+            "1bfbe48bf006292664fb4485507bd9a54080eae24398eed24e281f74fa4c5457",
+            "b105695fbbf582f6ad2e6503e103393273a810763bac7282ffd05c4277ad0657"
+          ]
+        },
+        {
+          "table": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            4,
+            1,
+            2,
+            1,
+            4,
+            1,
+            0,
+            3,
+            3,
+            2,
+            4,
+            0,
+            4
+          ],
+          "table_sha256": "eeda49f8027f5066ada9df96b890178942b01ec90051cc39998782ae938e26ea",
+          "training_score": {
+            "mean": {
+              "utility": 0.9466715856717091,
+              "availability": 0.9741856319887482,
+              "qualified_availability": 0.9375002368993625,
+              "degraded_arrival_fraction": 0.036685395089385765,
+              "blocked_arrival_fraction": 0.02581436801125177,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8913023193254216
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9466715856717091,
+                "availability": 0.9741856319887482,
+                "qualified_availability": 0.9375002368993625,
+                "degraded_arrival_fraction": 0.036685395089385765,
+                "blocked_arrival_fraction": 0.02581436801125177,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.8913023193254216
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9466715856717091,
+              "availability": 0.9741856319887482,
+              "qualified_availability": 0.9375002368993625,
+              "degraded_arrival_fraction": 0.036685395089385765,
+              "blocked_arrival_fraction": 0.02581436801125177,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.8913023193254216
+            },
+            "minimum_condition_utility": 0.9466715856717091,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "739509facee4294dde163e2ae65f4e8dcadcfb529c96662f52e87527c4b9f3e7",
+            "e0feaf447c146bc7f7d9cd0b2f6b10afbe67567293373ec1939cf300bdddb420",
+            "aec40fc03830902571ade16d2096660731a811e9880e2138f75e731cb8e4e03c",
+            "3db40304fce3f523da836b4cd7c532a369e1bcaafac9f5559c3f87a23207f192",
+            "9362552973f6c83ad6c60743e5e4d7db2fc6e7c87da9e1c9e168d1164a6920e6",
+            "bf40d7a0aed85eb02d07d89b8060f4da108b4f0ce1bc49c72ad412492d4bd2d0"
+          ]
+        },
+        {
+          "table": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            4,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4
+          ],
+          "table_sha256": "b601ef495437052fea24d7f949fa46c35b8c4f8823da1d029eba8460aef0fa2c",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741446428728825,
+              "availability": 0.9741621941225316,
+              "qualified_availability": 0.974138792456333,
+              "degraded_arrival_fraction": 2.3401666198633343e-05,
+              "blocked_arrival_fraction": 0.025837805877468433,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9873225121153576
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741446428728825,
+                "availability": 0.9741621941225316,
+                "qualified_availability": 0.974138792456333,
+                "degraded_arrival_fraction": 2.3401666198633343e-05,
+                "blocked_arrival_fraction": 0.025837805877468433,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9873225121153576
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741446428728825,
+              "availability": 0.9741621941225316,
+              "qualified_availability": 0.974138792456333,
+              "degraded_arrival_fraction": 2.3401666198633343e-05,
+              "blocked_arrival_fraction": 0.025837805877468433,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9873225121153576
+            },
+            "minimum_condition_utility": 0.9741446428728825,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "a92d5e9c36f4b6cf4b434660b0abe6749ed9e356057636267515be2344c9dc49",
+            "56638195a0882f8d7a1d5c2f9666a7b4c5fa12280bbc004e56e3446172c50d70",
+            "8c3181767dbc0c4cfd0eb45b238cd33882f672794873c860ab1e9ca11bb2e408",
+            "240c7e1e5f6b7a2b0b2fde56545a24efb15ccd5eed07b35a668b0e34c6433d54",
+            "7493fab49798a67897c88313cded0f8271f53649bc5b601ac9e5d53a3c33d177",
+            "c3ad862a94333637bb26a2dacf6f349c209509a0c2fa1a485f8041d3f9aadc8f"
+          ]
+        },
+        {
+          "table": [
+            2,
+            3,
+            3,
+            4,
+            0,
+            2,
+            0,
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            1
+          ],
+          "table_sha256": "e2e61fd2148f673ecaf2916da26cec8bdf50255d67c082b9d75bb6f88c6d8e18",
+          "training_score": {
+            "mean": {
+              "utility": 0.9734139349322802,
+              "availability": 0.9734139349322802,
+              "qualified_availability": 0.9734139349322802,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.026586065067719777,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872180466425649
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9734139349322802,
+                "availability": 0.9734139349322802,
+                "qualified_availability": 0.9734139349322802,
+                "degraded_arrival_fraction": 0.0,
+                "blocked_arrival_fraction": 0.026586065067719777,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872180466425649
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9734139349322802,
+              "availability": 0.9734139349322802,
+              "qualified_availability": 0.9734139349322802,
+              "degraded_arrival_fraction": 0.0,
+              "blocked_arrival_fraction": 0.026586065067719777,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872180466425649
+            },
+            "minimum_condition_utility": 0.9734139349322802,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "4c2d0c4a3dd058b987ef9fe7dd397491f99a336845a85f966169c14adaf305b0",
+            "cc827ad42c80a480cd75fd6ab14a70d07c8a829116dc7dabb9037df3d660a99e",
+            "3328f590f51a36528dc454e081997325e3eef1d8cad579b6fbd7c987739d30a4",
+            "f6ffd445d1d1dee140a1d84d223d7e72854ff33da5f972660d7c91142069a9c5",
+            "27fa059ec9a471742fe101f015c551f1e59433933fca6b058291085cc7c54d94",
+            "fffe2b4d9292e247b7f71f68e5eafadf2576410d4307328744b1ac923e7e2d58"
+          ]
+        },
+        {
+          "table": [
+            3,
+            4,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            4,
+            1,
+            1,
+            2,
+            4,
+            0,
+            1,
+            3,
+            4
+          ],
+          "table_sha256": "5b601d0cd82c5fc51240eef43c7d6d1186635e3ff4de5279645b603bde982735",
+          "training_score": {
+            "mean": {
+              "utility": 0.9685843177291065,
+              "availability": 0.9686364074484818,
+              "qualified_availability": 0.9685669544893147,
+              "degraded_arrival_fraction": 6.94529591671474e-05,
+              "blocked_arrival_fraction": 0.031363592551518125,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9727020833369705
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9685843177291065,
+                "availability": 0.9686364074484818,
+                "qualified_availability": 0.9685669544893147,
+                "degraded_arrival_fraction": 6.94529591671474e-05,
+                "blocked_arrival_fraction": 0.031363592551518125,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9727020833369705
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9685843177291065,
+              "availability": 0.9686364074484818,
+              "qualified_availability": 0.9685669544893147,
+              "degraded_arrival_fraction": 6.94529591671474e-05,
+              "blocked_arrival_fraction": 0.031363592551518125,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9727020833369705
+            },
+            "minimum_condition_utility": 0.9685843177291065,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "d0785f5202bf6db85b6ccbf97b5682cfe561640ff95f27be6953239715809d6f",
+            "11f0e5aacb7868968215bfe9dffff8740528e0c8a193ce1b734f625d1f95a9ea",
+            "6bc4cc60ea301b9b2eabcf005a548391c495ccbe3d2a1419a18b1aabe583642c",
+            "c8967446d6effabecdd99c226640a680de73180fd1f7305f9ca836039507169f",
+            "9f08d585f896931ff7b175e43f77d331e0954e29a1571c5dc6c5c32080debad3",
+            "75f3c005ec30f37cc062e74b973d3ec4db91f4d9a5fdee94a5fc6d253f10eff2"
+          ]
+        },
+        {
+          "table": [
+            0,
+            3,
+            3,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            1,
+            4,
+            4,
+            0,
+            0
+          ],
+          "table_sha256": "709ebb6ffb4574f522a1f2de80bf79a5f7eef02d492a560400e8fc30baa3277a",
+          "training_score": {
+            "mean": {
+              "utility": 0.9741216781563908,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9741158277398411,
+              "degraded_arrival_fraction": 2.3401666198633343e-05,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872287310281945
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9741216781563908,
+                "availability": 0.9741392294060397,
+                "qualified_availability": 0.9741158277398411,
+                "degraded_arrival_fraction": 2.3401666198633343e-05,
+                "blocked_arrival_fraction": 0.0258607705939603,
+                "forced_entitled_fraction": 0.0,
+                "qualified_payload_fraction": 0.9872287310281945
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9741216781563908,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9741158277398411,
+              "degraded_arrival_fraction": 2.3401666198633343e-05,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0,
+              "qualified_payload_fraction": 0.9872287310281945
+            },
+            "minimum_condition_utility": 0.9741216781563908,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "3c135dc056e3bc2125d860e899c808ee60dd0d8c241c1e1fcc75d75b83a3c4ef",
+            "247f320faab677360f41b3ef8d8bb3122e5b125f78b361b522f22f309671ed10",
+            "96bbcea44c7c69927c53edcb658399ef529b22f3b7ba7dc9984f800250cda89f",
+            "c15ece7c27ac4e936369eb5c40e99ce9b27a700805affac6dc299672a1ce7428",
+            "097bc7bcf9eeede71429b651ccae3af0e77b704ac2c25aad2ea0c328ddcf1218",
+            "d492c6ac83919082a454934bd28b0ea2ad9cc7bb073d3e45786fc93e7c604ce3"
+          ]
+        },
+        {
+          "table": [
+            4,
+            2,
+            1,
+            1,
+            1,
+            0,
+            0,
+            3,
+            1,
+            4,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "table_sha256": "7e07e33350fc6c4e1d0742bd9f7b578168fc4527c038c15137d65fdfd2895489",
+          "training_score": {
+            "mean": {
+              "utility": 0.9736958287757996,
+              "availability": 0.9737651865237337,
+              "qualified_availability": 0.9736727095264883,
+              "degraded_arrival_fraction": 9.247699724541453e-05,
+              "blocked_arrival_fraction": 0.026234813476266352,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.9871686200666545
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9736958287757996,
+                "availability": 0.9737651865237337,
+                "qualified_availability": 0.9736727095264883,
+                "degraded_arrival_fraction": 9.247699724541453e-05,
+                "blocked_arrival_fraction": 0.026234813476266352,
+                "forced_entitled_fraction": 3.7268932617769825e-05,
+                "qualified_payload_fraction": 0.9871686200666545
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9736958287757996,
+              "availability": 0.9737651865237337,
+              "qualified_availability": 0.9736727095264883,
+              "degraded_arrival_fraction": 9.247699724541453e-05,
+              "blocked_arrival_fraction": 0.026234813476266352,
+              "forced_entitled_fraction": 3.7268932617769825e-05,
+              "qualified_payload_fraction": 0.9871686200666545
+            },
+            "minimum_condition_utility": 0.9736958287757996,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "8fcba6709e5e63f23615f1ad45b5b9c3012b4b6a83b7ae25925f3fd4acefbe2f",
+            "3a318ac26fd60201751bdac2416e4b8d91cea81481e24630927a64fa6100fb21",
+            "c7bf4710e5ceb2de7855bd9e2d5d1c5e8c2ead9d701dec3b9a813ce4f059a42a",
+            "a1bd560ad4d8af9fe486f1fa1a10501e1340281efbc4d2212f83ad18790caeed",
+            "5a94132f8589538d1e42ab4b0a43592aa750de509becc9eeb66bef47b52617aa",
+            "98e34bf9e27ecc05c1eece0e65d02895cd78d35e92d6042607ac0664e7041a37"
+          ]
+        },
+        {
+          "table": [
+            0,
+            0,
+            3,
+            2,
+            1,
+            3,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0
+          ],
+          "table_sha256": "b3326615b98d48ae593787e0582da9110af0f20893c0f4a0a9256a3057bb2321",
+          "training_score": {
+            "mean": {
+              "utility": 0.9716829377241267,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9708641738301558,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.982039616456114
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9716829377241267,
+                "availability": 0.9741392294060397,
+                "qualified_availability": 0.9708641738301558,
+                "degraded_arrival_fraction": 0.003275055575884022,
+                "blocked_arrival_fraction": 0.0258607705939603,
+                "forced_entitled_fraction": 0.0036946914049050695,
+                "qualified_payload_fraction": 0.982039616456114
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9716829377241267,
+              "availability": 0.9741392294060397,
+              "qualified_availability": 0.9708641738301558,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.0258607705939603,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.982039616456114
+            },
+            "minimum_condition_utility": 0.9716829377241267,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "07fd52a0101cdf142fae418073f8e5d76bc886a247a46569c95df33027d25013",
+            "af2029a7f52166a743ce3ca41deb9f4f12a55fa1d1dc8bcff8db53848f8b0bd5",
+            "b60b5fc5ec77b38038fde002bded1b76699283998a42301d600ac2595023557b",
+            "ff195d57e4d2ff618e2c26d14a532ccbbc09a366c824d9529e00cfcea9491ee2",
+            "ba9e02d2ceaf967c2f4d0c3a2878723a3f1c12440e1e89e6f60d63289b9c82c4",
+            "02cbd9f209c6332d3c929ca8b5c822f9e9fe3ea8eec3958b11e5ba57d9f72a57"
+          ]
+        },
+        {
+          "table": [
+            2,
+            4,
+            1,
+            1,
+            0,
+            0,
+            2,
+            3,
+            0,
+            4,
+            3,
+            0,
+            1,
+            3,
+            1,
+            3,
+            1,
+            0
+          ],
+          "table_sha256": "ec89f8eb423d297d92e4f4bfa45d019ac8b1d4e6482d859d3e7af594bc916c8f",
+          "training_score": {
+            "mean": {
+              "utility": 0.9707469094615404,
+              "availability": 0.9732032011434534,
+              "qualified_availability": 0.9699281455675693,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.026796798856546566,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9817528778812711
+            },
+            "condition_means": {
+              "nominal": {
+                "utility": 0.9707469094615404,
+                "availability": 0.9732032011434534,
+                "qualified_availability": 0.9699281455675693,
+                "degraded_arrival_fraction": 0.003275055575884022,
+                "blocked_arrival_fraction": 0.026796798856546566,
+                "forced_entitled_fraction": 0.0036946914049050695,
+                "qualified_payload_fraction": 0.9817528778812711
+              }
+            },
+            "worst_condition_components": {
+              "utility": 0.9707469094615404,
+              "availability": 0.9732032011434534,
+              "qualified_availability": 0.9699281455675693,
+              "degraded_arrival_fraction": 0.003275055575884022,
+              "blocked_arrival_fraction": 0.026796798856546566,
+              "forced_entitled_fraction": 0.0036946914049050695,
+              "qualified_payload_fraction": 0.9817528778812711
+            },
+            "minimum_condition_utility": 0.9707469094615404,
+            "n_rollouts": 6
+          },
+          "rollout_keys": [
+            "3d6a9d9f23704b56c9fef6adc063c163d7205df97e07fc29e082b8c9236b3c0a",
+            "65209efdc12bc34dd0119c911d8dd4076f78637cb05ba9f808654a381a0a67f7",
+            "85ef1864f705cd4c09c42762c9b8dd53b46623877bc8ce0ba33dc22f2e49c8e6",
+            "9761d5a56a6907d558e4d0f3b057b42aae6a33f4bef90291b98aeedca5860ff3",
+            "627feb6343941af68c312baef5293113a4c33efe055c519c1be2378a3e106ba1",
+            "798c6d0d47feef6d594b9d584bf6164d467f90509f53b054e3a78d61bf56ca27"
+          ]
+        }
+      ],
+      "probabilities_before": [
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ]
+      ],
+      "probabilities_after": [
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        [
+          0.45454545454545453,
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ],
+        [
+          0.2727272727272727,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        [
+          0.6363636363636364,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ],
+        [
+          0.45454545454545453,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.2727272727272727
+        ]
+      ],
+      "incumbent_table": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "incumbent_training_utility": 0.9741626672722564,
+      "optimizer_rng_state": {
+        "bit_generator": "PCG64",
+        "state": {
+          "state": 323343927083192454437885379011994980567,
+          "inc": 243370909585270774436545750675754934523
+        },
+        "has_uint32": 0,
+        "uinteger": 0
+      },
+      "requested_candidates": 10,
+      "requested_rollouts": 60
+    }
+  ],
+  "best_observed": {
+    "table": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "table_sha256": "1c092e73351bc7e576a3d903948eb95415f6e7212afcb04aeda7e34dfeab03e8",
+    "training_score": {
+      "mean": {
+        "utility": 0.9741626672722564,
+        "availability": 0.9741626672722564,
+        "qualified_availability": 0.9741626672722564,
+        "degraded_arrival_fraction": 0.0,
+        "blocked_arrival_fraction": 0.025837332727743637,
+        "forced_entitled_fraction": 0.0,
+        "qualified_payload_fraction": 0.9872844671744413
+      },
+      "condition_means": {
+        "nominal": {
+          "utility": 0.9741626672722564,
+          "availability": 0.9741626672722564,
+          "qualified_availability": 0.9741626672722564,
+          "degraded_arrival_fraction": 0.0,
+          "blocked_arrival_fraction": 0.025837332727743637,
+          "forced_entitled_fraction": 0.0,
+          "qualified_payload_fraction": 0.9872844671744413
+        }
+      },
+      "worst_condition_components": {
+        "utility": 0.9741626672722564,
+        "availability": 0.9741626672722564,
+        "qualified_availability": 0.9741626672722564,
+        "degraded_arrival_fraction": 0.0,
+        "blocked_arrival_fraction": 0.025837332727743637,
+        "forced_entitled_fraction": 0.0,
+        "qualified_payload_fraction": 0.9872844671744413
+      },
+      "minimum_condition_utility": 0.9741626672722564,
+      "n_rollouts": 6
+    },
+    "rollout_keys": [
+      "f141f1780b5ca1c22431d5e9a6427931875dec63bce24f74a9e2bc4f2d0c2c2c",
+      "2248775edf761d5e5754c80dfae454156fe36ec709915deedb02dab4f652b52c",
+      "02d5c3f378a3fbbe504740ea2e715e150f4592bd56fc29a943a5838983178882",
+      "242b1a41b59847a38957bcae9a4496eee8ecdc4207b1bdc69644a8b778ba4c3e",
+      "add4a9382adbc19bdbd1d02cc72717459362dd59deec6596075aa178e2d0bc27",
+      "39692ac890a2ab61cd7086f230722dc5951f8ad0d4e0ecf58be58f5782d26af4"
+    ]
+  },
+  "execution_stats": {
+    "requested": 240,
+    "unique_jobs_dispatched": 240,
+    "cache_hits": 36,
+    "executed": 204
+  }
+}

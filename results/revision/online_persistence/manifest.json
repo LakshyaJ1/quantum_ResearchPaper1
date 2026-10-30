@@ -1,0 +1,766 @@
+{
+  "schema_version": 1,
+  "files": {
+    "qkdsim/__init__.py": "858694635b679774ddf36c058271a47ffc1b0914fbfbe264857ccc2395526bb5",
+    "qkdsim/config.py": "51d7fbbed721a4fed39fa95afa014d5be9ba982fe2bdde1e2ab6917e7f694ab6",
+    "qkdsim/network.py": "4d1171d2e2214c13acdfa707c255940494b6b7302e1612504d551acf7913ab3a",
+    "qkdsim/physics.py": "bbf2b83347c5c3b5dd43b86f0c0a10f03bdb94931fb92026f1cc5e4fe90c1d7d",
+    "qkdsim/rl.py": "cf510c304304ae54600b412ccb14f1b4d83150fd80f27105cf1ec791af658ffe",
+    "qkdsim/sim.py": "922471034e6164c588127a9db8ea085ac3939779ee2eab7c94a9ccd9af18af49",
+    "revision/scenarios.py": "0087884a479b1314dd0b258930a06ab6538afb5acc1eda04cce1a1ca60e274ec",
+    "revision/metrics.py": "1deb62f2e8fc9bfcbe87d1f0a9f7e899a52c38f27a6db00688014636781fad44",
+    "experiments/revision_online_adversary.py": "1a2ef5c91d870a0d829d4d7829625d1a76aba73efa241790f6ca14076743d133",
+    "experiments/revision_online_persistence.py": "d6ebf2e8d7399f7e27d0dd608ce8713cfa70d4652c3e32620d55e5d428ae44f3"
+  },
+  "runtime": {
+    "python": "3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "networkx": "3.4.2",
+    "os_name": "nt",
+    "windows": [
+      10,
+      0,
+      22631,
+      2,
+      ""
+    ]
+  },
+  "source_hash": "90baaec0d031b0efd250e1210b32f358c135445166ed9416312fee440b05c1ed",
+  "protocol": {
+    "classification": "post-hoc mechanism diagnostic with disjoint confirmation seeds",
+    "exploratory_seeds": [
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3005
+    ],
+    "confirmation_seeds": [
+      3100,
+      3101,
+      3102,
+      3103,
+      3104,
+      3105
+    ],
+    "variants": [
+      "release_on_unusable",
+      "persistent_slots",
+      "weighted_cut"
+    ],
+    "depths": [
+      2,
+      4,
+      6
+    ],
+    "budgets": [
+      1,
+      2
+    ],
+    "requested_runs": 126,
+    "shared_no_attack_controls": 18,
+    "horizon_s": 86400,
+    "initial_spendable_fraction": 0.02,
+    "isr_scale": 0.1,
+    "n_auth": 7,
+    "update_period_s": 60,
+    "unobserved_path_weight": 0.01,
+    "persistence_rule": "original feedback choices first, fill unused slots with previous targets in prior order",
+    "initialization_rule": "fill any remaining slots from frozen weighted-cut order and canonical tail",
+    "unchanged": "path weights, committed-route observations, lexical coverage ties, 60-second update period, environment",
+    "target_cost": "concurrent relative-cost cap; actual integral and campaign footprint reported separately",
+    "retarget_overhead_modelled": false,
+    "optimal_attacker_claim": false
+  },
+  "protocol_sha256": "83527f4c0a307376a58fa748bc254f12055389a3198666fd8630fc99ff7b7795",
+  "protected_previous_artifact_hashes": {
+    "experiments\\revision_online_adversary.py": "1a2ef5c91d870a0d829d4d7829625d1a76aba73efa241790f6ca14076743d133",
+    "results\\revision\\online_adversary\\manifest.json": "da719d320a40c5b554613f6ab00b533f4d3f7dd088ba8f5e6cc60936a5e707ab",
+    "results\\revision\\online_adversary\\analysis.json": "26e12dc0239ea07b9c0099792d63acbf5a15ee10c056d4d334b5973120a89b54"
+  },
+  "prior_mechanism_audit": {
+    "exploratory_source_hash": "f007330e9cf450df6ce9ea2bd9b0a5bc09992f49f144c015e2908fc8042fb388",
+    "logs_reconstruct_exposure": true,
+    "findings": [
+      {
+        "depth": 2,
+        "online_excess_fal": 0.7327318797729022,
+        "online_link_hours": 43.888888888888886,
+        "cut_link_hours": 48.0,
+        "online_update_slot_count_histogram": {
+          "0": 45,
+          "1": 1390,
+          "2": 7205
+        },
+        "fraction_updates_below_two_slots": 0.16608796296296297,
+        "online_minus_cut_generated_Mbit": 1.7771133333333333
+      },
+      {
+        "depth": 4,
+        "online_excess_fal": 0.5281554258290063,
+        "online_link_hours": 41.34444444444444,
+        "cut_link_hours": 48.0,
+        "online_update_slot_count_histogram": {
+          "0": 147,
+          "1": 2102,
+          "2": 6391
+        },
+        "fraction_updates_below_two_slots": 0.2603009259259259,
+        "online_minus_cut_generated_Mbit": 4.029366666666667
+      },
+      {
+        "depth": 6,
+        "online_excess_fal": 0.35896129408831756,
+        "online_link_hours": 38.949999999999996,
+        "cut_link_hours": 48.0,
+        "online_update_slot_count_histogram": {
+          "0": 287,
+          "1": 2684,
+          "2": 5669
+        },
+        "fraction_updates_below_two_slots": 0.3438657407407407,
+        "online_minus_cut_generated_Mbit": 5.67818
+      }
+    ],
+    "interpretation": "Exposure loss is verified; its effect on forcing is tested prospectively on disjoint seeds."
+  },
+  "started_utc": "2026-09-26T01:08:17.010465+00:00",
+  "workers": 3,
+  "completed_utc": "2026-09-26T01:12:52.227366+00:00",
+  "completed_runs": 126,
+  "wall_s": 275.2133379000006,
+  "runs": [
+    {
+      "key": "360f8524fd3997d52ac030b61e744fb014bfaf2b10d40a16de1c000b59438a9c",
+      "cached": false,
+      "wall_s": 4.305327399997623
+    },
+    {
+      "key": "6d449a0553b25ec2592ad3f0e3b6284c06ec805c6a224eb508d2afb315ea7d51",
+      "cached": false,
+      "wall_s": 4.265135300003749
+    },
+    {
+      "key": "cf56dd81a43dc0ea390c46c62b495c8ef018a0f0c5d869a6091a85903fee898d",
+      "cached": false,
+      "wall_s": 4.5182674000025145
+    },
+    {
+      "key": "7662398a7827f0f7a615a1ea672ef6779572ef2bc63f11c9062ca74e886a7dad",
+      "cached": false,
+      "wall_s": 4.851899200002663
+    },
+    {
+      "key": "6547a97e211d039f923dcbb21e501ce5e7af600692781b4fbd5b127c09c2c01e",
+      "cached": false,
+      "wall_s": 4.797434500003874
+    },
+    {
+      "key": "43adba8c0eff93b078a06c78d96169f2039a0cc0e344ae942557b4bbc3fcb5d2",
+      "cached": false,
+      "wall_s": 4.74212819999957
+    },
+    {
+      "key": "b497519705d95e51214de5881640c84a0ea2ee867d08baa2fed486d0420ce636",
+      "cached": false,
+      "wall_s": 3.97857120000117
+    },
+    {
+      "key": "e1e338613cfabba3db8a1b01fb7b889223f4fdf1ad5f29f2857263c9dd8971f3",
+      "cached": false,
+      "wall_s": 3.9718365000007907
+    },
+    {
+      "key": "c4f400aa732c0cce4a5789b5241c3cf7524566c9aaf509c1fd225295c313c1e8",
+      "cached": false,
+      "wall_s": 4.141874900000403
+    },
+    {
+      "key": "94a1443e8238db8cf0f57f4bc758baf0ebbda2b60dd46178c3a9d9dc885499b0",
+      "cached": false,
+      "wall_s": 4.34012839999923
+    },
+    {
+      "key": "94e3375f24d72718070ef64ef694772092cc779b3502ac3f9c405edec0f9724d",
+      "cached": false,
+      "wall_s": 4.468710100001772
+    },
+    {
+      "key": "13f71841c719f9cb5977c536e7bc58439f25a46e12a583e9463545ea6c359622",
+      "cached": false,
+      "wall_s": 4.3819862000018475
+    },
+    {
+      "key": "14f6702eb198e43a2a8465106e391d97d3100d960ff9bae1f351f37a3bbaa13a",
+      "cached": false,
+      "wall_s": 4.270321199997852
+    },
+    {
+      "key": "73e69245f82921d15c05ae2939d5b6892877437ee4f1999dba70c9b40a93e0b1",
+      "cached": false,
+      "wall_s": 4.498555599995598
+    },
+    {
+      "key": "03c079d0ea7246f36da490b669475f0c186608e78b27cdea30b762e469f78c29",
+      "cached": false,
+      "wall_s": 4.342285599996103
+    },
+    {
+      "key": "f57d9ad5e6fc8267a12602fa65bcce8c5fd2ec2ad20f406773e429a781d5f711",
+      "cached": false,
+      "wall_s": 4.067843800003175
+    },
+    {
+      "key": "e6da825508f2d5074c861b0e4aabb52bd50ac9c8048afb9a979637f3237750b5",
+      "cached": false,
+      "wall_s": 4.2196661999987555
+    },
+    {
+      "key": "1911e5ea7a5b06584dfa01f325eeb126519cfb04bb6058090a5ed8d83506c047",
+      "cached": false,
+      "wall_s": 4.194967000003089
+    },
+    {
+      "key": "f2bf8ad45aba32f4f6167551ac87f1f4aee66af6ce162c03457461e2262fde0a",
+      "cached": false,
+      "wall_s": 3.8416857999982312
+    },
+    {
+      "key": "bd245228b9bcae587ba38e9bae979ec0f2b81ff0f0f55502474078d9a27a628f",
+      "cached": false,
+      "wall_s": 3.891488900000695
+    },
+    {
+      "key": "946f1310e65d01f8542d7b9d6b22728b6b324598be0056f094c051512dbd74ce",
+      "cached": false,
+      "wall_s": 3.846815900004003
+    },
+    {
+      "key": "72716550272c694486ea5b545bded612cc7d36602bd51814e50616b1d6c0c12f",
+      "cached": false,
+      "wall_s": 4.150729000000865
+    },
+    {
+      "key": "5092bc10aa57334484c8f87ed15dfb339b1bfc123c102a8ade677b0dbceb75c2",
+      "cached": false,
+      "wall_s": 3.982803300001251
+    },
+    {
+      "key": "570d738e8b165be258737b9b28540a1ea50105fcbcd87450c14176d6c6548c0a",
+      "cached": false,
+      "wall_s": 4.095904599998903
+    },
+    {
+      "key": "0a2b40404f19cb3e1363c26fca4c9ee93fe44ec5b8e1e606e36feeff0f826b59",
+      "cached": false,
+      "wall_s": 4.26032860000123
+    },
+    {
+      "key": "7438d6f73c878ca497df3318f2012986ae8b449711cffffac690595341d4c3ff",
+      "cached": false,
+      "wall_s": 4.171793599998637
+    },
+    {
+      "key": "527151284b3f858badc6fb0c5b43d8b8fe09917695a137fddedd6d01cf6a2151",
+      "cached": false,
+      "wall_s": 4.334168699999282
+    },
+    {
+      "key": "2e80f642b0a507ecf8b3577c195e1e017a01bce7f1f02b637879dbd90bc034aa",
+      "cached": false,
+      "wall_s": 4.154955500001961
+    },
+    {
+      "key": "359421d4aea86c631aa12681b7be654f83c857845897b74c0474afbc422e008e",
+      "cached": false,
+      "wall_s": 4.344296899995243
+    },
+    {
+      "key": "628e705d714dfd74ad78a2eb34f9b988bcf75e437a7aae967255b512a9208f1c",
+      "cached": false,
+      "wall_s": 4.473980199996731
+    },
+    {
+      "key": "1eae70fa2ee41a4ca9491f319ebb28964e41f411dea6867e39910390e0b65f44",
+      "cached": false,
+      "wall_s": 4.098503000001074
+    },
+    {
+      "key": "e010e67df1d5b8aa643b903c002620a1105d2016319233a55ef8424c7397e4fb",
+      "cached": false,
+      "wall_s": 3.9469603999968967
+    },
+    {
+      "key": "eaf611e1ddd751ef062c1d5a722e6eb93583829cb484a87706b4e157468f27c7",
+      "cached": false,
+      "wall_s": 3.9040311999997357
+    },
+    {
+      "key": "bd73d4ec441aabcadf222b40699ec65e7733bfb3312b707fb6391ea3c1c9b39c",
+      "cached": false,
+      "wall_s": 4.07266140000138
+    },
+    {
+      "key": "731cb8a4b7a865e6b41a23868966f910c4205896567a03682d109677a7e326a7",
+      "cached": false,
+      "wall_s": 3.9502017999984673
+    },
+    {
+      "key": "ad60f5e2f66e8f77601c39ec4ab97b52b355b803140b9ed9005a99c1e86b4383",
+      "cached": false,
+      "wall_s": 3.984757800004445
+    },
+    {
+      "key": "cfc11e33e521d6b1ab2b82dff3dc9c93523e37e373e3f824cc5024e240532e19",
+      "cached": false,
+      "wall_s": 6.253942299998016
+    },
+    {
+      "key": "0eb0e309709cdf1d2cfab207bc9f160420b8495d92b5222d68e43364f984c338",
+      "cached": false,
+      "wall_s": 6.2556708000047365
+    },
+    {
+      "key": "06f7bb920dec40d5086be42cdae48b5bf189971feaa4ac2722d24380a309b42b",
+      "cached": false,
+      "wall_s": 6.441246900001715
+    },
+    {
+      "key": "e6bfca4aee848542c6f54315bb86875d3ff11c77d0c6d0c954477c27cac7e107",
+      "cached": false,
+      "wall_s": 6.597553399995377
+    },
+    {
+      "key": "37ec00a84a99ad0254e0e790d11eba2312b3d79d1bc8ddff078cf3d4cd39edf1",
+      "cached": false,
+      "wall_s": 6.573486999994202
+    },
+    {
+      "key": "bc5f9c9597ec42a9acca9c79a577ba8d6d61d8276b929b4dd65920b61664a437",
+      "cached": false,
+      "wall_s": 6.587910700000066
+    },
+    {
+      "key": "067a1977bf8fb76ce80ce49234520421d56a74d1519a22164e3a0fa3db34a511",
+      "cached": false,
+      "wall_s": 6.368693700002041
+    },
+    {
+      "key": "bca6f43aaa2760a06660df7839db5437401e28ee8e1e112afd4ebf8a224fac2f",
+      "cached": false,
+      "wall_s": 6.5294816000023275
+    },
+    {
+      "key": "eb3f5c5cfbd28aa67e15f931937c6cf6730eed7020c41c4ffbe938f9db7816a7",
+      "cached": false,
+      "wall_s": 6.740938800001459
+    },
+    {
+      "key": "9e3c71dbb6abb987ae35771d1696f32a982b61c0bc71cb7f7b97c8ba288bda85",
+      "cached": false,
+      "wall_s": 6.543649299994286
+    },
+    {
+      "key": "8fc4772748fa7c9bab5246beb3c4c34e224a01af5663d9c211be31641c10751f",
+      "cached": false,
+      "wall_s": 6.470963799998572
+    },
+    {
+      "key": "18ffa44212a752c88e21e82d35e80c05d6687c8cd48591a74d3b577b8ff3e17d",
+      "cached": false,
+      "wall_s": 6.252094499999657
+    },
+    {
+      "key": "0ed08738016dab5df9247d136d1c326883c2c4ca81ce677c904f404dc45a6d3e",
+      "cached": false,
+      "wall_s": 6.297631900000852
+    },
+    {
+      "key": "37001776a19ba99a173cb574aded57213c98868517fc5e24a0d2c8e8ba17880d",
+      "cached": false,
+      "wall_s": 6.260233600005449
+    },
+    {
+      "key": "fc08ce3d0246a2683249af282c00a419718585f2eb3a131d7b3c1a2885571c64",
+      "cached": false,
+      "wall_s": 6.40965960000176
+    },
+    {
+      "key": "ae99d91a6d41979140b86420019ec2b0b19e46fde827a876e412babdb4bdf4c1",
+      "cached": false,
+      "wall_s": 6.418935800000327
+    },
+    {
+      "key": "1ad3d1a378048771c8ac089e2b0827a6aad7808e6fba0e9371b6a74d35445a82",
+      "cached": false,
+      "wall_s": 6.3183124999995925
+    },
+    {
+      "key": "8b13b9e060adf263b899cc8da606eab5bd9f49922080a5e1b03826ca8fc547d5",
+      "cached": false,
+      "wall_s": 6.3093881999957375
+    },
+    {
+      "key": "aac174c48f207a5323f1fc4a9ed98965e9b0c0ad0cb0abc3ac4a9ef54761ba93",
+      "cached": false,
+      "wall_s": 6.560448800002632
+    },
+    {
+      "key": "738518c5a0d3fd89a2ae4e0a0bf1d54fb79aad6f81bca7b62135a156a0d9760c",
+      "cached": false,
+      "wall_s": 6.554488499998115
+    },
+    {
+      "key": "54d730d3351627085394b43f9ed9392cbee01a92456830bf77eda229a56115ad",
+      "cached": false,
+      "wall_s": 6.5292153999980655
+    },
+    {
+      "key": "84201e558ff94e95811d854124eceee6f05a849bbe191a92abb39f0c06d5fec8",
+      "cached": false,
+      "wall_s": 6.366644699999597
+    },
+    {
+      "key": "da1f8a155d33583fcaa512da2da3cf38b1daa15699d7ea4287c83ee69527b6b2",
+      "cached": false,
+      "wall_s": 6.3646360999991884
+    },
+    {
+      "key": "a09ec30404acfe9cc19f8a5b7dd9c18f1f1837a02d10b45d74ac5df61ea33546",
+      "cached": false,
+      "wall_s": 6.343418999997084
+    },
+    {
+      "key": "c53a41eeac7da9ac0aef9ed4af106a3a92bbb03fdfc11d69882beedf4af1e2b2",
+      "cached": false,
+      "wall_s": 6.342551200003072
+    },
+    {
+      "key": "eac087ee92568e7351715a3a6a945ae9b568453e3f4ea3761c89622cde02fdbb",
+      "cached": false,
+      "wall_s": 6.253016800001205
+    },
+    {
+      "key": "0c60df62357da53521eb55d7b71c9eaf3b54d2a1fd800cae885e931c668829d8",
+      "cached": false,
+      "wall_s": 6.349735300005705
+    },
+    {
+      "key": "a7eab0d34c2c09454917e21838ea42e6f80b2b5bb78d8ce3a5f43104ead0ac55",
+      "cached": false,
+      "wall_s": 6.424329499997839
+    },
+    {
+      "key": "c5ac47d38c8f43390085ab9914691d56eb25a0f11ef166b96b4d9be50ebf5644",
+      "cached": false,
+      "wall_s": 6.251568699997733
+    },
+    {
+      "key": "3ba9ee846d45b45a4d8dc517c3d3c7397ce2f089edc208728618a0357b2eb4bb",
+      "cached": false,
+      "wall_s": 6.586710499999754
+    },
+    {
+      "key": "20c110a562e94d726e8cd5ba21cd7b3c7f590c8a0d0037457ad5ac8aed0469b7",
+      "cached": false,
+      "wall_s": 6.23732249999739
+    },
+    {
+      "key": "9ecc68e46eabed7015254c986f7f34b7073cdbec286675f40fffb19a84c71974",
+      "cached": false,
+      "wall_s": 6.414568299995153
+    },
+    {
+      "key": "b2a162c8fe8832f2eefbf6bcdf71aaeb444a96cd0f8294b2f248d4f21cf43ff5",
+      "cached": false,
+      "wall_s": 6.342987300005916
+    },
+    {
+      "key": "055136c166224407d1ccb13eb1f5f60477f663e3118d1671ba4ec7d890796304",
+      "cached": false,
+      "wall_s": 6.0736882999990485
+    },
+    {
+      "key": "00ba2f240bf2d258eacb5a0b6ca91efceaaa729f81b4dbd095b9792187e8e28f",
+      "cached": false,
+      "wall_s": 5.981703400000697
+    },
+    {
+      "key": "829d356c8445eb938ac1a145d95ab64312beb44bdff04251bc5966445e3716ee",
+      "cached": false,
+      "wall_s": 6.597024599999713
+    },
+    {
+      "key": "298c2b7e0d2298d0df97abcfe5f55b17460d3b50f41ac4ef2c022ae747fb75da",
+      "cached": false,
+      "wall_s": 8.741051400000288
+    },
+    {
+      "key": "90e1b027fc374f6bd4c3820707ae9c88173185dfc33fcd90e25199ee3d1044b0",
+      "cached": false,
+      "wall_s": 8.689998300003936
+    },
+    {
+      "key": "01e18ac8a2552a73e7213213ea07774b65d1fea4f828366a1b81b3a881f5965a",
+      "cached": false,
+      "wall_s": 8.750799800000095
+    },
+    {
+      "key": "eead5167fc30c1f5128cf3bab9db6cee4f352b531b21b6477d5cc56cff1ff1d9",
+      "cached": false,
+      "wall_s": 8.511107899998024
+    },
+    {
+      "key": "801cab24aaa561b193284b584f86d8837a5455c1bbf47c220c9d9f3bcd7c215f",
+      "cached": false,
+      "wall_s": 8.557831400001305
+    },
+    {
+      "key": "d03aed2c773699c0bd36afd2e15a0f397d47e02317bd7121b3cdfb1dac1f812c",
+      "cached": false,
+      "wall_s": 8.725921900004323
+    },
+    {
+      "key": "f1b34d901c8bbb99fdbe6216e0bf88c87638c4d6a32b47a27a6a08faba708271",
+      "cached": false,
+      "wall_s": 8.728754499999923
+    },
+    {
+      "key": "b2359a7703cce4b6af7b88cfd83d608e043fd3f4745aa896c396a27ca958af64",
+      "cached": false,
+      "wall_s": 8.896299599997292
+    },
+    {
+      "key": "56587d6ed3bc5a383e114e731677699b065612fb92de2addc5601774369bfc60",
+      "cached": false,
+      "wall_s": 8.685127299999294
+    },
+    {
+      "key": "ea763db389216caa5f10d02c3139b2c01573a9cee5d9049ae5cd57eec6c4987a",
+      "cached": false,
+      "wall_s": 8.542217599999276
+    },
+    {
+      "key": "88ebf17b813ac7f491292e824cfe5d398691f04f0014e34de277a6bdeef76ed0",
+      "cached": false,
+      "wall_s": 8.72870729999704
+    },
+    {
+      "key": "224256c6a121bb126ea116b52e0d3d7758fd56c51d5d48f224ad42f64a898ab3",
+      "cached": false,
+      "wall_s": 8.716019100000267
+    },
+    {
+      "key": "7dd5ca8cfc04391b2a3d201082d7bae1c0d4dec400e6b58e780496986d9f66cf",
+      "cached": false,
+      "wall_s": 8.599066299997503
+    },
+    {
+      "key": "e23ebb99bf6b7e596835f9c2f79ddd05f3def2e9d821124d0dad7448371d7ad8",
+      "cached": false,
+      "wall_s": 8.510048200005258
+    },
+    {
+      "key": "b6f7b08caa235058349cc88928246398db2519519f4ee3365d7effb2b6ab3f7d",
+      "cached": false,
+      "wall_s": 8.68014889999904
+    },
+    {
+      "key": "dbd498eaf915e1b74a023da8caf986420c264fb502c078bdbc7432a47f6f9515",
+      "cached": false,
+      "wall_s": 8.867486399998597
+    },
+    {
+      "key": "1845ea7f95459d201233eb9e824c1ccb5f2fdac4ac92a508c6b8d672b9379eea",
+      "cached": false,
+      "wall_s": 8.746674299996812
+    },
+    {
+      "key": "40ea489927abafc1f01c6e90230d6d17ce670d9b2ab5e13a06ccbd1c4a7108ea",
+      "cached": false,
+      "wall_s": 8.895592000000761
+    },
+    {
+      "key": "f28cfe8ccc2b5ae724ba0c875f6419d3e09589e274c21f8056c508b129f15f1c",
+      "cached": false,
+      "wall_s": 8.539235700001882
+    },
+    {
+      "key": "60f232e0dfe75d80fbfe50f5f208c2796605d12a8b7f03156bbe35b7d6386794",
+      "cached": false,
+      "wall_s": 8.752150000000256
+    },
+    {
+      "key": "e9a5a312b40fa6c380e24a740337bec3c81eb725104121eaee8743b913364df1",
+      "cached": false,
+      "wall_s": 8.94239469999593
+    },
+    {
+      "key": "c694959b5d8f8bf870d69c872d15c4bc0b5ba626dfea9b07151d7ad3bb7e9289",
+      "cached": false,
+      "wall_s": 8.56692219999968
+    },
+    {
+      "key": "d127b491d2c9f16361d257e4e2cb2520463c07006504c2ccba3630c557f39c6c",
+      "cached": false,
+      "wall_s": 8.734232599999814
+    },
+    {
+      "key": "d9eafba8ee93169033e180e641aee8eaa189ae7711b793a235f2daaf07753cfe",
+      "cached": false,
+      "wall_s": 8.505751299999247
+    },
+    {
+      "key": "9ec20a751fceb752418045322ce7f9a2ca1757d54f3b076e0e32aee164abeef7",
+      "cached": false,
+      "wall_s": 8.651460200002475
+    },
+    {
+      "key": "a8dcb5f15cdbab661afca3f3bb0751630a0462a22aa2d609fc3e96cd9200d85c",
+      "cached": false,
+      "wall_s": 8.867311800000607
+    },
+    {
+      "key": "ca9171f0fb5614fe23e770c0070eac4ffbab59350bbbb10c598a7991570bbdc4",
+      "cached": false,
+      "wall_s": 9.028570299997227
+    },
+    {
+      "key": "966faa57ab67a044278a9f8270dd393bc3375ae500283f5795b323aa270cdcd7",
+      "cached": false,
+      "wall_s": 8.893516399999498
+    },
+    {
+      "key": "56ea1b678ff8ed6061cb79ebb94414ff8509368f18a537099ee80f0569019ec0",
+      "cached": false,
+      "wall_s": 8.813818400005403
+    },
+    {
+      "key": "6951c589c06dc74ca7019bf6c876ffac088758a935d0739751faead81a112d8f",
+      "cached": false,
+      "wall_s": 8.707626600000367
+    },
+    {
+      "key": "1212c03b07ca51268353febc75d35e5449f70a911fb369e0225e9a4885cd3f86",
+      "cached": false,
+      "wall_s": 8.405325300002005
+    },
+    {
+      "key": "0756c40e50c5f17a5fbc980e373fec65254e930863645e5af88790a4473cb516",
+      "cached": false,
+      "wall_s": 8.39153559999977
+    },
+    {
+      "key": "9fb0fed1ff28fd21e6d4751e5272baa849608eb7a67ebab54f1a8c482b61d1bb",
+      "cached": false,
+      "wall_s": 8.672697300004074
+    },
+    {
+      "key": "72bbdbf3b7104306642192f86166820101d1bb5fb2693677cb9b3d69b9bb6931",
+      "cached": false,
+      "wall_s": 8.408380799999577
+    },
+    {
+      "key": "cafecc4302defe93b9fb53c5b98129f1f7b2f8d125c969af5fd40d6dab97a165",
+      "cached": false,
+      "wall_s": 8.395381199996336
+    },
+    {
+      "key": "66f8989b50d74124186577d48467b8318bff2113b2f6766c7a855dd43f9557b7",
+      "cached": false,
+      "wall_s": 8.472820000002685
+    },
+    {
+      "key": "669bae4b023bd5abc2a52da82d604393b9efabf3a07dea7aa8233269a7bf5ad2",
+      "cached": false,
+      "wall_s": 4.401412899998832
+    },
+    {
+      "key": "9281ac69d40216aa5aefc1b4d9aad72411ad527d28a33ab88ab8e7dbddddbc31",
+      "cached": false,
+      "wall_s": 4.346332999994047
+    },
+    {
+      "key": "185d8c938270decc7d8f5a3745c90df00dd8eec9560516581d2d74f69d71a442",
+      "cached": false,
+      "wall_s": 4.5088520000063
+    },
+    {
+      "key": "c9a741bf6373c5c5f3000125eceeb2e02dfa810746297142e35352e121921623",
+      "cached": false,
+      "wall_s": 4.496627100001206
+    },
+    {
+      "key": "5893763c8f1e965100f1796c570a4cd838f3e2b407074090770b847baea8b8cb",
+      "cached": false,
+      "wall_s": 4.294064100002288
+    },
+    {
+      "key": "7297d4be012b0c68f12c67eee85d4c0544e30c4b8396034c31d5742ef9310ef5",
+      "cached": false,
+      "wall_s": 4.438568599995051
+    },
+    {
+      "key": "556f8a85db32fed3c67b98bf61f3211696002120d77e9709f27ecc91c754c3fa",
+      "cached": false,
+      "wall_s": 6.48622510000132
+    },
+    {
+      "key": "1ff788219c1d9640d0330d989f24450fa0514e4e3302401304c685a71823a83c",
+      "cached": false,
+      "wall_s": 6.453667199995834
+    },
+    {
+      "key": "ce08bff45420ccec2d069d294f63e7bc668146f5994c9db9572000b7a941351c",
+      "cached": false,
+      "wall_s": 6.408791399997426
+    },
+    {
+      "key": "f53c57db8552b27565ef9121cfff983729b21968f0e1ad15f63b281dfa609b54",
+      "cached": false,
+      "wall_s": 6.561246699995536
+    },
+    {
+      "key": "45ada30660739af615647521609b2971a26ac33cb9c92d55eb7e66c8761d4361",
+      "cached": false,
+      "wall_s": 6.3222311999998055
+    },
+    {
+      "key": "1392d464e8f8a32f969b9d67a03c9195f929a784e2979fcd739491ac44dce1c6",
+      "cached": false,
+      "wall_s": 6.640130300002056
+    },
+    {
+      "key": "7373435db2ced72c8f8cf7073f7efcd5bdcd17258db5fcf19a44bf59521e5970",
+      "cached": false,
+      "wall_s": 8.614588500000536
+    },
+    {
+      "key": "c33bd7f7a426c3373f0a8c7ca975dd0272f8001ada927a9d1baa48e3c63ba53c",
+      "cached": false,
+      "wall_s": 8.662108500000613
+    },
+    {
+      "key": "0333d0b30ba84c00e6c8c76fc9f41378d3396ec83df6d795dabed5e469e3355a",
+      "cached": false,
+      "wall_s": 8.613168099996983
+    },
+    {
+      "key": "b9a3a108661629f4c3ddc087b1ec8aec811ba6a3ac968f3ceec39b1a96f4ca0f",
+      "cached": false,
+      "wall_s": 8.837853500001074
+    },
+    {
+      "key": "403fcc854fc78fc27c8ecdfb115f8d102e826d945267bcb31b0d02de0bfcce1c",
+      "cached": false,
+      "wall_s": 8.740914599999087
+    },
+    {
+      "key": "58931bc4bf1eb3dff8d792575f9fb88904a7a384b383b2bc5149ee94034f8094",
+      "cached": false,
+      "wall_s": 8.535230300003604
+    }
+  ],
+  "previous_artifacts_unchanged": true
+}

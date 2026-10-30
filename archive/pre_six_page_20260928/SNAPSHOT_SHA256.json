@@ -1,0 +1,126 @@
+﻿[
+    {
+        "file":  "abstract_new.tex",
+        "sha256":  "972130D8D0AB3CDE9E334B4F711870A264E433775A6A9226CBDD01DEA0F9F3E6"
+    },
+    {
+        "file":  "MANUSCRIPT_BUILD.md",
+        "sha256":  "B18B1BE8D98E591472703D2A7BE7195B47213A4FB05927843CD824E7E22E9ABF"
+    },
+    {
+        "file":  "paper.tex",
+        "sha256":  "740A8458B80B572CEA4A96FD77E12C6D6F3851A0D1251B0995FB232A8339A7DA"
+    },
+    {
+        "file":  "paper_extended.tex",
+        "sha256":  "ACDFD480B8A82606748C2FB93A98E4E121CB3753964F4AF5C4EA7A38F2CD03F9"
+    },
+    {
+        "file":  "paper_revised.tex",
+        "sha256":  "740A8458B80B572CEA4A96FD77E12C6D6F3851A0D1251B0995FB232A8339A7DA"
+    },
+    {
+        "file":  "README.md",
+        "sha256":  "08BC0AA8B6118E16C65EA055CE970617AB4FFE49721ED5646886ED2FBC07F278"
+    },
+    {
+        "file":  "build\\final_word\\audit_conversion.py",
+        "sha256":  "A4516ABBF4DAE39A6200EA4CEA41A27D5A1643DB608CAB79E6C1B72B04CB7192"
+    },
+    {
+        "file":  "build\\final_word\\FINAL_QA.md",
+        "sha256":  "CFB01B2E8911706B2092DC14C67017BAD7B55F9F1F15AA0424AA5195D793B658"
+    },
+    {
+        "file":  "build\\final_word\\final_quality_report.json",
+        "sha256":  "AB8CB8E10E6F38D947B9F5E4DE4B2BD0A41D1C88AA4AC863917BDF712D0029D8"
+    },
+    {
+        "file":  "build\\final_word\\independent_visual_review.md",
+        "sha256":  "3D657FABD6254F94EC80DA0450000502F9A450CFBB6F675C1673944F14BC770C"
+    },
+    {
+        "file":  "build\\reviewer_compliance\\build_pdf.py",
+        "sha256":  "4B5CA052802A2B61BB9DE51CAA688312E6355268C61D5B729ACBD1927D1C3589"
+    },
+    {
+        "file":  "build\\reviewer_compliance\\closure_manifest.json",
+        "sha256":  "A8C055D9AD797151DE033CC9DFC5902EDDB920E284F7AAEF4FD664203C5D9B7D"
+    },
+    {
+        "file":  "build\\reviewer_compliance\\verify_pdf.py",
+        "sha256":  "B1CCAF1BB30A3DD81A17F6FA6342477D5A968912EB368F1FADC074DFD34181AE"
+    },
+    {
+        "file":  "docs\\revision\\explainer_delivery_verification.json",
+        "sha256":  "9015C0775C250EE50B4CBA2930D57BFE358589241D6137386C0C0A3181DC3D02"
+    },
+    {
+        "file":  "docs\\revision\\official_review_matrix.md",
+        "sha256":  "1FFFE2BA68AB3B44683BBC5F2105590D490BB4F96736D3A668CEEED03F3B06F7"
+    },
+    {
+        "file":  "docs\\revision\\REVIEWER_RESPONSE.md",
+        "sha256":  "87FD252E006A10EFEECC65D7844A5DC281C91FD075283E5685778E2AEA636DD5"
+    },
+    {
+        "file":  "docs\\revision\\WORK_STATUS.md",
+        "sha256":  "87AB686645BD3E37B33775B6AEC1220030B4938D64931BD6EF7F9A39B8CC441B"
+    },
+    {
+        "file":  "submission\\DELIVERY_MANIFEST.json",
+        "sha256":  "F5DD5DE48D947593DACAF7875EAB042158120F4B89250EC71B6DCE2BE6C30446"
+    },
+    {
+        "file":  "submission\\Manuscript_Source.zip",
+        "sha256":  "86EF7C3D65086C375D25553176B8F2BBF5FE60D26FD54021062A40992F96BB3D"
+    },
+    {
+        "file":  "submission\\Paper167_LaTeX.pdf",
+        "sha256":  "FA392508F196BDA7B279CDA9E3B21875265218C41AD17BB7D77E24D941FFCA96"
+    },
+    {
+        "file":  "submission\\Paper167_Manuscript.docx",
+        "sha256":  "11C40920D0B520351F91DDAEA0E6C29357EF9FE42DDB0904627A8D1821699611"
+    },
+    {
+        "file":  "submission\\Paper167_Manuscript.pdf",
+        "sha256":  "7D4AA184773678DBEE8F9159A94CA9994FFFC315130A8F827A7B64D457CB8854"
+    },
+    {
+        "file":  "submission\\READ_ME.md",
+        "sha256":  "98B9E7F8BF2FBC8E80E8504E365D97FECFE4501ADFA1AE3FB68983F0EF3C16CC"
+    },
+    {
+        "file":  "submission\\Research_Explained.docx",
+        "sha256":  "72BE7B801FD6AD8032EF289E5AF42EC573FEB3ED2213EAEDED25851C609F7FA4"
+    },
+    {
+        "file":  "submission\\Research_Explained.pdf",
+        "sha256":  "45DB3625FF23E6AE6A58E2FF7BA7C2AB22643410CC8ADD6571A5003B6209C10F"
+    },
+    {
+        "file":  "submission\\Research_Revision_Source.zip",
+        "sha256":  "1BEA8F933D66597EC6EDA881CDEE6DBE509E9218261244FC7F9901658F98407B"
+    },
+    {
+        "file":  "submission\\Reviewer_Compliance.pdf",
+        "sha256":  "DD826518074BA94A8FC3EAD7AE184FFFEA752AAF1539F42334FBB484E4F24484"
+    },
+    {
+        "file":  "submission\\SHA256SUMS.txt",
+        "sha256":  "C602A18E3B7E64E784E379046221FB897E15FB9F57D5B7B0B6F6B0820B621EC1"
+    },
+    {
+        "file":  "tools\\build_delivery.py",
+        "sha256":  "A899D080478BB106BBF659240EB2A0C490BF0675B6EE97F9F78D2E09A50E4BC2"
+    },
+    {
+        "file":  "tools\\convert_manuscript_word.py",
+        "sha256":  "188DAFE6C0AD2A82C8DF54535AF278752FC1A454B26DF5EF16275C043934BAFC"
+    },
+    {
+        "file":  "tools\\verify_packaged_manuscript.py",
+        "sha256":  "36FB32230BBEF74A528374E84284F5F5E2D2F50F7C7D9B75D51D57A6B19ED72E"
+    }
+]

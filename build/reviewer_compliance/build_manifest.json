@@ -1,0 +1,261 @@
+{
+  "source": "docs\\revision\\REVIEWER_RESPONSE.md",
+  "source_sha256": "9565cdf3d4e5213b0b743a025582f17af0dd4c21d3a8476314240d22e2c0c245",
+  "paper_source_sha256": "65d3966f91dd1fdae8f115fb963c938fabb5a092501eabad829304035b7920a8",
+  "paper_aux_sha256": "5f9b435a4ba0baf6c6dd9de0eff1fce3cafe06e3c42ce6f67f2aad0bb4ae7cf5",
+  "latex_reference_pdf_sha256": "88f7b9dc3f2add96cc97e6d1c408c2593ff14cbd93fa940981eb59f46918299a",
+  "authoritative_manuscript_pdf": "submission/Paper167_Manuscript.pdf",
+  "authoritative_manuscript_pdf_sha256": "70e9aadb16a4140658eb919ca9ae7dd1a46cfb32895d82cbde6ffa56d42a60de",
+  "builder_sha256": "593205b2f67a013fe4d8db4092a4adf70dd7a436c8633c64e2a3f37c3f332da9",
+  "tex_sha256": "43e9aed3ce5f53f952b4621cabc1d9cd749faa3105dad55c057bafb6be7e4b7e",
+  "output": "submission\\Reviewer_Compliance.pdf",
+  "pdf_sha256": "c14b4d3f92c375ee4029b68ea94345a29f34f4df9c7449f0737fdc179478fc1c",
+  "official_sections": 21,
+  "evidence_references": [
+    {
+      "label": "main summary",
+      "path": "results/revision/analysis/main_summary.csv"
+    },
+    {
+      "label": "sensitivity summary",
+      "path": "results/revision/analysis/sensitivity_summary.csv"
+    },
+    {
+      "label": "deterministic theory checks",
+      "path": "results/revision/theory_checks.json"
+    },
+    {
+      "label": "paired main comparisons",
+      "path": "results/revision/analysis/main_paired_comparisons.csv"
+    },
+    {
+      "label": "metric definitions",
+      "path": "revision/metrics.py"
+    },
+    {
+      "label": "literature/source register",
+      "path": "docs/revision/literature_verified.md"
+    },
+    {
+      "label": "historical calculation record",
+      "path": "results/e8_published_validation.csv"
+    },
+    {
+      "label": "original-baseline audit",
+      "path": "docs/revision/audit_original_baseline.json"
+    },
+    {
+      "label": "research verification gate",
+      "path": "results/revision/verification/research_gate.json"
+    },
+    {
+      "label": "sensitivity summary",
+      "path": "results/revision/analysis/sensitivity_summary.csv"
+    },
+    {
+      "label": "source register L14-L15",
+      "path": "docs/revision/literature_verified.md"
+    },
+    {
+      "label": "Case defaults",
+      "path": "revision/scenarios.py"
+    },
+    {
+      "label": "sensitivity records",
+      "path": "results/revision/analysis/sensitivity_summary.csv"
+    },
+    {
+      "label": "online report",
+      "path": "docs/revision/ONLINE_ATTACK_RESULTS.md"
+    },
+    {
+      "label": "persistence report",
+      "path": "docs/revision/ONLINE_PERSISTENCE_RESULTS.md"
+    },
+    {
+      "label": "signed sensitivity comparisons",
+      "path": "results/revision/analysis/sensitivity_paired_comparisons.csv"
+    },
+    {
+      "label": "pairing verification",
+      "path": "results/revision/verification/main_attack_pairing.json"
+    },
+    {
+      "label": "scenario implementation",
+      "path": "revision/scenarios.py"
+    },
+    {
+      "label": "importance sensitivity",
+      "path": "results/revision/analysis/main_importance_sensitivity.csv"
+    },
+    {
+      "label": "main summary",
+      "path": "results/revision/analysis/main_summary.csv"
+    },
+    {
+      "label": "held-out paired differences",
+      "path": "results/revision/learning_analysis/paired_differences.csv"
+    },
+    {
+      "label": "main per-class summary",
+      "path": "results/revision/analysis/main_summary.csv"
+    },
+    {
+      "label": "load/routing sensitivity",
+      "path": "results/revision/analysis/sensitivity_summary.csv"
+    },
+    {
+      "label": "registered protocol",
+      "path": "docs/revision/learning_protocol.md"
+    },
+    {
+      "label": "completed learning report",
+      "path": "docs/revision/LEARNING_RESULTS.md"
+    },
+    {
+      "label": "integrity/statistical analysis",
+      "path": "results/revision/learning_analysis/analysis.json"
+    },
+    {
+      "label": "threshold summary",
+      "path": "results/revision/analysis/threshold_summary.csv"
+    },
+    {
+      "label": "rate implementation",
+      "path": "qkdsim/physics.py"
+    },
+    {
+      "label": "fallback paired comparisons",
+      "path": "results/revision/fallback/analysis/paired_comparisons.csv"
+    },
+    {
+      "label": "persistence analysis",
+      "path": "results/revision/online_persistence/analysis.json"
+    },
+    {
+      "label": "main summary with metric-specific SD",
+      "path": "results/revision/analysis/main_summary.csv"
+    },
+    {
+      "label": "raw main metrics",
+      "path": "results/revision/analysis/main_raw_metrics.csv"
+    },
+    {
+      "label": "learning per-class outcomes",
+      "path": "results/revision/learning_analysis/per_class.csv"
+    },
+    {
+      "label": "verified source register and method comparison",
+      "path": "docs/revision/literature_verified.md"
+    },
+    {
+      "label": "scenario tests",
+      "path": "tests/test_revision_scenarios.py"
+    },
+    {
+      "label": "fallback tests",
+      "path": "tests/test_revision_fallback.py"
+    },
+    {
+      "label": "research gate",
+      "path": "results/revision/verification/research_gate.json"
+    },
+    {
+      "label": "literature_verified.md",
+      "path": "docs/revision/literature_verified.md"
+    },
+    {
+      "label": "sensitivity summary",
+      "path": "results/revision/analysis/sensitivity_summary.csv"
+    },
+    {
+      "label": "paired comparisons",
+      "path": "results/revision/analysis/sensitivity_paired_comparisons.csv"
+    },
+    {
+      "label": "408-run verification",
+      "path": "results/revision/analysis/threshold_verification.json"
+    },
+    {
+      "label": "complete threshold summary",
+      "path": "results/revision/analysis/threshold_summary.csv"
+    },
+    {
+      "label": "structural checks",
+      "path": "docs/revision/theory_checks.md"
+    },
+    {
+      "label": "online report with target/cost logs",
+      "path": "docs/revision/ONLINE_ATTACK_RESULTS.md"
+    },
+    {
+      "label": "disjoint-seed persistence confirmation",
+      "path": "docs/revision/ONLINE_PERSISTENCE_RESULTS.md"
+    },
+    {
+      "label": "completed fallback report",
+      "path": "docs/revision/FALLBACK_RESULTS.md"
+    },
+    {
+      "label": "48-run verification",
+      "path": "results/revision/fallback/analysis/verification.json"
+    },
+    {
+      "label": "main_verification.json",
+      "path": "results/revision/analysis/main_verification.json"
+    },
+    {
+      "label": "sensitivity_verification.json",
+      "path": "results/revision/analysis/sensitivity_verification.json"
+    },
+    {
+      "label": "threshold_verification.json",
+      "path": "results/revision/analysis/threshold_verification.json"
+    },
+    {
+      "label": "fallback verification",
+      "path": "results/revision/fallback/analysis/verification.json"
+    },
+    {
+      "label": "learning analysis",
+      "path": "results/revision/learning_analysis/analysis.json"
+    },
+    {
+      "label": "online analysis",
+      "path": "results/revision/online_adversary/analysis.json"
+    },
+    {
+      "label": "persistence analysis",
+      "path": "results/revision/online_persistence/analysis.json"
+    },
+    {
+      "label": "theory_checks.json",
+      "path": "results/revision/theory_checks.json"
+    },
+    {
+      "label": "research_gate.json",
+      "path": "results/revision/verification/research_gate.json"
+    },
+    {
+      "label": "literature_verified.md",
+      "path": "docs/revision/literature_verified.md"
+    }
+  ],
+  "compilation": {
+    "command": [
+      "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\tectonic\\tectonic.exe",
+      "-X",
+      "compile",
+      "--keep-logs",
+      "--keep-intermediates",
+      "--outdir",
+      "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\reviewer_compliance\\pdf_build",
+      "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\reviewer_compliance\\Reviewer_Compliance.tex"
+    ],
+    "exit_code": 0,
+    "log": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\reviewer_compliance\\pdf_build\\tectonic_command.log",
+    "pdf": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\build\\reviewer_compliance\\pdf_build\\Reviewer_Compliance.pdf"
+  },
+  "locator_map_sha256": "b1e31fcb90b88712127ac07a6b0dc809ca67b437dd6e30576b3e434ec40ef4cb",
+  "reference_identity_refreshed_without_content_rebuild": true
+}

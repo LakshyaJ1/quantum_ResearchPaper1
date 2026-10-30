@@ -1,0 +1,29 @@
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: downloading fontenc.sty
+note: downloading t1lmr.fd
+note: downloading ec-lmr10.tfm
+note: downloading t1ptm.fd
+note: downloading ptmr8t.tfm
+note: downloading ptmb8t.tfm
+note: downloading ptmri8t.tfm
+note: downloading ptmbi8t.tfm
+note: downloading ptmrc8t.tfm
+note: Rerunning TeX because "ieee_smoke.out" changed ...
+note: Running xdvipdfmx ...
+note: downloading ptmr8t.vf
+note: downloading ptmr8r.tfm
+note: downloading 8r.enc
+note: downloading utmr8a.pfb
+note: downloading ptmbi8t.vf
+note: downloading ptmbi8r.tfm
+note: downloading utmbi8a.pfb
+note: downloading ptmb8t.vf
+note: downloading ptmb8r.tfm
+note: downloading utmb8a.pfb
+note: downloading ptmrc8t.vf
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\tools\manuscript_smoke\latex_output\ieee_smoke.aux` (999 B)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\tools\manuscript_smoke\latex_output\ieee_smoke.pdf` (18.279296875 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\tools\manuscript_smoke\latex_output\ieee_smoke.log` (15.3212890625 KiB)
+note: Writing `C:\Users\10jai\OneDrive\Desktop\ResearchPaper\tools\manuscript_smoke\latex_output\ieee_smoke.out` (234 B)
+

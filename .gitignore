@@ -26,3 +26,17 @@ experiments/swap_abstract.py
 
 # Only the top-level draft PDF is excluded; figure PDFs are part of the artifact.
 /*.pdf
+
+# Task-local archives, third-party source material, tool downloads and builds.
+# Current numerical evidence remains under results/revision/.
+/archive/
+/build/
+/submission/
+/docs/revision/sources/
+/docs/revision/audit_tools/pool_probe_outputs/
+/tools/tectonic/
+/tools/tectonic_cache/
+/tools/pandoc/
+/tools/manuscript_smoke/
+/tools/explainer_preview/
+/tools/explainer_final/

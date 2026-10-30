@@ -1,0 +1,117 @@
+{
+  "phase": "sensitivity",
+  "mode_pairs_checked": 576,
+  "target_mismatches": 0,
+  "missing_mode_pairs": 0,
+  "attack_set_variants": [
+    {
+      "configuration": [
+        "formation",
+        "weighted_cut",
+        10.0,
+        0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "weighted_cut",
+        10.0,
+        2.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "parallel3",
+        "weighted_cut",
+        10.0,
+        3.0
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "weighted_cut",
+        1,
+        2
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "static_betweenness",
+        1,
+        2
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "adaptive_betweenness",
+        1,
+        2
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "static_betweenness",
+        10,
+        2
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "adaptive_betweenness",
+        10,
+        2
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "weighted_cut",
+        100,
+        2
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "static_betweenness",
+        100,
+        2
+      ],
+      "variants": 1
+    },
+    {
+      "configuration": [
+        "formation",
+        "adaptive_betweenness",
+        100,
+        2
+      ],
+      "variants": 1
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,3 @@
+# Research provenance records pin exact source/data bytes. Do not silently
+# rewrite line endings when a checkout moves between Windows and another OS.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

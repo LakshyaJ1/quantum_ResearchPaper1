@@ -1,0 +1,4 @@
+note: "version 2" Tectonic command-line interface activated
+
+error: could not open format file latex
+caused by: Access is denied. (os error 5)

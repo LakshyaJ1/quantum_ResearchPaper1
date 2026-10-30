@@ -1,0 +1,378 @@
+{
+  "topology": {
+    "nodes": 8,
+    "links": 9,
+    "cuts": {
+      "FWD1": 1,
+      "FWD2": 1,
+      "FWD3": 1
+    },
+    "top2_betweenness": [
+      [
+        "BDE1",
+        "BDE2"
+      ],
+      [
+        "REL1",
+        "BDE1"
+      ]
+    ],
+    "reachable_after_top2": [
+      "FWD3"
+    ]
+  },
+  "buffered_abort": {
+    "available_bits": 51380224.0,
+    "rate": 0.0,
+    "serve_g2": false,
+    "serve_g4": true
+  },
+  "expired_session": {
+    "outcome": "SERVED",
+    "ttk": 2.0,
+    "deadline": 1
+  },
+  "pqc_deadline": {
+    "served": true,
+    "ttk": 0.35
+  },
+  "learned_fail_closed": {
+    "outcome": "SERVED",
+    "grade": "G4",
+    "floor_violation": true
+  },
+  "shield_projection": "G1",
+  "csv_inventory": {
+    "e2_policy.csv": {
+      "rows": 144,
+      "columns": [
+        "policy",
+        "fail_mode_t",
+        "k",
+        "seed",
+        "n",
+        "served",
+        "blocked",
+        "below_its",
+        "forced_below_its",
+        "floor_viol",
+        "mean_ttk",
+        "p95_ttk",
+        "mean_hops",
+        "consumed_Mbit",
+        "generated_Mbit",
+        "discarded_Mbit",
+        "n_links",
+        "comp_G1",
+        "comp_G2",
+        "comp_G3",
+        "comp_G4",
+        "served_C2",
+        "below_its_C2",
+        "served_ISR",
+        "below_its_ISR",
+        "served_LOG",
+        "below_its_LOG"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "e3_failmode.csv": {
+      "rows": 144,
+      "columns": [
+        "fail_mode_t",
+        "k",
+        "seed",
+        "n",
+        "served",
+        "blocked",
+        "below_its",
+        "forced_below_its",
+        "floor_viol",
+        "mean_ttk",
+        "p95_ttk",
+        "mean_hops",
+        "consumed_Mbit",
+        "generated_Mbit",
+        "discarded_Mbit",
+        "n_links",
+        "comp_G1",
+        "comp_G2",
+        "comp_G3",
+        "comp_G4",
+        "served_C2",
+        "below_its_C2",
+        "served_ISR",
+        "below_its_ISR",
+        "served_LOG",
+        "below_its_LOG"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "e4_forcing_cost.csv": {
+      "rows": 624,
+      "columns": [
+        "depth",
+        "k",
+        "fail_mode_t",
+        "targeting",
+        "seed",
+        "n",
+        "served",
+        "blocked",
+        "below_its",
+        "forced_below_its",
+        "floor_viol",
+        "mean_ttk",
+        "p95_ttk",
+        "mean_hops",
+        "consumed_Mbit",
+        "generated_Mbit",
+        "discarded_Mbit",
+        "n_links",
+        "comp_G1",
+        "comp_G2",
+        "comp_G3",
+        "comp_G4",
+        "served_C2",
+        "below_its_C2",
+        "served_ISR",
+        "below_its_ISR",
+        "served_LOG",
+        "below_its_LOG"
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    "e4_kstar.csv": {
+      "rows": 12,
+      "columns": [
+        "targeting",
+        "depth",
+        "n_links",
+        "nominal_forced",
+        "kstar_0.1",
+        "kstar_0.25",
+        "kstar_0.5"
+      ],
+      "seeds": null
+    },
+    "e5_auth.csv": {
+      "rows": 32,
+      "columns": [
+        "mix",
+        "auth_on",
+        "seed",
+        "n",
+        "served",
+        "blocked",
+        "below_its",
+        "floor_viol",
+        "mean_ttk",
+        "p95_ttk",
+        "mean_hops",
+        "consumed_Mbit",
+        "generated_Mbit",
+        "discarded_Mbit",
+        "n_links",
+        "comp_G1",
+        "comp_G2",
+        "comp_G3",
+        "comp_G4",
+        "served_C2",
+        "below_its_C2",
+        "served_ISR",
+        "below_its_ISR",
+        "served_LOG",
+        "below_its_LOG"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "e5_overhead_vs_blocksize.csv": {
+      "rows": 8,
+      "columns": [
+        "D_bits",
+        "cost_per_hop",
+        "overhead_factor",
+        "regime"
+      ],
+      "seeds": null
+    },
+    "e6_hop_penalty.csv": {
+      "rows": 48,
+      "columns": [
+        "hp",
+        "routing",
+        "mode",
+        "seed",
+        "served",
+        "hops",
+        "key_Mbit",
+        "below_its"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "e6b_sensitivity.csv": {
+      "rows": 576,
+      "columns": [
+        "gamma",
+        "e_abort",
+        "deny_classical",
+        "k",
+        "mode",
+        "seed",
+        "delta_e",
+        "avail",
+        "blocked",
+        "forced",
+        "viol",
+        "g4",
+        "key_Mbit"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "e6c_nauth.csv": {
+      "rows": 128,
+      "columns": [
+        "n_auth",
+        "k",
+        "mode",
+        "seed",
+        "avail",
+        "blocked",
+        "forced",
+        "viol",
+        "g1",
+        "g4",
+        "key_Mbit"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "e7_policy_audit.csv": {
+      "rows": 17,
+      "columns": [
+        "J",
+        "avail",
+        "viol",
+        "its_share",
+        "c2_below_its",
+        "key_Mbit",
+        "policy",
+        "condition"
+      ],
+      "seeds": null
+    },
+    "e7_policy_table.csv": {
+      "rows": 12,
+      "columns": [
+        "state",
+        "heuristic",
+        "searched",
+        "differs"
+      ],
+      "seeds": null
+    },
+    "e7_policy_table_effective.csv": {
+      "rows": 12,
+      "columns": [
+        "state",
+        "heuristic",
+        "searched",
+        "differs",
+        "searched_effective",
+        "shield_clipped",
+        "differs_effective"
+      ],
+      "seeds": null
+    },
+    "e8_published_validation.csv": {
+      "rows": 4,
+      "columns": [
+        "check",
+        "quantity",
+        "measured",
+        "predicted",
+        "units",
+        "verdict",
+        "note"
+      ],
+      "seeds": null
+    }
+  },
+  "paired_KAR_minus_SP": {
+    "delta": -0.026815444126870747,
+    "ci95": [
+      -0.029327242771612985,
+      -0.024234698759099834
+    ],
+    "n": 12
+  },
+  "replay_seed0": {
+    "served": 0.8122001370801919,
+    "saved": 0.8122001370801919,
+    "consumed_Mbit": 462.941726,
+    "saved_Mbit": 462.941726
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "source_hash": "10b972ad12db9859da4e2785b267b154a94527e0fd5097df8758673f175d8aab",
+  "candidates": [
+    {
+      "restart": 0,
+      "optimizer_seed": 7000,
+      "table": [
+        4,
+        4,
+        1,
+        2,
+        1,
+        4,
+        2,
+        4,
+        4,
+        3,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "table_sha256": "d28b31e6b0375e1ed2e6da164b94fae1105b3d625a3e1b11963a08a8036c8573",
+      "training_score": {
+        "mean": {
+          "utility": 0.6580980823978603,
+          "availability": 0.6713780870135727,
+          "qualified_availability": 0.6536714141926228,
+          "degraded_arrival_fraction": 0.01770667282094996,
+          "blocked_arrival_fraction": 0.32862191298642734,
+          "forced_entitled_fraction": 0.002000409273451106,
+          "qualified_payload_fraction": 0.6644197012762718
+        },
+        "condition_means": {
+          "attack2": {
+            "utility": 0.07520475338226856,
+            "availability": 0.10435559082732668,
+            "qualified_availability": 0.0654878075672492,
+            "degraded_arrival_fraction": 0.03886778326007749,
+            "blocked_arrival_fraction": 0.8956444091726734,
+            "forced_entitled_fraction": 0.0035476193843231255,
+            "qualified_payload_fraction": 0.07035321304271269
+          },
+          "nominal": {
+            "utility": 0.9647468437829426,
+            "availability": 0.9664791551628935,
+            "qualified_availability": 0.9641694066562924,
+            "degraded_arrival_fraction": 0.002309748506601074,
+            "blocked_arrival_fraction": 0.03352084483710657,
+            "forced_entitled_fraction": 0.0,
+            "qualified_payload_fraction": 0.9777295244253843
+          },
+          "severe": {
+            "utility": 0.9343426500283694,
+            "availability": 0.9432995150504979,
+            "qualified_availability": 0.9313570283543265,
+            "degraded_arrival_fraction": 0.011942486696171315,
+            "blocked_arrival_fraction": 0.05670048494950211,
+            "forced_entitled_fraction": 0.0024536084360301915,
+            "qualified_payload_fraction": 0.9451763663607183
+          }
+        },
+        "worst_condition_components": {
+          "utility": 0.07520475338226856,
+          "availability": 0.10435559082732668,
+          "qualified_availability": 0.0654878075672492,
+          "degraded_arrival_fraction": 0.03886778326007749,
+          "blocked_arrival_fraction": 0.8956444091726734,
+          "forced_entitled_fraction": 0.0035476193843231255,
+          "qualified_payload_fraction": 0.07035321304271269
+        },
+        "minimum_condition_utility": 0.07520475338226856,
+        "n_rollouts": 6
+      },
+      "training_rollout_keys": [
+        "0c8248154c2f7848f18ca3ea2a57e84f99e7624039cd781ce8dc566c4224ce5f",
+        "c289137f3e79ae0310579219504f62e63647eb62a49ae903b2183bf8d53e3fb6",
+        "1ed31820bc0a940e5568f462ec37e6c4524fca62f5d5baaf391e1c6a350d8f8c",
+        "ea4c88b6577ebb9ad6948d2ad77a91562de660f5caa87d36252ffeb307cc187d",
+        "d659f0175cbd3511585d46e13ffa361845b76f47b360696ec19e25fd819b9bcc",
+        "55be26a6263fb9706b478a8e50153524638c4223240a26dd99aad2df849cabf6"
+      ],
+      "search_artifact": "search/full_robust_restart0.json",
+      "validation_score": {
+        "mean": {
+          "utility": 0.6492694800621969,
+          "availability": 0.664612223651607,
+          "qualified_availability": 0.6441552321990601,
+          "degraded_arrival_fraction": 0.0204569914525469,
+          "blocked_arrival_fraction": 0.335387776348393,
+          "forced_entitled_fraction": 0.0022849894916115803,
+          "qualified_payload_fraction": 0.6523555944447208
+        },
+        "condition_means": {
+          "attack2": {
+            "utility": 0.06713954406370075,
+            "availability": 0.09646904376843617,
+            "qualified_availability": 0.05736304416212227,
+            "degraded_arrival_fraction": 0.0391059996063139,
+            "blocked_arrival_fraction": 0.9035309562315639,
+            "forced_entitled_fraction": 0.0037025211873842195,
+            "qualified_payload_fraction": 0.05785146679082419
+          },
+          "nominal": {
+            "utility": 0.9713934983242842,
+            "availability": 0.9732300903167596,
+            "qualified_availability": 0.9707813009934592,
+            "degraded_arrival_fraction": 0.002448789323300485,
+            "blocked_arrival_fraction": 0.026769909683240407,
+            "forced_entitled_fraction": 5.5567903978661923e-05,
+            "qualified_payload_fraction": 0.9827167576383988
+          },
+          "severe": {
+            "utility": 0.9092753977986056,
+            "availability": 0.9241375368696253,
+            "qualified_availability": 0.904321351441599,
+            "degraded_arrival_fraction": 0.019816185428026326,
+            "blocked_arrival_fraction": 0.07586246313037467,
+            "forced_entitled_fraction": 0.0030968793834718587,
+            "qualified_payload_fraction": 0.9164985589049395
+          }
+        },
+        "worst_condition_components": {
+          "utility": 0.06713954406370075,
+          "availability": 0.09646904376843617,
+          "qualified_availability": 0.05736304416212227,
+          "degraded_arrival_fraction": 0.0391059996063139,
+          "blocked_arrival_fraction": 0.9035309562315639,
+          "forced_entitled_fraction": 0.0037025211873842195,
+          "qualified_payload_fraction": 0.05785146679082419
+        },
+        "minimum_condition_utility": 0.06713954406370075,
+        "n_rollouts": 12
+      },
+      "validation_rollout_keys": [
+        "1f1c255274f737ebdbd0ccb6658179f96a32bb9122f4da338db2cb73f33e7f5c",
+        "bb88837848ec239dd4782102c9058c5ca0d76495a2cea4f8232630d712c837cb",
+        "ad1aa3d08ec7f2359e30869e45f6773f51f50838bb85aed14c5f96f41109d2af",
+        "19a80beb465c9bf40a7317ad561888f9dfe3d9d78332b56cd61bb515be556a15",
+        "db7542ee4841aa8065a5ba8e594da71e5d85a8402db6333c5a1ee8c9681af0b3",
+        "b78004ab5386100283f57696e23a742a69de4fccd3e8b73753882bedde85921c",
+        "8855a726f5e1d3213434e17dfe5895704f2fcedf3b3264251f02e8fc1843a43f",
+        "8f4b4bc4d54eb92c1064d604e0017606890a86d47086ffc55d0775a915f3f5dc",
+        "bebe8ac7d477cb255b499f4d6b523c0f6415051cb041a3de4a4c95d17af5a5e7",
+        "d8336de307c8b3705abfb9808539c02e6fca63c50946d81819b3b1d3c87f7456",
+        "bb86818e0cc5bb4b57b199742d85c4d559999583b395a8089165b8d40e49e71a",
+        "34d11fa4154862bb060a9553e1752f60b9e996abffd6c886410ccaa5ca47b675"
+      ],
+      "table_complexity": 10
+    },
+    {
+      "restart": 1,
+      "optimizer_seed": 7001,
+      "table": [
+        3,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        4,
+        0,
+        0,
+        3,
+        1,
+        1,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "table_sha256": "598649f309838e27d1bf392b414aaf96a3eae2b2c2baf4e49f36ea6820e3ac22",
+      "training_score": {
+        "mean": {
+          "utility": 0.6558512272715813,
+          "availability": 0.6693419948991765,
+          "qualified_availability": 0.6513543047290496,
+          "degraded_arrival_fraction": 0.017987690170126698,
+          "blocked_arrival_fraction": 0.3306580051008237,
+          "forced_entitled_fraction": 0.003657687260440889,
+          "qualified_payload_fraction": 0.6611585041733294
+        },
+        "condition_means": {
+          "attack2": {
+            "utility": 0.06776318160596631,
+            "availability": 0.09691401905102442,
+            "qualified_availability": 0.05804623579094695,
+            "degraded_arrival_fraction": 0.03886778326007749,
+            "blocked_arrival_fraction": 0.9030859809489755,
+            "forced_entitled_fraction": 0.003769219770230893,
+            "qualified_payload_fraction": 0.062488845932343454
+          },
+          "nominal": {
+            "utility": 0.9649559117890668,
+            "availability": 0.9666882231690177,
+            "qualified_availability": 0.9643784746624166,
+            "degraded_arrival_fraction": 0.002309748506601074,
+            "blocked_arrival_fraction": 0.03331177683098238,
+            "forced_entitled_fraction": 0.0036363309406714133,
+            "qualified_payload_fraction": 0.9779774065928044
+          },
+          "severe": {
+            "utility": 0.9348345884197109,
+            "availability": 0.944423742477487,
+            "qualified_availability": 0.9316382037337854,
+            "degraded_arrival_fraction": 0.01278553874370153,
+            "blocked_arrival_fraction": 0.05557625752251305,
+            "forced_entitled_fraction": 0.003567511070420362,
+            "qualified_payload_fraction": 0.9430092599948403
+          }
+        },
+        "worst_condition_components": {
+          "utility": 0.06776318160596631,
+          "availability": 0.09691401905102442,
+          "qualified_availability": 0.05804623579094695,
+          "degraded_arrival_fraction": 0.03886778326007749,
+          "blocked_arrival_fraction": 0.9030859809489755,
+          "forced_entitled_fraction": 0.003769219770230893,
+          "qualified_payload_fraction": 0.062488845932343454
+        },
+        "minimum_condition_utility": 0.06776318160596631,
+        "n_rollouts": 6
+      },
+      "training_rollout_keys": [
+        "f83276b9bf0910325e0b6fda3619c5a2a57765ee0ab19249bc48176d9b0ff244",
+        "19cddf6520131ed2569f53c55aa0e15cb5dbe571743a1d45683e271ecf10f9e1",
+        "2d986d384bc5fce4fadd5f1aeea06399d9886b216a080192fa8e986d206b0107",
+        "94d335628a575329f83e8c22b550933e7657fc4ec76d7ce2caa6e68f8c99a2e1",
+        "d05876facc97d2526751bbb5f8d493bb2767ea05ecf0c9f1a297b071147bfed3",
+        "5cc026266df0e5dc5cc8758d022ccf7b34b9286eb18550bd1a2c535bc0262e5e"
+      ],
+      "search_artifact": "search/full_robust_restart1.json",
+      "validation_score": {
+        "mean": {
+          "utility": 0.6486128807186902,
+          "availability": 0.664733466755723,
+          "qualified_availability": 0.6432393520396792,
+          "degraded_arrival_fraction": 0.021494114716043743,
+          "blocked_arrival_fraction": 0.33526653324427697,
+          "forced_entitled_fraction": 0.0038677035914760644,
+          "qualified_payload_fraction": 0.6496244247603862
+        },
+        "condition_means": {
+          "attack2": {
+            "utility": 0.06724467173840083,
+            "availability": 0.09657417144313625,
+            "qualified_availability": 0.05746817183682235,
+            "degraded_arrival_fraction": 0.0391059996063139,
+            "blocked_arrival_fraction": 0.9034258285568637,
+            "forced_entitled_fraction": 0.0038677035914760644,
+            "qualified_payload_fraction": 0.05785324151445646
+          },
+          "nominal": {
+            "utility": 0.9717093037677085,
+            "availability": 0.9735458957601838,
+            "qualified_availability": 0.9710971064368833,
+            "degraded_arrival_fraction": 0.002448789323300485,
+            "blocked_arrival_fraction": 0.0264541042398162,
+            "forced_entitled_fraction": 0.0038677035914760644,
+            "qualified_payload_fraction": 0.983089017640386
+          },
+          "severe": {
+            "utility": 0.9068846666499613,
+            "availability": 0.924080333063849,
+            "qualified_availability": 0.9011527778453321,
+            "degraded_arrival_fraction": 0.02292755521851686,
+            "blocked_arrival_fraction": 0.07591966693615106,
+            "forced_entitled_fraction": 0.0038677035914760644,
+            "qualified_payload_fraction": 0.9079310151263162
+          }
+        },
+        "worst_condition_components": {
+          "utility": 0.06724467173840083,
+          "availability": 0.09657417144313625,
+          "qualified_availability": 0.05746817183682235,
+          "degraded_arrival_fraction": 0.0391059996063139,
+          "blocked_arrival_fraction": 0.9034258285568637,
+          "forced_entitled_fraction": 0.0038677035914760644,
+          "qualified_payload_fraction": 0.05785324151445646
+        },
+        "minimum_condition_utility": 0.06724467173840083,
+        "n_rollouts": 12
+      },
+      "validation_rollout_keys": [
+        "539cababf36fd54be560bf0ae5dd3ab352f037102e0a3db77fa6ee2a3df17129",
+        "4fe0528a57e76a6eebe294795cb206cd171e47dfa5c3b9524d71ec3686707d3b",
+        "33a823c3c0dea0acac88ed2c70167b3e628d87c47718ee057e7922de288ec0a1",
+        "f8f972c2a4deab9de222836014718918ef5621e3c81bc689d22c80983e75d0ec",
+        "c9387f343953154c6352d96ebeda7ecec5c3fa568f4d4795eb20138549640dbe",
+        "ecdfdbbf8aee599a78d66acd72481cbc84b9d13fa42e2287a885d26f21942e2a",
+        "f3c89a78e495a11329f061ea263fbea43a0761474d3813292bff94df7b88c500",
+        "a316c755982eb8b3a35ac8fd552abc7cab7f25c33c6633902ff117cb97aebb84",
+        "be74f9240102ca2305df25925d39533d1b4fac0395baf34094f66d7f83cfbf00",
+        "ed66451b82f18fe2cf2c842a8140c4830576364aedcf2f639736b53702d14885",
+        "4301bcd20ea17b76368f60772af8202893d8d93c04d46ebf0308584743d752cb",
+        "f81c8006257cb6efaf98de4a79365211eb2ec8d77b4c428f01913f5aab3f02ac"
+      ]
+    }
+  ],
+  "selected_restart": 0
+}

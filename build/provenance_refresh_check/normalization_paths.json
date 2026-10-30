@@ -1,0 +1,13 @@
+[
+  "StockLowClosed.source_row.first_forced_median_if_observed_s",
+  "StockLowClosedLo.source_row.first_forced_median_if_observed_s",
+  "StockLowClosedHi.source_row.first_forced_median_if_observed_s",
+  "StockMidClosed.source_row.first_forced_median_if_observed_s",
+  "StockMidClosedLo.source_row.first_forced_median_if_observed_s",
+  "StockMidClosedHi.source_row.first_forced_median_if_observed_s",
+  "StockFullClosed.source_row.first_forced_median_if_observed_s",
+  "StockFullClosedLo.source_row.first_forced_median_if_observed_s",
+  "StockFullClosedHi.source_row.first_forced_median_if_observed_s",
+  "AuthLowClosed.source_row.first_forced_median_if_observed_s",
+  "AuthHighClosed.source_row.first_forced_median_if_observed_s"
+]

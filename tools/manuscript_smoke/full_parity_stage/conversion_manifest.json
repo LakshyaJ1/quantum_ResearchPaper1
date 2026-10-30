@@ -1,0 +1,83 @@
+{
+  "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\full_parity_fixture.tex",
+  "source_sha256": "e48f737b771454999532e1f5b2b3a8dd6b0ce3964f97f86a0048af1f69a94745",
+  "aux": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\full_parity_latex\\full_parity_fixture.aux",
+  "aux_sha256": "34b1eecd153b3d96e84a95f325dcc5496a4ee09c021942d3743ab68c6ef31b80",
+  "staged": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\full_parity_stage\\manuscript_for_word.tex",
+  "sections": [
+    [
+      false,
+      "Rendering Check"
+    ],
+    [
+      false,
+      "Interpretation"
+    ]
+  ],
+  "labels": {
+    "sec:check": "I",
+    "eq:check": "1",
+    "tab:check": "I",
+    "fig:wide": "1",
+    "fig:column": "2"
+  },
+  "citations": {
+    "sample": "1"
+  },
+  "equations": [
+    {
+      "number": "1",
+      "latex": "e_i(t)=e_0+\\Delta e.",
+      "label": "eq:check"
+    }
+  ],
+  "floats": [
+    {
+      "kind": "table",
+      "number": "I",
+      "wide": false,
+      "labels": [
+        "tab:check"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "1",
+      "wide": true,
+      "labels": [
+        "fig:wide"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "2",
+      "wide": false,
+      "labels": [
+        "fig:column"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\fixture_figure.pdf",
+      "source_sha256": "90fadfd3d962f639448b513a429d7af4dfaca863666fde7e770828e1cff82ab6",
+      "raster": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\full_parity_stage\\assets\\fixture_figure.png",
+      "width_in": 7.139892071398921
+    },
+    {
+      "source": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\fixture_figure.pdf",
+      "source_sha256": "90fadfd3d962f639448b513a429d7af4dfaca863666fde7e770828e1cff82ab6",
+      "raster": "C:\\Users\\10jai\\OneDrive\\Desktop\\ResearchPaper\\tools\\manuscript_smoke\\full_parity_stage\\assets\\fixture_figure.png",
+      "width_in": 3.4869240348692405
+    }
+  ],
+  "word_structure": {
+    "numbered_equations": 1,
+    "native_math_elements": 2,
+    "tables": 1,
+    "inline_shapes": 2,
+    "sections": 4
+  },
+  "output": "tools\\manuscript_smoke\\full_parity_fixture.docx",
+  "output_sha256": "21c5d63f92d61410370511b2c97bdb6c7d0b340bd9ec5602ec92ed9caa7f5d3a"
+}
